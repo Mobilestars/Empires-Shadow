@@ -1,0 +1,37 @@
+state={
+	id=21
+	name="STATE_21" # Bouches-du-Rhône
+	manpower = 1670310
+	resources={
+		aluminium=60 # was: 120
+	}
+
+	state_category = city
+
+	history={
+		owner = ITA
+		controller = ITA
+		victory_points = {
+			11834 10
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 2
+			arms_factory = 1
+			fuel_silo = 1
+			air_base = 10
+			11834 = {
+				naval_base = 3
+				coastal_bunker = 1
+			}
+		}
+		add_core_of = ITA
+	}
+
+	provinces={
+		958 3762 11834 11849 11875 
+	}
+
+	local_supplies=0.0 
+}
