@@ -1,0 +1,27 @@
+ideas = {
+	country = {
+
+		ES_ger_kaiserreich_sovereignty = {
+			picture = ger_revive_the_kaiserreich
+
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				generate_wargoal_tension = -0.5
+			}
+
+			rule = {
+				can_only_justify_war_on_threat_country = no
+			}
+		}
+
+	}
+}
