@@ -857,24 +857,19 @@ autonomous_state = autonomy_puppet
 }
 
 
-# Setup German Politics
+# Setup German Politics - EmpiresShadow: Kaiserreich
 set_politics = {
-	ruling_party = fascism
-	last_election = "1933.3.5"
+	ruling_party = neutrality
+	last_election = "1919.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 35
-	fascism = 40
-	communism = 10
-	neutrality = 15
+	democratic = 15
+	fascism = 10
+	communism = 5
+	neutrality = 70
 }
-
-
-# Wowow nice faction
-create_faction_from_template = faction_template_axis
-add_to_faction = GER
 
 # Setup of National Spirits
 add_ideas = {
@@ -888,6 +883,11 @@ add_ideas = {
 activate_mission = GER_mefo_bills_mission
 
 # Character Recruitment
+recruit_character = GER_wilhelm_ii
+set_country_leader = {
+	character = GER_wilhelm_ii
+	ideology = despotism
+}
 recruit_character = GER_wilhelm_pieck
 recruit_character = GER_konrad_adenauer
 recruit_character = GER_adolf_hitler
