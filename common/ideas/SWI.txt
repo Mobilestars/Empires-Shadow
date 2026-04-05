@@ -1,0 +1,294 @@
+ideas = {
+	country = {
+
+		# ===== WIRTSCHAFT =====
+
+		SWI_nationalbank_idea = {
+			picture = generic_bank_reserve_money
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				consumer_goods_expected_value = -0.03
+			}
+		}
+
+		SWI_devisenreserven_idea = {
+			picture = generic_foreign_capital
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				trade_opinion_factor = 0.15
+				resource_import_factor = 0.10
+			}
+		}
+
+		SWI_exportwirtschaft_idea = {
+			picture = generic_goods_red_production
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				trade_opinion_factor = 0.20
+				civilian_intel_to_others = -5
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		# ===== NEUTRALITÄT / AUSSENPOLITIK =====
+
+		SWI_neutralitaet_idea = {
+			picture = generic_neutrality_focus
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.50
+				stability_factor = 0.05
+			}
+		}
+
+		SWI_rotes_kreuz_idea = {
+			picture = generic_secret_rearmament
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		SWI_humanitaere_hilfe_idea = {
+			picture = generic_morale_bonus
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				improve_relations_maintain_cost_factor = -0.10
+			}
+		}
+
+		SWI_genf_zentrum_idea = {
+			picture = generic_political_support
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.10
+				improve_relations_maintain_cost_factor = -0.15
+			}
+		}
+
+		SWI_internationalismus_idea = {
+			picture = generic_foreign_capital
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+				trade_opinion_factor = 0.10
+			}
+		}
+
+		# ===== INNENPOLITIK =====
+
+		SWI_direktdemokratie_idea = {
+			picture = generic_political_support
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.05
+			}
+		}
+
+		SWI_kantone_idea = {
+			picture = generic_secret_rearmament
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.07
+				political_power_gain = 0.05
+			}
+		}
+
+		SWI_volksrechte_idea = {
+			picture = generic_manpower
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.10
+				stability_factor = 0.05
+			}
+		}
+
+		# Demokratischer Pfad
+
+		SWI_freie_presse_idea = {
+			picture = generic_pp_unity_bonus
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+
+		SWI_sozialreformen_idea = {
+			picture = generic_goods_red_production
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.08
+				consumer_goods_expected_value = 0.05
+				mobilization_laws_cost_factor = -0.10
+			}
+		}
+
+		# Faschistischer Pfad
+
+		SWI_nationale_erneuerung_idea = {
+			picture = generic_fascism_drift_politics
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.10
+				mobilization_speed = 0.05
+			}
+		}
+
+		SWI_frontenfruhling_idea = {
+			picture = fascism_on_the_march
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.10
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+
+		# Kommunistischer Pfad
+
+		SWI_arbeiterbewegung_idea = {
+			picture = generic_communism_drift_politics
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.10
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		SWI_rote_schweiz_idea = {
+			picture = generic_communism_drift_politics
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				production_speed_arms_factory_factor = 0.10
+				army_core_defence_factor = 0.05
+			}
+		}
+
+		# ===== MILITÄR =====
+
+		SWI_bewaffnete_neutralitaet_idea = {
+			picture = generic_reserve_divisions
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		SWI_milizreform_idea = {
+			picture = generic_manpower
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.02
+				training_time_factor = -0.10
+				army_morale_factor = 0.05
+			}
+		}
+
+		SWI_alpenjager_idea = {
+			picture = generic_mountain_infantry
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				mountain_attack_factor = 0.15
+				mountain_defence_factor = 0.15
+				army_morale_factor = 0.05
+			}
+		}
+
+		SWI_reduit_idea = {
+			picture = generic_build_infrastructure
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.10
+				attrition = -0.10
+			}
+		}
+
+		SWI_festung_schweiz_idea = {
+			picture = generic_fortify_the_borders
+
+			allowed = { original_tag = SWI }
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.15
+				attrition = -0.15
+				army_morale_factor = 0.10
+				war_support_factor = 0.05
+			}
+		}
+	}
+}

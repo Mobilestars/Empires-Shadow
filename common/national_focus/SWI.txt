@@ -1,0 +1,613 @@
+###########################
+# SWITZERLAND FOCUS TREE
+# EmpiresShadow - Alternative History: Germany won WW1
+# Switzerland (SWI) bleibt eine demokratische Neutralität,
+# eingekreist von der wachsenden Macht des Deutschen Kaiserreichs.
+###########################
+
+focus_tree = {
+	id = SWI_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SWI
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+
+	###########################
+	# WIRTSCHAFT
+	###########################
+
+	focus = {
+		id = SWI_bankenplatz
+		icon = GFX_focus_generic_trade
+		cost = 10
+		x = 2
+		y = 0
+
+		available = {
+			is_subject = no
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = SWI_nationalbank
+		icon = GFX_focus_generic_self_management
+		cost = 10
+		prerequisite = { focus = SWI_bankenplatz }
+		x = -1
+		y = 1
+		relative_position_id = SWI_bankenplatz
+
+		completion_reward = {
+			add_ideas = SWI_nationalbank_idea
+		}
+	}
+
+	focus = {
+		id = SWI_uhrenindustrie
+		icon = GFX_focus_generic_industry_2
+		cost = 10
+		prerequisite = { focus = SWI_bankenplatz }
+		x = 1
+		y = 1
+		relative_position_id = SWI_bankenplatz
+
+		completion_reward = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+
+	focus = {
+		id = SWI_devisenreserven
+		icon = GFX_focus_generic_commonwealth_of_nations
+		cost = 10
+		prerequisite = { focus = SWI_nationalbank }
+		x = 0
+		y = 1
+		relative_position_id = SWI_nationalbank
+
+		completion_reward = {
+			add_ideas = SWI_devisenreserven_idea
+		}
+	}
+
+	focus = {
+		id = SWI_praezisionstechnik
+		icon = GFX_focus_generic_research
+		cost = 10
+		prerequisite = { focus = SWI_uhrenindustrie }
+		x = 0
+		y = 1
+		relative_position_id = SWI_uhrenindustrie
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SWI_praezisions_bonus
+				bonus = 0.50
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = SWI_exportwirtschaft
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10
+		prerequisite = { focus = SWI_devisenreserven }
+		prerequisite = { focus = SWI_praezisionstechnik }
+		x = 1
+		y = 1
+		relative_position_id = SWI_devisenreserven
+
+		completion_reward = {
+			add_ideas = SWI_exportwirtschaft_idea
+		}
+	}
+
+	###########################
+	# NEUTRALITÄT / AUSSENPOLITIK
+	###########################
+
+	focus = {
+		id = SWI_ewige_neutralitaet
+		icon = GFX_focus_generic_morale_bonus
+		cost = 10
+		x = 9
+		y = 0
+
+		completion_reward = {
+			add_stability = 0.10
+			add_ideas = SWI_neutralitaet_idea
+		}
+	}
+
+	focus = {
+		id = SWI_rotes_kreuz
+		icon = GFX_focus_generic_secret_rearmament
+		cost = 10
+		prerequisite = { focus = SWI_ewige_neutralitaet }
+		x = -1
+		y = 1
+		relative_position_id = SWI_ewige_neutralitaet
+
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = SWI_rotes_kreuz_idea
+		}
+	}
+
+	focus = {
+		id = SWI_vlkerbund
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		prerequisite = { focus = SWI_ewige_neutralitaet }
+		x = 1
+		y = 1
+		relative_position_id = SWI_ewige_neutralitaet
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = SWI_humanitaere_hilfe
+		icon = GFX_focus_generic_manpower
+		cost = 10
+		prerequisite = { focus = SWI_rotes_kreuz }
+		x = 0
+		y = 1
+		relative_position_id = SWI_rotes_kreuz
+
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = SWI_humanitaere_hilfe_idea
+		}
+	}
+
+	focus = {
+		id = SWI_genf_als_zentrum
+		icon = GFX_focus_generic_political_support
+		cost = 10
+		prerequisite = { focus = SWI_vlkerbund }
+		x = 0
+		y = 1
+		relative_position_id = SWI_vlkerbund
+
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = SWI_genf_zentrum_idea
+		}
+	}
+
+	focus = {
+		id = SWI_internationalismus
+		icon = GFX_focus_generic_defense
+		cost = 10
+		prerequisite = { focus = SWI_humanitaere_hilfe }
+		prerequisite = { focus = SWI_genf_als_zentrum }
+		x = 1
+		y = 1
+		relative_position_id = SWI_humanitaere_hilfe
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			add_ideas = SWI_internationalismus_idea
+		}
+	}
+
+	###########################
+	# INNENPOLITIK
+	###########################
+
+	focus = {
+		id = SWI_bundesrat
+		icon = GFX_focus_generic_political_support
+		cost = 10
+		x = 17
+		y = 0
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = SWI_direktdemokratie
+		icon = GFX_focus_generic_democratic_opposition_support
+		cost = 10
+		prerequisite = { focus = SWI_bundesrat }
+		x = 0
+		y = 1
+		relative_position_id = SWI_bundesrat
+
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = SWI_direktdemokratie_idea
+		}
+	}
+
+	focus = {
+		id = SWI_kantonale_autonomie
+		icon = GFX_focus_generic_provoke_incidents
+		cost = 10
+		prerequisite = { focus = SWI_direktdemokratie }
+		x = -2
+		y = 1
+		relative_position_id = SWI_direktdemokratie
+
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = SWI_kantone_idea
+		}
+	}
+
+	focus = {
+		id = SWI_volksrechte
+		icon = GFX_focus_generic_manpower
+		cost = 10
+		prerequisite = { focus = SWI_direktdemokratie }
+		x = 0
+		y = 1
+		relative_position_id = SWI_direktdemokratie
+
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = SWI_volksrechte_idea
+		}
+	}
+
+	focus = {
+		id = SWI_partei_staerken
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10
+		prerequisite = { focus = SWI_direktdemokratie }
+		x = 3
+		y = 1
+		relative_position_id = SWI_direktdemokratie
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	# Partei-Pfade (gegenseitig exklusiv)
+
+	focus = {
+		id = SWI_demokratie_staerken
+		icon = GFX_focus_generic_democratic_opposition_support
+		cost = 10
+		prerequisite = { focus = SWI_partei_staerken }
+		mutually_exclusive = { focus = SWI_faschismus_staerken }
+		mutually_exclusive = { focus = SWI_kommunismus_staerken }
+		x = -2
+		y = 1
+		relative_position_id = SWI_partei_staerken
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		}
+	}
+
+	focus = {
+		id = SWI_faschismus_staerken
+		icon = GFX_focus_ger_the_third_reich
+		cost = 10
+		prerequisite = { focus = SWI_partei_staerken }
+		mutually_exclusive = { focus = SWI_demokratie_staerken }
+		mutually_exclusive = { focus = SWI_kommunismus_staerken }
+		x = 0
+		y = 1
+		relative_position_id = SWI_partei_staerken
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+		}
+	}
+
+	focus = {
+		id = SWI_kommunismus_staerken
+		icon = GFX_focus_generic_communism_support
+		cost = 10
+		prerequisite = { focus = SWI_partei_staerken }
+		mutually_exclusive = { focus = SWI_demokratie_staerken }
+		mutually_exclusive = { focus = SWI_faschismus_staerken }
+		x = 2
+		y = 1
+		relative_position_id = SWI_partei_staerken
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+		}
+	}
+
+	# Demokratischer Pfad
+
+	focus = {
+		id = SWI_freie_presse
+		icon = GFX_focus_ger_propaganda
+		cost = 10
+		prerequisite = { focus = SWI_demokratie_staerken }
+		x = 0
+		y = 1
+		relative_position_id = SWI_demokratie_staerken
+
+		visible = { has_government = democratic }
+		available = { has_government = democratic }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = SWI_freie_presse_idea
+		}
+	}
+
+	focus = {
+		id = SWI_sozialreformen
+		icon = GFX_focus_generic_morale_bonus
+		cost = 10
+		prerequisite = { focus = SWI_freie_presse }
+		x = -1
+		y = 1
+		relative_position_id = SWI_freie_presse
+
+		visible = { has_government = democratic }
+		available = { has_government = democratic }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = SWI_sozialreformen_idea
+		}
+	}
+
+	focus = {
+		id = SWI_bundesstaat_konsolidieren
+		icon = GFX_focus_generic_political_support
+		cost = 10
+		prerequisite = { focus = SWI_freie_presse }
+		x = 1
+		y = 1
+		relative_position_id = SWI_freie_presse
+
+		visible = { has_government = democratic }
+		available = { has_government = democratic }
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+
+	# Faschistischer Pfad (Frontenbewegung / Frontenfrühling)
+
+	focus = {
+		id = SWI_nationale_erneuerung
+		icon = GFX_focus_ger_propaganda
+		cost = 10
+		prerequisite = { focus = SWI_faschismus_staerken }
+		x = 0
+		y = 1
+		relative_position_id = SWI_faschismus_staerken
+
+		visible = { has_government = fascism }
+		available = { has_government = fascism }
+
+		completion_reward = {
+			add_war_support = 0.10
+			add_ideas = SWI_nationale_erneuerung_idea
+		}
+	}
+
+	focus = {
+		id = SWI_frontenfruhling
+		icon = GFX_focus_ger_strengthen_the_ss
+		cost = 10
+		prerequisite = { focus = SWI_nationale_erneuerung }
+		x = -1
+		y = 1
+		relative_position_id = SWI_nationale_erneuerung
+
+		visible = { has_government = fascism }
+		available = { has_government = fascism }
+
+		completion_reward = {
+			add_ideas = SWI_frontenfruhling_idea
+		}
+	}
+
+	focus = {
+		id = SWI_anschluss_an_deutschland
+		icon = GFX_focus_ger_the_third_reich
+		cost = 10
+		prerequisite = { focus = SWI_frontenfruhling }
+		x = 1
+		y = 1
+		relative_position_id = SWI_frontenfruhling
+
+		visible = { has_government = fascism }
+		available = {
+			has_government = fascism
+			GER = { has_government = fascism }
+		}
+
+		completion_reward = {
+			GER = {
+				country_event = {
+					id = swi.1
+					days = 3
+				}
+			}
+		}
+	}
+
+	# Kommunistischer Pfad
+
+	focus = {
+		id = SWI_arbeiterbewegung
+		icon = GFX_focus_generic_communism_support
+		cost = 10
+		prerequisite = { focus = SWI_kommunismus_staerken }
+		x = 0
+		y = 1
+		relative_position_id = SWI_kommunismus_staerken
+
+		visible = { has_government = communism }
+		available = { has_government = communism }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = SWI_arbeiterbewegung_idea
+		}
+	}
+
+	focus = {
+		id = SWI_rote_schweiz
+		icon = GFX_focus_generic_mutiny
+		cost = 10
+		prerequisite = { focus = SWI_arbeiterbewegung }
+		x = 0
+		y = 1
+		relative_position_id = SWI_arbeiterbewegung
+
+		visible = { has_government = communism }
+		available = { has_government = communism }
+
+		completion_reward = {
+			add_ideas = SWI_rote_schweiz_idea
+		}
+	}
+
+	###########################
+	# MILITÄR
+	###########################
+
+	focus = {
+		id = SWI_bewaffnete_neutralitaet
+		icon = GFX_focus_generic_army_problems
+		cost = 10
+		x = 26
+		y = 0
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_ideas = SWI_bewaffnete_neutralitaet_idea
+		}
+	}
+
+	focus = {
+		id = SWI_milizreform
+		icon = GFX_focus_generic_infantry_equipment_improvement
+		cost = 10
+		prerequisite = { focus = SWI_bewaffnete_neutralitaet }
+		x = -1
+		y = 1
+		relative_position_id = SWI_bewaffnete_neutralitaet
+
+		completion_reward = {
+			add_manpower = 15000
+			add_ideas = SWI_milizreform_idea
+		}
+	}
+
+	focus = {
+		id = SWI_alpenbefestigungen
+		icon = GFX_focus_generic_fortify_the_borders
+		cost = 10
+		prerequisite = { focus = SWI_bewaffnete_neutralitaet }
+		x = 1
+		y = 1
+		relative_position_id = SWI_bewaffnete_neutralitaet
+
+		completion_reward = {
+			add_building_construction = {
+				type = bunker
+				level = 3
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SWI_alpenjager
+		icon = GFX_focus_generic_special_forces
+		cost = 10
+		prerequisite = { focus = SWI_milizreform }
+		x = 0
+		y = 1
+		relative_position_id = SWI_milizreform
+
+		completion_reward = {
+			add_ideas = SWI_alpenjager_idea
+		}
+	}
+
+	focus = {
+		id = SWI_reduit
+		icon = GFX_focus_generic_fortify_the_borders
+		cost = 10
+		prerequisite = { focus = SWI_alpenbefestigungen }
+		x = 0
+		y = 1
+		relative_position_id = SWI_alpenbefestigungen
+
+		completion_reward = {
+			add_building_construction = {
+				type = bunker
+				level = 5
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+			}
+			add_ideas = SWI_reduit_idea
+		}
+	}
+
+	focus = {
+		id = SWI_festung_schweiz
+		icon = GFX_focus_generic_little_entente
+		cost = 10
+		prerequisite = { focus = SWI_alpenjager }
+		prerequisite = { focus = SWI_reduit }
+		x = 1
+		y = 1
+		relative_position_id = SWI_alpenjager
+
+		completion_reward = {
+			add_war_support = 0.10
+			add_ideas = SWI_festung_schweiz_idea
+		}
+	}
+}

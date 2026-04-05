@@ -1,0 +1,43 @@
+# Custom joining rule for the Stahlpakt (Steel Pact)
+# Allows all ideologies to remain members.
+# SOV cannot leave while Lenin is still in power.
+
+joining_rule_stahlpakt = {
+	type = joining_rules
+
+	visible = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		always = yes
+	}
+
+	# Controls when a member can voluntarily leave (or be dismissed).
+	# ROOT = the member country, FROM = the faction leader.
+	can_remove = {
+		IF = {
+			limit = { ROOT = { original_tag = SOV } }
+			# SOV can only leave once Lenin is no longer the country leader
+			ROOT = {
+				NOT = {
+					has_country_leader = {
+						character = SOV_vladimir_ilyich_ulyanov
+					}
+				}
+			}
+		}
+		ELSE = {
+			always = yes
+		}
+	}
+
+	# The Steel Pact accepts all ideologies – no ideology restriction.
+	trigger = {
+		always = yes
+	}
+}

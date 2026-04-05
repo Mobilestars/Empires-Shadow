@@ -140,10 +140,24 @@
  GER_mittelafrika_desc:0 "Ein großes deutsches Kolonialterritorium, das ganz Zentralafrika umspannt — ein Mittelafrika — soll Deutschlands überseeisches Juwel werden."
  GER_buendnis_mit_oesterreich:0 "Bündnis mit Österreich"
  GER_buendnis_mit_oesterreich_desc:0 "Österreich-Ungarn ist unser ältester Verbündeter. Wir werden diese Partnerschaft zu einem dauerhaften und unzerbrechlichen Bündnis vertiefen."
+ GER_schweiz_einladen:0 "Die Schweiz einladen"
+ GER_schweiz_einladen_desc:0 "Die Schweiz, ein deutschsprachiges neutrales Land im Herzen Europas, wäre ein wertvoller Partner im Deutschen Pakt. Wir werden eine Einladung aussprechen, unserem wachsenden Bündnis beizutreten."
+ GER_angebot_luxemburg:0 "Angebot an Luxemburg"
+ GER_angebot_luxemburg_desc:0 "Das Großherzogtum Luxemburg, derzeit unter deutscher Verwaltung, verdient die Anerkennung als freie Nation. Wir werden seine Souveränität wiederherstellen — und es dennoch fest durch gegenseitigen Schutz und Mitgliedschaft im Deutschen Pakt an Deutschland binden."
  GER_anschluss_antreiben:0 "Den Anschluss vorantreiben"
  GER_anschluss_antreiben_desc:0 "Österreich und Deutschland sind ein Volk, eine Kultur, ein Schicksal. Wir werden die deutschsprachigen Länder unter der Krone des Kaisers wiedervereinigen."
+
+ # Anschluss-Event-Lokalisation
+ GER_anschluss.1.t:0 "Deutschland fordert die Vereinigung"
+ GER_anschluss.1.d:0 "Kaiserliche Gesandte aus Berlin haben Deutschlands formelle Forderung nach Vereinigung überbracht. Das Kaiserreich verlangt von Österreich-Ungarn eine Antwort — unterwirft sich die Doppelmonarchie mit ihren österreichischen Ländern teilweise, ergibt sie sich vollständig oder verweigert sie und riskiert einen Feldzug unter deutschen Waffen?"
+ GER_anschluss.1.a:0 "Teilweiser Anschluss: Die österreichischen Gebiete schließen sich Deutschland an, Ungarn bleibt frei"
+ GER_anschluss.1.b:0 "Vollständiger Anschluss: Ganz Österreich-Ungarn wird deutsches Territorium"
+ GER_anschluss.1.c:0 "Wien verweigert — wir werden nicht nachgeben!"
+
  GER_sudetenland_forderung:0 "Das Sudetenland fordern"
  GER_sudetenland_forderung_desc:0 "Millionen von Deutschen leben unter tschechischer Herrschaft im Sudetenland. Wir werden fordern, dass diese Gebiete dem Reich zurückgegeben werden."
+ GER_plan_oranje:0 "Plan Oranje"
+ GER_plan_oranje_desc:0 "Die Niederlande, eine kleine Nation an Deutschlands westlicher Flanke, besitzen riesige Kolonialgebiete und strategisch wichtige Häfen an der Rheinmündung. Der Kaiserliche Generalstab hat einen Notfallplan — Plan Oranje — für die schnelle Unterwerfung der Holländer ausgearbeitet. Mit ihrem Territorium unter kaiserlicher Kontrolle würde Deutschland die Nordseeküste sichern und die Zugänge zu Großbritannien beherrschen."
 
  # FORSCHUNG
  GER_wissenschaft_und_forschung:0 "Wissenschaft und Forschung"

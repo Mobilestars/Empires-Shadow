@@ -1,0 +1,22 @@
+# EmpiresShadow on_actions additions
+# This file ADDS to vanilla on_actions (does not replace them).
+
+# Fires when a country leaves a faction.
+# ROOT = the country leaving, FROM = the faction leader.
+on_leave_faction = {
+	effect = {
+		# If SOV leaves the Stahlpakt while Lenin is still in power, force them back in.
+		if = {
+			limit = {
+				ROOT = { original_tag = SOV }
+				FROM = { original_tag = GER }
+				ROOT = {
+					has_country_leader = {
+						character = SOV_vladimir_ilyich_ulyanov
+					}
+				}
+			}
+			FROM = { add_to_faction = ROOT }
+		}
+	}
+}

@@ -139,9 +139,21 @@
  GER_mittelafrika:0 "Mittelafrika"
  GER_mittelafrika_desc:0 "A great German colonial territory spanning Central Africa — a Mittelafrika — shall become Germany's overseas jewel."
  GER_buendnis_mit_oesterreich:0 "Alliance with Austria"
- GER_buendnis_mit_oesterreich_desc:0 "Austria-Hungary is our oldest ally. We shall reinforce and deepen this partnership into a permanent and unbreakable alliance."
+ GER_buendnis_mit_oesterreich_desc:0 "Austria-Hungary is our oldest ally. We shall formalize this historic partnership into the Deutscher Pakt — a permanent military and political alliance, binding our nations in destiny and brotherhood."
+ GER_schweiz_einladen:0 "Invite Switzerland"
+ GER_schweiz_einladen_desc:0 "Switzerland, a German-speaking neutral nestled in the heart of Europe, would be a valuable partner in the Deutscher Pakt. We shall extend an invitation to join our growing alliance."
+ GER_angebot_luxemburg:0 "Offer to Luxembourg"
+ GER_angebot_luxemburg_desc:0 "The Grand Duchy of Luxembourg, currently under German administration, deserves recognition as a free nation. We shall restore its sovereignty — yet bind it firmly to Germany through mutual protection and membership in the Deutscher Pakt."
  GER_anschluss_antreiben:0 "Drive the Anschluss"
- GER_anschluss_antreiben_desc:0 "Austria and Germany are one people, one culture, one destiny. We shall reunite the German-speaking lands under the Kaiser's crown."
+ GER_anschluss_antreiben_desc:0 "Austria and Germany are one people, one culture, one destiny. We shall confront Austria-Hungary with the question of unification. How they respond will determine whether this is achieved peacefully or by force."
+
+ # Anschluss Event Localisation
+ GER_anschluss.1.t:0 "Germany Demands Unification"
+ GER_anschluss.1.d:0 "Imperial envoys from Berlin have delivered Germany's formal demand for unification. The Kaiserreich calls upon Austria-Hungary to answer — does the Dual Monarchy submit its Austrian lands, surrender entirely, or refuse and face German arms?"
+ GER_anschluss.1.a:0 "Partial Anschluss: Austrian lands join Germany, Hungary remains free"
+ GER_anschluss.1.b:0 "Complete Anschluss: All of Austria-Hungary becomes German territory"
+ GER_anschluss.1.c:0 "Vienna refuses — we will not yield!"
+
  GER_sudetenland_forderung:0 "Claim the Sudetenland"
  GER_sudetenland_forderung_desc:0 "Millions of Germans live under Czech rule in the Sudetenland. We will demand that these lands — rightfully German — are returned to the Reich."
  GER_plan_oranje:0 "Plan Oranje"

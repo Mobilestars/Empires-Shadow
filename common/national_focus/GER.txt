@@ -1148,6 +1148,12 @@ focus_tree = {
 			AUS = { is_subject = no }
 		}
 		completion_reward = {
+			if = {
+				limit = { NOT = { has_faction = yes } }
+				set_rule = { can_create_factions = yes }
+				create_faction = "Deutscher Pakt"
+			}
+			add_to_faction = AUS
 			AUS = {
 				add_opinion_modifier = {
 					target = GER
@@ -1158,6 +1164,76 @@ focus_tree = {
 				add_opinion_modifier = {
 					target = AUS
 					modifier = large_increase
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_schweiz_einladen
+		icon = GFX_focus_generic_alliance
+		cost = 10
+		prerequisite = { focus = GER_buendnis_mit_oesterreich }
+		x = -1
+		y = 1
+		relative_position_id = GER_buendnis_mit_oesterreich
+
+		available = {
+			is_faction_leader = yes
+			country_exists = SWI
+			SWI = { is_subject = no }
+		}
+		bypass = {
+			SWI = { is_in_faction_with = GER }
+		}
+		completion_reward = {
+			SWI = {
+				add_opinion_modifier = {
+					target = GER
+					modifier = large_increase
+				}
+			}
+			add_to_faction = SWI
+		}
+	}
+
+	focus = {
+		id = GER_angebot_luxemburg
+		icon = GFX_focus_ger_danzig_or_war
+		cost = 10
+		prerequisite = { focus = GER_buendnis_mit_oesterreich }
+		x = 1
+		y = 1
+		relative_position_id = GER_buendnis_mit_oesterreich
+
+		available = {
+			is_faction_leader = yes
+		}
+		bypass = {
+			NOT = {
+				any_state = {
+					is_core_of = LUX
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { NOT = { country_exists = LUX } }
+				release = LUX
+			}
+			if = {
+				limit = { country_exists = LUX }
+				set_autonomy = {
+					target = LUX
+					autonomy_state = autonomy_puppet
+					end_wars = yes
+				}
+				add_to_faction = LUX
+				LUX = {
+					add_opinion_modifier = {
+						target = GER
+						modifier = large_increase
+					}
 				}
 			}
 		}
@@ -1180,10 +1256,7 @@ focus_tree = {
 			NOT = { country_exists = AUS }
 		}
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = AUS
-			}
+			AUS = { country_event = { id = GER_anschluss.1 days = 3 } }
 		}
 	}
 
@@ -1213,10 +1286,10 @@ focus_tree = {
 		id = GER_plan_oranje
 		icon = GFX_focus_ger_danzig_or_war
 		cost = 10
-		prerequisite = { focus = GER_weltpolitik }
-		x = 4
+		prerequisite = { focus = GER_mitteleuropa }
+		x = 6
 		y = 1
-		relative_position_id = GER_weltpolitik
+		relative_position_id = GER_mitteleuropa
 
 		available = {
 			country_exists = HOL
