@@ -1318,10 +1318,7 @@ set_popularities = {
 	communism = 88
 }
 
-create_faction_from_template = faction_template_comintern
-add_to_faction = SOV
-add_to_faction = MON
-add_to_faction = TAN
+# Komintern entfernt – SOV tritt dem Stahlpakt bei (definiert in GER - Germany.txt)
 
 if = {
 	limit = {

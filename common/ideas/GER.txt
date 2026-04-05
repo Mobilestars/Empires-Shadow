@@ -23,5 +23,428 @@ ideas = {
 			}
 		}
 
+		# ===== FOCUS TREE IDEAS =====
+
+		GER_wirtschaftswunder_idea = {
+			picture = generic_goods_red_production
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		GER_reichsbahn_idea = {
+			picture = generic_build_infrastructure
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				supply_throughput_factor = 0.10
+				army_speed_factor = 0.05
+			}
+		}
+
+		GER_kriegswirtschaft_idea = {
+			picture = generic_war_economy
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_expected_value = -0.05
+				production_speed_arms_factory_factor = 0.10
+			}
+		}
+
+		GER_export_wirtschaft_idea = {
+			picture = generic_foreign_capital
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				trade_opinion_factor = 0.15
+				civilian_intel_to_others = -10
+			}
+		}
+
+		GER_kaiserliche_verwaltung_idea = {
+			picture = generic_political_support
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.10
+			}
+		}
+
+		GER_pangermanismus_idea = {
+			picture = generic_morale_bonus
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.10
+				conscription = 0.02
+				generate_wargoal_tension = -0.10
+			}
+		}
+
+		GER_monarchistische_jugend_idea = {
+			picture = generic_manpower_bonus
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.03
+				training_time_factor = -0.05
+			}
+		}
+
+		GER_volkssturm_idea = {
+			picture = generic_reserve_divisions
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.02
+				defence = 0.05
+			}
+		}
+
+		GER_starkes_kaiserreich_idea = {
+			picture = ger_revive_the_kaiserreich
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				generate_wargoal_tension = -0.15
+				justify_war_goal_time = -0.10
+			}
+		}
+
+		GER_wilhelminisches_militaer_idea = {
+			picture = generic_army_war_college
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				land_reinforce_rate = 0.03
+			}
+		}
+
+		GER_weimarer_weg_idea = {
+			picture = generic_democratic_opposition_support
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.15
+			}
+		}
+
+		GER_rote_front_idea = {
+			picture = generic_communism_support
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+
+		GER_kaiserliches_heer_idea = {
+			picture = generic_army_war_college
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				land_doctrine_cost_factor = -0.05
+				army_org_factor = 0.05
+			}
+		}
+
+		GER_blitzkrieg_idea = {
+			picture = ger_tank_production
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				army_speed_factor = 0.10
+				breakthrough_factor = 0.10
+				armor_speed_factor = 0.05
+			}
+		}
+
+		GER_kaiserliche_marine_idea = {
+			picture = generic_navy_anti_submarine
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				navy_morale_factor = 0.05
+				naval_doctrine_cost_factor = -0.05
+			}
+		}
+
+		GER_weltmacht_zur_see_idea = {
+			picture = generic_navy_production
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				navy_capital_ship_attack_factor = 0.05
+				navy_screen_speed_factor = 0.05
+				spotting_chance = 0.10
+			}
+		}
+
+		GER_luftstreitkraefte_idea = {
+			picture = generic_air_bonus
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				air_doctrine_cost_factor = -0.05
+				air_org_factor = 0.05
+			}
+		}
+
+		GER_luftueberlegenheit_idea = {
+			picture = generic_air_superiority
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				air_superiority_bonus_in_combat = 0.10
+				air_agility_factor = 0.05
+			}
+		}
+
+		GER_weltpolitik_idea = {
+			picture = generic_foreign_capital
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.10
+				generate_wargoal_tension = -0.05
+				trade_opinion_factor = 0.10
+			}
+		}
+
+		GER_mitteleuropa_idea = {
+			picture = generic_little_entente
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				generate_wargoal_tension = -0.10
+				justify_war_goal_time = -0.15
+				annex_cost_factor = -0.15
+			}
+		}
+
+		GER_lebensraum_idea = {
+			picture = ger_lebensraum
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.10
+				justify_war_goal_time = -0.10
+				core_creation_cost = -0.10
+			}
+		}
+
+		GER_kolonialreich_idea = {
+			picture = generic_foreign_capital
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.10
+			}
+		}
+
+		GER_mittelafrika_idea = {
+			picture = generic_africa
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.05
+				conscription = 0.01
+			}
+		}
+
+		GER_chemische_industrie_idea = {
+			picture = generic_goods_red_production
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.05
+				production_speed_synthetic_refinery_factor = 0.10
+			}
+		}
+
+		# ===== NEW DEMOCRATIC IDEAS =====
+
+		GER_parlamentarismus_idea = {
+			picture = generic_democratic_opposition_support
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.15
+				drift_defence_factor = 0.10
+			}
+		}
+
+		# ===== NEW COMMUNIST IDEAS =====
+
+		GER_sowjet_buendnis_idea = {
+			picture = generic_communism_support
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				opinion_gain_monthly_factor = 0.10
+			}
+		}
+
+		# ===== FASCIST PATH IDEAS =====
+
+		GER_nationale_bewegung_idea = {
+			picture = generic_fascism_ftw
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.10
+				stability_factor = 0.05
+				conscription = 0.02
+			}
+		}
+
+		GER_sa_milizen_idea = {
+			picture = generic_pp_unity_bonus
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.03
+				training_time_factor = -0.05
+				land_reinforce_rate = 0.03
+			}
+		}
+
+		GER_propaganda_feldzug_idea = {
+			picture = generic_propaganda
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+
+		GER_gleichschaltung_idea = {
+			picture = generic_political_support
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.10
+				drift_defence_factor = 0.20
+			}
+		}
+
+		GER_fuehrerstaat_idea = {
+			picture = ger_reichstag_fire
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.15
+				justify_war_goal_time = -0.15
+				generate_wargoal_tension = -0.10
+				political_power_gain = 0.10
+			}
+		}
+
+		GER_vierjahresplan_idea = {
+			picture = generic_war_economy
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				industrial_capacity_factory = 0.10
+				consumer_goods_expected_value = -0.10
+			}
+		}
+
+		GER_achsenmaechte_idea = {
+			picture = generic_alliance
+
+			allowed = { original_tag = GER }
+			removal_cost = -1
+
+			modifier = {
+				generate_wargoal_tension = -0.15
+				justify_war_goal_time = -0.15
+				guarantee_tension = -0.10
+			}
+		}
+
 	}
 }

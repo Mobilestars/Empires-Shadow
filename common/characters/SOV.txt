@@ -2687,7 +2687,7 @@ characters = {
 				NOT = { has_idea = ES_SOV_stalin_under_lenin }
 			}
 			cost = 0
-			traits = { pc_military_naval_affairs }
+			traits = { pc_military_naval_affairs ES_advisor_trotsky }
 		}
 		advisor = {
 			slot = political_advisor

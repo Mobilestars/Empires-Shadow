@@ -1834,3 +1834,11 @@ if = {
 	#	obsolete = yes
 	#}
 }
+
+
+# === STAHLPAKT ===
+create_faction = "faction_stahlpakt"
+add_to_faction = GER
+add_to_faction = SOV
+add_to_faction = ITA
+add_to_faction = AUS
