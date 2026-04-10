@@ -1,22 +1,117 @@
 # EmpiresShadow on_actions additions
 # This file ADDS to vanilla on_actions (does not replace them).
 
-# Fires when a country leaves a faction.
-# ROOT = the country leaving, FROM = the faction leader.
-on_leave_faction = {
-	effect = {
-		# If SOV leaves the Stahlpakt while Lenin is still in power, force them back in.
-		if = {
-			limit = {
-				ROOT = { original_tag = SOV }
-				FROM = { original_tag = GER }
-				ROOT = {
-					has_country_leader = {
-						character = SOV_vladimir_ilyich_ulyanov
-					}
+on_actions = {
+
+	# Fires once at game start, after all history files have been processed.
+	# Re-adds SOV and ITA to the Stahlpakt if they were auto-kicked by
+	# generic joining-rule triggers during history loading.
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					GER = { is_faction_leader = yes }
+					SOV = { NOT = { is_in_faction_with = GER } }
 				}
+				GER = { add_to_faction = SOV }
 			}
-			FROM = { add_to_faction = ROOT }
+			if = {
+				limit = {
+					GER = { is_faction_leader = yes }
+					ITA = { NOT = { is_in_faction_with = GER } }
+				}
+				GER = { add_to_faction = ITA }
+			}
 		}
 	}
+
+	# Fires when a country leaves a faction.
+	# ROOT = the country leaving, FROM = the faction leader.
+	on_leave_faction = {
+		effect = {
+			# SOV cannot leave the Stahlpakt while Lenin is still in power.
+			if = {
+				limit = {
+					ROOT = { original_tag = SOV }
+					FROM = { original_tag = GER }
+					ROOT = {
+						has_country_leader = {
+							character = SOV_vladimir_ilyich_ulyanov
+						}
+					}
+				}
+				FROM = { add_to_faction = ROOT }
+			}
+		}
+	}
+
+	# Weekly check – re-add SOV to Stahlpakt while Lenin lives (backup enforcement).
+	on_weekly_SOV = {
+		effect = {
+			if = {
+				limit = {
+					GER = { is_faction_leader = yes }
+					SOV = { NOT = { is_in_faction_with = GER } }
+					SOV = {
+						has_country_leader = {
+							character = SOV_vladimir_ilyich_ulyanov
+						}
+					}
+				}
+				GER = { add_to_faction = SOV }
+			}
+		}
+	}
+
+	# Weekly check – re-add ITA to Stahlpakt in the early game (backup enforcement).
+	# Stops after 1938 so ITA can choose its own path via events/focuses after that.
+	on_weekly_ITA = {
+		effect = {
+			if = {
+				limit = {
+					GER = { is_faction_leader = yes }
+					ITA = { NOT = { is_in_faction_with = GER } }
+					date < 1938.1.1
+				}
+				GER = { add_to_faction = ITA }
+			}
+		}
+	}
+
+	# ── WWI Fatigue: "Echoes of the Trenches" ───────────────────────────────
+	# Added once at game start to all nations that fought in WWI.
+	# Permanently removed via ES_war_support.1 when that nation reaches 100% war support.
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = GER
+						tag = AUS
+						tag = CZE
+						tag = YUG
+						tag = TUR
+						tag = BUL
+						tag = FRA
+						tag = ENG
+						tag = SOV
+						tag = ITA
+						tag = USA
+						tag = JAP
+					}
+				}
+				add_ideas = ES_echoes_of_the_trenches
+			}
+		}
+	}
+
+	# ── War Support tier spirits ─────────────────────────────────────────────
+	# Fires every month for every country to update war support penalty/bonus spirits.
+	on_monthly_pulse = {
+		events = {
+			ES_war_support.1
+		}
+	}
+
 }
+

@@ -1,4 +1,16 @@
 ﻿l_english:
+ # === WWI Fatigue ===
+ ES_echoes_of_the_trenches:0 "Echoes of the Trenches"
+ ES_echoes_of_the_trenches_desc:0 "A generation of officers and soldiers were forged — and scarred — in the mud of the Great War. The infantry carries that trauma still: slower to act, quicker to break, and harder to commit. This burden lifts only when the nation burns with total conviction."
+ # === War Support Tier Spirits ===
+ ES_ws_national_fervor:0 "National Fervor"
+ ES_ws_national_fervor_desc:0 "The nation stands as one behind the war effort. Every soldier knows what he fights for, and that certainty sharpens every blade."
+ ES_ws_wavering_resolve:0 "Wavering Resolve"
+ ES_ws_wavering_resolve_desc:0 "Doubts are spreading among the civilian population. Troops sense the uncertainty at home, and their will to recover and press on begins to falter."
+ ES_ws_crumbling_morale:0 "Crumbling Morale"
+ ES_ws_crumbling_morale_desc:0 "War-weariness has set in across the country. Soldiers fight without conviction, recovery from battle is sluggish, and commanders struggle to maintain coherent plans."
+ ES_ws_brink_of_collapse:0 "On the Brink of Collapse"
+ ES_ws_brink_of_collapse_desc:0 "The population has all but turned against the war. Units disintegrate rapidly under pressure, planning is near-impossible, and the entire military machine teeters on the edge of breakdown."
  fascist_influence:0 "Fascist Influence"
  fascist_influence_desc:0 "Fascist pressure has made fascism very popular, and the country is susceptible to align with other fascists."
  communist_influence:0 "Communist Influence"

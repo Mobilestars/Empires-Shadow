@@ -1,4 +1,16 @@
 ﻿l_german:
+ # === WWI-Erschöpfung ===
+ ES_echoes_of_the_trenches: "Echos der Schützengräben"
+ ES_echoes_of_the_trenches_desc: "Eine ganze Generation von Offizieren und Soldaten wurde im Schlamm des Großen Krieges geprägt — und gebrochen. Die Infanterie trägt dieses Trauma noch immer: langsamer im Entschluss, schneller am Ende ihrer Kräfte, schwerer zu motivieren. Diese Last fällt erst dann ab, wenn die Nation mit absoluter Überzeugung hinter dem Krieg steht."
+ # === Kriegsstimmungs-Geister ===
+ ES_ws_national_fervor: "Nationaler Eifer"
+ ES_ws_national_fervor_desc: "Die Nation steht geschlossen hinter dem Krieg. Jeder Soldat weiß, wofür er kämpft — und diese Überzeugung schärft jede Klinge."
+ ES_ws_wavering_resolve: "Schwankende Entschlossenheit"
+ ES_ws_wavering_resolve_desc: "Zweifel breiten sich in der Zivilbevölkerung aus. Die Truppen spüren die Unsicherheit in der Heimat, und ihr Wille zur Erholung und zum Vorstoß beginnt zu nacken."
+ ES_ws_crumbling_morale: "Zerbröckelnde Moral"
+ ES_ws_crumbling_morale_desc: "Kriegsmüdigkeit hat das gesamte Land erfasst. Soldaten kämpfen ohne Überzeugung, die Erholung nach Gefechten ist schleppend, und Kommandeure tun sich schwer, kohärente Pläne aufrechtzuerhalten."
+ ES_ws_brink_of_collapse: "Am Rande des Zusammenbruchs"
+ ES_ws_brink_of_collapse_desc: "Die Bevölkerung hat sich nahezu vollständig gegen den Krieg gewandt. Einheiten zerfallen unter Druck rasch, Planung ist kaum möglich, und das gesamte Militärsystem steht kurz vor dem Zusammenbruch."
  fascist_influence: "Faschistischer Einfluss"
  fascist_influence_desc: "Faschistischer Druck hat den Faschismus äußerst beliebt gemacht. Das Land ist offen für Bündnisse mit anderen Faschisten."
  communist_influence: "Kommunistischer Einfluss"
