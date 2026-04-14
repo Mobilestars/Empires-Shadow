@@ -1,0 +1,14 @@
+BEL_reichskommissariat = {
+    color = rgb { 175 177 170 }
+    color_ui = rgb { 175 177 170 }
+}
+
+BLR_reichskommissariat = {
+    color = rgb { 175 177 170 }
+    color_ui = rgb { 175 177 170 }
+}
+
+UKR_reichskommissariat = {
+    color = rgb { 175 177 170 }
+    color_ui = rgb { 175 177 170 }
+}

@@ -219,7 +219,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_demokraten_staerken }
 		mutually_exclusive = { focus = GER_kommunisten_staerken }
 		mutually_exclusive = { focus = GER_faschisten_staerken }
-		x = -9
+		x = -11
 		y = 1
 		relative_position_id = GER_partei_verstaerkung
 
@@ -241,7 +241,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_kaiserreich_staerken }
 		mutually_exclusive = { focus = GER_kommunisten_staerken }
 		mutually_exclusive = { focus = GER_faschisten_staerken }
-		x = -3
+		x = -4
 		y = 1
 		relative_position_id = GER_partei_verstaerkung
 
@@ -262,7 +262,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_kaiserreich_staerken }
 		mutually_exclusive = { focus = GER_demokraten_staerken }
 		mutually_exclusive = { focus = GER_faschisten_staerken }
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = GER_partei_verstaerkung
 
@@ -283,7 +283,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_kaiserreich_staerken }
 		mutually_exclusive = { focus = GER_demokraten_staerken }
 		mutually_exclusive = { focus = GER_kommunisten_staerken }
-		x = 9
+		x = 11
 		y = 1
 		relative_position_id = GER_partei_verstaerkung
 
@@ -592,140 +592,597 @@ focus_tree = {
 	}
 
 	###########################
-	# FASCHISTISCHER PFAD (nur sichtbar wenn Faschisten an der Macht)
+	# FASCHISTISCHER PFAD (Beer Hall Putsch + Vanilla-Stats)
 	###########################
 
 	focus = {
-		id = GER_nationale_bewegung
-		icon = GFX_focus_ger_the_third_reich
-		cost = 10
+		id = GER_beer_hall_putsch
+		icon = GFX_focus_GER_support_the_fuhrer
+		cost = 5
 		prerequisite = { focus = GER_faschisten_staerken }
 		x = 0
 		y = 1
 		relative_position_id = GER_faschisten_staerken
 
-		visible = { has_government = fascism }
-		available = { has_government = fascism }
-		completion_reward = {
-			add_war_support = 0.10
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.15
-			}
-			add_ideas = GER_nationale_bewegung_idea
+		available = {
+			fascism > 0.5
 		}
-	}
 
-	focus = {
-		id = GER_sa_milizen
-		icon = GFX_focus_ger_the_stormtroopers
-		cost = 10
-		prerequisite = { focus = GER_nationale_bewegung }
-		x = -1
-		y = 1
-		relative_position_id = GER_nationale_bewegung
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
 
-		visible = { has_government = fascism }
-		available = { has_government = fascism }
 		completion_reward = {
-			add_manpower = 30000
-			add_ideas = GER_sa_milizen_idea
-		}
-	}
-
-	focus = {
-		id = GER_propaganda_feldzug
-		icon = GFX_focus_ger_propaganda
-		cost = 10
-		prerequisite = { focus = GER_nationale_bewegung }
-		x = 1
-		y = 1
-		relative_position_id = GER_nationale_bewegung
-
-		visible = { has_government = fascism }
-		available = { has_government = fascism }
-		completion_reward = {
-			add_stability = 0.05
-			add_war_support = 0.10
-			add_ideas = GER_propaganda_feldzug_idea
-		}
-	}
-
-	focus = {
-		id = GER_gleichschaltung
-		icon = GFX_focus_ger_strengthen_the_ss
-		cost = 10
-		prerequisite = { focus = GER_sa_milizen }
-		prerequisite = { focus = GER_propaganda_feldzug }
-		x = 0
-		y = 1
-		relative_position_id = GER_sa_milizen
-
-		visible = { has_government = fascism }
-		available = { has_government = fascism }
-		completion_reward = {
-			add_stability = 0.05
-			add_ideas = GER_gleichschaltung_idea
+			add_political_power = 75
+			army_experience = 5
 			set_politics = {
 				ruling_party = fascism
 				elections_allowed = no
 			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_stability = 0.03
 		}
 	}
 
 	focus = {
-		id = GER_fuehrerstaat
-		icon = GFX_focus_ger_the_third_reich
-		cost = 10
-		prerequisite = { focus = GER_gleichschaltung }
-		x = -1
+		id = GER_bhp_adopt_new_panzer_doctrine
+		icon = GFX_focus_generic_tank_assault
+		alternate_icon = GFX_focus_GER_adopt_new_panzer_doctrine_historical
+		cost = 5
+		prerequisite = { focus = GER_beer_hall_putsch }
+		x = -4
 		y = 1
-		relative_position_id = GER_gleichschaltung
+		relative_position_id = GER_beer_hall_putsch
 
-		visible = { has_government = fascism }
 		available = { has_government = fascism }
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_ARMY_XP }
 		completion_reward = {
-			add_war_support = 0.10
-			add_ideas = GER_fuehrerstaat_idea
-		}
-	}
-
-	focus = {
-		id = GER_vierjahresplan
-		icon = GFX_focus_ger_four_year_plan
-		cost = 10
-		prerequisite = { focus = GER_gleichschaltung }
-		x = 1
-		y = 1
-		relative_position_id = GER_gleichschaltung
-
-		visible = { has_government = fascism }
-		available = { has_government = fascism }
-		completion_reward = {
-			add_ideas = GER_vierjahresplan_idea
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
+			add_command_power = 25
+			army_experience = 15
+			add_doctrine_cost_reduction = {
+				name = GER_adopt_new_panzer_doctrine
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
 			}
 		}
 	}
 
 	focus = {
-		id = GER_achsenmaechte
-		icon = GFX_focus_generic_alliance
-		cost = 10
-		prerequisite = { focus = GER_fuehrerstaat }
+		id = GER_bhp_dive_bombers
+		icon = GFX_focus_generic_cas_aircraft
+		alternate_icon = GFX_focus_GER_sturzkampfbomber_historical
+		cost = 5
+		prerequisite = { focus = GER_beer_hall_putsch }
+		x = -2
+		y = 1
+		relative_position_id = GER_beer_hall_putsch
+
+		available = { has_government = fascism }
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = GER_dive_bombers
+				cost_reduction = 0.25
+				uses = 1
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+				name = GER_dive_bombers
+				bonus = 0.5
+				uses = 1
+				category = light_air
+			}
+			GER_modify_airforce_modifier = yes
+			add_to_variable = {
+				GER_military_air_cas_efficiency = 0.1
+				tooltip = air_cas_efficiency_tt
+			}
+		}
+	}
+
+	focus = {
+		id = GER_bhp_trade_interdiction
+		icon = GFX_focus_generic_trade_interdiction
+		alternate_icon = GFX_focus_GER_trade_interdiction_historical
+		cost = 5
+		prerequisite = { focus = GER_beer_hall_putsch }
 		x = 0
 		y = 1
-		relative_position_id = GER_fuehrerstaat
+		relative_position_id = GER_beer_hall_putsch
 
-		visible = { has_government = fascism }
+		available = { has_government = fascism }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL FOCUS_FILTER_MILITARY_CHARACTER }
+		completion_reward = {
+			add_mastery_bonus = {
+				name = GER_trade_interdiction
+				bonus = 0.2
+				days = 180
+				grand_doctrine = new_convoy_raiding
+			}
+			add_doctrine_cost_reduction = {
+				name = GER_trade_interdiction
+				cost_reduction = 0.25
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = GER_bhp_the_four_year_plan
+		icon = GFX_focus_GER_the_four_year_plan
+		alternate_icon = GFX_focus_GER_the_four_year_plan_historical
+		cost = 5
+		prerequisite = { focus = GER_beer_hall_putsch }
+		x = 2
+		y = 1
+		relative_position_id = GER_beer_hall_putsch
+
+		available = { has_government = fascism }
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = GER_the_four_year_plan
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = GER_bhp_fuhrerprinzip
+		dynamic = yes
+		icon = GFX_focus_GER_support_the_fuhrer
+		alternate_icon = GFX_focus_GER_support_the_fuhrer_historical
+		cost = 5
+		prerequisite = { focus = GER_beer_hall_putsch }
+		x = 4
+		y = 1
+		relative_position_id = GER_beer_hall_putsch
+
+		available = {
+			has_government = fascism
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = GER_bhp_army_indoctrination
+		icon = GFX_focus_GER_subdue_the_wehrmacht
+		alternate_icon = GFX_focus_GER_subdue_the_wehrmacht_historical
+		cost = 5
+		prerequisite = { focus = GER_beer_hall_putsch }
+		x = 6
+		y = 1
+		relative_position_id = GER_beer_hall_putsch
+
+		available = { has_government = fascism }
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_MILITARY_CHARACTER }
+		completion_reward = {
+			GER_modify_army_modifier = yes
+			add_to_variable = { GER_military_mobilization_speed = 0.1 tooltip = mobilization_speed_tt }
+			add_to_variable = { GER_military_army_morale_factor = 0.1 tooltip = army_morale_factor_tt }
+		}
+	}
+
+	focus = {
+		id = GER_bhp_reorganize_the_wehrmacht
+		icon = GFX_focus_GER_reorganize_the_wehrmacht
+		alternate_icon = GFX_focus_GER_reorganize_the_wehrmacht_historical
+		cost = 5
+		prerequisite = { focus = GER_beer_hall_putsch }
+		x = 8
+		y = 1
+		relative_position_id = GER_beer_hall_putsch
+
+		available = { has_government = fascism }
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL FOCUS_FILTER_MILITARY_CHARACTER }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.05
+			if = {
+				limit = {
+					has_completed_focus = GER_bhp_fuhrerprinzip
+				}
+				add_country_leader_trait = GER_der_fuhrer_fuhrerprinzip_wehrmacht
+			}
+			else = {
+				add_country_leader_trait = GER_der_fuhrer_wehrmacht
+			}
+		}
+	}
+
+	focus = {
+		id = GER_bhp_anti_comintern_pact
+		icon = GFX_goal_anti_comintern_pact
+		alternate_icon = GFX_focus_GER_anti_comintern_pact
+		cost = 5
+		prerequisite = { focus = GER_beer_hall_putsch }
+		x = 12
+		y = 1
+		relative_position_id = GER_beer_hall_putsch
+
+		available = {
+			has_government = fascism
+			is_subject = no
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+			SOU = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
+			add_named_threat = { threat = 2 name = GER_anti_comintern_pact }
+		}
+	}
+
+	focus = {
+		id = GER_bhp_combined_arms
+		icon = GFX_focus_generic_tank_air_support
+		alternate_icon = GFX_focus_GER_combined_arms_historical
+		cost = 5
+		prerequisite = { focus = GER_bhp_adopt_new_panzer_doctrine }
+		prerequisite = { focus = GER_bhp_dive_bombers }
+		x = 1
+		y = 1
+		relative_position_id = GER_bhp_adopt_new_panzer_doctrine
+
+		available = { has_government = fascism }
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+			GER_modify_army_modifier = yes
+			add_to_variable = {
+				GER_military_air_superiority_bonus_in_combat = 0.1
+				tooltip = air_superiority_bonus_in_combat_tt
+			}
+			add_to_variable = {
+				GER_military_coordination_bonus = 0.05
+				tooltip = coordination_bonus_tt
+			}
+		}
+	}
+
+	focus = {
+		id = GER_bhp_uplift_the_rosenberg_office
+		icon = GFX_focus_ger_reichskommisariats
+		alternate_icon = GFX_focus_ger_reichskommisariats_historical
+		cost = 5
+		prerequisite = { focus = GER_bhp_reorganize_the_wehrmacht }
+		x = -1
+		y = 1
+		relative_position_id = GER_bhp_reorganize_the_wehrmacht
+
 		available = { has_government = fascism }
 		completion_reward = {
-			set_rule = { can_create_factions = yes }
-			add_ideas = GER_achsenmaechte_idea
+			add_dynamic_modifier = {
+				modifier = GER_alfred_rosenberg_modifier
+			}
+			custom_effect_tooltip = GER_reichskommissariats_tt
+		}
+	}
+
+	focus = {
+		id = GER_bhp_molotov_ribbentrop_pact
+		icon = GFX_goal_molotov_ribbentrop_pact
+		alternate_icon = GFX_focus_GER_molotov_ribbentrop_pact
+		cost = 5
+		prerequisite = { focus = GER_bhp_reorganize_the_wehrmacht }
+		x = 1
+		y = 1
+		relative_position_id = GER_bhp_reorganize_the_wehrmacht
+
+		available = {
+			has_government = fascism
+			is_subject = no
+			SOV = {
+				NOT = { has_war_with = GER }
+				country_exists = yes
+			}
+		}
+		completion_reward = {
+			SOV = {
+				country_event = { id = germany.11 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = GER_bhp_anschluss
+		icon = GFX_focus_GER_anschluss
+		alternate_icon = GFX_focus_GER_anschluss_historical
+		cost = 10
+		prerequisite = { focus = GER_bhp_reorganize_the_wehrmacht }
+		x = 3
+		y = 1
+		relative_position_id = GER_bhp_reorganize_the_wehrmacht
+
+		available = {
+			has_government = fascism
+			has_war = no
+			is_subject = no
+		}
+		completion_reward = {
+			AUS = {
+				country_event = {
+					id = AUS_political_events.77
+					hours = 12
+				}
+			}
+			add_political_power = 75
+			add_war_support = 0.1
+			add_stability = 0.05
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = GER_bhp_war_with_ussr
+		icon = GFX_focus_attack_soviet
+		alternate_icon = GFX_focus_GER_war_with_the_ussr
+		cost = 10
+		prerequisite = { focus = GER_bhp_anti_comintern_pact }
+		x = 2
+		y = 2
+		relative_position_id = GER_bhp_anti_comintern_pact
+
+		available = {
+			has_government = fascism
+			is_subject = no
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+				expire = 0
+			}
+		}
+	}
+
+	focus = {
+		id = GER_bhp_befriend_japan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		alternate_icon = GFX_focus_GER_befriend_japan
+		cost = 5
+		prerequisite = { focus = GER_bhp_anti_comintern_pact }
+		x = 4
+		y = 2
+		relative_position_id = GER_bhp_anti_comintern_pact
+
+		available = {
+			has_government = fascism
+			is_subject = no
+			country_exists = JAP
+			NOT = { has_war_with = JAP }
+		}
+		completion_reward = {
+			JAP = {
+				add_opinion_modifier = { target = GER modifier = ger_jap_diplomacy_focus }
+			}
+			diplomatic_relation = {
+				country = JAP
+				relation = non_aggression_pact
+			}
+		}
+	}
+
+	focus = {
+		id = GER_bhp_demand_sudetenland
+		icon = GFX_focus_generic_attack_czechoslovakia
+		alternate_icon = GFX_focus_GER_demand_sudetenland
+		cost = 10
+		prerequisite = { focus = GER_bhp_anschluss }
+		x = -1
+		y = 1
+		relative_position_id = GER_bhp_anschluss
+
+		available = {
+			has_government = fascism
+			is_subject = no
+		}
+		completion_reward = {
+			add_state_claim = 69
+			add_state_claim = 972
+			add_state_claim = 74
+			add_named_threat = { threat = 4 name = GER_demand_sudetenland_threat }
+		}
+	}
+
+	focus = {
+		id = GER_bhp_war_with_poland
+		icon = GFX_focus_GER_danzig_or_war
+		alternate_icon = GFX_focus_GER_danzig_or_war_historical
+		cost = 10
+		prerequisite = { focus = GER_bhp_anschluss }
+		x = 1
+		y = 1
+		relative_position_id = GER_bhp_anschluss
+
+		available = {
+			has_government = fascism
+			is_subject = no
+		}
+		completion_reward = {
+			add_named_threat = { threat = 5 name = GER_danzig_or_war }
+			create_wargoal = {
+				type = annex_everything
+				target = POL
+				expire = 0
+			}
+		}
+	}
+
+	focus = {
+		id = GER_bhp_fate_of_czechoslovakia
+		icon = GFX_focus_GER_fate_of_czechoslovakia
+		alternate_icon = GFX_focus_GER_fate_of_czechoslovakia_historical
+		cost = 10
+		prerequisite = { focus = GER_bhp_demand_sudetenland }
+		x = 0
+		y = 1
+		relative_position_id = GER_bhp_demand_sudetenland
+
+		available = {
+			has_government = fascism
+			is_subject = no
+		}
+		completion_reward = {
+			add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
+			create_wargoal = {
+				type = annex_everything
+				target = CZE
+			}
+		}
+	}
+
+	focus = {
+		id = GER_bhp_form_rome_berlin_axis
+		icon = GFX_focus_befriend_italy
+		alternate_icon = GFX_focus_GER_befriend_italy
+		cost = 5
+		prerequisite = { focus = GER_bhp_fate_of_czechoslovakia }
+		x = 0
+		y = 1
+		relative_position_id = GER_bhp_fate_of_czechoslovakia
+
+		available = {
+			has_government = fascism
+			is_faction_leader = yes
+			is_subject = no
+			NOT = { has_war_with = ITA }
+			ITA = {
+				has_government = fascism
+				is_subject = no
+			}
+		}
+		completion_reward = {
+			ITA = {
+				add_opinion_modifier = { target = GER modifier = ger_ita_alliance_focus }
+				country_event = { id = generic.5 hours = 4 random_hours = 4 }
+			}
+		}
+	}
+
+	focus = {
+		id = GER_bhp_around_maginot
+		icon = GFX_focus_GER_around_maginot
+		alternate_icon = GFX_focus_GER_around_maginot_historical
+		cost = 4
+		prerequisite = { focus = GER_bhp_war_with_poland }
+		x = 0
+		y = 1
+		relative_position_id = GER_bhp_war_with_poland
+
+		available = {
+			has_government = fascism
+			is_subject = no
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = BEL
+				expire = 0
+				generator = { 6 }
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = HOL
+				expire = 0
+				generator = { 7 }
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = LUX
+				expire = 0
+				generator = { 8 }
+			}
+		}
+	}
+
+	focus = {
+		id = GER_bhp_operation_weserubung
+		icon = GFX_focus_GER_operation_wesserubung
+		alternate_icon = GFX_focus_GER_operation_wesserubung_historical
+		cost = 4
+		prerequisite = { focus = GER_bhp_war_with_poland }
+		x = 2
+		y = 1
+		relative_position_id = GER_bhp_war_with_poland
+
+		available = {
+			has_government = fascism
+			is_subject = no
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = DEN
+				expire = 0
+				generator = { 37 }
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = NOR
+				expire = 0
+				generator = { 110 }
+			}
+			add_tech_bonus = {
+				name = tp_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = tp_tech
+			}
+		}
+	}
+
+	focus = {
+		id = GER_bhp_war_with_france
+		icon = GFX_focus_attack_france
+		alternate_icon = GFX_focus_GER_war_with_france
+		cost = 10
+		prerequisite = { focus = GER_bhp_war_with_poland }
+		prerequisite = { focus = GER_bhp_around_maginot }
+		x = 1
+		y = 1
+		relative_position_id = GER_bhp_around_maginot
+
+		available = {
+			has_government = fascism
+			is_subject = no
+			NOT = { is_in_faction_with = FRA }
+		}
+		completion_reward = {
+			add_named_threat = { threat = 5 name = GER_war_with_france_threat }
+			create_wargoal = {
+				type = take_state_focus
+				target = FRA
+				expire = 0
+				generator = { 28 }
+			}
 		}
 	}
 
@@ -1071,7 +1528,7 @@ focus_tree = {
 		icon = GFX_focus_ger_lebensraum
 		cost = 10
 		prerequisite = { focus = GER_mitteleuropa }
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = GER_mitteleuropa
 
