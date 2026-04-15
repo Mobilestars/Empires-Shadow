@@ -1,0 +1,54 @@
+spriteTypes = {
+
+    ### EmpiresShadow ###
+
+    # Kaiser Wilhelm II und III (Deutschland)
+    spriteType = {
+        name = "GFX_portrait_ger_wilhelm_ii"
+        texturefile = "gfx/leaders/GER/portrait_ger_wilhelm_ii.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_ger_wilhelm_iii"
+        texturefile = "gfx/leaders/GER/portrait_ger_wilhelm_iii.dds"
+    }
+
+    # Otto von Habsburg (Österreich)
+    spriteType = {
+        name = "GFX_Portrait_austria_otto_von_habsburg"
+        texturefile = "gfx/leaders/AUS/Portrait_otto_von_hapsburg.dds"
+    }
+
+    # Ideen-Icons für österreichische Monarchie-Modifier
+    spriteType = {
+        name = "GFX_idea_AUS_empire_restored"
+        texturefile = "gfx/interface/ideas/idea_AUS_empire_restored.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_AUS_habsburg_monarchy_restored"
+        texturefile = "gfx/interface/ideas/idea_AUS_habsburg_monarchy_restored.dds"
+    }
+
+    spriteType = {
+        name = "GFX_portrait_SOV_vladimir_ilyich_lenin"
+        texturefile = "gfx/leaders/SOV/Portrait_Soviet_Vladimir_Lenin.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ES_der_sterbende_loewe"
+        texturefile = "gfx/interface/ideas/idea_ES_der_sterbende_loewe.png"
+    }
+    spriteType = {
+        name = "GFX_idea_ES_SOV_stalin_under_lenin"
+        texturefile = "gfx/interface/ideas/idea_ES_advisor_stalin.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_ES_SOV_trotsky_under_lenin"
+        texturefile = "gfx/interface/ideas/idea_ES_advisor_trotsky.dds"
+    }
+
+    # Sergej Vojcechovsky (Tschechoslowakei)
+    spriteType = {
+        name = "GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
+        texturefile = "gfx/leaders/CZE/portrait_sergej_vojcechovsky.dds"
+    }
+
+}

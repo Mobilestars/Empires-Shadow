@@ -1208,5 +1208,51 @@ HBC = {
 	color_ui = rgb { 94 17 14 }
 }
 
+# EmpiresShadow - German colonial puppets (grey like other GER puppets)
+COG = {
+	color = rgb { 175 177 170 }
+	color_ui = rgb { 175 177 170 }
+}
+CMR = {
+	color = rgb { 175 177 170 }
+	color_ui = rgb { 175 177 170 }
+}
+TOG = {
+	color = rgb { 175 177 170 }
+	color_ui = rgb { 175 177 170 }
+}
+NMB = {
+	color = rgb { 175 177 170 }
+	color_ui = rgb { 175 177 170 }
+}
+TZN = {
+	color = rgb { 175 177 170 }
+	color_ui = rgb { 175 177 170 }
+}
+RWA = {
+	color = rgb { 175 177 170 }
+	color_ui = rgb { 175 177 170 }
+}
+BRD = {
+	color = rgb { 175 177 170 }
+	color_ui = rgb { 175 177 170 }
+}
+PNG = {
+	color = rgb { 175 177 170 }
+	color_ui = rgb { 175 177 170 }
+}
+SAM = {
+	color = rgb { 175 177 170 }
+	color_ui = rgb { 175 177 170 }
+}
+PLU = {
+	color = rgb { 175 177 170 }
+	color_ui = rgb { 175 177 170 }
+}
+FSM = {
+	color = rgb { 175 177 170 }
+	color_ui = rgb { 175 177 170 }
+}
+
 
 

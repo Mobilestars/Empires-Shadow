@@ -1,0 +1,149 @@
+spriteTypes = {
+
+    # EmpiresShadow visual replacements
+    SpriteType = {
+        name = "GFX_focus_generic_africa"
+        texturefile = "gfx/interface/goals/focus_generic_africa.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_generic_air_production"
+        texturefile = "gfx/interface/goals/focus_generic_air_production.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_generic_air_superiority"
+        texturefile = "gfx/interface/goals/focus_generic_air_superiority.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_generic_alliance"
+        texturefile = "gfx/interface/goals/focus_generic_alliance.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_generic_attack_allies"
+        texturefile = "gfx/interface/goals/focus_generic_attack_allies.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_generic_build_infrastructure"
+        texturefile = "gfx/interface/goals/focus_generic_build_infrastructure.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_generic_communism_support"
+        texturefile = "gfx/interface/goals/focus_generic_communism_support.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_generic_democratic_opposition_support"
+        texturefile = "gfx/interface/goals/focus_generic_democratic_opposition_support.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_generic_morale_bonus"
+        texturefile = "gfx/interface/goals/focus_generic_morale_bonus.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_generic_naval_bases"
+        texturefile = "gfx/interface/goals/focus_generic_naval_bases.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_generic_navy_anti_submarine"
+        texturefile = "gfx/interface/goals/focus_generic_navy_anti_submarine.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_generic_oil_well"
+        texturefile = "gfx/interface/goals/focus_generic_oil_well.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_generic_political_support"
+        texturefile = "gfx/interface/goals/focus_generic_political_support.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_generic_provoke_incidents"
+        texturefile = "gfx/interface/goals/focus_generic_provoke_incidents.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_generic_recon"
+        texturefile = "gfx/interface/goals/focus_generic_recon.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_generic_reserve_divisions"
+        texturefile = "gfx/interface/goals/focus_generic_reserve_divisions.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_generic_soviet_union_ally"
+        texturefile = "gfx/interface/goals/focus_generic_soviet_union_ally.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_generic_support_democracy"
+        texturefile = "gfx/interface/goals/focus_generic_support_democracy.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_generic_trade"
+        texturefile = "gfx/interface/goals/focus_generic_trade.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_ger_armaments_industry"
+        texturefile = "gfx/interface/goals/focus_ger_armaments_industry.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_ger_claims_czechoslovakia"
+        texturefile = "gfx/interface/goals/focus_ger_claims_czechoslovakia.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_ger_claims_memel"
+        texturefile = "gfx/interface/goals/focus_ger_claims_memel.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_ger_claims_sudetenland"
+        texturefile = "gfx/interface/goals/focus_ger_claims_sudetenland.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_ger_four_year_plan"
+        texturefile = "gfx/interface/goals/focus_ger_four_year_plan.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_ger_lebensraum"
+        texturefile = "gfx/interface/goals/focus_ger_lebensraum.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_ger_mefo"
+        texturefile = "gfx/interface/goals/focus_ger_mefo.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_ger_naval_production"
+        texturefile = "gfx/interface/goals/focus_ger_naval_production.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_ger_propaganda"
+        texturefile = "gfx/interface/goals/focus_ger_propaganda.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_ger_reichswehr_modernisation"
+        texturefile = "gfx/interface/goals/focus_ger_reichswehr_modernisation.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_ger_rocket_artillery_focus"
+        texturefile = "gfx/interface/goals/focus_ger_rocket_artillery_focus.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_ger_secret_rearmament"
+        texturefile = "gfx/interface/goals/focus_ger_secret_rearmament.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_ger_strengthen_the_ss"
+        texturefile = "gfx/interface/goals/focus_ger_strengthen_the_ss.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_ger_the_kaiser"
+        texturefile = "gfx/interface/goals/focus_ger_the_kaiser.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_ger_the_stormtroopers"
+        texturefile = "gfx/interface/goals/focus_ger_the_stormtroopers.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_ger_the_third_reich"
+        texturefile = "gfx/interface/goals/focus_ger_the_third_reich.dds"
+    }
+    SpriteType = {
+        name = "GFX_focus_ger_war_economy"
+        texturefile = "gfx/interface/goals/focus_ger_war_economy.dds"
+    }
+
+}

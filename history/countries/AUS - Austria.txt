@@ -79,14 +79,36 @@ IF = {
 		days = 1657
 	}
 
-	add_dynamic_modifier= {
-		modifier = AUS_austrofascism 
-	}	
+	# EmpiresShadow - Habsburg monarchy from start
+	add_dynamic_modifier = {
+		modifier = AUS_habsburg_monarchy_restored
+	}
 
-	add_opinion_modifier = {
-		target = GER
-		modifier = AUS_austrofascism_opm
-	}	
+	add_dynamic_modifier = {
+		modifier = AUS_empire_restored
+	}
+
+	# Boost monarchy variables so the modifiers have meaningful initial values
+	add_to_variable = { AUS_habsburg_monarchy_restored_neutrality_drift = 0.05 }
+	add_to_variable = { AUS_habsburg_monarchy_restored_drift_defence_factor = 0.3 }
+	add_to_variable = { AUS_habsburg_monarchy_restored_war_support_factor = 0.10 }
+	add_to_variable = { AUS_empire_restored_war_support_factor = 0.10 }
+	add_to_variable = { AUS_empire_restored_stability_factor = 0.10 }
+	add_to_variable = { AUS_empire_restored_conscription_factor = 0.05 }
+
+	# EmpiresShadow - Otto von Habsburg als österreichischer Kaiser
+	recruit_character = AUS_otto_von_habsburg
+	set_country_leader = {
+		character = AUS_otto_von_habsburg
+		ideology = despotism
+	}
+	AUS_otto_von_habsburg = {
+		add_country_leader_trait = AUS_king_of_austria
+	}
+	set_global_flag = AUS_otto_von_habsburg_has_joined_austria_flag
+
+	# Set the Austrian Empire cosmetic tag ("Austrian Empire")
+	set_cosmetic_tag = AUS_austrian_empire
 
 	# rules are set here
 
@@ -248,13 +270,13 @@ IF = {
 # EmpiresShadow - Austria-Hungary subjects
 set_autonomy = {
 target = YUG
-autonomous_state = autonomy_puppet
+autonomous_state = autonomy_integrated_puppet
 }
 set_autonomy = {
 target = CZE
-autonomous_state = autonomy_puppet
+autonomous_state = autonomy_integrated_puppet
 }
-set_research_slots = 3
+set_research_slots = 4
 
 set_technology = {
 	infantry_weapons = 1
@@ -298,13 +320,15 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 48
-	fascism = 50
-	democratic = 1
-	communism = 1
+	neutrality = 72
+	fascism = 20
+	democratic = 5
+	communism = 3
 }
 
 set_stability = 0.50
 
-
-
+set_country_leader = {
+	character = AUS_otto_von_habsburg
+	ideology = despotism
+}

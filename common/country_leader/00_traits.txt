@@ -17887,53 +17887,22 @@ leader_traits = {
 		}
 	}
 
-	### EmpiresShadow Custom Traits ###
 
-	ES_kaiser_of_germany = {
-		random = no
-		stability_factor = 0.08
-		political_power_factor = 0.10
-		war_support_factor = 0.05
-		justify_war_goal_time = -0.20
-	}
+# EmpiresShadow - Advisor traits
+ES_advisor_stalin = {
+random = no
+sprite = 13
+stability_factor = 0.1
+war_support_factor = 0.05
+political_power_factor = 0.05
+opinion_gain_monthly_factor = -0.05
+subjects_autonomy_gain = -0.1
+}
 
-	ES_supreme_warlord = {
-		random = no
-		army_attack_factor = 0.03
-		army_defence_factor = 0.03
-		high_command_cost_factor = -0.10
-	}
-
-	ES_father_of_the_revolution = {
-		random = no
-		political_power_factor = 0.15
-		communism_drift = 0.08
-		stability_factor = 0.05
-		research_speed_factor = 0.03
-	}
-
-	ES_iron_will_of_revolution = {
-		random = no
-		war_support_factor = 0.05
-		army_morale_factor = 0.03
-		mobilization_speed = 0.05
-	}
-
-	ES_advisor_stalin = {
-		random = no
-		sprite = 13
-		stability_factor = 0.1
-		war_support_factor = 0.05
-		political_power_factor = 0.05
-		opinion_gain_monthly_factor = -0.05
-		subjects_autonomy_gain = -0.1
-	}
-
-	ES_advisor_trotsky = {
-		random = no
-		sprite = 13
-		division_attack_factor = 0.03
-		division_defence_factor = 0.03
-	}
-
+ES_advisor_trotsky = {
+random = no
+sprite = 13
+division_attack_factor = 0.03
+division_defence_factor = 0.03
+}
 }

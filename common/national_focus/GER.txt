@@ -928,8 +928,8 @@ focus_tree = {
 		completion_reward = {
 			AUS = {
 				country_event = {
-					id = AUS_political_events.77
-					hours = 12
+					id = GER_anschluss.1
+					days = 3
 				}
 			}
 			add_political_power = 75

@@ -1828,6 +1828,512 @@ division= {	# "46ya Strelkovaya Diviziya"
 
 	}
 
+	### === Kopien aus BLR/UKR (zusaetzliche sowjetische Einheiten) === ###
+
+	# --- BLR Kopien ---
+	division= {	# "2ya 'Belorusskaya' Strelk. Div." (BLR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6380
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "8ya 'Minskaya' Strelk. Div." (BLR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 6262
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "37ya Strelkovaya Diviziya" (BLR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 37
+		}
+		location = 306
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "7ya Kavaleriyskaya Diviziya" (BLR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3686
+		division_template = "Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "11ya Kavaleriyskaya Diviziya" (BLR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 3335
+		division_template = "Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "2ya NKVD Pogranichnaya Diviziya" (BLR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3686
+		division_template = "NKVD Pogranichnaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	# "14ya 'Krivorozhskaya' Strelk. Div." (BLR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 6380
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "52ya Strelkovaya Diviziya" (BLR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 52
+		}
+		location = 6262
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "55ya 'Kurskaya' Strelk. Div." (BLR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 55
+		}
+		location = 306
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "31ya 'Stalingradskaya' Strelk. Div." (BLR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 3335
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "61ya 'Turkestanskaya' Strelk. Div." (BLR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 61
+		}
+		location = 3686
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "70ya Strelkovaya Diviziya" (BLR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 70
+		}
+		location = 3580
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "4ya 'Smolenskaya' Strelk. Div." (BLR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6380
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "43ya Strelkovaya Diviziya" (BLR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
+		location = 6262
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "81ya Strelkovaya Diviziya" (BLR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 81
+		}
+		location = 306
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "12ya NKVD Pogranichnaya Diviziya" (BLR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 3335
+		division_template = "NKVD Pogranichnaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	# "24ya 'Samaro-Ulyanovsk' Strelk. Div." (BLR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 3580
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "46ya Strelkovaya Diviziya" (BLR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 46
+		}
+		location = 3686
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+
+	# --- UKR Kopien ---
+	division= {	# "58ya Gornostrelkovaya Diviziya" (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 58
+		}
+		location = 3686
+		division_template = "Gornostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "99ya Strelkovaya Diviziya" (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 99
+		}
+		location = 6380
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "15ya 'Sivashskaya' Strelk. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 6262
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "51ya 'Perekopskaya' Strelk. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 51
+		}
+		location = 306
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "96ya 'Vinnitskaya' Strelk. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 96
+		}
+		location = 3335
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "1ya 'Chernigov' Kav. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3686
+		division_template = "Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "3ya 'Bessarabskaya' Kav. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3580
+		division_template = "Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "9ya 'Krymskiy' Kav. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 6380
+		division_template = "Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "31ya Kavaleriyskaya Diviziya" (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 6262
+		division_template = "Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "10ya NKVD Pogranichnaya Diviziya" (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 306
+		division_template = "NKVD Pogranichnaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	# "13ya NKVD Pogranichnaya Diviziya" (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 3335
+		division_template = "NKVD Pogranichnaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	# "15ya NKVD Pogranichnaya Diviziya" (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 3686
+		division_template = "NKVD Pogranichnaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	# "2ya KiVO Mekhanizirovanaya Gruppa" (UKR-Kopie)
+		name = "2ya KiVO Mekhanizirovanaya Gruppa SOV"
+		location = 6380
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "7ya 'Chernigovskaya' Strelk. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3580
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "44ya 'Kyiv' Strelk. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 6380
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "95ya 'Moldavskaya' Strelk. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 95
+		}
+		location = 6262
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "1ya KiVO Mekhanizirovanaya Gruppa" (UKR-Kopie)
+		name = "1ya KiVO Mekhanizirovanaya Gruppa SOV"
+		location = 306
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "60ya 'Kavkazskaya' Gornostrelk. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 60
+		}
+		location = 3686
+		division_template = "Gornostrelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "62ya 'Turkestanskaya' Strelk. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 62
+		}
+		location = 3335
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "100ya Strelkovaya Diviziya" (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 100
+		}
+		location = 3580
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "5ya 'Bleanov' Kav. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 6380
+		division_template = "Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "14ya 'Bessarabskaya' Kav. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 6262
+		division_template = "Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "45ya Mekhanizirovaniy Korpus" (UKR-Kopie)
+		name = "45ya Mekhanizirovaniy Korpus SOV"
+		location = 306
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.3
+	}
+	division= {	# "3ya 'Krymskaya' Strelk. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3335
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "25ya 'Chapayevskaya' Strelk. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 3686
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "30ya 'Irkutsk' Strelk. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = 3580
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "41ya Strelkovaya Diviziya" (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 41
+		}
+		location = 6380
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	division= {	# "5ya NKVD Pogranichnaya Diviziya" (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 6262
+		division_template = "NKVD Pogranichnaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	# "10ya Kavaleriyskaya Diviziya" (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 306
+		division_template = "Kavaleriyskaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+	}
+	division= {	# "12ya 'Kubanskaya' Kav. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 3335
+		division_template = "Kavaleriyskaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+	}
+	division= {	# "13ya 'Kubanskaya' Kav. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 3686
+		division_template = "Kavaleriyskaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+	}
+	division= {	# "15ya 'Donskaya' Kav. Div." (UKR-Kopie)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 3580
+		division_template = "Kavaleriyskaya Diviziya"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
+	}
+
 }
 					
 
