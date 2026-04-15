@@ -1,0 +1,61 @@
+###########################
+# GERMANY - SUDETENLAND DEMAND EVENTS
+# Triggered by GER_bhp_demand_sudetenland (fascist path) and GER_sudetenland_forderung (Weltpolitik path)
+# Fires on the owner of state 69 (North Sudetenland) — usually Austria-Hungary (AUS) or Czechoslovakia (CZE)
+# GER always gets cores on the 3 Sudetenland states + world tension regardless of choice
+###########################
+
+add_namespace = GER_sudetenland
+
+# Main event: fires ON the Sudetenland controller (AUS/CZE)
+# ROOT = the receiving country; GER = the demander
+country_event = {
+	id = GER_sudetenland.1
+	title = GER_sudetenland.1.t
+	desc = GER_sudetenland.1.d
+	picture = GFX_report_event_ger_anschluss
+
+	is_triggered_only = yes
+
+	# Option A: Forderung akzeptieren — Sudetenland übergeben
+	option = {
+		name = GER_sudetenland.1.a
+		ai_chance = { factor = 30 }
+
+		GER = {
+			transfer_state = 69  # Nordsudetenland
+			transfer_state = 972 # Ostsudetenland
+			transfer_state = 74  # Südsudetenland
+		}
+
+		# Deutschland bekommt trotzdem eine negative Meinung (Erpressung)
+		GER = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = large_decrease
+			}
+		}
+	}
+
+	# Option B: Forderung ablehnen — Deutschland erhält Kriegsziel
+	option = {
+		name = GER_sudetenland.1.b
+		ai_chance = { factor = 70 }
+
+		GER = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ROOT
+				expire = 0
+				generator = { 69 }
+			}
+		}
+
+		ROOT = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = large_decrease
+			}
+		}
+	}
+}

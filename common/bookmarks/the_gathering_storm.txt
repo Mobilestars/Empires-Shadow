@@ -145,6 +145,7 @@ bookmarks = {
 			}		
 		}
 		JAP = {
+			minor = yes
 			history = "JAP_GATHERING_STORM_DESC"
 			available = {  NOT = { has_dlc = "No Compromise, No Surrender" } }
 			ideology = neutrality
@@ -163,6 +164,7 @@ bookmarks = {
 		}
 
 		JAP = {
+			minor = yes
 			history = "JAP_GATHERING_STORM_DESC"
 			available = {  has_dlc = "No Compromise, No Surrender" }
 			ideology = neutrality
@@ -208,6 +210,36 @@ bookmarks = {
 				SOV_father_of_nations
 				SOV_the_supreme_soviet
 			}	
+		}
+
+		AUS = {
+			history = AUS_GATHERING_STORM_DESC #might need an edit because it is not very good at the moment.
+			ideology = neutrality
+			available = { has_dlc = "Gotterdammerung" }
+			ideas = {
+				AUS_treaty_of_saint_germain_en_laye
+				AUS_austrofascism_fake_ns
+				AUS_widespread_unemployment
+			}
+			focuses = {
+				AUS_legacy_of_the_empire
+				AUS_repeal_the_may_constitution
+				AUS_second_brothers_war
+			}
+		}
+		AUS = {
+			history = AUS_GATHERING_STORM_DESC
+			ideology = neutrality
+			available = { NOT = { has_dlc = "Gotterdammerung" } }
+			ideas = {
+				AUS_treaty_of_saint_germain_en_laye
+				AUS_widespread_unemployment
+			}
+			focuses = {
+				AUS_legacy_of_the_empire
+				AUS_repeal_the_may_constitution
+				AUS_second_brothers_war
+			}
 		}
 
 		"---"={
@@ -840,22 +872,6 @@ bookmarks = {
 				ARG_islas_del_atlantico_sur
 				ARG_a_red_south_america
 				ARG_south_american_unity
-			}
-		}
-		AUS = {
-			minor = yes
-			history = AUS_GATHERING_STORM_DESC #might need an edit because it is not very good at the moment.
-			ideology = neutrality
-			available = { has_dlc = "Gotterdammerung" }
-			ideas = {
-				AUS_treaty_of_saint_germain_en_laye
-				AUS_austrofascism_fake_ns
-				AUS_widespread_unemployment
-			}
-			focuses = {
-				AUS_legacy_of_the_empire
-				AUS_repeal_the_may_constitution
-				AUS_second_brothers_war
 			}
 		}
 		HUN = {

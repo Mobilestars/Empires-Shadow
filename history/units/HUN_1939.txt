@@ -1,55 +1,4 @@
 ﻿division_template = {
-	name = "Infanterie Division"
-	division_names_group = AUS_INF_01
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-
-	}
-	support = {
-		engineer = { x = 0 y = 0 }   # Pioneer Bn
-		recon = { x = 0 y = 1}
-	}
-}
-
-division_template = {
-	name = "Alpenjäger Division"
-	division_names_group = AUS_MNT_01
-
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-
-	}
-	support = {
-		engineer = { x = 0 y = 0 }   # Pioneer Bn
-		recon = { x = 0 y = 1}
-	}
-}
-
-division_template = {
-	name = "Schnelle Division"  		# Schnelle-Division (cavalry)
-	division_names_group = AUS_CAV_01
-
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-	}
-	support = {
-		engineer = {x = 0 y = 0}
-		recon = { x = 0 y = 1}
-	}
-}
-
-division_template = {
 	name = "Gyalogdandár"				# Infantry Brigade
 
 	division_names_group = HUN_INF_02
@@ -65,16 +14,15 @@ division_template = {
 		anti_tank_brigade = { x = 2 y = 1 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		engineer = { x = 0 y = 2 }
-		logistics_company = { x = 0 y = 3 }
-		signal_company = { x = 0 y = 4 }
+		recon = { x = 0 y = 0 }   # cavalry recon
+		artillery = { x = 0 y = 1 } # Represents the smaller artillery regiments
+		engineer = { x = 0 y = 2 } # Combat Engineers
+		logistics_company = { x = 0 y = 3 } # Logistics Support
+		signal_company = { x = 0 y = 4 } # Signal and Command units
 	}
 }
-
 division_template = {
-	name = "Huszár Dandár"			# Cavalry Brigade
+	name = "Huszár Dandár" 			# Cavalry Brigade
 
 	division_names_group = HUN_CAV_01
 
@@ -87,15 +35,14 @@ division_template = {
 		motorized = { x = 1 y = 1 }
 	}
 	support = {
-		light_tank_recon = { x = 0 y = 0 }
-		signal_company = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-		anti_air = { x = 0 y = 3 }
+		light_tank_recon = { x = 0 y = 0 }   
+		signal_company = { x = 0 y = 1 } # Signal and Command units
+		artillery = { x = 0 y = 2 } # Represents the smaller artillery regiments
+		anti_air = { x = 0 y = 3 } # Represents the smaller artillery regiments
 	}
 }
-
 division_template = {
-	name = "Motorizált Dandár"			# Motorized Brigade
+	name = "Motorizált Dandár" 			# Motorized Brigade
 
 	division_names_group = HUN_MOT_01
 
@@ -103,94 +50,27 @@ division_template = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
+
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
+
 		light_armor = { x = 2 y = 0 }
 	}
 	support = {
-		mot_recon = { x = 0 y = 0 }
-		anti_tank = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-		signal_company = { x = 0 y = 3 }
-		maintenance_company = { x = 0 y = 4 }
+		mot_recon = { x = 0 y = 0 }   
+		anti_tank = { x = 0 y = 1 }   
+		artillery = { x = 0 y = 2 }   
+		signal_company = { x = 0 y = 3 }   
+		maintenance_company = { x = 0 y = 4 }   
 	}
 }
 
-
 units = {
-	##### Österreichisches Bundesheer #####
-	# I Korps
-	division= {	#Cavalry schnelle
-		name = "Schnelle Division" 
-		location = 11666  # Vienna
-		division_template = "Schnelle Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
-	}
-
-	division= {	# "1. Division"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 3700  # Eisenstadt 
-		division_template = "Infanterie Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
-	}
-	division= {	# "2. Division"			# Used to form 44. Infanterie-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 11666  # Vienna
-		division_template = "Infanterie Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
-	}
-	division= {	# "3. Division"			# Used to form 44. Infanterie--division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
-		}
-		location = 9648 # Graz
-		division_template = "Infanterie Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
-	# II Korps
-	division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 4
-		}
-		location = 9665 # Linz
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division= {	# "5. Division"			# Used to form 3. Gebirgs-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 5
-		}
-		location = 9648  # Graz
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
-	##### Honvédelmi Fõparancsnokság (Hungarian units merged into Austrian army) #####
-	# Gyorshadtest ('Rapid Corps') #
-	division= {
-		division_name = {
+	##### Honvédelmi Fõparancsnokság #####
+	# Gyorshadtest ('Rapid Corps', actual corps raised in 1940) #
+	division= {	
+		#name = "1. Motorizált Dandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 1
 		}
@@ -200,8 +80,9 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
-		division_name = {
+	division= {	
+		#name = "2. Motorizált Dandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -211,8 +92,9 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
-		division_name = {
+	division= {	
+		#name = "1. Huszár Dandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 1
 		}
@@ -222,8 +104,9 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
-		division_name = {
+	division= {	
+		#name = "2. Huszár Dandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -235,8 +118,9 @@ units = {
 	}
 
 	# I Hadtest #
-	division= {
-		division_name = {
+	division= {	
+		#name = "1. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 1
 		}
@@ -246,8 +130,9 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
-		division_name = {
+	division= {	
+		#name = "2. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -257,8 +142,9 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
-		division_name = {
+	division= {	
+		#name = "3. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 3
 		}
@@ -270,8 +156,9 @@ units = {
 	}
 
 	# II Hadtest #
-	division= {
-		division_name = {
+	division= {	
+		#name = "4. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 4
 		}
@@ -281,8 +168,9 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
-		division_name = {
+	division= {	
+		#name = "5. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 5
 		}
@@ -292,8 +180,9 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
-		division_name = {
+	division= {	
+		#name = "6. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 6
 		}
@@ -305,8 +194,9 @@ units = {
 	}
 
 	# III Hadtest #
-	division= {
-		division_name = {
+	division= {	
+		#name = "7. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 7
 		}
@@ -316,8 +206,9 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
-		division_name = {
+	division= {	
+		#name = "8. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 8
 		}
@@ -327,8 +218,9 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
-		division_name = {
+	division= {	
+		#name = "9. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 9
 		}
@@ -340,8 +232,9 @@ units = {
 	}
 
 	# IV Hadtest #
-	division= {
-		division_name = {
+	division= {	
+		#name = "10. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 10
 		}
@@ -351,8 +244,9 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
-		division_name = {
+	division= {	
+		#name = "11. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 11
 		}
@@ -362,8 +256,9 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
-		division_name = {
+	division= {	
+		#name = "12. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 12
 		}
@@ -375,30 +270,33 @@ units = {
 	}
 
 	# V Hadtest #
-	division= {
-		division_name = {
+	division= {	
+		#name = "13. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 13
-		}
+		}	
 		location = 679
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
-	division= {
-		division_name = {
+	division= {	
+		#name = "14. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 14
-		}
+		}	
 		location = 679
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
-	division= {
-		division_name = {
+	division= {	
+		#name = "15. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 15
 		}
@@ -410,8 +308,9 @@ units = {
 	}
 
 	# VI Hadtest #
-	division= {
-		division_name = {
+	division= {	
+		#name = "16. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 16
 		}
@@ -421,8 +320,9 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
-		division_name = {
+	division= {	
+		#name = "17. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 17
 		}
@@ -432,8 +332,9 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
-		division_name = {
+	division= {	
+		#name = "18. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 18
 		}
@@ -445,8 +346,9 @@ units = {
 	}
 
 	# VII Hadtest #
-	division= {
-		division_name = {
+	division= {	
+		#name = "19. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 19
 		}
@@ -456,8 +358,9 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
-		division_name = {
+	division= {	
+		#name = "20. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 20
 		}
@@ -467,8 +370,9 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
-		division_name = {
+	division= {	
+		#name = "21. Gyalogdandár"
+		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 21
 		}
@@ -478,6 +382,9 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
+
+	# Note: VIII, IX Corps created during 1940 #
+	
 }
 
 
@@ -486,19 +393,40 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "AUS"
+			creator = "HUN"
 		}
-		requested_factories = 1
-		progress = 0.54
+		requested_factories = 2
+		progress = 0.82
 		efficiency = 100
+		industrial_manufacturer = mio:HUN_femaru_fegyver_es_gepgyar_organization
 	}
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "AUS"
+			creator = "HUN"
 		}
 		requested_factories = 1
-		progress = 0.74
+		progress = 0.75
 		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "HUN" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+		industrial_manufacturer = mio:HUN_mwg_raba_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "HUN"
+		}
+		requested_factories = 2
+		progress = 0.60
+		efficiency = 100
+		industrial_manufacturer = mio:HUN_digep_artillery
 	}
 }

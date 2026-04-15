@@ -27,7 +27,7 @@ focus_tree = {
 		id = GER_wirtschaftswunder
 		icon = GFX_focus_ger_four_year_plan
 		cost = 10
-		x = 2
+		x = 4
 		y = 0
 
 		available = {
@@ -77,6 +77,77 @@ focus_tree = {
 				amount = 30
 				state = 42
 			}
+		}
+	}
+
+	focus = {
+		id = GER_prioritize_economic_growth
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 5
+		prerequisite = { focus = GER_wirtschaftswunder }
+		x = 4
+		y = 1
+		relative_position_id = GER_wirtschaftswunder
+
+		available = {
+			NOT = {
+				has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL_CHARACTER }
+
+		completion_reward = {
+			add_ideas = civilian_economy
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_stability = -0.1
+			add_popularity = {
+				ideology = ROOT
+				popularity = -0.1
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = GER_ludwig_erhard
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
+				}
+				custom_effect_tooltip = {
+					localization_key = remove_political_advisor_no_trait_tt
+					CHARACTER = hjalmar_schacht
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			GER_stop_rearmament = yes
 		}
 	}
 
@@ -181,8 +252,8 @@ focus_tree = {
 	focus = {
 		id = GER_innenpolitik
 		icon = GFX_focus_ger_the_kaiser
-		cost = 10
-		x = 22
+		cost = 5
+		x = 50
 		y = 0
 
 		completion_reward = {
@@ -197,12 +268,37 @@ focus_tree = {
 		icon = GFX_focus_generic_political_support
 		cost = 10
 		prerequisite = { focus = GER_innenpolitik }
-		x = 0
+		mutually_exclusive = { focus = GER_reestablish_free_elections }
+		x = -1
 		y = 1
 		relative_position_id = GER_innenpolitik
 
 		completion_reward = {
 			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = GER_reestablish_free_elections
+		icon = GFX_goal_support_democracy
+		cost = 10
+		prerequisite = { focus = GER_innenpolitik }
+		mutually_exclusive = { focus = GER_partei_verstaerkung }
+		x = 1
+		y = 1
+		relative_position_id = GER_innenpolitik
+
+		available = {
+			is_subject = no
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = GER_reestablish_free_elections
+				days = 720
+			}
 		}
 	}
 
@@ -219,9 +315,9 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_demokraten_staerken }
 		mutually_exclusive = { focus = GER_kommunisten_staerken }
 		mutually_exclusive = { focus = GER_faschisten_staerken }
-		x = -11
-		y = 1
-		relative_position_id = GER_partei_verstaerkung
+		x = -10
+		y = 2
+		relative_position_id = GER_innenpolitik
 
 		completion_reward = {
 			add_stability = 0.05
@@ -237,13 +333,13 @@ focus_tree = {
 		id = GER_demokraten_staerken
 		icon = GFX_focus_generic_democratic_opposition_support
 		cost = 10
-		prerequisite = { focus = GER_partei_verstaerkung }
+		prerequisite = { focus = GER_reestablish_free_elections }
 		mutually_exclusive = { focus = GER_kaiserreich_staerken }
 		mutually_exclusive = { focus = GER_kommunisten_staerken }
 		mutually_exclusive = { focus = GER_faschisten_staerken }
-		x = -4
-		y = 1
-		relative_position_id = GER_partei_verstaerkung
+		x = 10
+		y = 2
+		relative_position_id = GER_innenpolitik
 
 		completion_reward = {
 			add_popularity = {
@@ -258,13 +354,13 @@ focus_tree = {
 		id = GER_kommunisten_staerken
 		icon = GFX_focus_generic_communism_support
 		cost = 10
-		prerequisite = { focus = GER_partei_verstaerkung }
+		prerequisite = { focus = GER_partei_verstaerkung focus = GER_reestablish_free_elections }
 		mutually_exclusive = { focus = GER_kaiserreich_staerken }
 		mutually_exclusive = { focus = GER_demokraten_staerken }
 		mutually_exclusive = { focus = GER_faschisten_staerken }
-		x = 4
-		y = 1
-		relative_position_id = GER_partei_verstaerkung
+		x = 30
+		y = 2
+		relative_position_id = GER_innenpolitik
 
 		completion_reward = {
 			add_popularity = {
@@ -279,13 +375,13 @@ focus_tree = {
 		id = GER_faschisten_staerken
 		icon = GFX_focus_ger_the_third_reich
 		cost = 10
-		prerequisite = { focus = GER_partei_verstaerkung }
+		prerequisite = { focus = GER_partei_verstaerkung focus = GER_reestablish_free_elections }
 		mutually_exclusive = { focus = GER_kaiserreich_staerken }
 		mutually_exclusive = { focus = GER_demokraten_staerken }
 		mutually_exclusive = { focus = GER_kommunisten_staerken }
-		x = 11
-		y = 1
-		relative_position_id = GER_partei_verstaerkung
+		x = -30
+		y = 2
+		relative_position_id = GER_innenpolitik
 
 		completion_reward = {
 			add_popularity = {
@@ -473,13 +569,42 @@ focus_tree = {
 	###########################
 
 	focus = {
-		id = GER_verfassungskonvent
-		icon = GFX_focus_generic_political_support
-		cost = 10
+		id = GER_kieler_matrosenaufstand
+		icon = GFX_focus_generic_democratic_opposition_support
+		cost = 5
 		prerequisite = { focus = GER_demokraten_staerken }
 		x = 0
 		y = 1
 		relative_position_id = GER_demokraten_staerken
+
+		available = {
+			democratic > 0.5
+		}
+
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 75
+			army_experience = 5
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = GER_verfassungskonvent
+		icon = GFX_focus_generic_political_support
+		cost = 10
+		prerequisite = { focus = GER_kieler_matrosenaufstand }
+		x = 0
+		y = 1
+		relative_position_id = GER_kieler_matrosenaufstand
 
 		visible = { has_government = democratic }
 		available = { has_government = democratic }
@@ -530,13 +655,42 @@ focus_tree = {
 	###########################
 
 	focus = {
-		id = GER_rote_front
+		id = GER_spartakusaufstand
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_kommunisten_staerken }
 		x = 0
 		y = 1
 		relative_position_id = GER_kommunisten_staerken
+
+		available = {
+			communism > 0.5
+		}
+
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 75
+			army_experience = 5
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = GER_rote_front
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10
+		prerequisite = { focus = GER_spartakusaufstand }
+		x = 0
+		y = 1
+		relative_position_id = GER_spartakusaufstand
 
 		visible = { has_government = communism }
 		available = { has_government = communism }
@@ -1004,10 +1158,23 @@ focus_tree = {
 			is_subject = no
 		}
 		completion_reward = {
-			add_state_claim = 69
-			add_state_claim = 972
-			add_state_claim = 74
+			# Cores und Weltspannung bekommt Deutschland in jedem Fall
+			add_state_core = 69  # Nordsudetenland
+			add_state_core = 972 # Ostsudetenland
+			add_state_core = 74  # Südsudetenland
 			add_named_threat = { threat = 4 name = GER_demand_sudetenland_threat }
+			# AUS wird gefragt wenn CZE ihr Vasall ist, sonst CZE selbst
+			if = {
+				limit = {
+					country_exists = CZE
+					CZE = { is_subject_of = AUS }
+				}
+				AUS = { country_event = { id = GER_sudetenland.1 days = 2 } }
+			}
+			else_if = {
+				limit = { country_exists = CZE }
+				CZE = { country_event = { id = GER_sudetenland.1 days = 2 } }
+			}
 		}
 	}
 
@@ -1050,10 +1217,26 @@ focus_tree = {
 			is_subject = no
 		}
 		completion_reward = {
-			add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
-			create_wargoal = {
-				type = annex_everything
-				target = CZE
+			# Event an CZE (oder den Overlord falls Vasall) — sie entscheiden ob sie nachgeben
+			if = {
+				limit = {
+					country_exists = CZE
+					CZE = { is_subject = yes }
+				}
+				CZE = {
+					overlord = {
+						country_event = { id = GER_cze_fate.1 days = 2 }
+					}
+				}
+			}
+			else_if = {
+				limit = { country_exists = CZE }
+				CZE = { country_event = { id = GER_cze_fate.1 days = 2 } }
+			}
+			else = {
+				# CZE existiert nicht mehr — direkte Ansprüche
+				add_state_claim = 75
+				add_state_claim = 9
 			}
 		}
 	}
@@ -1194,7 +1377,7 @@ focus_tree = {
 		id = GER_kaiserliches_heer
 		icon = GFX_focus_ger_reichswehr_modernisation
 		cost = 10
-		x = 38
+		x = 100
 		y = 0
 
 		completion_reward = {
@@ -1302,7 +1485,7 @@ focus_tree = {
 		id = GER_kaiserliche_marine
 		icon = GFX_focus_ger_naval_production
 		cost = 10
-		x = 44
+		x = 106
 		y = 0
 
 		completion_reward = {
@@ -1403,7 +1586,7 @@ focus_tree = {
 		id = GER_luftstreitkraefte
 		icon = GFX_focus_ger_secret_rearmament
 		cost = 10
-		x = 50
+		x = 112
 		y = 0
 
 		completion_reward = {
@@ -1497,7 +1680,7 @@ focus_tree = {
 		id = GER_weltpolitik
 		icon = GFX_focus_ger_claims_sudetenland
 		cost = 10
-		x = 60
+		x = 90
 		y = 0
 
 		available = {
@@ -1526,7 +1709,7 @@ focus_tree = {
 	focus = {
 		id = GER_lebensraum_im_osten
 		icon = GFX_focus_ger_lebensraum
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_mitteleuropa }
 		x = -3
 		y = 1
@@ -1629,7 +1812,7 @@ focus_tree = {
 	focus = {
 		id = GER_schweiz_einladen
 		icon = GFX_focus_generic_alliance
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_buendnis_mit_oesterreich }
 		x = -1
 		y = 1
@@ -1657,7 +1840,7 @@ focus_tree = {
 	focus = {
 		id = GER_angebot_luxemburg
 		icon = GFX_focus_ger_danzig_or_war
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_buendnis_mit_oesterreich }
 		x = 1
 		y = 1
@@ -1728,21 +1911,70 @@ focus_tree = {
 
 		available = {
 			country_exists = CZE
+			NOT = { has_government = fascism }
 		}
 		bypass = {
 			owns_state = 69 # Sudetenland
 		}
 		completion_reward = {
-			add_state_core = 69 # Sudetenland
-			add_state_core = 74 # East Sudetenland
-			add_state_core = 75 # Moravia
+			# Cores und Weltspannung bekommt Deutschland in jedem Fall
+			add_state_core = 69  # Nordsudetenland
+			add_state_core = 972 # Ostsudetenland
+			add_state_core = 74  # Südsudetenland
+			add_named_threat = { threat = 4 name = GER_demand_sudetenland_threat }
+			# AUS wird gefragt wenn CZE ihr Vasall ist, sonst CZE selbst
+			if = {
+				limit = {
+					country_exists = CZE
+					CZE = { is_subject_of = AUS }
+				}
+				AUS = { country_event = { id = GER_sudetenland.1 days = 2 } }
+			}
+			else_if = {
+				limit = { country_exists = CZE }
+				CZE = { country_event = { id = GER_sudetenland.1 days = 2 } }
+			}
+		}
+	}
+
+	focus = {
+		id = GER_tschechoslowakei_teilen
+		icon = GFX_focus_GER_fate_of_czechoslovakia
+		cost = 10
+		prerequisite = { focus = GER_sudetenland_forderung }
+		x = 0
+		y = 1
+		relative_position_id = GER_sudetenland_forderung
+
+		available = {
+			country_exists = CZE
+			owns_state = 69 # Nordsudetenland muss bereits unter Kontrolle sein
+			NOT = { has_government = fascism }
+		}
+		bypass = {
+			NOT = { country_exists = CZE }
+		}
+		completion_reward = {
+			add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
+			# AUS wird gefragt wenn CZE ihr Vasall ist, sonst CZE selbst
+			if = {
+				limit = {
+					country_exists = CZE
+					CZE = { is_subject_of = AUS }
+				}
+				AUS = { country_event = { id = GER_cze_fate.1 days = 2 } }
+			}
+			else_if = {
+				limit = { country_exists = CZE }
+				CZE = { country_event = { id = GER_cze_fate.1 days = 2 } }
+			}
 		}
 	}
 
 	focus = {
 		id = GER_plan_oranje
 		icon = GFX_focus_ger_danzig_or_war
-		cost = 10
+		cost = 4
 		prerequisite = { focus = GER_mitteleuropa }
 		x = 6
 		y = 1
@@ -1770,7 +2002,7 @@ focus_tree = {
 		id = GER_wissenschaft_und_forschung
 		icon = GFX_focus_research
 		cost = 10
-		x = 68
+		x = 16
 		y = 0
 
 		completion_reward = {

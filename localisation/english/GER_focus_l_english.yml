@@ -56,6 +56,8 @@
  GER_bund_der_kaiser_desc:0 "Germany shall forge alliances with other great monarchies and authoritarian powers, creating a 'League of Kaisers' to stand against the democratic and communist worlds."
 
  # DEMOCRATIC PATH (visible only when democratic)
+ GER_kieler_matrosenaufstand:0 "Kiel Mutiny"
+ GER_kieler_matrosenaufstand_desc:0 "Sailors and workers in Kiel have risen against the old order! If the democratic movement is strong enough, this popular uprising can place the Reich in the hands of the people and establish a democratic government."
  GER_verfassungskonvent:0 "Constitutional Convention"
  GER_verfassungskonvent_desc:0 "A grand Constitutional Convention shall be called, with representatives from all walks of German life, to draft a new constitution for the Empire."
  GER_weimarer_weg:0 "The Weimar Path"
@@ -64,6 +66,8 @@
  GER_parlamentarismus_desc:0 "True democracy requires a parliament with real legislative power. We shall entrench the rights of elected representatives and build a stable multi-party system."
 
  # COMMUNIST PATH (visible only when communist)
+ GER_spartakusaufstand:0 "Spartacist Uprising"
+ GER_spartakusaufstand_desc:0 "The Spartacist League leads a revolutionary uprising against the bourgeois order. If the communist movement is strong enough, the insurrection can seize power and place Germany on the path to a socialist state."
  GER_rote_front:0 "Red Front"
  GER_rote_front_desc:0 "The Communist Party of Germany rises, organized and militant. The Red Front stands ready to challenge the bourgeois order."
  GER_raetemacht:0 "Council Republic"
@@ -240,6 +244,8 @@
 
  GER_sudetenland_forderung:0 "Claim the Sudetenland"
  GER_sudetenland_forderung_desc:0 "Millions of Germans live under Czech rule in the Sudetenland. We will demand that these lands — rightfully German — are returned to the Reich."
+ GER_tschechoslowakei_teilen:0 "Divide Czechoslovakia"
+ GER_tschechoslowakei_teilen_desc:0 "With the Sudetenland secured, we must decide the fate of what remains of Czechoslovakia. The Slovaks deserve their own state, and the Czech rump must fall under German protection."
  GER_plan_oranje:0 "Plan Oranje"
  GER_plan_oranje_desc:0 "The Netherlands, a small nation nestled on Germany's western flank, controls vast colonial holdings and strategically vital ports at the mouth of the Rhine. The Imperial General Staff has prepared a contingency plan — Plan Oranje — for the swift subjugation of the Dutch. With their territory under Imperial control, Germany would secure the North Sea coast and dominate the approaches to Britain."
 

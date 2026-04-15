@@ -330,7 +330,8 @@ set_popularities = {
 	communism = 3
 }
 
-set_stability = 0.50
+set_stability = 0.30
+set_war_support = 0.4
 
 set_country_leader = {
 	character = AUS_otto_von_habsburg
