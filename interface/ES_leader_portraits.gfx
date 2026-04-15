@@ -2,6 +2,11 @@ spriteTypes = {
 
     ### EmpiresShadow ###
 
+	spriteType = {
+		name = "GFX_idea_GER_gregor_strasser"
+		texturefile = "gfx/interface/ideas/GER_gregor_strasser.dds"
+	}
+
     # Kaiser Wilhelm II und III (Deutschland)
     spriteType = {
         name = "GFX_portrait_ger_wilhelm_ii"

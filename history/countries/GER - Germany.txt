@@ -1008,6 +1008,7 @@ recruit_character = GER_wilhelm_canaris
 recruit_character = GER_joseph_goebbels
 recruit_character = GER_konstantin_von_neurath
 recruit_character = GER_alfred_hugenberg
+recruit_character = GER_gregor_strasser
 recruit_character = GER_kurt_schumacher
 recruit_character = GER_wilhelm_ii
 recruit_character = GER_wilhelm_iii

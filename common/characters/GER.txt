@@ -2904,11 +2904,46 @@ characters = {
 					}
 				}
 			}
+			available = {
+				has_completed_focus = GER_innenpolitik
+			}
 			traits = {
 				anti_fascist_agent 
 			}
 			ai_will_do = {
 				factor = 0.000
+			}
+		}
+	}
+
+	GER_gregor_strasser = {
+		name = GER_gregor_strasser
+		portraits = {
+			army = {
+				small = GFX_idea_GER_gregor_strasser
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = GER_gregor_strasser
+			allowed = {
+				original_tag = GER
+			}
+			visible = {
+				NOT = {
+					has_completed_focus = GER_start_the_proletarian_revolution
+					has_completed_focus = GER_revive_the_kaiserreich
+					has_completed_focus = GER_revive_the_kaiserreich_ww
+				}
+			}
+			available = {
+				has_completed_focus = GER_faschisten_staerken
+			}
+			traits = {
+				fascist_demagogue
+			}
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 	}
@@ -2941,6 +2976,9 @@ characters = {
 					}
 					has_completed_focus = GER_start_the_proletarian_revolution
 				}
+			}
+			available = {
+				has_completed_focus = GER_kaiserreich_staerken
 			}
 			traits = {
 				monarchist_media_mogul 
@@ -3436,6 +3474,7 @@ characters = {
 					original_tag = GER
 				}
 				available = {
+					has_completed_focus = GER_kommunisten_staerken
 					if = {
 						limit = {
 							has_dlc = "Man the Guns"
@@ -3492,6 +3531,7 @@ characters = {
 					}
 				}
 				available = {
+					has_completed_focus = GER_kommunisten_staerken
 					has_country_flag = GER_thalmann_freed_from_prison_flag
 					is_country_leader = no
 				}
