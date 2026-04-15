@@ -1277,8 +1277,7 @@ units = {
 
 	}			
 
-	### === UKR/BLR Westbezirke (nach Russland verschoben) === ###
-division= {	# "58ya Gornostrelkovaya Diviziya"		
+	division= {	# "58ya Gornostrelkovaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 58
@@ -1289,7 +1288,7 @@ division= {	# "58ya Gornostrelkovaya Diviziya"
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "99ya Strelkovaya Diviziya"		
+	division= {	# "99ya Strelkovaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 99
@@ -1300,7 +1299,7 @@ division= {	# "99ya Strelkovaya Diviziya"
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "15ya 'Sivashskaya' Strelk. Div."		
+	division= {	# "15ya 'Sivashskaya' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 15
@@ -1311,7 +1310,7 @@ division= {	# "15ya 'Sivashskaya' Strelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "51ya 'Perekopskaya' Strelk. Div."		
+	division= {	# "51ya 'Perekopskaya' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 51
@@ -1322,7 +1321,7 @@ division= {	# "51ya 'Perekopskaya' Strelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "96ya 'Vinnitskaya' Strelk. Div."		
+	division= {	# "96ya 'Vinnitskaya' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 96
@@ -1333,7 +1332,7 @@ division= {	# "96ya 'Vinnitskaya' Strelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "1ya 'Chernigov' Kav. Div."		
+	division= {	# "1ya 'Chernigov' Kav. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
@@ -1344,7 +1343,7 @@ division= {	# "1ya 'Chernigov' Kav. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "3ya 'Bessarabskaya' Kav. Div."		
+	division= {	# "3ya 'Bessarabskaya' Kav. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
@@ -1355,7 +1354,7 @@ division= {	# "3ya 'Bessarabskaya' Kav. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "9ya 'Krymskiy' Kav. Div."		
+	division= {	# "9ya 'Krymskiy' Kav. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 9
@@ -1366,7 +1365,7 @@ division= {	# "9ya 'Krymskiy' Kav. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "31ya Kavaleriyskaya Diviziya"		
+	division= {	# "31ya Kavaleriyskaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 31
@@ -1377,7 +1376,7 @@ division= {	# "31ya Kavaleriyskaya Diviziya"
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "10ya NKVD Pogranichnaya Diviziya"		
+	division= {	# "10ya NKVD Pogranichnaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 10
@@ -1389,7 +1388,7 @@ division= {	# "10ya NKVD Pogranichnaya Diviziya"
 		start_equipment_factor = 0.5
 
 	}
-division= {	# "13ya NKVD Pogranichnaya Diviziya"		
+	division= {	# "13ya NKVD Pogranichnaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 13
@@ -1401,7 +1400,7 @@ division= {	# "13ya NKVD Pogranichnaya Diviziya"
 		start_equipment_factor = 0.5
 
 	}
-division= {	# "15ya NKVD Pogranichnaya Diviziya"		
+	division= {	# "15ya NKVD Pogranichnaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 15
@@ -1413,7 +1412,7 @@ division= {	# "15ya NKVD Pogranichnaya Diviziya"
 		start_equipment_factor = 0.5
 
 	}
-division= {			
+	division= {			
 		name = "2ya KiVO Mekhanizirovanaya Gruppa"		
 		location = 3333
 		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
@@ -1421,7 +1420,7 @@ division= {
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "7ya 'Chernigovskaya' Strelk. Div."		
+	division= {	# "7ya 'Chernigovskaya' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 7
@@ -1432,7 +1431,7 @@ division= {	# "7ya 'Chernigovskaya' Strelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "44ya 'Kyiv' Strelk. Div."		
+	division= {	# "44ya 'Kyiv' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 44
@@ -1443,7 +1442,7 @@ division= {	# "44ya 'Kyiv' Strelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "95ya 'Moldavskaya' Strelk. Div."		
+	division= {	# "95ya 'Moldavskaya' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 95
@@ -1454,7 +1453,7 @@ division= {	# "95ya 'Moldavskaya' Strelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {			
+	division= {			
 		name = "1ya KiVO Mekhanizirovanaya Gruppa"		
 		location = 6262
 		division_template = "Mekhanizirovaniy Korpus"		# 1x H Tank Bge, 2x Mekh Bge
@@ -1462,7 +1461,7 @@ division= {
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "60ya 'Kavkazskaya' Gornostrelk. Div."		
+	division= {	# "60ya 'Kavkazskaya' Gornostrelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 60
@@ -1473,7 +1472,7 @@ division= {	# "60ya 'Kavkazskaya' Gornostrelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "62ya 'Turkestanskaya' Strelk. Div."		
+	division= {	# "62ya 'Turkestanskaya' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 62
@@ -1484,7 +1483,7 @@ division= {	# "62ya 'Turkestanskaya' Strelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "100ya Strelkovaya Diviziya"		
+	division= {	# "100ya Strelkovaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 100
@@ -1495,7 +1494,7 @@ division= {	# "100ya Strelkovaya Diviziya"
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "5ya 'Bleanov' Kav. Div."		
+	division= {	# "5ya 'Bleanov' Kav. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
@@ -1506,7 +1505,7 @@ division= {	# "5ya 'Bleanov' Kav. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "14ya 'Bessarabskaya' Kav. Div."		
+	division= {	# "14ya 'Bessarabskaya' Kav. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 14
@@ -1517,13 +1516,13 @@ division= {	# "14ya 'Bessarabskaya' Kav. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {			
+	division= {			
 		name = "45ya Mekhanizirovaniy Korpus"		
 		location = 9408
 		division_template = "Mekhanizirovaniy Korpus"		# 2x Mekh Bge, 1x Mot Bge
 		start_experience_factor = 0.3
 	}
-division= {	# "3ya 'Krymskaya' Strelk. Div."		
+	division= {	# "3ya 'Krymskaya' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
@@ -1534,7 +1533,7 @@ division= {	# "3ya 'Krymskaya' Strelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "25ya 'Chapayevskaya' Strelk. Div."		
+	division= {	# "25ya 'Chapayevskaya' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 25
@@ -1545,7 +1544,7 @@ division= {	# "25ya 'Chapayevskaya' Strelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "30ya 'Irkutsk' Strelk. Div."		
+	division= {	# "30ya 'Irkutsk' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 30
@@ -1556,7 +1555,7 @@ division= {	# "30ya 'Irkutsk' Strelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "41ya Strelkovaya Diviziya"		
+	division= {	# "41ya Strelkovaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 41
@@ -1567,7 +1566,7 @@ division= {	# "41ya Strelkovaya Diviziya"
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "5ya NKVD Pogranichnaya Diviziya"		
+	division= {	# "5ya NKVD Pogranichnaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
@@ -1579,7 +1578,7 @@ division= {	# "5ya NKVD Pogranichnaya Diviziya"
 		start_equipment_factor = 0.5
 
 	}
-division= {	# "10ya Kavaleriyskaya Diviziya"		
+	division= {	# "10ya Kavaleriyskaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 10
@@ -1591,7 +1590,7 @@ division= {	# "10ya Kavaleriyskaya Diviziya"
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "12ya 'Kubanskaya' Kav. Div."		
+	division= {	# "12ya 'Kubanskaya' Kav. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 12
@@ -1603,7 +1602,7 @@ division= {	# "12ya 'Kubanskaya' Kav. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "13ya 'Kubanskaya' Kav. Div."		
+	division= {	# "13ya 'Kubanskaya' Kav. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 13
@@ -1615,7 +1614,7 @@ division= {	# "13ya 'Kubanskaya' Kav. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "15ya 'Donskaya' Kav. Div."		
+	division= {	# "15ya 'Donskaya' Kav. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 15
@@ -1627,7 +1626,7 @@ division= {	# "15ya 'Donskaya' Kav. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "2ya 'Belorusskaya' Strelk. Div."		
+	division= {	# "2ya 'Belorusskaya' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -1638,7 +1637,7 @@ division= {	# "2ya 'Belorusskaya' Strelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "8ya 'Minskaya' Strelk. Div."		
+	division= {	# "8ya 'Minskaya' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 8
@@ -1649,7 +1648,7 @@ division= {	# "8ya 'Minskaya' Strelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "37ya Strelkovaya Diviziya"		
+	division= {	# "37ya Strelkovaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 37
@@ -1660,7 +1659,7 @@ division= {	# "37ya Strelkovaya Diviziya"
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "7ya Kavaleriyskaya Diviziya"		
+	division= {	# "7ya Kavaleriyskaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 7
@@ -1671,7 +1670,7 @@ division= {	# "7ya Kavaleriyskaya Diviziya"
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "11ya Kavaleriyskaya Diviziya"		
+	division= {	# "11ya Kavaleriyskaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 11
@@ -1682,7 +1681,7 @@ division= {	# "11ya Kavaleriyskaya Diviziya"
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "2ya NKVD Pogranichnaya Diviziya"		
+	division= {	# "2ya NKVD Pogranichnaya Diviziya"		
 			division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -1694,7 +1693,7 @@ division= {	# "2ya NKVD Pogranichnaya Diviziya"
 		start_equipment_factor = 0.5
 
 	}
-division= {	# "14ya 'Krivorozhskaya' Strelk. Div."		
+	division= {	# "14ya 'Krivorozhskaya' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 14
@@ -1705,7 +1704,7 @@ division= {	# "14ya 'Krivorozhskaya' Strelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "52ya Strelkovaya Diviziya"		
+	division= {	# "52ya Strelkovaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 52
@@ -1716,7 +1715,7 @@ division= {	# "52ya Strelkovaya Diviziya"
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "55ya 'Kurskaya' Strelk. Div."		
+	division= {	# "55ya 'Kurskaya' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 55
@@ -1727,7 +1726,7 @@ division= {	# "55ya 'Kurskaya' Strelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "31ya 'Stalingradskaya' Strelk. Div."		
+	division= {	# "31ya 'Stalingradskaya' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 31
@@ -1738,7 +1737,7 @@ division= {	# "31ya 'Stalingradskaya' Strelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "61ya 'Turkestanskaya' Strelk. Div."		
+	division= {	# "61ya 'Turkestanskaya' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 61
@@ -1749,7 +1748,7 @@ division= {	# "61ya 'Turkestanskaya' Strelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "70ya Strelkovaya Diviziya"		
+	division= {	# "70ya Strelkovaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 70
@@ -1760,7 +1759,7 @@ division= {	# "70ya Strelkovaya Diviziya"
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "4ya 'Smolenskaya' Strelk. Div."		
+	division= {	# "4ya 'Smolenskaya' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4
@@ -1771,7 +1770,7 @@ division= {	# "4ya 'Smolenskaya' Strelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "43ya Strelkovaya Diviziya"		
+	division= {	# "43ya Strelkovaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 43
@@ -1782,7 +1781,7 @@ division= {	# "43ya Strelkovaya Diviziya"
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "81ya Strelkovaya Diviziya"		
+	division= {	# "81ya Strelkovaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 81
@@ -1793,7 +1792,7 @@ division= {	# "81ya Strelkovaya Diviziya"
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "12ya NKVD Pogranichnaya Diviziya"		
+	division= {	# "12ya NKVD Pogranichnaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 12
@@ -1805,7 +1804,7 @@ division= {	# "12ya NKVD Pogranichnaya Diviziya"
 		start_equipment_factor = 0.5
 
 	}
-division= {	# "24ya 'Samaro-Ulyanovsk' Strelk. Div."		
+	division= {	# "24ya 'Samaro-Ulyanovsk' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 24
@@ -1816,7 +1815,7 @@ division= {	# "24ya 'Samaro-Ulyanovsk' Strelk. Div."
 		start_equipment_factor = 0.85
 
 	}
-division= {	# "46ya Strelkovaya Diviziya"		
+	division= {	# "46ya Strelkovaya Diviziya"		
 		division_name = {
 			is_name_ordered = yes
 			name_order = 46
@@ -1828,505 +1827,361 @@ division= {	# "46ya Strelkovaya Diviziya"
 
 	}
 
-	### === Kopien aus BLR/UKR (zusaetzliche sowjetische Einheiten) === ###
 
-	# --- BLR Kopien ---
-	division= {	# "2ya 'Belorusskaya' Strelk. Div." (BLR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
+	division= {
+		name = "2ya 'Belorusskaya' Strelk. Div."
 		location = 6380
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "8ya 'Minskaya' Strelk. Div." (BLR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 8
-		}
+	division= {
+		name = "8ya 'Minskaya' Strelk. Div."
 		location = 6262
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "37ya Strelkovaya Diviziya" (BLR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 37
-		}
+	division= {
+		name = "37ya Strelkovaya Diviziya"
 		location = 306
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "7ya Kavaleriyskaya Diviziya" (BLR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 7
-		}
+	division= {
+		name = "7ya Kavaleriyskaya Diviziya"
 		location = 3686
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "11ya Kavaleriyskaya Diviziya" (BLR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 11
-		}
+	division= {
+		name = "11ya Kavaleriyskaya Diviziya"
 		location = 3335
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "2ya NKVD Pogranichnaya Diviziya" (BLR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
+	division= {
+		name = "2ya NKVD Pogranichnaya Diviziya"
 		location = 3686
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
-	division= {	# "14ya 'Krivorozhskaya' Strelk. Div." (BLR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 14
-		}
+	division= {
+		name = "14ya 'Krivorozhskaya' Strelk. Div."
 		location = 6380
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "52ya Strelkovaya Diviziya" (BLR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 52
-		}
+	division= {
+		name = "52ya Strelkovaya Diviziya"
 		location = 6262
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "55ya 'Kurskaya' Strelk. Div." (BLR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 55
-		}
+	division= {
+		name = "55ya 'Kurskaya' Strelk. Div."
 		location = 306
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "31ya 'Stalingradskaya' Strelk. Div." (BLR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 31
-		}
+	division= {
+		name = "31ya 'Stalingradskaya' Strelk. Div."
 		location = 3335
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "61ya 'Turkestanskaya' Strelk. Div." (BLR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 61
-		}
+	division= {
+		name = "61ya 'Turkestanskaya' Strelk. Div."
 		location = 3686
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "70ya Strelkovaya Diviziya" (BLR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 70
-		}
+	division= {
+		name = "70ya Strelkovaya Diviziya"
 		location = 3580
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "4ya 'Smolenskaya' Strelk. Div." (BLR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
+	division= {
+		name = "4ya 'Smolenskaya' Strelk. Div."
 		location = 6380
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "43ya Strelkovaya Diviziya" (BLR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 43
-		}
+	division= {
+		name = "43ya Strelkovaya Diviziya"
 		location = 6262
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "81ya Strelkovaya Diviziya" (BLR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 81
-		}
+	division= {
+		name = "81ya Strelkovaya Diviziya"
 		location = 306
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "12ya NKVD Pogranichnaya Diviziya" (BLR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 12
-		}
+	division= {
+		name = "12ya NKVD Pogranichnaya Diviziya"
 		location = 3335
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
-	division= {	# "24ya 'Samaro-Ulyanovsk' Strelk. Div." (BLR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 24
-		}
+	division= {
+		name = "24ya 'Samaro-Ulyanovsk' Strelk. Div."
 		location = 3580
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "46ya Strelkovaya Diviziya" (BLR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 46
-		}
+	division= {
+		name = "46ya Strelkovaya Diviziya"
 		location = 3686
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
 
-	# --- UKR Kopien ---
-	division= {	# "58ya Gornostrelkovaya Diviziya" (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 58
-		}
+	division= {
+		name = "58ya Gornostrelkovaya Diviziya"
 		location = 3686
 		division_template = "Gornostrelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "99ya Strelkovaya Diviziya" (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 99
-		}
+	division= {
+		name = "99ya Strelkovaya Diviziya"
 		location = 6380
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "15ya 'Sivashskaya' Strelk. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 15
-		}
+	division= {
+		name = "15ya 'Sivashskaya' Strelk. Div."
 		location = 6262
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "51ya 'Perekopskaya' Strelk. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 51
-		}
+	division= {
+		name = "51ya 'Perekopskaya' Strelk. Div."
 		location = 306
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "96ya 'Vinnitskaya' Strelk. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 96
-		}
+	division= {
+		name = "96ya 'Vinnitskaya' Strelk. Div."
 		location = 3335
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "1ya 'Chernigov' Kav. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
+	division= {
+		name = "1ya 'Chernigov' Kav. Div."
 		location = 3686
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "3ya 'Bessarabskaya' Kav. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
+	division= {
+		name = "3ya 'Bessarabskaya' Kav. Div."
 		location = 3580
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "9ya 'Krymskiy' Kav. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 9
-		}
+	division= {
+		name = "9ya 'Krymskiy' Kav. Div."
 		location = 6380
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "31ya Kavaleriyskaya Diviziya" (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 31
-		}
+	division= {
+		name = "31ya Kavaleriyskaya Diviziya"
 		location = 6262
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "10ya NKVD Pogranichnaya Diviziya" (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 10
-		}
+	division= {
+		name = "10ya NKVD Pogranichnaya Diviziya"
 		location = 306
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
-	division= {	# "13ya NKVD Pogranichnaya Diviziya" (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 13
-		}
+	division= {
+		name = "13ya NKVD Pogranichnaya Diviziya"
 		location = 3335
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
-	division= {	# "15ya NKVD Pogranichnaya Diviziya" (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 15
-		}
+	division= {
+		name = "15ya NKVD Pogranichnaya Diviziya"
 		location = 3686
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
-	division= {	# "2ya KiVO Mekhanizirovanaya Gruppa" (UKR-Kopie)
+	division= {	# "2ya KiVO Mekhanizirovanaya Gruppa"
 		name = "2ya KiVO Mekhanizirovanaya Gruppa SOV"
 		location = 6380
 		division_template = "Mekhanizirovaniy Korpus"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "7ya 'Chernigovskaya' Strelk. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 7
-		}
+	division= {
+		name = "7ya 'Chernigovskaya' Strelk. Div."
 		location = 3580
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "44ya 'Kyiv' Strelk. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 44
-		}
+	division= {
+		name = "44ya 'Kyiv' Strelk. Div."
 		location = 6380
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "95ya 'Moldavskaya' Strelk. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 95
-		}
+	division= {
+		name = "95ya 'Moldavskaya' Strelk. Div."
 		location = 6262
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "1ya KiVO Mekhanizirovanaya Gruppa" (UKR-Kopie)
+	division= {	# "1ya KiVO Mekhanizirovanaya Gruppa"
 		name = "1ya KiVO Mekhanizirovanaya Gruppa SOV"
 		location = 306
 		division_template = "Mekhanizirovaniy Korpus"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "60ya 'Kavkazskaya' Gornostrelk. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 60
-		}
+	division= {
+		name = "60ya 'Kavkazskaya' Gornostrelk. Div."
 		location = 3686
 		division_template = "Gornostrelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "62ya 'Turkestanskaya' Strelk. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 62
-		}
+	division= {
+		name = "62ya 'Turkestanskaya' Strelk. Div."
 		location = 3335
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "100ya Strelkovaya Diviziya" (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 100
-		}
+	division= {
+		name = "100ya Strelkovaya Diviziya"
 		location = 3580
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "5ya 'Bleanov' Kav. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
+	division= {
+		name = "5ya 'Bleanov' Kav. Div."
 		location = 6380
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "14ya 'Bessarabskaya' Kav. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 14
-		}
+	division= {
+		name = "14ya 'Bessarabskaya' Kav. Div."
 		location = 6262
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "45ya Mekhanizirovaniy Korpus" (UKR-Kopie)
+	division= {	# "45ya Mekhanizirovaniy Korpus"
 		name = "45ya Mekhanizirovaniy Korpus SOV"
 		location = 306
 		division_template = "Mekhanizirovaniy Korpus"
 		start_experience_factor = 0.3
 	}
-	division= {	# "3ya 'Krymskaya' Strelk. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
+	division= {
+		name = "3ya 'Krymskaya' Strelk. Div."
 		location = 3335
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "25ya 'Chapayevskaya' Strelk. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 25
-		}
+	division= {
+		name = "25ya 'Chapayevskaya' Strelk. Div."
 		location = 3686
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "30ya 'Irkutsk' Strelk. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 30
-		}
+	division= {
+		name = "30ya 'Irkutsk' Strelk. Div."
 		location = 3580
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "41ya Strelkovaya Diviziya" (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 41
-		}
+	division= {
+		name = "41ya Strelkovaya Diviziya"
 		location = 6380
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
-	division= {	# "5ya NKVD Pogranichnaya Diviziya" (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
+	division= {
+		name = "5ya NKVD Pogranichnaya Diviziya"
 		location = 6262
 		division_template = "NKVD Pogranichnaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
-	division= {	# "10ya Kavaleriyskaya Diviziya" (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 10
-		}
+	division= {
+		name = "10ya Kavaleriyskaya Diviziya"
 		location = 306
 		division_template = "Kavaleriyskaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.85
 	}
-	division= {	# "12ya 'Kubanskaya' Kav. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 12
-		}
+	division= {
+		name = "12ya 'Kubanskaya' Kav. Div."
 		location = 3335
 		division_template = "Kavaleriyskaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.85
 	}
-	division= {	# "13ya 'Kubanskaya' Kav. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 13
-		}
+	division= {
+		name = "13ya 'Kubanskaya' Kav. Div."
 		location = 3686
 		division_template = "Kavaleriyskaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.85
 	}
-	division= {	# "15ya 'Donskaya' Kav. Div." (UKR-Kopie)
-		division_name = {
-			is_name_ordered = yes
-			name_order = 15
-		}
+	division= {
+		name = "15ya 'Donskaya' Kav. Div."
 		location = 3580
 		division_template = "Kavaleriyskaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }

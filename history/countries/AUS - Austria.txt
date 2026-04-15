@@ -239,6 +239,10 @@ IF = {
 		#####FREE CHARACTERS#####
 		#########################
 
+		# EmpiresShadow - Otto von Habsburg als österreichischer Kaiser
+		recruit_character = AUS_otto_von_habsburg
+		set_global_flag = AUS_otto_von_habsburg_has_joined_austria_flag
+
 		recruit_character = AUS_kurt_schuschnigg
 		recruit_character = AUS_karl_renner
 		recruit_character = AUS_arthur_seyss-inquart

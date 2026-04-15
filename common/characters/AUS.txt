@@ -2836,34 +2836,79 @@ characters = {
 		}
 	}
 
-# EmpiresShadow - Otto von Habsburg als österreichischer Kaiser
-AUS_otto_von_habsburg = {
-name = "Otto von Habsburg"
+	# EmpiresShadow - Otto von Habsburg als österreichischer Kaiser
+	AUS_otto_von_habsburg = {
+		instance = {
+			allowed = {
+				NOT = {
+					has_dlc = "Gotterdammerung"
+				}
+			}
 
-portraits = {
-civilian = {
-large = "GFX_Portrait_austria_otto_von_habsburg"
-}
-army = {
-large = "GFX_Portrait_austria_otto_von_habsburg"
-}
-}
+			name = "Otto von Habsburg"
 
-country_leader = {
-ideology = despotism
-traits = { AUS_king_of_austria }
-expire = "1965.1.1.1"
-id = -1
-}
+			portraits = {
+				civilian = {
+					large = "GFX_Portrait_austria_otto_von_habsburg"
+				}
+			}
 
-field_marshal = {
-traits = { politically_connected }
-skill = 2
-attack_skill = 2
-defense_skill = 1
-planning_skill = 3
-logistics_skill = 2
-}
-}
+			country_leader = {
+				ideology = despotism
+				traits = { AUS_king_of_austria }
+				expire = "1965.1.1.1"
+				id = -1
+			}
+		}
+
+		instance = {
+			allowed = {
+				has_dlc = "Gotterdammerung"
+			}
+
+			name = "Otto von Habsburg"
+
+			portraits = {
+				civilian = {
+					large = "GFX_Portrait_austria_otto_von_habsburg"
+				}
+				army = {
+					large = "GFX_Portrait_austria_otto_von_habsburg"
+				}
+			}
+
+			country_leader = {
+				ideology = despotism
+				traits = { AUS_king_of_austria }
+				expire = "1965.1.1.1"
+				id = -1
+			}
+
+			field_marshal = {
+				traits = { politically_connected }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 2
+				legacy_id = -1
+				visible = {
+					OR = {
+						AND = {
+							original_tag = AUS
+							has_country_leader = {
+								ruling_only = yes
+								character = AUS_otto_von_habsburg
+							}
+						}
+						AND = {
+							original_tag = AUS
+							has_country_flag = AUS_otto_on_the_battlefield_flag
+						}
+					}
+				}
+			}
+		}
+	}
 
 }
