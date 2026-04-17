@@ -26,7 +26,7 @@ focus_tree = {
 	focus = {
 		id = GER_wirtschaftswunder
 		icon = GFX_focus_ger_four_year_plan
-		cost = 10
+		cost = 5
 		x = 4
 		y = 0
 
@@ -83,7 +83,7 @@ focus_tree = {
 	focus = {
 		id = GER_prioritize_economic_growth
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		cost = 5
+		cost = 10
 		prerequisite = { focus = GER_wirtschaftswunder }
 		x = 4
 		y = 1
@@ -181,7 +181,7 @@ focus_tree = {
 	focus = {
 		id = GER_reichsbahn_ausbau
 		icon = GFX_focus_generic_industry_3
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_stahl_und_kohle }
 		x = 2
 		y = 1
@@ -195,7 +195,7 @@ focus_tree = {
 	focus = {
 		id = GER_wirtschaftspolitik
 		icon = GFX_focus_generic_trade
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_grosse_infrastruktur }
 		prerequisite = { focus = GER_reichsbahn_ausbau }
 		x = 1
@@ -234,7 +234,7 @@ focus_tree = {
 	focus = {
 		id = GER_ru_stungsexporte
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_wirtschaftspolitik }
 		x = 2
 		y = 1
@@ -266,7 +266,7 @@ focus_tree = {
 	focus = {
 		id = GER_partei_verstaerkung
 		icon = GFX_focus_generic_political_support
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_innenpolitik }
 		mutually_exclusive = { focus = GER_reestablish_free_elections }
 		x = -1
@@ -281,7 +281,7 @@ focus_tree = {
 	focus = {
 		id = GER_reestablish_free_elections
 		icon = GFX_goal_support_democracy
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_innenpolitik }
 		mutually_exclusive = { focus = GER_partei_verstaerkung }
 		x = 1
@@ -310,7 +310,7 @@ focus_tree = {
 	focus = {
 		id = GER_kaiserreich_staerken
 		icon = GFX_focus_ger_the_kaiser
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_partei_verstaerkung }
 		mutually_exclusive = { focus = GER_demokraten_staerken }
 		mutually_exclusive = { focus = GER_kommunisten_staerken }
@@ -332,7 +332,7 @@ focus_tree = {
 	focus = {
 		id = GER_demokraten_staerken
 		icon = GFX_focus_generic_democratic_opposition_support
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_reestablish_free_elections }
 		mutually_exclusive = { focus = GER_kaiserreich_staerken }
 		mutually_exclusive = { focus = GER_kommunisten_staerken }
@@ -353,7 +353,7 @@ focus_tree = {
 	focus = {
 		id = GER_kommunisten_staerken
 		icon = GFX_focus_generic_communism_support
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_partei_verstaerkung focus = GER_reestablish_free_elections }
 		mutually_exclusive = { focus = GER_kaiserreich_staerken }
 		mutually_exclusive = { focus = GER_demokraten_staerken }
@@ -374,7 +374,7 @@ focus_tree = {
 	focus = {
 		id = GER_faschisten_staerken
 		icon = GFX_focus_ger_the_third_reich
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_partei_verstaerkung focus = GER_reestablish_free_elections }
 		mutually_exclusive = { focus = GER_kaiserreich_staerken }
 		mutually_exclusive = { focus = GER_demokraten_staerken }
@@ -398,7 +398,7 @@ focus_tree = {
 	focus = {
 		id = GER_kaiser_unterstuetzung
 		icon = GFX_focus_ger_strengthen_the_ss
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_kaiserreich_staerken }
 		x = -1
 		y = 1
@@ -418,7 +418,7 @@ focus_tree = {
 	focus = {
 		id = GER_reichsverfassung
 		icon = GFX_focus_generic_political_support
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_kaiserreich_staerken }
 		x = 1
 		y = 1
@@ -434,7 +434,7 @@ focus_tree = {
 	focus = {
 		id = GER_kaiserliche_verwaltung
 		icon = GFX_focus_generic_provoke_incidents
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_kaiser_unterstuetzung }
 		x = 0
 		y = 1
@@ -450,7 +450,7 @@ focus_tree = {
 	focus = {
 		id = GER_pangermanismus
 		icon = GFX_focus_generic_morale_bonus
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_kaiser_unterstuetzung }
 		prerequisite = { focus = GER_reichsverfassung }
 		x = 0
@@ -467,7 +467,7 @@ focus_tree = {
 	focus = {
 		id = GER_propaganda_des_kaisers
 		icon = GFX_focus_ger_propaganda
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_kaiserliche_verwaltung }
 		prerequisite = { focus = GER_pangermanismus }
 		x = 1
@@ -485,7 +485,7 @@ focus_tree = {
 	focus = {
 		id = GER_monarchistische_jugend
 		icon = GFX_focus_generic_manpower
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_propaganda_des_kaisers }
 		x = -1
 		y = 1
@@ -518,7 +518,7 @@ focus_tree = {
 	focus = {
 		id = GER_kaiserreich_festigen
 		icon = GFX_focus_ger_the_kaiser
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_reichsverfassung }
 		x = 2
 		y = 1
@@ -535,7 +535,7 @@ focus_tree = {
 	focus = {
 		id = GER_wilhelminisches_militaer
 		icon = GFX_focus_ger_reichswehr_modernisation
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_kaiserreich_festigen }
 		x = 0
 		y = 1
@@ -551,7 +551,7 @@ focus_tree = {
 	focus = {
 		id = GER_bund_der_kaiser
 		icon = GFX_focus_generic_alliance
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_wilhelminisches_militaer }
 		x = 0
 		y = 1
@@ -571,7 +571,7 @@ focus_tree = {
 	focus = {
 		id = GER_kieler_matrosenaufstand
 		icon = GFX_focus_generic_democratic_opposition_support
-		cost = 5
+		cost = 10
 		prerequisite = { focus = GER_demokraten_staerken }
 		x = 0
 		y = 1
@@ -600,7 +600,7 @@ focus_tree = {
 	focus = {
 		id = GER_verfassungskonvent
 		icon = GFX_focus_generic_political_support
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_kieler_matrosenaufstand }
 		x = 0
 		y = 1
@@ -620,7 +620,7 @@ focus_tree = {
 	focus = {
 		id = GER_weimarer_weg
 		icon = GFX_focus_generic_support_democracy
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_verfassungskonvent }
 		x = -1
 		y = 1
@@ -636,7 +636,7 @@ focus_tree = {
 	focus = {
 		id = GER_parlamentarismus
 		icon = GFX_focus_generic_provoke_incidents
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_verfassungskonvent }
 		x = 1
 		y = 1
@@ -657,7 +657,7 @@ focus_tree = {
 	focus = {
 		id = GER_spartakusaufstand
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 5
+		cost = 10
 		prerequisite = { focus = GER_kommunisten_staerken }
 		x = 0
 		y = 1
@@ -686,7 +686,7 @@ focus_tree = {
 	focus = {
 		id = GER_rote_front
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_spartakusaufstand }
 		x = 0
 		y = 1
@@ -703,7 +703,7 @@ focus_tree = {
 	focus = {
 		id = GER_raetemacht
 		icon = GFX_focus_generic_soviet_union_ally
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_rote_front }
 		x = -1
 		y = 1
@@ -726,7 +726,7 @@ focus_tree = {
 	focus = {
 		id = GER_sowjet_buendnis
 		icon = GFX_focus_generic_communism_support
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_rote_front }
 		x = 1
 		y = 1
@@ -1389,7 +1389,7 @@ focus_tree = {
 	focus = {
 		id = GER_sturmbataillon
 		icon = GFX_focus_ger_the_stormtroopers
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_kaiserliches_heer }
 		x = -1
 		y = 1
@@ -1408,7 +1408,7 @@ focus_tree = {
 	focus = {
 		id = GER_aufklaerungseinheiten
 		icon = GFX_focus_generic_recon
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_kaiserliches_heer }
 		x = 1
 		y = 1
@@ -1446,7 +1446,7 @@ focus_tree = {
 	focus = {
 		id = GER_artillerie_programm
 		icon = GFX_focus_ger_claims_czechoslovakia
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_aufklaerungseinheiten }
 		x = 1
 		y = 1
@@ -1465,7 +1465,7 @@ focus_tree = {
 	focus = {
 		id = GER_blitzkrieg_doktrin
 		icon = GFX_focus_generic_attack_allies
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_panzerwaffe }
 		prerequisite = { focus = GER_artillerie_programm }
 		x = 0
@@ -1541,7 +1541,7 @@ focus_tree = {
 	focus = {
 		id = GER_weltmacht_zur_see
 		icon = GFX_focus_generic_navy_anti_submarine
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_hochseeflotte }
 		prerequisite = { focus = GER_u_boot_krieg }
 		x = 0
@@ -1556,7 +1556,7 @@ focus_tree = {
 	focus = {
 		id = GER_marinebasis_ausbau
 		icon = GFX_focus_generic_naval_bases
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_weltmacht_zur_see }
 		x = 0
 		y = 1
@@ -1598,7 +1598,7 @@ focus_tree = {
 	focus = {
 		id = GER_jagdflieger
 		icon = GFX_focus_ger_secret_rearmament
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_luftstreitkraefte }
 		x = -1
 		y = 1
@@ -1617,7 +1617,7 @@ focus_tree = {
 	focus = {
 		id = GER_strategische_bomber
 		icon = GFX_focus_ger_secret_rearmament
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_luftstreitkraefte }
 		x = 1
 		y = 1
@@ -1636,7 +1636,7 @@ focus_tree = {
 	focus = {
 		id = GER_luftueberlegenheit
 		icon = GFX_focus_generic_air_superiority
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_jagdflieger }
 		prerequisite = { focus = GER_strategische_bomber }
 		x = 0
@@ -1679,7 +1679,7 @@ focus_tree = {
 	focus = {
 		id = GER_weltpolitik
 		icon = GFX_focus_ger_claims_sudetenland
-		cost = 10
+		cost = 5
 		x = 90
 		y = 0
 
@@ -1695,7 +1695,7 @@ focus_tree = {
 	focus = {
 		id = GER_mitteleuropa
 		icon = GFX_focus_generic_little_entente
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_weltpolitik }
 		x = -2
 		y = 1
@@ -1709,7 +1709,7 @@ focus_tree = {
 	focus = {
 		id = GER_lebensraum_im_osten
 		icon = GFX_focus_ger_lebensraum
-		cost = 5
+		cost = 10
 		prerequisite = { focus = GER_mitteleuropa }
 		x = -3
 		y = 1
@@ -1747,7 +1747,7 @@ focus_tree = {
 	focus = {
 		id = GER_kolonialreich
 		icon = GFX_focus_generic_africa
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_weltpolitik }
 		x = 2
 		y = 1
@@ -1761,7 +1761,7 @@ focus_tree = {
 	focus = {
 		id = GER_mittelafrika
 		icon = GFX_focus_generic_africa
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_kolonialreich }
 		x = 2
 		y = 1
@@ -1882,7 +1882,7 @@ focus_tree = {
 	focus = {
 		id = GER_anschluss_antreiben
 		icon = GFX_focus_ger_anschluss
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_mitteleuropa }
 		mutually_exclusive = { focus = GER_buendnis_mit_oesterreich }
 		x = 2
@@ -1974,7 +1974,7 @@ focus_tree = {
 	focus = {
 		id = GER_plan_oranje
 		icon = GFX_focus_ger_danzig_or_war
-		cost = 4
+		cost = 10
 		prerequisite = { focus = GER_mitteleuropa }
 		x = 6
 		y = 1
@@ -2027,7 +2027,7 @@ focus_tree = {
 	focus = {
 		id = GER_raketen_forschung
 		icon = GFX_focus_ger_rocket_artillery_focus
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_wissenschaft_und_forschung }
 		x = 1
 		y = 1
@@ -2046,7 +2046,7 @@ focus_tree = {
 	focus = {
 		id = GER_chemische_industrie
 		icon = GFX_focus_ger_four_year_plan
-		cost = 10
+		cost = 5
 		prerequisite = { focus = GER_universitaeten_foerdern }
 		x = -1
 		y = 1
