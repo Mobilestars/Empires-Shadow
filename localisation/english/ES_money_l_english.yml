@@ -1,0 +1,7 @@
+l_english:
+ # ES Money System – Topbar display value
+ # [?es_money] shows the value of the es_money variable in the player country scope
+ ES_MONEY_TOPBAR_VALUE_LOC:0 "$[?es_money]"
+
+ # Tooltip for the money display
+ ES_MONEY_TOPBAR_TOOLTIP:0 "§YTreasury§!\nMonthly income: §G+[?es_monthly_income]§! Dollar\nMonthly wages: §R-[?es_monthly_wages]§! Dollar\nNet monthly: §Y[?es_monthly_net]§! Dollar\n\nTaxable civilians = population minus free manpower pool.\nDivision wages depend on template composition (armoured cost more).\nSoldiers in training and field are paid wages by the state."

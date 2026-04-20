@@ -1,0 +1,10 @@
+##──────────────────────────────────────────────────────────────────────────────
+## ES Money System – Sprite Definitions
+##──────────────────────────────────────────────────────────────────────────────
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_es_money_icon"
+		texturefile = "gfx/interface/topbar/es_money_icon.dds"
+	}
+}

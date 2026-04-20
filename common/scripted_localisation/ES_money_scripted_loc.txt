@@ -1,0 +1,13 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# ES Money System – Scripted Localisation
+# ES_MONEY_TOPBAR_VALUE is referenced by the topbar GUI text box.
+# Because the scripted GUI uses context_type = player_context, ROOT here
+# is the player country, so [?es_money] correctly reads the player's variable.
+# ──────────────────────────────────────────────────────────────────────────────
+
+defined_text = {
+	name = ES_MONEY_TOPBAR_VALUE
+	text = {
+		localization_key = ES_MONEY_TOPBAR_VALUE_LOC
+	}
+}

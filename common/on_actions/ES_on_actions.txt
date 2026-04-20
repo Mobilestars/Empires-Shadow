@@ -105,11 +105,113 @@ on_actions = {
 		}
 	}
 
+	# ── ES Money System: Initialise es_money for every country ───────────────
+	on_startup = {
+		effect = {
+			every_country = {
+				set_variable = { var = es_money value = 0 }
+				set_variable = { var = es_monthly_income value = 0 }
+				set_variable = { var = es_monthly_wages value = 0 }
+				set_variable = { var = es_monthly_net value = 0 }
+			}
+		}
+	}
+
 	# ── War Support tier spirits ─────────────────────────────────────────────
 	# Fires every month for every country to update war support penalty/bonus spirits.
 	on_monthly_pulse = {
 		events = {
 			ES_war_support.1
+		}
+	}
+
+	# ── ES Money System: Monthly Tax Income & Division Wages ─────────────────
+	# Tax base  = real state population (state_population_k) MINUS free manpower pool.
+	#   → Free manpower pool are conscripted reserves – they don't pay civilian taxes.
+	#   → Soldiers in training & in field pay no civilian tax but DO draw army wages.
+	# Rate: 0.005 Dollar per 1 000 taxable civilians per month.
+	# Division wages are based on template type (armoured > mechanised > motorised > infantry).
+	on_monthly = {
+		effect = {
+			every_country = {
+				# ── 1. Total population ──────────────────────────────────────
+				set_variable = { var = es_total_pop value = 0 }
+				every_owned_state = {
+					ROOT = { add_to_variable = { var = es_total_pop value = PREV.state_population_k } }
+				}
+
+				# ── 2. Taxable civilians = total_pop − free_manpower ─────────
+				# Both state_population_k and the manpower variable are in thousands.
+				set_variable = { var = es_taxable_pop value = es_total_pop }
+				subtract_from_variable = { var = es_taxable_pop value = manpower }
+				if = {
+					limit = { check_variable = { es_taxable_pop < 0 } }
+					set_variable = { var = es_taxable_pop value = 0 }
+				}
+
+				# ── 3. Tax income ────────────────────────────────────────────
+				set_variable = { var = es_monthly_income value = es_taxable_pop }
+				multiply_variable = { var = es_monthly_income value = 0.005 }
+
+				# ── 4. Division wages (deployed + training) ──────────────────
+				# Wage per division depends on template type, which reflects
+				# battalion composition (e.g. a template heavy with tanks costs more).
+				set_variable = { var = es_monthly_wages value = 0 }
+
+				# Deployed divisions – iterate all generals/field-marshals and their led units
+				every_unit_leader = {
+					every_led_unit = {
+						if = { limit = { has_type = armored }
+							ROOT = { add_to_variable = { var = es_monthly_wages value = 15 } }
+						}
+						else_if = { limit = { has_type = mechanized }
+							ROOT = { add_to_variable = { var = es_monthly_wages value = 10 } }
+						}
+						else_if = { limit = { has_type = motorized }
+							ROOT = { add_to_variable = { var = es_monthly_wages value = 6 } }
+						}
+						else_if = { limit = { OR = { has_type = marine has_type = mountaineer has_type = paratrooper } }
+							ROOT = { add_to_variable = { var = es_monthly_wages value = 5 } }
+						}
+						else_if = { limit = { has_type = cavalry }
+							ROOT = { add_to_variable = { var = es_monthly_wages value = 2 } }
+						}
+						else_if = { limit = { has_type = garrison }
+							ROOT = { add_to_variable = { var = es_monthly_wages value = 1 } }
+						}
+						else = { # infantry and all others
+							ROOT = { add_to_variable = { var = es_monthly_wages value = 3 } }
+						}
+					}
+				}
+
+				# Divisions in training – half the deployed wage
+				every_training_unit = {
+					if = { limit = { has_type = armored }
+						ROOT = { add_to_variable = { var = es_monthly_wages value = 7 } }
+					}
+					else_if = { limit = { has_type = mechanized }
+						ROOT = { add_to_variable = { var = es_monthly_wages value = 5 } }
+					}
+					else_if = { limit = { has_type = motorized }
+						ROOT = { add_to_variable = { var = es_monthly_wages value = 3 } }
+					}
+					else = {
+						ROOT = { add_to_variable = { var = es_monthly_wages value = 2 } }
+					}
+				}
+
+				# ── 5. Apply net change ──────────────────────────────────────
+				add_to_variable = { var = es_money value = es_monthly_income }
+				subtract_from_variable = { var = es_money value = es_monthly_wages }
+				if = {
+					limit = { check_variable = { es_money < 0 } }
+					set_variable = { var = es_money value = 0 }
+				}
+				# Store net for tooltip display
+				set_variable = { var = es_monthly_net value = es_monthly_income }
+				subtract_from_variable = { var = es_monthly_net value = es_monthly_wages }
+			}
 		}
 	}
 
