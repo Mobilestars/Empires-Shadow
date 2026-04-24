@@ -1,0 +1,93 @@
+﻿division_template = {
+
+	name = "Paidala Dibhijana"		# Represents groupings of independent Nepalese battalions	
+
+	division_names_group = NEP_MTN_01
+
+	# Special Forces: Mountaineers + Line Arty ~30W
+	# Needs: Special Forces Doctrine (AaT) + Fire Concentration sub-doctrine
+	regiments = {
+		mountaineers      = { x = 0 y = 0 }
+		mountaineers      = { x = 0 y = 1 }
+		mountaineers      = { x = 0 y = 2 }
+		mountaineers      = { x = 1 y = 0 }
+		mountaineers      = { x = 1 y = 1 }
+		mountaineers      = { x = 1 y = 2 }
+		mountaineers      = { x = 2 y = 0 }
+		mountaineers      = { x = 2 y = 1 }
+		mountaineers      = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+division_template = {
+
+	name = "Royal Nepalese Division"		# Represents the Nepali royal guards division
+
+	division_names_group = NEP_INF_01
+
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+
+units = {
+	##### Sahi Nepali Sena #####
+	division = {
+		#name = "1 Nepali Dibhijana"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4987
+		division_template = "Paidala Dibhijana"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		#name = "2 Nepali Dibhijana"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4987
+		division_template = "Paidala Dibhijana"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+
+	}
+}
+
+### No notable air forces ###
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "NEP"
+		}
+		requested_factories = 1
+		progress = 0.89
+		efficiency = 100
+	}
+}

@@ -1,0 +1,472 @@
+﻿# USED FOR REVERSE THE RISORGIMENTO GAME RULE OPTION
+
+# Units will be transferred to fragmentation tags but we want to keep all Blackshirts, irregulars and colonial troops in TTS
+
+# NEED TO REAPPLY DIVISION TEMPLATES AND RE-SPAWN UNITS IN AFRICA
+
+
+division_template = {
+	name = "Camicie Nere" 
+	division_names_group = ITA_INF_02
+
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+
+#############################
+###### ASCARI INFANTRY ######
+#############################
+
+### GENERIC ASCARI TEMPLATES ### (Eritrean Model)
+
+division_template = {
+ 
+	name = "Divisione Coloniale" 
+	division_names_group = ITA_COL_01
+
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+
+
+### LIBYAN ASCARI TEMPLATES ###
+
+division_template = {
+ 
+	name = "Divisione Ascari Libica" 
+	division_names_group = ITA_COL_01
+
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+
+
+### ERITREAN ASCARI TEMPLATES ###
+
+division_template = {
+ 
+	name = "Divisione Ascari Eritrea" 
+	division_names_group = ITA_COL_01
+
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+
+
+### SOMALI ASCARI TEMPLATES ###
+
+division_template = {
+ 
+	name = "Divisione Ascari Somala" 
+	division_names_group = ITA_COL_01
+
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+
+
+###################
+#### IRREGULARS ###
+###################
+
+### GENERIC IRREGULAR TEMPLATES ### (Eritrean Model)
+
+division_template = {
+
+	name = "Banda Indigena Irregolare"		
+	division_names_group = ITA_COL_02
+
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+
+division_template = {
+
+	name = "Truppe Irregolari a Cavallo"		
+	division_names_group = ITA_CAV_05
+
+	# Elite Motorized/Mechanized 18W
+	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
+	# Upgrade motorized -> mechanized when available
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer            = { x = 0 y = 0 }
+		anti_air            = { x = 0 y = 1 }
+		logistics_company   = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+	}}
+
+
+### LIBYAN IRREGULAR INFANTRY ###
+
+division_template = {
+
+	name = "Banda Irregolare Libica"		
+	division_names_group = ITA_COL_02
+
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+
+### ERITREAN IRREGULAR INFANTRY ###
+
+division_template = {
+
+	name = "Banda Irregolare Eritrea"		
+	division_names_group = ITA_COL_02
+
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+
+
+### SOMALI IRREGULAR INFANTRY ###
+
+division_template = {
+
+	name = "Banda Irregolare Somala"		
+	division_names_group = ITA_COL_03
+
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+
+
+
+####### OOB #######
+units = {
+	##### Commando Superiore Africa #####
+	# Subordinate to Theater #
+	division = { # 
+		name = "7a Divisione CC.NN. 'Cirene'" 
+		location = 1130 
+		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment 
+		start_equipment_factor = 0.2
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}#  "2a Divisione Fanteria Coloniale Libica" 
+		location = 1149 
+		division_template = "Divisione Ascari Libica" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
+		start_equipment_factor = 0.3
+	}
+
+	division = { # 
+		name = "4a Divisione CC.NN. '3 Gennaio'" 
+		location = 12723 
+		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.15
+	}
+
+	division = { # 
+		name = "3a Divisione CC.NN. '21 Aprile'" 
+		location = 13250
+		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.15
+	}
+
+	division = { # 
+		name = "1a Divisione CC.NN. '23 Marzo'" 
+		location = 12766 
+		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.15
+	}
+
+	division = { # 
+		name = "2a Divisione CC.NN. '28 Ottobre'" 
+		location = 8043 
+		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.15
+	}
+	division = { # 
+		name = "5a Divisione CC.NN. '1 Febbraio'" 
+		location = 8043 
+		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.15
+	}
+
+	# Corpo d'Armata Eritreo #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}#  "1a Divisione Fanteria Coloniale Eritrea" 
+		location = 13250
+		division_template = "Divisione Ascari Eritrea" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}#  "2a Divisione Fanteria Coloniale Eritrea" 
+		location = 12766 
+		division_template = "Divisione Ascari Eritrea" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
+	}
+
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}#  "1a Divisione Fanteria Coloniale Libica" 
+		location = 2063 
+		division_template = "Divisione Ascari Libica" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
+	}
+	division = {
+		name = "Divisione F. Coloniale Arabo-Somala"
+		#division_name = {
+		#	is_name_ordered = yes
+		#	name_order = 101
+		#}#  "101a Divisione Fanteria Coloniale Somala" 
+		location = 2020 
+		division_template = "Divisione Ascari Somala" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
+	}
+	division = { # 
+		name = "6a Divisione CC.NN. 'Tevere'" 
+		location = 2063 
+		division_template = "Camicie Nere"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.15
+	}
+
+	############################
+	##### IRREGULAR TROOPS #####
+	############################
+
+	#LIBYAN IRREGULAR TROOPS
+	division = { #Libyan Irregulars
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} 
+		location = 8043 
+		division_template = "Banda Irregolare Libica"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }} 
+	}
+
+	division = { #Libyan Spahi
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} 
+		location = 13251 
+		division_template = "Truppe Irregolari a Cavallo"
+		start_experience_factor = 0.1 
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
+	}
+
+	#ERITREAN IRREGULAR TROOPS
+	division = { #Daskalian Irregular Bands (Eritrean Irregular Infantry)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} 
+		location = 8043 
+		division_template = "Banda Irregolare Eritrea"
+		start_experience_factor = 0.05 
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }} 
+	}
+
+	division = { #Massaua Irregulars Band (Eritrean Irregular Infantry)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} 
+		location = 12766 
+		division_template = "Banda Irregolare Eritrea"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }} 
+	}
+
+	#SOMALI IRREGULAR TROOPS
+	division = { #Somali Dubat Cavalry
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} 
+		location = 2020 
+		division_template = "Truppe Irregolari a Cavallo"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }} 
+	}
+
+	division = { #Somlia Dubats (Somali Irregular Infantry)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} 
+		location = 1964 
+		division_template = "Banda Irregolare Somala"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
+	}
+
+	division = { #Somlia Dubats (Somali Irregular Infantry)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} 
+		location = 1964 
+		division_template = "Banda Irregolare Somala"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
+	}
+}

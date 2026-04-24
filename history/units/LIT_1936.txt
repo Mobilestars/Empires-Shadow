@@ -1,7 +1,11 @@
 ﻿division_template = {
+
+
 	name = "Pestininku Divizija"			# Infantry Division
 	division_names_group = LIT_INF_01
-	# Note: Divisions were nowhere near full strength until mobilized
+
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -13,39 +17,58 @@
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 	}
-}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
 
 division_template = {
+
+
 	name = "Artilerija Divizija"			# Artillery Division
 	division_names_group = LIT_INF_01
-	# Note: Divisions were nowhere near full strength until mobilized
+
+	# Line Artillery Infantry ~30W (9 inf + 3 arty brigade)
+	# Needs: Fire Concentration sub-doctrine (effective ~27W)
+	regiments = {
+		infantry          = { x = 0 y = 0 }
+		infantry          = { x = 0 y = 1 }
+		infantry          = { x = 0 y = 2 }
+		infantry          = { x = 1 y = 0 }
+		infantry          = { x = 1 y = 1 }
+		infantry          = { x = 1 y = 2 }
+		infantry          = { x = 2 y = 0 }
+		infantry          = { x = 2 y = 1 }
+		infantry          = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+	}}
+
+division_template = {
+
+
+	name = "Valstybės Sienos Apsaugos Skyrius"			# Border guard
+	division_names_group = LIT_INF_01
+
+	# Garrison / Border Guard 6W (minimal cost/equipment)
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		artillery_brigade = { x = 1 y = 0 }
-		artillery_brigade = { x = 1 y = 1 }
-		artillery_brigade = { x = 1 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }
-	}
-}
-
-division_template = {
-	name = "Valstybės Sienos Apsaugos Skyrius"			# Border guard
-	division_names_group = LIT_INF_01
-	# Note: Divisions were nowhere near full strength until mobilized
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-	}
-	support = {
-	}
-	priority = 0
-}
+		engineer = { x = 0 y = 0 }
+	}}
 
 units = {
 	######## LAND OOB ########

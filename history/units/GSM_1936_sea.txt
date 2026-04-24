@@ -1,0 +1,126 @@
+﻿division_template = {
+
+	name = "Juntuán"	 			
+	division_names_group = XSM_INF_01
+
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+division_template = {
+
+	name = "Juntuán Reformed" 				
+	division_names_group = XSM_INF_01
+
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+division_template = {
+
+	name = "Qibing Jun" 		
+	division_names_group = XSM_CAV_01
+
+	# Elite Motorized/Mechanized 18W
+	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
+	# Upgrade motorized -> mechanized when available
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer            = { x = 0 y = 0 }
+		anti_air            = { x = 0 y = 1 }
+		logistics_company   = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+	}}
+
+### OOB ###
+units = {
+
+	division = {
+		name = "Wuwei Jingbei" 
+		location = 5100 
+		division_template = "Juntuán Reformed"		
+		start_equipment_factor = 0.2
+
+	}
+	division = {
+		name = "Wuwei Jingbei" 
+		location = 5100 
+		division_template = "Juntuán"		
+		start_equipment_factor = 0.2
+
+	}
+	division = {
+		name = "Jiuquan Jingbei" 
+		location = 7971 
+		division_template = "Juntuán"		
+		start_equipment_factor = 0.2
+
+	}
+	division = {
+		name = "4th Cavalry Division" 
+		location = 1630 
+		division_template = "Qibing Jun"		
+		start_equipment_factor = 0.2
+
+	}
+	division = {
+		name = "5th Cavalry Division" 
+		location = 5100 
+		division_template = "Qibing Jun"		
+		start_equipment_factor = 0.2
+
+	}
+
+	
+}
+
+### STARTING PRODUCTION ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "GSM"
+		}
+		requested_factories = 1
+		progress = 0.78
+		efficiency = 100
+	}
+}

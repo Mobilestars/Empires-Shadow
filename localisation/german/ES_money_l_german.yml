@@ -1,0 +1,12 @@
+﻿l_german:
+ # Fallback-Keys, damit der Wert auch ohne scripted localisation angezeigt wird
+ ES_MONEY_TOPBAR_VALUE:0 "[?es_money|0]"
+ ES_MONEY_TOPBAR_TOOLTIP:0 "Staatskasse\nAktueller Bestand: [?es_money|0] Dollar\nMonatliches Wachstum: +[?es_monthly_income|0] Dollar\nMonatliche Ausgaben: -[?es_monthly_wages|0] Dollar\nMonatliche Nettoaenderung: [?es_monthly_net|+=0] Dollar\n\nAnspruchsberechtigte Bevoelkerung: [?es_total_pop|0]k\nFreie Manpower-Reserve: [?es_free_manpower_k|0]k\nSteuerpflichtige Zivilbevoelkerung: [?es_taxable_pop|0]k"
+
+ # ES-Money-Topbaranzeige - k/m-Notation wie bei Manpower
+ ES_MONEY_TOPBAR_VALUE_M:0 "[?es_money_m|1]M"
+ ES_MONEY_TOPBAR_VALUE_K:0 "[?es_money_k|1]k"
+ ES_MONEY_TOPBAR_VALUE_RAW:0 "[?es_money|0]"
+
+ # Tooltip-Inhalt (Key, der von ES_MONEY_TOPBAR_TOOLTIP defined_text zurueckgegeben wird)
+ ES_MONEY_TOPBAR_TOOLTIP_LOC:0 "Staatskasse\nAktueller Bestand: [?es_money|0] Dollar\nMonatliches Wachstum: +[?es_monthly_income|0] Dollar\nMonatliche Ausgaben: -[?es_monthly_wages|0] Dollar\nMonatliche Nettoaenderung: [?es_monthly_net|+=0] Dollar\n\nAnspruchsberechtigte Bevoelkerung: [?es_total_pop|0]k\nFreie Manpower-Reserve: [?es_free_manpower_k|0]k\nSteuerpflichtige Zivilbevoelkerung: [?es_taxable_pop|0]k\n\nSteuerpflichtige Zivilbevoelkerung = anspruchsberechtigte Kern- und Nichtkernbevoelkerung minus freie Manpower-Reserve minus Soldaten im Feld minus Soldaten in Ausbildung.\nDivisionsloehne haengen von der Template-Zusammensetzung ab (Panzer sind teurer).\nSoldaten in Ausbildung und im Feld erhalten staatliche Besoldung."

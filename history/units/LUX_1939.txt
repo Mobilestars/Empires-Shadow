@@ -1,0 +1,32 @@
+﻿start_equipment_factor = 0.1
+division_template = {
+
+	name = "Public Force"		
+	division_names_group = LUX_INF_01
+
+	# Garrison / Border Guard 6W (minimal cost/equipment)
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}}
+
+
+units = { }
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "LUX"
+		}
+		requested_factories = 1
+		progress = 0.44
+		efficiency = 100
+	}
+}

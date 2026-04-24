@@ -1,0 +1,597 @@
+﻿division_template = {
+
+
+
+	name = "Pěší divize"					# Infantry Division
+	division_names_group = CZE_INF_01
+
+	# Line Artillery Infantry ~30W (9 inf + 3 arty brigade)
+	# Needs: Fire Concentration sub-doctrine (effective ~27W)
+	regiments = {
+		infantry          = { x = 0 y = 0 }
+		infantry          = { x = 0 y = 1 }
+		infantry          = { x = 0 y = 2 }
+		infantry          = { x = 1 y = 0 }
+		infantry          = { x = 1 y = 1 }
+		infantry          = { x = 1 y = 2 }
+		infantry          = { x = 2 y = 0 }
+		infantry          = { x = 2 y = 1 }
+		infantry          = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+	}}
+
+division_template = {
+
+
+
+	name = "Horská divize"					# Mountain Division
+	division_names_group = CZE_MNT_01
+
+	# Special Forces: Mountaineers + Line Arty ~30W
+	# Needs: Special Forces Doctrine (AaT) + Fire Concentration sub-doctrine
+	regiments = {
+		mountaineers      = { x = 0 y = 0 }
+		mountaineers      = { x = 0 y = 1 }
+		mountaineers      = { x = 0 y = 2 }
+		mountaineers      = { x = 1 y = 0 }
+		mountaineers      = { x = 1 y = 1 }
+		mountaineers      = { x = 1 y = 2 }
+		mountaineers      = { x = 2 y = 0 }
+		mountaineers      = { x = 2 y = 1 }
+		mountaineers      = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+
+division_template = {
+
+
+
+	name = "Jezdecká brigáda"				# Cavalry Brigade -- precursor to Fast Divisions. Fast Divisions add 2nd regiment of 2x L tank, 2x mot 
+	division_names_group = CZE_CAV_01
+
+	# Elite Motorized/Mechanized 18W
+	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
+	# Upgrade motorized -> mechanized when available
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer            = { x = 0 y = 0 }
+		anti_air            = { x = 0 y = 1 }
+		logistics_company   = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+	}}
+
+division_template = {
+
+
+				
+	name = "Rychlá divize"	#Fast division -- these are in really bad shape in 1936. Orders are behind and they were force to take on tanks they didn't want due to politcal pressure. Large orders placed in 1936 to fill them
+	division_names_group = CZE_ARM_01
+
+	# Elite Motorized/Mechanized 18W
+	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
+	# Upgrade motorized -> mechanized when available
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer            = { x = 0 y = 0 }
+		anti_air            = { x = 0 y = 1 }
+		logistics_company   = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+	}}
+
+division_template = {
+
+
+
+   	name = "Finanční Stráž"  #Financial Guard -- garison formations before their merger with State Defense Guard. Precursor to some reservists units
+	division_names_group = CZE_GAR_01
+
+	# Garrison / Border Guard 6W (minimal cost/equipment)
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}}
+
+
+units = {
+	#### Československá Vojenská Jednotka #####
+	# directly subordinate
+	division = {
+		name = "1. jezdecká brigáda"
+		location = 11542  # Prague
+		division_template = "Jezdecká brigáda"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+	division = { # "4. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11542  # Prague
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+	division = { # "16. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 3569 # Brno
+		division_template = "Horská divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	# VIII Sbor
+	division = {
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+	division = { # "2. fast"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3569 # Brno
+		division_template = "Rychlá divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = {
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+	}
+	division = { # "15. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 9692  # Bratislava
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+	division = { # "3. fast"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9692  # Bratislava
+		division_template = "Rychlá divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.1
+		force_equipment_variants = {
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+	}
+	division = { # "4. fast"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9692  # Bratislava
+		division_template = "Rychlá divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.1
+		force_equipment_variants = {
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+	}
+	### I Armáda ###
+	division = { # "18. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 11401
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	# I Sbor
+	division = {
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+	division = { # "5. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3418
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	# II Sbor
+	division = {
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+	division = { # "17. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 9555
+		division_template = "Horská divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+
+	### II Armáda ###
+	division = {
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+	# IV Sbor
+	division = { # "7. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 9567
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+
+	### III Armády ###
+	# VII Sbor
+	division = {
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+	division = { # "11. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 3581
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+
+		name = "3. jezdecká brigáda"
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+
+	### IV Armády ###
+	division = {
+		name = "2. jezdecká brigáda"
+		location = 6418
+		division_template = "Jezdecká brigáda"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	# III Sbor
+	division = {
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+	# V Sbor
+	division = { # "6. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 11525
+		division_template = "Pěší divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+	# VI Sbor
+	division = {
+		name = "4. jezdecká brigáda"
+		location = 9539
+		division_template = "Jezdecká brigáda"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+}
+
+
+### Starting Production ###
+instant_effect = {
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}

@@ -133,20 +133,20 @@ guiTypes = {
 		iconType ={
 			name ="manpower_value_bg"
 			spriteType = "GFX_generic_box_96"
-			position = { x = 394 y = 5 }
+			position = { x = 417 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		iconType ={
 			name ="manpower_icon"
 			spriteType = "GFX_manpower_icon"
-			position = { x= 396 y = 3 }
+			position = { x= 419 y = 3 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextBoxType = {
 			name ="manpower"
-			position = { x= 427 y = 8 }
+			position = { x= 450 y = 8 }
 			font = "hoi_18mbs"
 			text = "9999"
 			format = center
@@ -158,20 +158,20 @@ guiTypes = {
 		iconType ={
 			name ="sability_value_bg"
 			spriteType = "GFX_generic_box_smallest"
-			position = { x = 248 y = 5 }
+			position = { x = 271 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType ={
 			name ="stability_icon"
 			spriteType = "GFX_stability_icon"
-			position = { x= 249 y = 5 }
+			position = { x= 272 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextBoxType = {
 			name ="stability"
-			position = { x= 255 y = 8 }
+			position = { x= 278 y = 8 }
 			font = "hoi_18mbs"
 			text = "100%"
 			format = right
@@ -183,20 +183,20 @@ guiTypes = {
 		iconType ={
 			name ="war_support_value_bg"
 			spriteType = "GFX_generic_box_smallest"
-			position = { x = 321 y = 5 }
+			position = { x = 344 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType ={
 			name ="war_support_icon"
 			spriteType = "GFX_war_support_icon"
-			position = { x= 322 y = 6 }
+			position = { x= 345 y = 6 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextBoxType = {
 			name ="war_support"
-			position = { x= 328 y = 8 }
+			position = { x= 351 y = 8 }
 			font = "hoi_18mbs"
 			text = "100%"
 			format = right
@@ -375,20 +375,20 @@ guiTypes = {
 		iconType ={
 			name ="industrial_capacity_bg" 
 			spriteType = "GFX_generic_box_smallest"
-			position = { x=493 y = 5 } 
+			position = { x=516 y = 5 } 
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType ={
 			name ="industrial_capacity_icon"
 			spriteType = "GFX_industrial_capacity_icon"
-			position = { x= 487 y = 3 } 
+			position = { x= 510 y = 3 } 
 			Orientation = "UPPER_LEFT"
 		}
         
 		instantTextBoxType = {
 			name ="industrial_capacity"
-			position = { x= 513 y = 4 } 
+			position = { x= 536 y = 4 } 
 			font = "hoi_18mbs"
 			text = "12/12/12"
 			format = center
@@ -400,7 +400,7 @@ guiTypes = {
 		iconType = {
 			name ="industrial_ratio_bar"
 			spriteType = "GFX_topbar_fuel_bar" 
-			position = { x= 516 y = 20 }
+			position = { x= 539 y = 20 }
 			frame = 50
 			alwaystransparent = yes
 		}
@@ -410,20 +410,20 @@ guiTypes = {
 		iconType ={
 			name ="convoy_text_bg"
 			spriteType = "GFX_generic_box_smallest"
-			position = { x=712 y=5 }
+			position = { x=735 y=5 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType ={
 			name ="convoys_icon"
 			spriteType = "GFX_topbar_convoys"
-			position = { x= 711 y = 9 }
+			position = { x= 734 y = 9 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType = {
 			name ="convoys_count"
-			position = { x= 737 y = 4 }
+			position = { x= 760 y = 4 }
 			font = "hoi_18mbs"
 			text = "0"
 			format = center
@@ -435,7 +435,7 @@ guiTypes = {
 		iconType = {
 			name ="convoys_ratio_bar"
 			spriteType = "GFX_topbar_fuel_bar"
-			position = { x= 735 y = 20 }
+			position = { x= 758 y = 20 }
 			frame = 50
 			alwaystransparent = yes
 		}
@@ -445,20 +445,20 @@ guiTypes = {
 		iconType ={
 			name ="fuel_value_bg"
 			spriteType = "GFX_generic_box_smallest"
-			position = { x=566 y=5 }
+			position = { x=589 y=5 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType = {
 			name ="fuel_icon"
 			spriteType = "GFX_fuel_state"
-			position = { x= 565 y = 6 }
+			position = { x= 588 y = 6 }
 			Orientation = "UPPER_LEFT"
 		}		
 		
 		instantTextBoxType = {
 			name ="fuel_value"
-			position = { x= 588 y = 4 }
+			position = { x= 611 y = 4 }
 			font = "hoi_18mbs"
 			text = "999d"
 			format = center
@@ -470,7 +470,7 @@ guiTypes = {
 		iconType = {
 			name ="fuel_ratio_bar"
 			spriteType = "GFX_topbar_fuel_bar"
-			position = { x= 589 y = 20 }
+			position = { x= 612 y = 20 }
 			frame = 50
 			alwaystransparent = yes
 		}
@@ -480,20 +480,20 @@ guiTypes = {
 		iconType ={
 			name ="supply_value_bg"
 			spriteType = "GFX_generic_box_smallest"
-			position = { x=639 y=5 }
+			position = { x=662 y=5 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType = {
 			name ="supply_icon"
 			spriteType = "GFX_equipment_icon"
-			position = { x= 640 y = 8 }
+			position = { x= 663 y = 8 }
 			Orientation = "UPPER_LEFT"
 		}		
 		
 		instantTextBoxType = {
 			name ="supply_value"
-			position = { x= 661 y = 4 }
+			position = { x= 684 y = 4 }
 			font = "hoi_18mbs"
 			text = "999d"
 			format = center
@@ -505,7 +505,7 @@ guiTypes = {
 		iconType = {
 			name ="supply_ratio_bar"
 			spriteType = "GFX_topbar_fuel_bar"
-			position = { x= 662 y = 20 }
+			position = { x= 685 y = 20 }
 			frame = 50
 			alwaystransparent = yes
 		}

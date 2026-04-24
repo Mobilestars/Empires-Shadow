@@ -1,0 +1,132 @@
+﻿division_template = {
+
+	name = "Morit Diviziin"			# Cavalry Division
+
+	division_names_group = MON_CAV_01
+
+	# Elite Motorized/Mechanized 18W
+	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
+	# Upgrade motorized -> mechanized when available
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer            = { x = 0 y = 0 }
+		anti_air            = { x = 0 y = 1 }
+		logistics_company   = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+	}}
+
+division_template = {
+
+	name = "Khalimagiin Khaadyn Kharuuluud"			# Kalmyk Royal Guards
+
+	division_names_group = MON_INF_01
+
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+
+units = {
+	
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3413
+		division_template = "Morit Diviziin"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9720
+		division_template = "Morit Diviziin"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 6516
+		division_template = "Morit Diviziin"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3487
+		division_template = "Morit Diviziin"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 618
+		division_template = "Morit Diviziin"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11724
+		division_template = "Khalimagiin Khaadyn Kharuuluud"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9753
+		division_template = "Khalimagiin Khaadyn Kharuuluud"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+}

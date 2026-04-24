@@ -1,0 +1,174 @@
+﻿division_template = {
+
+	name = "Infanterie Division"
+	division_names_group = AUS_INF_01
+
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+
+division_template = {
+
+	name = "Alpenjäger Division"
+	division_names_group = AUS_MNT_01
+
+	# Special Forces: Mountaineers + Line Arty ~30W
+	# Needs: Special Forces Doctrine (AaT) + Fire Concentration sub-doctrine
+	regiments = {
+		mountaineers      = { x = 0 y = 0 }
+		mountaineers      = { x = 0 y = 1 }
+		mountaineers      = { x = 0 y = 2 }
+		mountaineers      = { x = 1 y = 0 }
+		mountaineers      = { x = 1 y = 1 }
+		mountaineers      = { x = 1 y = 2 }
+		mountaineers      = { x = 2 y = 0 }
+		mountaineers      = { x = 2 y = 1 }
+		mountaineers      = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+
+division_template = {
+
+	name = "Schnelle Division"  		# Schnelle-Division (cavalry)
+	division_names_group = AUS_CAV_01
+
+	# Elite Motorized/Mechanized 18W
+	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
+	# Upgrade motorized -> mechanized when available
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer            = { x = 0 y = 0 }
+		anti_air            = { x = 0 y = 1 }
+		logistics_company   = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+	}}
+
+
+
+
+units = {
+	##### Österreichisches Bundesheer #####
+	# I Korps
+	division= {	#Cavalry schnelle
+		name = "Schnelle Division" 
+		location = 11666  # Vienna
+		division_template = "Schnelle Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+
+	division= {	# "1. Division"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3700  # Eisenstadt 
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "2. Division"			# Used to form 44. Infanterie-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 11666  # Vienna
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "3. Division"			# Used to form 44. Infanterie--division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9648 # Graz
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	# II Korps
+	division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 9665 # Linz
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "5. Division"			# Used to form 3. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 9648  # Graz
+		division_template = "Alpenjäger Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+}
+
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "AUS"
+		}
+		requested_factories = 1
+		progress = 0.54
+		efficiency = 100
+		industrial_manufacturer = mio:AUS_steyr_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "AUS"
+		}
+		requested_factories = 1
+		progress = 0.74
+		efficiency = 100
+	}
+}

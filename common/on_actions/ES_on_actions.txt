@@ -106,13 +106,129 @@ on_actions = {
 	}
 
 	# ── ES Money System: Initialise es_money for every country ───────────────
+	# Start capital is population-based using country-level eligible population.
+	# eligible_*_population is in people, so convert to thousands.
 	on_startup = {
 		effect = {
 			every_country = {
-				set_variable = { var = es_money value = 0 }
-				set_variable = { var = es_monthly_income value = 0 }
+				set_variable = { var = es_total_pop value = eligible_core_population }
+				add_to_variable = { var = es_total_pop value = eligible_non_core_population }
+				divide_variable = { var = es_total_pop value = 1000 }
+
+				# Tune this multiplier to scale starting treasury with population.
+				set_variable = { var = es_start_capital value = es_total_pop }
+				multiply_variable = { var = es_start_capital value = 1.0 }
+
+				set_variable = { var = es_money value = es_start_capital }
+
+				# Populate current monthly values immediately so a fresh game does not show 0/0 until the first monthly tick.
+				set_variable = { var = es_fielded_manpower_k value = 0 }
+				set_variable = { var = es_training_manpower_k value = 0 }
+				set_variable = { var = es_free_manpower_k value = manpower }
+				divide_variable = { var = es_free_manpower_k value = 1000 }
+
+				every_unit_leader = {
+					every_led_unit = {
+						if = { limit = { has_type = armored }
+							ROOT = { add_to_variable = { var = es_fielded_manpower_k value = 12 } }
+						}
+						else_if = { limit = { has_type = mechanized }
+							ROOT = { add_to_variable = { var = es_fielded_manpower_k value = 10 } }
+						}
+						else_if = { limit = { has_type = motorized }
+							ROOT = { add_to_variable = { var = es_fielded_manpower_k value = 9 } }
+						}
+						else_if = { limit = { OR = { has_type = marine has_type = mountaineer has_type = paratrooper } }
+							ROOT = { add_to_variable = { var = es_fielded_manpower_k value = 8 } }
+						}
+						else_if = { limit = { has_type = cavalry }
+							ROOT = { add_to_variable = { var = es_fielded_manpower_k value = 7 } }
+						}
+						else_if = { limit = { has_type = garrison }
+							ROOT = { add_to_variable = { var = es_fielded_manpower_k value = 5 } }
+						}
+						else = {
+							ROOT = { add_to_variable = { var = es_fielded_manpower_k value = 8 } }
+						}
+					}
+				}
+
+				every_training_unit = {
+					if = { limit = { has_type = armored }
+						ROOT = { add_to_variable = { var = es_training_manpower_k value = 10 } }
+					}
+					else_if = { limit = { has_type = mechanized }
+						ROOT = { add_to_variable = { var = es_training_manpower_k value = 8 } }
+					}
+					else_if = { limit = { has_type = motorized }
+						ROOT = { add_to_variable = { var = es_training_manpower_k value = 7 } }
+					}
+					else = {
+						ROOT = { add_to_variable = { var = es_training_manpower_k value = 8 } }
+					}
+				}
+
+				set_variable = { var = es_taxable_pop value = es_total_pop }
+				subtract_from_variable = { var = es_taxable_pop value = es_free_manpower_k }
+				subtract_from_variable = { var = es_taxable_pop value = es_fielded_manpower_k }
+				subtract_from_variable = { var = es_taxable_pop value = es_training_manpower_k }
+				if = {
+					limit = { check_variable = { es_taxable_pop < 0 } }
+					set_variable = { var = es_taxable_pop value = 0 }
+				}
+
+				set_variable = { var = es_monthly_income value = es_taxable_pop }
+				multiply_variable = { var = es_monthly_income value = 0.005 }
+
 				set_variable = { var = es_monthly_wages value = 0 }
-				set_variable = { var = es_monthly_net value = 0 }
+				every_unit_leader = {
+					every_led_unit = {
+						if = { limit = { has_type = armored }
+							ROOT = { add_to_variable = { var = es_monthly_wages value = 15 } }
+						}
+						else_if = { limit = { has_type = mechanized }
+							ROOT = { add_to_variable = { var = es_monthly_wages value = 10 } }
+						}
+						else_if = { limit = { has_type = motorized }
+							ROOT = { add_to_variable = { var = es_monthly_wages value = 6 } }
+						}
+						else_if = { limit = { OR = { has_type = marine has_type = mountaineer has_type = paratrooper } }
+							ROOT = { add_to_variable = { var = es_monthly_wages value = 5 } }
+						}
+						else_if = { limit = { has_type = cavalry }
+							ROOT = { add_to_variable = { var = es_monthly_wages value = 2 } }
+						}
+						else_if = { limit = { has_type = garrison }
+							ROOT = { add_to_variable = { var = es_monthly_wages value = 1 } }
+						}
+						else = {
+							ROOT = { add_to_variable = { var = es_monthly_wages value = 3 } }
+						}
+					}
+				}
+
+				every_training_unit = {
+					if = { limit = { has_type = armored }
+						ROOT = { add_to_variable = { var = es_monthly_wages value = 7 } }
+					}
+					else_if = { limit = { has_type = mechanized }
+						ROOT = { add_to_variable = { var = es_monthly_wages value = 5 } }
+					}
+					else_if = { limit = { has_type = motorized }
+						ROOT = { add_to_variable = { var = es_monthly_wages value = 3 } }
+					}
+					else = {
+						ROOT = { add_to_variable = { var = es_monthly_wages value = 2 } }
+					}
+				}
+
+				set_variable = { var = es_monthly_net value = es_monthly_income }
+				subtract_from_variable = { var = es_monthly_net value = es_monthly_wages }
+				set_variable = { var = es_money_k value = es_money }
+				divide_variable = { var = es_money_k value = 1000 }
+				set_variable = { var = es_money_m value = es_money }
+				divide_variable = { var = es_money_m value = 1000000 }
+				set_variable = { var = es_money_initialized value = 1 }
 			}
 		}
 	}
@@ -126,7 +242,10 @@ on_actions = {
 	}
 
 	# ── ES Money System: Monthly Tax Income & Division Wages ─────────────────
-	# Tax base  = real state population (state_population_k) MINUS free manpower pool.
+	# Tax base  = eligible core + eligible non-core population
+	#             MINUS free manpower pool
+	#             MINUS fielded soldiers
+	#             MINUS soldiers in training.
 	#   → Free manpower pool are conscripted reserves – they don't pay civilian taxes.
 	#   → Soldiers in training & in field pay no civilian tax but DO draw army wages.
 	# Rate: 0.005 Dollar per 1 000 taxable civilians per month.
@@ -134,26 +253,90 @@ on_actions = {
 	on_monthly = {
 		effect = {
 			every_country = {
-				# ── 1. Total population ──────────────────────────────────────
-				set_variable = { var = es_total_pop value = 0 }
-				every_owned_state = {
-					ROOT = { add_to_variable = { var = es_total_pop value = PREV.state_population_k } }
+				# Existing saves: initialize once if startup init was never run.
+				if = {
+					limit = {
+						NOT = { check_variable = { es_money_initialized >= 1 } }
+					}
+						set_variable = { var = es_total_pop value = eligible_core_population }
+						add_to_variable = { var = es_total_pop value = eligible_non_core_population }
+						divide_variable = { var = es_total_pop value = 1000 }
+
+					set_variable = { var = es_start_capital value = es_total_pop }
+					multiply_variable = { var = es_start_capital value = 1.0 }
+					set_variable = { var = es_money value = es_start_capital }
+					set_variable = { var = es_money_initialized value = 1 }
 				}
 
-				# ── 2. Taxable civilians = total_pop − free_manpower ─────────
-				# Both state_population_k and the manpower variable are in thousands.
+					# ── 1. Total population from country eligible population ─────
+					set_variable = { var = es_total_pop value = eligible_core_population }
+					add_to_variable = { var = es_total_pop value = eligible_non_core_population }
+					divide_variable = { var = es_total_pop value = 1000 }
+
+				# ── 2. Estimate soldiers not paying civilian taxes ───────────
+				# Values are manpower in thousands per division (k).
+				set_variable = { var = es_fielded_manpower_k value = 0 }
+				set_variable = { var = es_training_manpower_k value = 0 }
+					set_variable = { var = es_free_manpower_k value = manpower }
+					divide_variable = { var = es_free_manpower_k value = 1000 }
+
+				every_unit_leader = {
+					every_led_unit = {
+						if = { limit = { has_type = armored }
+							ROOT = { add_to_variable = { var = es_fielded_manpower_k value = 12 } }
+						}
+						else_if = { limit = { has_type = mechanized }
+							ROOT = { add_to_variable = { var = es_fielded_manpower_k value = 10 } }
+						}
+						else_if = { limit = { has_type = motorized }
+							ROOT = { add_to_variable = { var = es_fielded_manpower_k value = 9 } }
+						}
+						else_if = { limit = { OR = { has_type = marine has_type = mountaineer has_type = paratrooper } }
+							ROOT = { add_to_variable = { var = es_fielded_manpower_k value = 8 } }
+						}
+						else_if = { limit = { has_type = cavalry }
+							ROOT = { add_to_variable = { var = es_fielded_manpower_k value = 7 } }
+						}
+						else_if = { limit = { has_type = garrison }
+							ROOT = { add_to_variable = { var = es_fielded_manpower_k value = 5 } }
+						}
+						else = {
+							ROOT = { add_to_variable = { var = es_fielded_manpower_k value = 8 } }
+						}
+					}
+				}
+
+				every_training_unit = {
+					if = { limit = { has_type = armored }
+						ROOT = { add_to_variable = { var = es_training_manpower_k value = 10 } }
+					}
+					else_if = { limit = { has_type = mechanized }
+						ROOT = { add_to_variable = { var = es_training_manpower_k value = 8 } }
+					}
+					else_if = { limit = { has_type = motorized }
+						ROOT = { add_to_variable = { var = es_training_manpower_k value = 7 } }
+					}
+					else = {
+						ROOT = { add_to_variable = { var = es_training_manpower_k value = 8 } }
+					}
+				}
+
+				# ── 3. Taxable civilians = total_pop − non-taxable military ──
+					# All components are in thousands here.
 				set_variable = { var = es_taxable_pop value = es_total_pop }
-				subtract_from_variable = { var = es_taxable_pop value = manpower }
+					subtract_from_variable = { var = es_taxable_pop value = es_free_manpower_k }
+				subtract_from_variable = { var = es_taxable_pop value = es_fielded_manpower_k }
+				subtract_from_variable = { var = es_taxable_pop value = es_training_manpower_k }
 				if = {
 					limit = { check_variable = { es_taxable_pop < 0 } }
 					set_variable = { var = es_taxable_pop value = 0 }
 				}
 
-				# ── 3. Tax income ────────────────────────────────────────────
+				# ── 4. Tax income ────────────────────────────────────────────
 				set_variable = { var = es_monthly_income value = es_taxable_pop }
 				multiply_variable = { var = es_monthly_income value = 0.005 }
 
-				# ── 4. Division wages (deployed + training) ──────────────────
+				# ── 5. Division wages (deployed + training) ──────────────────
 				# Wage per division depends on template type, which reflects
 				# battalion composition (e.g. a template heavy with tanks costs more).
 				set_variable = { var = es_monthly_wages value = 0 }
@@ -201,7 +384,7 @@ on_actions = {
 					}
 				}
 
-				# ── 5. Apply net change ──────────────────────────────────────
+				# ── 6. Apply net change ──────────────────────────────────────
 				add_to_variable = { var = es_money value = es_monthly_income }
 				subtract_from_variable = { var = es_money value = es_monthly_wages }
 				if = {
@@ -211,6 +394,12 @@ on_actions = {
 				# Store net for tooltip display
 				set_variable = { var = es_monthly_net value = es_monthly_income }
 				subtract_from_variable = { var = es_monthly_net value = es_monthly_wages }
+
+				# Display variables for k/m topbar formatting
+				set_variable = { var = es_money_k value = es_money }
+				divide_variable = { var = es_money_k value = 1000 }
+				set_variable = { var = es_money_m value = es_money }
+				divide_variable = { var = es_money_m value = 1000000 }
 			}
 		}
 	}

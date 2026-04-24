@@ -1,10 +1,12 @@
 ﻿division_template = {
+
+
 	name = "Pesadijska Divizija"	# Infantry Division	
-	# Note: infantry divisions were all at low reserve levels even just prior to Axis 
-	#	invasion of 1941
 
 	division_names_group = YUG_INF_01
 
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -17,50 +19,93 @@
 		infantry = { x = 2 y = 2 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 } 
-		artillery = { x = 0 y = 1 }  
-	}
-}
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
 division_template = {
+
+
 	name = "Gorska Pesadija"		# Mountain Brigade
 
 	division_names_group = YUG_MTN_01
 
+	# Special Forces: Mountaineers + Line Arty ~30W
+	# Needs: Special Forces Doctrine (AaT) + Fire Concentration sub-doctrine
 	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
+		mountaineers      = { x = 0 y = 0 }
+		mountaineers      = { x = 0 y = 1 }
+		mountaineers      = { x = 0 y = 2 }
+		mountaineers      = { x = 1 y = 0 }
+		mountaineers      = { x = 1 y = 1 }
+		mountaineers      = { x = 1 y = 2 }
+		mountaineers      = { x = 2 y = 0 }
+		mountaineers      = { x = 2 y = 1 }
+		mountaineers      = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
 	}
-}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
 division_template = {
+
+
+	name = "Konjička Divizija" 			# Cavalry Division
+
 
 	division_names_group = YUG_CAV_01
 
-	name = "Konjička Divizija" 			# Cavalry Division
-	# Note: regiments within the brigade were battalion-sized units
+	# Elite Motorized/Mechanized 18W
+	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
+	# Upgrade motorized -> mechanized when available
 	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
 	}
-}
+	support = {
+		engineer            = { x = 0 y = 0 }
+		anti_air            = { x = 0 y = 1 }
+		logistics_company   = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+	}}
 division_template = {
+
+
 	name = "Tenkovski Bataljon" 			# Tank Battalion
-	# Note: 1st Armor Battalion had FT-17s in 1936, 
-	#	2nd battalion formed when R-35s added in 1940
 
 	division_names_group = YUG_ARM_01
 
+	# Space Marines ~20W (9 inf + 1 Medium SP-Artillery)
+	# Tank design: cap speed 4 km/h, Wet Ammo (Reliability), Howitzer (Soft Attack)
+	# SPG is ~20% cheaper than regular tanks
 	regiments = {
-		light_armor = { x = 0 y = 0 }
-		infantry = { x = 1 y = 0 }       # added infantry to not make it a death trap
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
+		infantry            = { x = 0 y = 0 }
+		infantry            = { x = 0 y = 1 }
+		infantry            = { x = 0 y = 2 }
+		infantry            = { x = 1 y = 0 }
+		infantry            = { x = 1 y = 1 }
+		infantry            = { x = 1 y = 2 }
+		infantry            = { x = 2 y = 0 }
+		infantry            = { x = 2 y = 1 }
+		infantry            = { x = 2 y = 2 }
+		medium_sp_artillery = { x = 3 y = 0 }
 	}
-}
+	support = {
+		engineer            = { x = 0 y = 0 }
+		maintenance_company = { x = 0 y = 1 }
+		anti_air            = { x = 0 y = 2 }
+	}}
 
 
 units = {

@@ -1,7 +1,11 @@
 ﻿division_template = {
+
+
 	name = "Infanterie Division"
 	division_names_group = AUS_INF_01
 
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -9,112 +13,155 @@
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   # Pioneer Bn
-		recon = { x = 0 y = 1}
-	}
-}
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
 
 division_template = {
+
+
 	name = "Alpenjäger Division"
 	division_names_group = AUS_MNT_01
 
+	# Special Forces: Mountaineers + Line Arty ~30W
+	# Needs: Special Forces Doctrine (AaT) + Fire Concentration sub-doctrine
 	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-
+		mountaineers      = { x = 0 y = 0 }
+		mountaineers      = { x = 0 y = 1 }
+		mountaineers      = { x = 0 y = 2 }
+		mountaineers      = { x = 1 y = 0 }
+		mountaineers      = { x = 1 y = 1 }
+		mountaineers      = { x = 1 y = 2 }
+		mountaineers      = { x = 2 y = 0 }
+		mountaineers      = { x = 2 y = 1 }
+		mountaineers      = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   # Pioneer Bn
-		recon = { x = 0 y = 1}
-	}
-}
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
 
 division_template = {
+
+
 	name = "Schnelle Division"  		# Schnelle-Division (cavalry)
 	division_names_group = AUS_CAV_01
 
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-	}
-	support = {
-		engineer = {x = 0 y = 0}
-		recon = { x = 0 y = 1}
-	}
-}
-
-division_template = {
-	name = "Gyalogdandár"				# Infantry Brigade
-
-	division_names_group = HUN_INF_02
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		artillery_brigade = { x = 2 y = 0 }
-		anti_tank_brigade = { x = 2 y = 1 }
-	}
-	support = {
-		recon = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		engineer = { x = 0 y = 2 }
-		logistics_company = { x = 0 y = 3 }
-		signal_company = { x = 0 y = 4 }
-	}
-}
-
-division_template = {
-	name = "Huszár Dandár"			# Cavalry Brigade
-
-	division_names_group = HUN_CAV_01
-
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 0 y = 3 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-	}
-	support = {
-		light_tank_recon = { x = 0 y = 0 }
-		signal_company = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-		anti_air = { x = 0 y = 3 }
-	}
-}
-
-division_template = {
-	name = "Motorizált Dandár"			# Motorized Brigade
-
-	division_names_group = HUN_MOT_01
-
+	# Elite Motorized/Mechanized 18W
+	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
+	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
-		light_armor = { x = 2 y = 0 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
 	}
 	support = {
-		mot_recon = { x = 0 y = 0 }
-		anti_tank = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-		signal_company = { x = 0 y = 3 }
-		maintenance_company = { x = 0 y = 4 }
+		engineer            = { x = 0 y = 0 }
+		anti_air            = { x = 0 y = 1 }
+		logistics_company   = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+	}}
+
+division_template = {
+
+
+	name = "Gyalogdandár"				# Infantry Brigade
+
+	division_names_group = HUN_INF_02
+
+	# Line Artillery Infantry ~30W (9 inf + 3 arty brigade)
+	# Needs: Fire Concentration sub-doctrine (effective ~27W)
+	regiments = {
+		infantry          = { x = 0 y = 0 }
+		infantry          = { x = 0 y = 1 }
+		infantry          = { x = 0 y = 2 }
+		infantry          = { x = 1 y = 0 }
+		infantry          = { x = 1 y = 1 }
+		infantry          = { x = 1 y = 2 }
+		infantry          = { x = 2 y = 0 }
+		infantry          = { x = 2 y = 1 }
+		infantry          = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
 	}
-}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+	}}
+
+division_template = {
+
+
+	name = "Huszár Dandár"			# Cavalry Brigade
+
+	division_names_group = HUN_CAV_01
+
+	# Elite Motorized/Mechanized 18W
+	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
+	# Upgrade motorized -> mechanized when available
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer            = { x = 0 y = 0 }
+		anti_air            = { x = 0 y = 1 }
+		logistics_company   = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+	}}
+
+division_template = {
+
+
+	name = "Motorizált Dandár"			# Motorized Brigade
+
+	division_names_group = HUN_MOT_01
+
+	# Elite Motorized/Mechanized 18W
+	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
+	# Upgrade motorized -> mechanized when available
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer            = { x = 0 y = 0 }
+		anti_air            = { x = 0 y = 1 }
+		logistics_company   = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+	}}
 
 
 units = {

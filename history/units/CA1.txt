@@ -1,0 +1,47 @@
+﻿division_template = {
+
+	name = "Azad Hind Infantry Corps"
+	# Space Marines ~20W (9 inf + 1 Medium SP-Artillery)
+	# Tank design: cap speed 4 km/h, Wet Ammo (Reliability), Howitzer (Soft Attack)
+	# SPG is ~20% cheaper than regular tanks
+	regiments = {
+		infantry            = { x = 0 y = 0 }
+		infantry            = { x = 0 y = 1 }
+		infantry            = { x = 0 y = 2 }
+		infantry            = { x = 1 y = 0 }
+		infantry            = { x = 1 y = 1 }
+		infantry            = { x = 1 y = 2 }
+		infantry            = { x = 2 y = 0 }
+		infantry            = { x = 2 y = 1 }
+		infantry            = { x = 2 y = 2 }
+		medium_sp_artillery = { x = 3 y = 0 }
+	}
+	support = {
+		engineer            = { x = 0 y = 0 }
+		maintenance_company = { x = 0 y = 1 }
+		anti_air            = { x = 0 y = 2 }
+	}}
+
+units = {
+
+	division = {
+		name = "1 Azad Hind Fauj"
+		location = 11260
+		division_template = "Azad Hind Infantry Corps"
+		bonus = 1
+	}
+	division = {
+		name = "2 Azad Hind Fauj"
+		location = 11260
+		division_template = "Azad Hind Infantry Corps"
+		bonus = 1
+	}
+	division = {
+		name = "3 Azad Hind Fauj"
+		location = 11260
+		division_template = "Azad Hind Infantry Corps"
+		bonus = 1
+	}
+}
+
+#assign_all_forces_to = "Erwin Rommel"

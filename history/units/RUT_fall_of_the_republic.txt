@@ -1,0 +1,45 @@
+﻿division_template = {
+
+   	name = "Karpathian Sič"
+	# Standard Infantry 18W (9 inf)
+	# No special doctrine required.
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer  = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air  = { x = 0 y = 2 }
+	}}
+
+
+#Conflicting information on how strong they actually were in the field. For gameplay considerations we’re going under the very high estimation of 15,000 with 14,000 and only ~2,000 supplied to fight upon OOB load.
+units = {
+		division = {
+		name = "Karpathian Sič M"
+		location = 3548 # Mukachevo 
+		division_template = "Karpathian Sič"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CZE" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+}
+
+units = {
+		division = {
+		name = "Karpathian Sič U"
+		location = 11691 # Uzhhorod
+		division_template = "Karpathian Sič"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CZE" } }
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.3
+	}
+}
