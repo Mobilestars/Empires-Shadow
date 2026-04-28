@@ -1,4 +1,4 @@
-﻿ l_english:
+﻿l_english:
  # WIRTSCHAFT (Economy)
  SWI_bankenplatz:0 "Banking Hub Switzerland"
  SWI_bankenplatz_desc:0 "Switzerland has emerged as one of Europe's most important financial centers. Our neutral banks enjoy the trust of all nations — friend and foe alike. Let us harness this unique position to further strengthen our economy."
@@ -128,3 +128,7 @@
  SWI_reduit_idea_desc:0 "The Réduit concept turns every meter of Swiss soil into a defensive position."
  SWI_festung_schweiz_idea:0 "Fortress Switzerland"
  SWI_festung_schweiz_idea_desc:0 "Switzerland has become an impregnable bulwark. Defence is our supreme strength."
+
+ SWI_plan_reduit:0 "Plan Réduit"
+ SWI_plan_reduit_desc:0 "The Swiss Army will retreat into the mountains and form a last line of defense. Unlocks the recruitment of up to 24 elite Réduit divisions."
+ plan_reduit_unlock_tt:0 "Allows recruitment of up to 24 Réduit divisions. All other templates remain locked."

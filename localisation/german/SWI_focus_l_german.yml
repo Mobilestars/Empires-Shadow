@@ -1,4 +1,4 @@
-﻿ l_german:
+﻿l_german:
  # WIRTSCHAFT
  SWI_bankenplatz:0 "Bankenplatz Schweiz"
  SWI_bankenplatz_desc:0 "Die Schweiz hat sich als eines der bedeutendsten Finanzzentren Europas etabliert. Unsere neutralen Banken genießen das Vertrauen aller Nationen – Freund wie Feind. Nutzen wir diese einzigartige Stellung, um unsere Wirtschaft weiter zu stärken."
@@ -128,3 +128,8 @@
  SWI_reduit_idea_desc:0 "Das Réduit-Konzept macht jeden Meter Schweizer Boden zur Verteidigungsposition."
  SWI_festung_schweiz_idea:0 "Festung Schweiz"
  SWI_festung_schweiz_idea_desc:0 "Die Schweiz ist zu einem uneinnehmlichen Bollwerk geworden. Verteidigung ist unsere Stärke."
+
+ # PLAN RÉDUIT
+ SWI_plan_reduit:0 "Plan Réduit"
+ SWI_plan_reduit_desc:0 "Die Schweizer Armee zieht sich ins Gebirge zurück und bildet eine letzte Verteidigungslinie. Ermöglicht die Rekrutierung von bis zu 24 Elite-\"Réduit\"-Divisionen."
+ plan_reduit_unlock_tt:0 "Erlaubt die Rekrutierung von bis zu 24 Réduit-Divisionen. Alle anderen Templates bleiben gesperrt."

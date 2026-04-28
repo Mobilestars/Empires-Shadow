@@ -572,28 +572,38 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SWI_reduit
-		icon = GFX_focus_generic_fortify_the_borders
-		cost = 10
-		prerequisite = { focus = SWI_alpenbefestigungen }
-		x = 0
-		y = 1
-		relative_position_id = SWI_alpenbefestigungen
+	       focus = {
+		       id = SWI_plan_reduit
+		       icon = GFX_focus_generic_fortify_the_borders
+		       cost = 10
+		       prerequisite = { focus = SWI_alpenbefestigungen }
+		       x = 0
+		       y = 1
+		       relative_position_id = SWI_alpenbefestigungen
 
-		completion_reward = {
-			add_building_construction = {
-				type = bunker
-				level = 5
-				instant_build = yes
-				province = {
-					all_provinces = yes
-					limit_to_border = yes
-				}
-			}
-			add_ideas = SWI_reduit_idea
-		}
-	}
+		       available = {
+			       has_war_support > 0.5
+			       global_tension > 0.2
+		       }
+		       completion_reward = {
+			       add_building_construction = {
+				       type = bunker
+				       level = 5
+				       instant_build = yes
+				       province = {
+					       all_provinces = yes
+					       limit_to_border = yes
+				       }
+			       }
+			       add_ideas = SWI_reduit_idea
+			       custom_effect_tooltip = plan_reduit_unlock_tt
+			       custom_effect = {
+				       on_national_focus = {
+					       id = SWI_plan_reduit
+				       }
+			       }
+		       }
+	       }
 
 	focus = {
 		id = SWI_festung_schweiz

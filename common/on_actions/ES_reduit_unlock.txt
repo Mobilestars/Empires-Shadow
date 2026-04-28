@@ -1,0 +1,35 @@
+on_national_focus = {
+    id = SWI_reduit
+    effect = {
+        set_division_template_limit = {
+            country = SWI
+            template = "Réduit"
+            value = 24
+        }
+        set_division_template_limit = {
+            country = SWI
+            template = "Infanterie-Division"
+            value = 0
+        }
+        set_division_template_limit = {
+            country = SWI
+            template = "Gebirgs-Division"
+            value = 0
+        }
+        set_division_template_limit = {
+            country = SWI
+            template = "Gebirgsbrigade"
+            value = 0
+        }
+        set_division_template_limit = {
+            country = SWI
+            template = "Grenzbrigade"
+            value = 0
+        }
+        set_division_template_limit = {
+            country = SWI
+            template = "Leichte-Brigade"
+            value = 0
+        }
+    }
+}
