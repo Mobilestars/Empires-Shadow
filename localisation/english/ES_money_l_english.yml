@@ -1,12 +1,12 @@
 ﻿l_english:
  # Fallback keys used directly by GUI if scripted localisation does not resolve
- ES_MONEY_TOPBAR_VALUE:0 "[?es_money|0]"
- ES_MONEY_TOPBAR_TOOLTIP:0 "Treasury\nCurrent funds: [?es_money|0] Dollar\nMonthly growth: +[?es_monthly_income|0] Dollar\nMonthly expenses: -[?es_monthly_wages|0] Dollar\nNet monthly change: [?es_monthly_net|+=0] Dollar\n\nEligible population: [?es_total_pop|0]k\nFree manpower pool: [?es_free_manpower_k|0]k\nTaxable civilians: [?es_taxable_pop|0]k"
+ ES_MONEY_TOPBAR_VALUE:0 "[?ROOT.money|0]"
+ ES_MONEY_TOPBAR_TOOLTIP:0 "Treasury\nCurrent funds: [?ROOT.money|0] Dollar\nMonthly growth: +[?ROOT.monthly_income|0] Dollar\nMonthly expenses: -[?ROOT.monthly_wages|0] Dollar\nMonthly construction costs: -[?ROOT.es_expense_build_total|0] Dollar\nNet monthly change: [?ROOT.monthly_net|+=0] Dollar\n\nIncome sources:\n Taxes: +[?ROOT.es_income_taxes|0]\n Civilian factories: +[?ROOT.es_income_civ_factories|0]\n\nExpense sources:\n Division wages: -[?ROOT.es_expense_divisions|0]\n Military factory upkeep: -[?ROOT.es_expense_military_factories|0]\n Dockyard upkeep: -[?ROOT.es_expense_dockyards|0]\n Building military factories: -[?ROOT.es_expense_build_military_factories|0]\n Building dockyards: -[?ROOT.es_expense_build_dockyards|0]"
 
  # ES Money topbar display - k/m notation like manpower
- ES_MONEY_TOPBAR_VALUE_M:0 "[?es_money_m|1]M"
- ES_MONEY_TOPBAR_VALUE_K:0 "[?es_money_k|1]k"
- ES_MONEY_TOPBAR_VALUE_RAW:0 "[?es_money|0]"
+ ES_MONEY_TOPBAR_VALUE_M:0 "[?ROOT.money_m|1]M"
+ ES_MONEY_TOPBAR_VALUE_K:0 "[?ROOT.money_k|1]k"
+ ES_MONEY_TOPBAR_VALUE_RAW:0 "[?ROOT.money|0]"
 
  # Tooltip content (key returned by ES_MONEY_TOPBAR_TOOLTIP defined_text)
- ES_MONEY_TOPBAR_TOOLTIP_LOC:0 "Treasury\nCurrent funds: [?es_money|0] Dollar\nMonthly growth: +[?es_monthly_income|0] Dollar\nMonthly expenses: -[?es_monthly_wages|0] Dollar\nNet monthly change: [?es_monthly_net|+=0] Dollar\n\nEligible population: [?es_total_pop|0]k\nFree manpower pool: [?es_free_manpower_k|0]k\nTaxable civilians: [?es_taxable_pop|0]k\n\nTaxable civilians = eligible core and non-core population minus free manpower pool minus fielded soldiers minus soldiers in training.\nDivision wages depend on template composition (armoured cost more).\nSoldiers in training and field are paid wages by the state."
+ ES_MONEY_TOPBAR_TOOLTIP_LOC:0 "Treasury\nCurrent funds: [?ROOT.money|0] Dollar\nMonthly growth: +[?ROOT.monthly_income|0] Dollar\nMonthly expenses: -[?ROOT.monthly_wages|0] Dollar\nMonthly construction costs: -[?ROOT.es_expense_build_total|0] Dollar\nNet monthly change: [?ROOT.monthly_net|+=0] Dollar\n\nIncome sources:\n Taxes: +[?ROOT.es_income_taxes|0]\n Civilian factories: +[?ROOT.es_income_civ_factories|0]\n\nExpense sources:\n Division wages: -[?ROOT.es_expense_divisions|0]\n Military factory upkeep: -[?ROOT.es_expense_military_factories|0]\n Dockyard upkeep: -[?ROOT.es_expense_dockyards|0]\n Building military factories: -[?ROOT.es_expense_build_military_factories|0]\n Building dockyards: -[?ROOT.es_expense_build_dockyards|0]\n\nTaxable civilians = owned core and non-core population minus fielded soldiers minus soldiers in training.\nIf direct state population cannot be read by script, the system falls back to current manpower plus troops already in service.\nBuilding costs are charged when construction is completed (monthly check)."

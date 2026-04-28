@@ -1889,3 +1889,4 @@ add_to_faction = GER
 add_to_faction = SOV
 add_to_faction = ITA
 add_to_faction = AUS
+add_to_faction = BUL

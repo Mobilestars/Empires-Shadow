@@ -1,0 +1,15 @@
+l_english:
+ # Construction tab hover labels
+ STAT_COMMON_BUILD_COST_IC_T:0 "§TConstruction cost (IC):§! §YMoney cost = IC x 0.02§!\n"
+ STAT_COMMON_BUILD_COST_IC_T_CONVERTING:0 "§TConversion cost (IC):§! §YMoney cost = IC x 0.02§!\n"
+
+ # Building hover descriptions with base money costs
+ industrial_complex_desc:0 "This building provides the state with industry for production of civilian goods or construction of new buildings. Can be converted to military industry if needed.\n\nBase construction money cost: §Y200§!\nConversion money cost (to civilian factory): §Y200§!"
+ arms_factory_desc:0 "This building provides the state with industry for production of new military equipment. Can be converted to civilian industry if needed.\n\nBase construction money cost: §Y150§!\nConversion money cost (to military factory): §Y150§!"
+ dockyard_desc:0 "This building provides the state with industry for building new ships.\n\nBase construction money cost: §Y130§!"
+ infrastructure_desc:1 "This building provides the state with improvement of infrastructure. It increases your supply power in strategic regions and increases your divisions' speed, as well as increasing your raw resource extraction.\n\nBase construction money cost: §Y120§!"
+ air_base_desc:0 "This building provides the state with deployment for your air forces.\n\nBase construction money cost: §Y25§!"
+ anti_air_building_desc:0 "This building provides the state with protection from enemy bombers and ability to fire at attacking aircraft.\n\nBase construction money cost: §Y50§!"
+ synthetic_refinery_desc:0 "This building provides the state with\n\nBase construction money cost: §Y290§!"
+ fuel_silo_desc:0 "This building provides your nation with more room for stockpiling §HFuel§!.\n\nBase construction money cost: §Y100§!"
+ radar_station_desc:3 "Radar allows you to gain intel on enemy troops in nearby states.\nA higher radar level in a state increases the effective range of the radar.\nRadar also provides the state with better detection of enemy air forces, giving your planes a better chance to engage them.\nIn addition radar increases the detection of enemy fleets at sea.\n\nBase construction money cost: §Y70§!"

@@ -1,0 +1,4 @@
+# Bulgaria - Stahlpakt Integration
+# Add Bulgaria to the Stahlpakt at game start
+
+add_to_faction = GER

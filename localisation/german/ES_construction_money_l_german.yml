@@ -1,0 +1,15 @@
+l_german:
+ # Beschriftungen im Bau-Tooltip
+ STAT_COMMON_BUILD_COST_IC_T:0 "§TBaukosten (IK):§! §YGeldkosten = IK x 0,02§!\n"
+ STAT_COMMON_BUILD_COST_IC_T_CONVERTING:0 "§TUmbaukosten (IK):§! §YGeldkosten = IK x 0,02§!\n"
+
+ # Gebaeude-Tooltiptexte mit Basis-Geldkosten
+ industrial_complex_desc:0 "Dieses Gebaeude ermoeglicht der Region die Produktion von Zivilguetern oder den Bau neuer Gebaeude. Kann bei Bedarf in eine Militaerfabrik umgewandelt werden.\n\nBasis-Geldkosten fuer Bau: §Y200§!\nUmbau-Geldkosten (zu Zivilfabrik): §Y200§!"
+ arms_factory_desc:0 "Dieses Gebaeude ermoeglicht der Region die Produktion neuer militaerischer Ausruestung. Kann bei Bedarf in eine Zivilfabrik umgewandelt werden.\n\nBasis-Geldkosten fuer Bau: §Y150§!\nUmbau-Geldkosten (zu Militaerfabrik): §Y150§!"
+ dockyard_desc:0 "Dieses Gebaeude liefert dem Staat Industrie zum Bau neuer Schiffe.\n\nBasis-Geldkosten fuer Bau: §Y130§!"
+ infrastructure_desc:0 "Mit diesem Gebaeude wird die staatliche Infrastruktur verbessert. Es erhoeht Ihre Nachschubstaerke in strategischen Regionen, die Geschwindigkeit Ihrer Divisionen sowie Ihre Rohstoffgewinnung.\n\nBasis-Geldkosten fuer Bau: §Y120§!"
+ air_base_desc:0 "Dieses Gebaeude ermoeglicht den Einsatz von Luftstreitkraeften in dieser Region.\n\nBasis-Geldkosten fuer Bau: §Y25§!"
+ anti_air_building_desc:0 "Dieses Gebaeude bietet dem Staat Schutz vor feindlichen Bombern und die Moeglichkeit, das Feuer auf angreifende Flugzeuge zu eroeffnen.\n\nBasis-Geldkosten fuer Bau: §Y50§!"
+ synthetic_refinery_desc:0 "Dieses Gebaeude produziert\n\nBasis-Geldkosten fuer Bau: §Y290§!"
+ fuel_silo_desc:0 "Dieses Gebaeude bietet Ihrer Nation mehr Platz, um §HTreibstoff§! zu lagern.\n\nBasis-Geldkosten fuer Bau: §Y100§!"
+ radar_station_desc:0 "Mit Hilfe von Radar koennen Sie Informationen ueber feindliche Truppen in Staaten in der Naehe sammeln.\nJe hoeher die Radarstufe in einem Staat, desto hoeher die effektive Reichweite des Radars.\nRadar ermoeglicht dem Staat zudem eine bessere Erkennung feindlicher Lufteinheiten, wodurch Ihre Flugzeuge eine hoehere Chance haben, sie anzugreifen.\nRadar verbessert auch die Ortung von feindlichen Flotten auf See.\n\nBasis-Geldkosten fuer Bau: §Y70§!"

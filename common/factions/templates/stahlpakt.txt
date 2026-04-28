@@ -8,4 +8,6 @@ faction_template_stahlpakt = {
 	default_rules = {
 		joining_rule_stahlpakt
 	}
+    # Optionally, add explicit members if required by mod structure
+    # members = { GER SOV ITA AUS BUL }
 }

@@ -9,22 +9,21 @@ state= {
 	state_category = town
 
 	history= {
-		owner = GRE
-		controller = GRE
-		add_core_of = GRE
-		add_core_of = TUR
-		victory_points = {
-			11842 5
-		}
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			849 = {
-				naval_base = 3
-				coastal_bunker = 2
-			}
-		}
-	}
+	       owner = BUL
+	       controller = BUL
+	       add_core_of = BUL
+	       victory_points = {
+		       11842 5
+	       }
+	       buildings = {
+		       infrastructure = 2
+		       industrial_complex = 1
+		       849 = {
+			       naval_base = 3
+			       coastal_bunker = 2
+		       }
+	       }
+	   }
 	provinces=
 	{
 849 922 3879 3893 6895 11842 	}
