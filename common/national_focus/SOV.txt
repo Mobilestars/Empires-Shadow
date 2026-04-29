@@ -1,0 +1,49 @@
+focus_tree = {
+	id = SOV_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+
+	# 1. Ukraine integrieren
+	focus = {
+		id = SOV_integrate_ukraine
+		icon = GFX_goal_generic_political_reform
+		x = 0
+		y = 0
+		cost = 10
+		desc = "[ROOT.GetName] will den kommunistischen Einfluss in der Ukraine stärken."
+		completion_reward = {
+			UKR = {
+				add_timed_idea = {
+					idea = communist_influence
+					days = 180
+				}
+			}
+		}
+	}
+
+	# 2. Ukraine eingliedern (nur wenn Kommunisten an der Macht)
+	focus = {
+		id = SOV_annex_ukraine
+		icon = GFX_goal_generic_territory_or_war
+		x = 1
+		y = 0
+		cost = 10
+		prerequisite = { focus = SOV_integrate_ukraine }
+		desc = "Die Ukraine kann nun eingegliedert werden, da die Kommunisten an der Macht sind."
+		available = {
+			UKR = { has_government = communism }
+		}
+		completion_reward = {
+			SOV = {
+				add_decision = SOV_ukraine_integration_decision
+			}
+		}
+	}
+
+	# Weitere Fokusse werden analog ergänzt...
+}

@@ -1,0 +1,20 @@
+country_event = {
+	id = SOV.1001
+	title = "SOV_ukraine_integration_title"
+	desc = "SOV_ukraine_integration_desc"
+	picture = GFX_report_event_generic_political
+
+	option = {
+		name = "SOV_ukraine_integration_alliance"
+		add_to_faction = UKR
+	}
+	option = {
+		name = "SOV_ukraine_integration_puppet"
+		UKR = { set_puppet = SOV }
+	}
+	option = {
+		name = "SOV_ukraine_integration_annex"
+		annex_country = UKR
+		add_core_of = UKR
+	}
+}

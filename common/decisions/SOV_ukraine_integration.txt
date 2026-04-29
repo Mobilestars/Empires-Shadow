@@ -1,0 +1,32 @@
+decisions = {
+	SOV_ukraine_integration_decision = {
+		icon = GFX_goal_generic_political_reform
+		allowed = {
+			original_tag = SOV
+			UKR = { has_government = communism }
+		}
+		available = {
+			NOT = { is_in_faction_with = GER }
+		}
+		visible = yes
+		cost = 50
+		complete_effect = {
+			custom_effect_tooltip = SOV_ukraine_integration_decision_tt
+			add_decision = SOV_ukraine_integration_choice
+		}
+	}
+
+	SOV_ukraine_integration_choice = {
+		icon = GFX_goal_generic_political_reform
+		visible = no
+		allowed = { always = yes }
+		available = { always = yes }
+		cost = 0
+		complete_effect = {
+			custom_effect_tooltip = SOV_ukraine_integration_choice_tt
+			# Hier werden die Optionen angeboten: Bündnis, Puppet, Eingliedern
+			# Diese werden als Events umgesetzt
+			country_event = { id = SOV.1001 }
+		}
+	}
+}
