@@ -1,10 +1,6 @@
 ﻿division_template = {
-
-	name = "Infantry Division"			# Represents both Philippines divisions and U.S. Division as expeditionary force
+	name = "Infantry Division"
 	division_names_group = PHI_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -21,21 +17,14 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
-
 units = {
-	######## LAND OOB ########
-	##### Philippine High Command #####
-	division = { # "1st Philippines Division"
+	division = {
 		name = "Philippine Scouts Division" 
 		location = 10265
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.1
 	}
-
-	######## No Naval OOB ########
 }
-
 instant_effect = {
 	if = {
 		limit = { has_dlc = "No Compromise, No Surrender" }
@@ -48,7 +37,6 @@ instant_effect = {
 				progress = 0.40
 				efficiency = 100
 			}
-
 			add_equipment_production = {
 				equipment = {
 					type = convoy_1

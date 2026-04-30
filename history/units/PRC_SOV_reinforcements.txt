@@ -1,8 +1,5 @@
 ﻿division_template = {
-
-	name = "Erjinzhi Juntuán"			# Binary Infantry Corps
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
+	name = "Erjinzhi Juntuán"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -19,9 +16,7 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 units = {
-
 	division = {
 		name = "1 Su jun Zhiyuanjun"
 		location = 10629

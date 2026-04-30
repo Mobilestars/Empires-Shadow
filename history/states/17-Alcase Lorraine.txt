@@ -1,14 +1,11 @@
 state={
 	id=17
-	name="STATE_17" # Lorraine
+	name="STATE_17"
 	manpower = 1517500
-	
 	state_category = city
-	
 	resources={
-		steel=48 # was: 28
+		steel=48
 	}
-
 	history={
 		owner = GER
 		controller = GER
@@ -25,10 +22,8 @@ state={
 		}
 		add_core_of = GER
 	}
-
 	provinces={
 		521 698 3646 3666 6698 9642 9658 11488 11516 11642 
 	}
-
 	local_supplies=0.0 
 }

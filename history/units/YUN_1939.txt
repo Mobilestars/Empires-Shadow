@@ -1,11 +1,7 @@
 ﻿start_equipment_factor = 0.2
 division_template = {
-
-	name = "Binary Infantry"		# Represents: two-division infantry corps (generally poorly-equipped militias),
-	division_names_group = YUN_INF_01								#	and local militia groups.
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
+	name = "Binary Infantry"
+	division_names_group = YUN_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -23,12 +19,8 @@ division_template = {
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Triangular Infantry"	# Represents three-division infantry corps (generally poorly-equipped militias)
+	name = "Triangular Infantry"
 	division_names_group = YUN_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -45,22 +37,21 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 units = {
 	division = {
 		name = "Kunming Jingbei"
 		location = 12789
-		division_template = "Binary Infantry"		# Provincial militia unit (poor equipment and training)
+		division_template = "Binary Infantry"
 	}
 	division = {
 		name = "Yunnan Baoan Ke"
 		location = 10346
-		division_template = "Binary Infantry"		# Provincial militia unit (poor equipment and training)
+		division_template = "Binary Infantry"
 	}
 	division = {
 		name = "Dali Baoan Ke"
 		location = 10346
-		division_template = "Binary Infantry"		# Provincial militia unit (poor equipment and training)
+		division_template = "Binary Infantry"
 	}
 }
 instant_effect = {

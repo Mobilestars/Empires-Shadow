@@ -1,11 +1,6 @@
 ﻿division_template = {
-
-	name = "Firqat Mushaa"			# Infantry Division
-
+	name = "Firqat Mushaa"
 	division_names_group = IRQ_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -22,9 +17,6 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-#division_template = {
-	# Special Forces: Mountaineers + Line Arty ~30W
-	# Needs: Special Forces Doctrine (AaT) + Fire Concentration sub-doctrine
 	regiments = {
 		mountaineers      = { x = 0 y = 0 }
 		mountaineers      = { x = 0 y = 1 }
@@ -45,14 +37,8 @@
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Silah Alfursan"			# Cavalry Division
-
+	name = "Silah Alfursan"
 	division_names_group = IRQ_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -70,12 +56,9 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 units = {
-	##### Royal Iraqi Army #####
 	division = {
-		#name = "1 Alfurqat"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
@@ -83,11 +66,9 @@ units = {
 		division_template = "Firqat Mushaa"	
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "2 Alfurqat"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -95,10 +76,9 @@ units = {
 		division_template = "Firqat Mushaa"	
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
@@ -108,8 +88,6 @@ units = {
 		start_equipment_factor = 0.5
 	}
 }
-
-
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

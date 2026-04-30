@@ -1,10 +1,6 @@
 ﻿division_template = {
-
-	name = "Juntuán"				# Represents: German-trained divisions (better equipment than rest),
+	name = "Juntuán"
 	division_names_group = CHI_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -22,12 +18,8 @@
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Sanjiao Jun"	# Represents three-division infantry corps (generally poorly-equipped militias)
+	name = "Sanjiao Jun"
 	division_names_group = CHI_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -45,13 +37,8 @@ division_template = {
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Motuo Hua Bubing Jun"		# Represents: 5th Corps/200th Division, which was a well-equipped & experienced (semi-)motorized/armored unit 
+	name = "Motuo Hua Bubing Jun"
 	division_names_group = CHI_MOT_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -70,13 +57,8 @@ division_template = {
 		maintenance_company = { x = 0 y = 3 }
 	}}
 division_template = {
-
-	name = "Qibing Jun"				# Represents (two-division) cavalry corps (generally poorly-equipped)
+	name = "Qibing Jun"
 	division_names_group = CHI_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -94,12 +76,8 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
-
 units = {
-	###### Kuomintang Army (CO: Chang Kai-shek) ######
-	##### First War Area (CO: Wei Lihuang) #####
-	division = { # "40 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 40
@@ -108,9 +86,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
-	division = { # "76 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 76
@@ -119,21 +96,18 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 2nd Army Group (CO: Sun Lianzhong) ###
-	division = { # "27 Bubing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 427
 		}
 		location = 7656
-		division_template = "Juntuán"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
-	division = { # "30 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 30
@@ -142,9 +116,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "56 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 56
@@ -153,9 +126,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "68 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 68
@@ -164,10 +136,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 3rd Army Group (CO: Sun Tongxuan) ###
-	division = { # "12 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 12
@@ -176,10 +146,8 @@ units = {
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
-
 	}
-	### Hopehei-Chahar C-in-C (CO: ) ###
-	division = { # "69 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 69
@@ -188,9 +156,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "99 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 99
@@ -199,9 +166,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "Xin 5 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 205
@@ -210,11 +176,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
-
-	##### Second War Area (CO: Yan Xishan) #####
-	division = { # "9 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 9
@@ -223,21 +186,18 @@ units = {
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
-	### 4th Army Group (CO: Sun Weiru) ###
-	division = { # "67 Bubing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 467
 		}
 		location = 10434
-		division_template = "Juntuán"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
-	division = { # "38 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 38
@@ -246,9 +206,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "47 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 47
@@ -257,9 +216,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "96 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 96
@@ -268,10 +226,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 5th Army Group (CO: Zeng Wanzhong) ###
-	division = { # "3 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
@@ -280,9 +236,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
-	division = { # "15 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 15
@@ -291,9 +246,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "17 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 17
@@ -302,10 +256,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	### 6th Army Group (CO: Yang Aiyuan) ###
-	division = { # "19 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 19
@@ -314,9 +266,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "61 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 61
@@ -325,9 +276,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "1 Qibing Jun"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
@@ -336,10 +286,8 @@ units = {
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-	### 7th Army Group (CO: Zhao Chengshou) ###
-	division = { # "22 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 22
@@ -348,9 +296,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "35 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 35
@@ -359,9 +306,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "Xin 1 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 201
@@ -370,35 +316,32 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
 	division = {
 		name = "Dongbei Xianqian Zu"
 		location = 10446
-		division_template = "Juntuán"		# Manchurian Advance Group (militia-quality guerrila group)
+		division_template = "Juntuán"
 		start_equipment_factor = 0.5
-
 	}
-	### 14th Army Group (CO: Wei Lihuang) ###
-	division = { # "10 Bubing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 410
 		}
 		location = 7126
-		division_template = "Juntuán"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 	}
-	division = { # "83 Bubing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 483
 		}
 		location = 7126
-		division_template = "Juntuán"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 	}
-	division = { # "14 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 14
@@ -407,7 +350,7 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.3
 	}
-	division = { # "98 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 98
@@ -416,12 +359,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
-
-	##### Third War Area (CO: Gu Zhutong) #####
-	### 10th Army Group (CO: Liu Jianxu) ###
-	division = { # "28 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 28
@@ -430,9 +369,8 @@ units = {
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "91 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 91
@@ -441,10 +379,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 23rd Army Group (CO: Tang Shizun) ###
-	division = { # "21 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 21
@@ -453,9 +389,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "50 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 50
@@ -464,10 +399,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 25th Army Group (CO: Chen Yi) ###
-	division = { # "100 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 100
@@ -476,10 +409,8 @@ units = {
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 32nd Army Group (CO: Shangguan Yunxiang) ###
-	division = { # "25 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 25
@@ -488,7 +419,7 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.3
 	}
-	division = { # "29 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 29
@@ -497,8 +428,7 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.3
 	}
-	## Shandong-Kansu C-in-C (CO: ) ##
-	division = { # "51 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 51
@@ -507,9 +437,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "57 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 57
@@ -518,9 +447,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "89 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 89
@@ -529,12 +457,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-
-	##### Fourth War Area (CO: Zhang Fakui) #####
-	### 9th Army Group (CO: Zhang Zhizhong) ###
-	division = { # "4 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4
@@ -543,9 +467,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "65 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 65
@@ -554,10 +477,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 12th Army Group (CO: Yu Hanmou) ###
-	division = { # "62 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 62
@@ -566,9 +487,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "63 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 63
@@ -577,9 +497,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "66 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 66
@@ -588,21 +507,18 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "Peixun Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 498
 		}
 		location = 1120
-		division_template = "Juntuán"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	### 16th Army Group (CO: Xia Wei) ###
-	division = { # "46 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 46
@@ -611,9 +527,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "64 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 64
@@ -622,10 +537,8 @@ units = {
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 26th Army Group (CO: Xu Yuanquan) ###
-	division = { # "10 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 10
@@ -634,12 +547,8 @@ units = {
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-
-	##### Fifth War Area (CO: Li Zongren) #####
-	### 11th Army Group (CO: Li Pingxian) ###
-	division = { # "39 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 39
@@ -648,9 +557,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
-	division = { # "84 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 84
@@ -659,10 +567,8 @@ units = {
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 21st Army Group (CO: Liao Lei) ###
-	division = { # "7 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 7
@@ -672,7 +578,7 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 	}
-	division = { # "48 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 48
@@ -681,10 +587,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 22nd Army Group (CO: Sun Zhen) ###
-	division = { # "41 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 41
@@ -693,9 +597,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "45 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 45
@@ -704,10 +607,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 29th Army Group (CO: Wang Zuanxu) ###
-	division = { # "44 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 44
@@ -716,9 +617,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "67 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 67
@@ -727,37 +627,35 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 31st Army Group (CO: Tang Enbo) ###
-	division = { # "4 Bubing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 404
 		}
 		location = 12467
-		division_template = "Juntuán"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 	}
-	division = { # "11 Bubing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 411
 		}
 		location = 12467
-		division_template = "Juntuán"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 	}
-	division = { # "89 Bubing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 489
 		}
 		location = 12467
-		division_template = "Juntuán"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 	}
-	division = { # "13 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 13
@@ -766,7 +664,7 @@ units = {
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.3
 	}
-	division = { # "85 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 85
@@ -775,9 +673,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "92 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 92
@@ -786,10 +683,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 33rd Army Group (CO: Zhang Zizhong) ###
-	division = { # "55 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 55
@@ -798,9 +693,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "59 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 59
@@ -809,9 +703,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "77 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 77
@@ -820,43 +713,34 @@ units = {
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-
-	##### Seventh War Area (CO: Chen Yi) #####
-	### Fujian Defense Force (CO: ) ###
-	division = { # "80 Bubing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 480
 		}
 		location = 4169
-		division_template = "Juntuán"		# German-trained division (frontline infantry, better equipment and experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
-
 	}
 	division = {
 		name = "Fujian Jingbei"
 		location = 1166
-		division_template = "Sanjiao Jun"	# Garrison unit (poor equipment and training)
+		division_template = "Sanjiao Jun"
 		start_equipment_factor = 0.3
-
 	}
-
-	##### Ninth War Area (CO: Xu Yue) #####
-	division = { # "57 Bubing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 457
 		}
 		location = 7097
-		division_template = "Juntuán"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "5 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
@@ -865,7 +749,7 @@ units = {
 		division_template = "Motuo Hua Bubing Jun"
 		start_experience_factor = 0.2
 	}
-	division = { # "75 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 75
@@ -874,10 +758,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 1st Army Group (CO: Song Zheyuan) ###
-	division = { # "58 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 58
@@ -886,9 +768,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "60 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 60
@@ -897,9 +778,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "Xin 3 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 203
@@ -908,32 +788,28 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 15th Army Group (CO: Chen Cheng) ###
-	division = { # "2 Bubing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 402
 		}
 		location = 7054
-		division_template = "Juntuán"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "25 Bubing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 425
 		}
 		location = 7054
-		division_template = "Juntuán"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "37 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 37
@@ -942,9 +818,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "52 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 52
@@ -953,9 +828,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "79 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 79
@@ -964,10 +838,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 19th Army Group (CO: Luo Zhuoying) ###
-	division = { # "32 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 32
@@ -976,9 +848,8 @@ units = {
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "49 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 49
@@ -987,9 +858,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "70 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 70
@@ -998,21 +868,18 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 20th Army Group (CO: Shang Zhen) ###
-	division = { # "14 Bubing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 414
 		}
 		location = 10086
-		division_template = "Juntuán"		# German-trained division (frontline infantry, better equipment and experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
-	division = { # "53 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 53
@@ -1021,9 +888,8 @@ units = {
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
-
 	}
-	division = { # "87 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 87
@@ -1032,10 +898,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 27th Army Group (CO: Yang Sen) ###
-	division = { # "20 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 20
@@ -1044,10 +908,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-	### 30th Army Group (CO: Wang Lingji) ###
-	division = { # "72 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 72
@@ -1056,9 +918,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "78 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 78
@@ -1067,21 +928,18 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### Hunan C-in-C (CO: ) ###
-	division = { # "3 Bubing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 403
 		}
 		location = 7097
-		division_template = "Juntuán"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "73 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 73
@@ -1090,9 +948,8 @@ units = {
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "Xin 6 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 206
@@ -1101,11 +958,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-
-	##### Tenth War Area (CO: Jiang Dingwen) #####
-	division = { # "16 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 16
@@ -1114,10 +968,8 @@ units = {
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-	### 34th Army Group (CO: Hu Zongnan) ###
-	division = { # "27 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 27
@@ -1126,9 +978,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "90 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 90
@@ -1137,11 +988,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-
-	##### Kuomintang Reserves (CO: Bai Chongxi) #####
-	division = { # "43 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 43
@@ -1150,9 +998,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "86 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 86
@@ -1161,54 +1008,48 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 8th Army Group (CO: Sun Chu) ###
-	division = { # "9 Bubing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 409
 		}
 		location = 6999
-		division_template = "Juntuán"		# German-trained division (frontline infantry, better equipment and experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "36 Bubing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 436
 		}
 		location = 6999
-		division_template = "Juntuán"		# German-trained division (frontline infantry, better equipment and experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "87 Bubing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 487
 		}
 		location = 6999
-		division_template = "Juntuán"		# German-trained division (frontline infantry, better equipment and experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "88 Bubing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 488
 		}
 		location = 6999
-		division_template = "Juntuán"		# German-trained division (frontline infantry, better equipment and experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "1 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
@@ -1217,9 +1058,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "2 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -1228,21 +1068,18 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	### 24th Army Group (CO: Pang Bingxun) ###
-	division = { # "6 Bubing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 406
 		}
 		location = 4925
-		division_template = "Juntuán"		# German-trained division (frontline infantry, better equipment and experience)
+		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "6 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 6
@@ -1251,9 +1088,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "64 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 64
@@ -1262,10 +1098,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	### 28th Army Group (CO: Pan Wenhua) ###
-	division = { # "23 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 23
@@ -1274,9 +1108,8 @@ units = {
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "26 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 26
@@ -1285,43 +1118,32 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-
-	### TROOPS FROM ANNEXED WARLORDS
-	### Yunnan ###
 	division = {
 		name = "Kunming Jingbei"
 		location = 12789
-		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		division_template = "Juntuán"
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "Yunnan Baoan Ke"
 		location = 10346
-		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		division_template = "Juntuán"
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "Dali Baoan Ke"
 		location = 10346
-		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		division_template = "Juntuán"
 		start_equipment_factor = 0.3
-
 	}
-	### Guangxi ###
 	division = {
 		name = "Guilin Jingbei"
 		location = 10404
-		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		division_template = "Juntuán"
 		start_equipment_factor = 0.3
-
 	}
-	### Xibei San Ma ###
-	##### Eighth War Area (CO: Zhu Shaoling) [Subordinate to KMT but acting quasi-independently within their own theatre] #####
-	division = { # "80 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 80
@@ -1330,9 +1152,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "82 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 82
@@ -1341,9 +1162,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "Xin 2 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 202
@@ -1352,9 +1172,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "5 Qábing Jun"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
@@ -1363,17 +1182,14 @@ units = {
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
 	division = {
 		name = "Golmud Jingbei"
 		location = 12846
-		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		division_template = "Juntuán"
 		start_equipment_factor = 0.3
-
 	}
-	### 17th Army Group (CO: Hu Zongnan) ###
-	division = { # "81 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 81
@@ -1382,9 +1198,8 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "2 Qábing Jun"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -1393,9 +1208,8 @@ units = {
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "6 Qábing Jun"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 6
@@ -1404,15 +1218,8 @@ units = {
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-
 }
-
-
-#########################
-## STARTING PRODUCTION ##
-#########################
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
@@ -1424,7 +1231,6 @@ instant_effect = {
 		efficiency = 100
 		industrial_manufacturer = mio:CHI_hanyan_arsenal_organization
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -1434,7 +1240,6 @@ instant_effect = {
 		progress = 0.15
 		efficiency = 100
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
@@ -1445,4 +1250,3 @@ instant_effect = {
 		efficiency = 100
 	}
 }
-#################################

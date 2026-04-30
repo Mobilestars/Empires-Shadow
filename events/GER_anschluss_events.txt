@@ -1,28 +1,13 @@
-###########################
-# GERMANY - ANSCHLUSS EVENTS
-# Triggered by GER_anschluss_antreiben focus, fires ON AUS
-# Austria-Hungary decides how to respond to Germany's unification demand
-###########################
-
 add_namespace = GER_anschluss
-
-# Main event: fires ON Austria-Hungary (AUS) — they choose the response
 country_event = {
 	id = GER_anschluss.1
 	title = GER_anschluss.1.t
 	desc = GER_anschluss.1.d
 	picture = GFX_report_event_ger_anschluss
-
 	is_triggered_only = yes
-
-	# Option A: Teilweiser Anschluss
-	# Nur die echten österreichischen Gebiete (kein HUN-Core) gehen an Deutschland.
-	# Ungarn bleibt unabhängig und behält seine Länder + CZE/YUG als Puppets.
 	option = {
 		name = GER_anschluss.1.a
 		ai_chance = { factor = 40 }
-
-		# Nur die echten österreichischen Staaten an Deutschland
 		set_state_owner = { state = 4 owner = GER }
 		set_state_owner = { state = 9661 owner = GER }
 		set_state_owner = { state = 976 owner = GER }
@@ -30,8 +15,6 @@ country_event = {
 		set_state_owner = { state = 152 owner = GER }
 		set_state_owner = { state = 848 owner = GER }
 		set_state_owner = { state = 39 owner = GER }
-
-		# Ungarn wird vollständig unabhängig (behält seine eigenen Staaten)
 		if = {
 			limit = { NOT = { country_exists = HUN } }
 			release = HUN
@@ -44,8 +27,6 @@ country_event = {
 				end_wars = yes
 			}
 		}
-
-		# Tschechoslowakei wird ungarisches Puppet
 		if = {
 			limit = { country_exists = CZE }
 			HUN = {
@@ -56,8 +37,6 @@ country_event = {
 				}
 			}
 		}
-
-		# Jugoslawien wird ungarisches Puppet
 		if = {
 			limit = { country_exists = YUG }
 			HUN = {
@@ -68,26 +47,17 @@ country_event = {
 				}
 			}
 		}
-
 		GER = {
 			add_stability = 0.05
 			add_war_support = 0.05
 		}
 	}
-
-	# Option B: Kompletter Anschluss
-	# Alle Gebiete Österreich-Ungarns werden deutsches Land.
-	# Tschechoslowakei und Jugoslawien werden vollständig unabhängig.
 	option = {
 		name = GER_anschluss.1.b
 		ai_chance = { factor = 30 }
-
-		# Alle AUS-Staaten an Deutschland übertragen
 		every_owned_state = {
 			set_state_owner = GER
 		}
-
-		# Tschechoslowakei wird vollständig unabhängig
 		if = {
 			limit = { country_exists = CZE }
 			set_autonomy = {
@@ -100,8 +70,6 @@ country_event = {
 			limit = { NOT = { country_exists = CZE } }
 			release = CZE
 		}
-
-		# Jugoslawien wird vollständig unabhängig
 		if = {
 			limit = { country_exists = YUG }
 			set_autonomy = {
@@ -114,23 +82,18 @@ country_event = {
 			limit = { NOT = { country_exists = YUG } }
 			release = YUG
 		}
-
 		GER = {
 			add_stability = 0.10
 			add_war_support = 0.10
 		}
 	}
-
-	# Option C: Wien lehnt ab — Deutschland erhält Kriegsziel gegen Österreich-Ungarn
 	option = {
 		name = GER_anschluss.1.c
 		ai_chance = { factor = 30 }
-
 		add_opinion_modifier = {
 			target = GER
 			modifier = large_decrease
 		}
-
 		GER = {
 			create_wargoal = {
 				type = annex_everything

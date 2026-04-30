@@ -1,10 +1,6 @@
 ﻿division_template = {
-
-	name = "División de Infanteria"		# Infantry Division - All cadres at the military district level with reserves called up to division strength 
+	name = "División de Infanteria"
 	division_names_group = SPAN_INF_02
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -22,13 +18,8 @@
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "División de Caballería"  	# Cavalry Division
+	name = "División de Caballería"
 	division_names_group = SPAN_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -46,56 +37,45 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 units = {
-	##### Ejército de Chile #####
-	division = {	# "1era División del Ejercito"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 8222 # Valparaiso
+		location = 8222
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-
-	division = {	# "2da División del Ejercito"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 12994 # Antofagasta
+		location = 12994
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-
-	division = {	# "3era División del Ejercito"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 5121 # Temuco
+		location = 5121
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-
 	division = {	
 		name = "División de Caballería"
-		location = 8194 # Coquimbo
+		location = 8194
 		division_template = "División de Caballería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-
 }
-
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

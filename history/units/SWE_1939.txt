@@ -1,11 +1,6 @@
 ﻿division_template = {
-
-	name = "Arméfördelning"				# Infantry Division - Planned formation for mobilization of divisions, 1937-1940
+	name = "Arméfördelning"
 	division_names_group = SWE_INF_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -24,13 +19,8 @@
 		maintenance_company = { x = 0 y = 3 }
 	}}
 division_template = {
-
-	name = "Kavalleribrigaden"   	# Cavalry Brigade 
+	name = "Kavalleribrigaden"
 	division_names_group = SWE_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -48,15 +38,9 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 division_template = {
-
 	name = " Pansarregemente"  	
 	division_names_group = SWE_ARM_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -74,13 +58,9 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 division_template = {
-
-	name = "Militärområde"				# Garrison Force
+	name = "Militärområde"
 	division_names_group = SWE_GAR_01
-
-	# Garrison / Border Guard 6W (minimal cost/equipment)
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -92,130 +72,107 @@ division_template = {
 	support = {
 		engineer = { x = 0 y = 0 }
 	}}
-
 units = {
-	######## LAND UNITS ########
-	##### Högkvarteret #####
-	# Southern Military District
-	division = { # "I. Arméfördelning"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 11160 # Kristianstad
+		location = 11160
 		division_template = "Arméfördelning"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "Södra Militärområde"
-		location = 11160 # Kristianstad
+		location = 11160
 		division_template = "Militärområde"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	# Northern Military District
-	division = { # "VI. Arméfördelning"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 11148 # Osterund
+		location = 11148
 		division_template = "Arméfördelning"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "Norra Militärområde"
-		location = 11148 # Osterund
+		location = 11148
 		division_template = "Militärområde"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	# Western Military District
-	division = { # "III. Arméfördelning"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 3375 # Skövde
+		location = 3375
 		division_template = "Arméfördelning"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "Västra Militärområde"
-		location = 3375 # Skovde
+		location = 3375
 		division_template = "Militärområde"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	# Eastern Military District
-	division = { # "IV. Arméfördelning"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 6050 #Stockholm
+		location = 6050
 		division_template = "Arméfördelning"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "Kavalleribrigaden"
-		location = 6050 #Stockholm
+		location = 6050
 		division_template = "Kavalleribrigaden"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "Östra Militärområde"
-		location = 6050 #Stockholm
+		location = 6050
 		division_template = "Militärområde"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	# Upper Northern Military District
-	division = { # "V. Arméfördelning"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 9186 # Boden
+		location = 9186
 		division_template = "Arméfördelning"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "Övre Norrland Militärområde"
-		location = 9186 # Boden
+		location = 9186
 		division_template = "Militärområde"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
 	division = {
 		name = "Gotlands Militärområde"
-		location = 408 # Gotland
+		location = 408
 		division_template = "Militärområde"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 }
-
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

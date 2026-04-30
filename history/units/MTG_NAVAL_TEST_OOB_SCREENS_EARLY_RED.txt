@@ -1,14 +1,11 @@
-﻿####### OOB #######
+﻿
 units = {
-	##### NAVAL UNITS #####
-	### HOME COMMAND ###
 	fleet = {
-		name = "Screen Fleet Early" # calculated as same cost as mixed fleet of 2CV 4CA 8DD
-		naval_base = 7660 # Scapa Flow
+		name = "Screen Fleet Early"
+		naval_base = 7660
 		task_force = {				
-			name = "Red TF 1"					# CO: Forbes	
-			location = 7660 # Scapa Flow	
-			
+			name = "Red TF 1"
+			location = 7660
 			ship = { name = "Blue CL1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = DOM } } }
 			ship = { name = "Red CL2" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = DOM } } }
 			ship = { name = "Red CL3" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = DOM } } }
@@ -24,7 +21,6 @@ units = {
 			ship = { name = "Red CL13" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = DOM } } }
 			ship = { name = "Red CL14" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = DOM } } }
 			ship = { name = "Red CL15" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = DOM } } }
-
 			ship = { name = "Red DD1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM } } }			
 			ship = { name = "Red DD2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM } } }
 			ship = { name = "Red DD3" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM } } }			
@@ -65,7 +61,6 @@ units = {
 			ship = { name = "Red DD38" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM } } }
 			ship = { name = "Red DD39" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM } } }
 			ship = { name = "Red DD40" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM } } }
-						
 		}
 	}
 }

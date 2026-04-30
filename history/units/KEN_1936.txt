@@ -1,12 +1,7 @@
-﻿### Kenya OOB ###
-
+﻿
 division_template = {
-
 	name = "Infantry Division"		
-	division_names_group = BRENGL_INF_01		# Uses generic English templates
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
+	division_names_group = BRENGL_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -23,15 +18,9 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
 	name = "Cavalry Division"		
-	division_names_group = BRENGL_CAV_01		# Uses generic English templates
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
+	division_names_group = BRENGL_CAV_01
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -49,19 +38,9 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
-
 units = {
-	
 }
-
-
-#########################
-## STARTING PRODUCTION ##
-#########################
-
 instant_effect = {
-
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
@@ -71,7 +50,4 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 50
 	}
-
 }
-
-#################################

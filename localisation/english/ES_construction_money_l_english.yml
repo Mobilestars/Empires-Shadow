@@ -1,9 +1,6 @@
 l_english:
- # Construction tab hover labels
  STAT_COMMON_BUILD_COST_IC_T:0 "§TConstruction cost (IC):§! §YMoney cost = IC x 0.02§!\n"
  STAT_COMMON_BUILD_COST_IC_T_CONVERTING:0 "§TConversion cost (IC):§! §YMoney cost = IC x 0.02§!\n"
-
- # Building hover descriptions with base money costs
  industrial_complex_desc:0 "This building provides the state with industry for production of civilian goods or construction of new buildings. Can be converted to military industry if needed.\n\nBase construction money cost: §Y200§!\nConversion money cost (to civilian factory): §Y200§!"
  arms_factory_desc:0 "This building provides the state with industry for production of new military equipment. Can be converted to civilian industry if needed.\n\nBase construction money cost: §Y150§!\nConversion money cost (to military factory): §Y150§!"
  dockyard_desc:0 "This building provides the state with industry for building new ships.\n\nBase construction money cost: §Y130§!"

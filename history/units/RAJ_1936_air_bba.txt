@@ -1,9 +1,6 @@
 ﻿
-
 air_wings = {
-	### AHQ India
 	439 = { 
-		### AHQ India -- Fairey Gordons, Battles
 		small_plane_cas_airframe_0 = {
 			owner = "RAJ" 
 			amount = 80

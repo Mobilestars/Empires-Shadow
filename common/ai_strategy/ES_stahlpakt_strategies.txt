@@ -1,14 +1,3 @@
-# EmpiresShadow – Stahlpakt AI Strategies
-#
-# These strategies are ADDED to vanilla files (new unique names → no conflicts).
-# They give SOV and ITA the AI desire to stay in GER's Stahlpakt faction.
-#
-# Root cause of the bug: vanilla AI has no alliance strategy for GER at 1936 start.
-# Without one, ITA/SOV immediately evaluate faction membership as undesirable and leave.
-
-# -----------------------------------------------------------------------
-# SOVIET UNION – stays allied with GER while Lenin is in power
-# -----------------------------------------------------------------------
 ES_SOV_stahlpakt_member = {
 	allowed = {
 		original_tag = SOV
@@ -30,7 +19,6 @@ ES_SOV_stahlpakt_member = {
 			}
 		}
 	}
-
 	ai_strategy = {
 		type = befriend
 		id = "GER"
@@ -42,10 +30,6 @@ ES_SOV_stahlpakt_member = {
 		value = 200
 	}
 }
-
-# -----------------------------------------------------------------------
-# BULGARIA – stays allied with GER in the Stahlpakt throughout the early game
-# -----------------------------------------------------------------------
 ES_BUL_stahlpakt_member = {
 	allowed = {
 		original_tag = BUL
@@ -59,7 +43,6 @@ ES_BUL_stahlpakt_member = {
 			GER = { is_faction_leader = no }
 		}
 	}
-
 	ai_strategy = {
 		type = befriend
 		id = "GER"
@@ -70,12 +53,7 @@ ES_BUL_stahlpakt_member = {
 		id = "GER"
 		value = 200
 	}
-    # This ensures Bulgaria stays in the Stahlpakt as long as GER is leader.
 }
-
-# -----------------------------------------------------------------------
-# ITALY – stays allied with GER in the Stahlpakt throughout the early game
-# -----------------------------------------------------------------------
 ES_ITA_stahlpakt_member = {
 	allowed = {
 		original_tag = ITA
@@ -89,7 +67,6 @@ ES_ITA_stahlpakt_member = {
 			GER = { is_faction_leader = no }
 		}
 	}
-
 	ai_strategy = {
 		type = befriend
 		id = "GER"

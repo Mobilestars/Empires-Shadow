@@ -1,8 +1,5 @@
 ﻿division_template = {
-
 	name = "German Expatriates"
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -19,21 +16,20 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 units = {
 	division = {
 		name = "I Expatriados Alemanes"
-		location = 3938  # Madrid
+		location = 3938
 		division_template = "German Expatriates"
 	}
 	division = {
 		name = "II Expatriados Alemanes"
-		location = 3938  # Madrid
+		location = 3938
 		division_template = "German Expatriates"
 	}
 	division = {
 		name = "III Expatriados Alemanes"
-		location = 3938  # Madrid
+		location = 3938
 		division_template = "German Expatriates"
 	}
 }

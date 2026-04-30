@@ -1,14 +1,8 @@
-# Custom joining rule for the Stahlpakt (Steel Pact).
-# Allows all ideologies and geographies to remain as members.
-
 joining_rule_stahlpakt = {
 	type = joining_rules
-
 	ai_will_do = {
 		base = 0
 	}
-
-	# Accept all ideologies and geographic positions.
 	trigger = {
 		always = yes
 	}

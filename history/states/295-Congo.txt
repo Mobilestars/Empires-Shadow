@@ -3,11 +3,8 @@ state = {
 	name = "STATE_295"
 	manpower = 1947522
 	state_category = rural
-
 	history = {
-
 		owner = COG
-
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -17,27 +14,20 @@ state = {
 				bunker = 2
 			}
 		}
-
 		victory_points = {
-			5117 5 # Leopoldville
+			5117 5
 		}
-
 		victory_points = {
-			12925 2 # Matadi
+			12925 2
 		}
-
 		victory_points = {
-			13365 1 # Nkamba
+			13365 1
 		}
-
 		add_core_of = COG
-
 	}
-
 	provinces = {
 		5117 10025 10968 12775 12896 12925 12945 13365 13370
 	}
-
 	buildings_max_level_factor = 1.000
 	local_supplies = 2.000
 }

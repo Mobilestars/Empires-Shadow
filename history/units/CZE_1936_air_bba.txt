@@ -1,59 +1,50 @@
 ﻿
-
-### Air Wings
 air_wings = {
-	# Letectvo I.Armády -- Prague
-	# Letectvo Hlavniho Velitelstivi -- Prague
 	9 = { 
-		small_plane_airframe_0 = {		# Avia B.534
+		small_plane_airframe_0 = {
 			owner = "CZE" 
 			amount = 36
 			version_name = "Avia B.534"
 		}
-		medium_plane_airframe_0 =  {	# Bloch MB.200
+		medium_plane_airframe_0 =  {
 			owner = "CZE" 
 			amount = 72
 			creator = "FRA"
 			version_name = "M.B. 200"
 		}
-		small_plane_cas_airframe_0 =  {		# Aero A-101
+		small_plane_cas_airframe_0 =  {
 			owner = "CZE" 
 			amount = 24
 			version_name = "Aero A.101"
 		}
 	}
-
-	# Letectvo III.Armády -- Bratislava
 	70 = {
-		small_plane_airframe_0 = {		# Avia B.534
+		small_plane_airframe_0 = {
 			owner = "CZE" 
 			amount = 36
 			version_name = "Avia B.534"
 		}
 	}
-
-	# Letectvo IV.Armády -- Olomouc
 	75 = {
-		small_plane_airframe_0 = {		# Avia B.534
+		small_plane_airframe_0 = {
 			owner = "CZE" 
 			amount = 72
 			version_name = "Avia B.534"
 		}
-		small_plane_airframe_0 = {		# Avia B.34.1
+		small_plane_airframe_0 = {
 			owner = "CZE"
 			amount = 12
 			version_name = "Avia B.34.1"
 		}
-		small_plane_cas_airframe_0 =  {		# Aero A-101
+		small_plane_cas_airframe_0 =  {
 			owner = "CZE" 
 			amount = 24
 			version_name = "Aero A.101"
 		}
 	}
 }
-
 instant_effect = {
-	add_equipment_production = { #568 were built. Production began oct. 1935
+	add_equipment_production = {
 		equipment = {
 			type = small_plane_airframe_0
 			creator = CZE
@@ -65,4 +56,3 @@ instant_effect = {
 		industrial_manufacturer = mio:CZE_avia_organization
 	}
 }
-

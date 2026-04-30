@@ -1,10 +1,6 @@
 ﻿division_template = {
-
-	name = "Juntuán"				# Represents local militia groups (generally poorly-equipped )
+	name = "Juntuán"
 	division_names_group = SHX_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -21,29 +17,20 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
-
-### OOB ###
 units = {
-	### Provincial Forces ###
 	division = {
 		name = "Suiyuan Jingbei"
 		location = 4174
-		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		division_template = "Juntuán"
 		start_equipment_factor = 0.2
-
 	}
 	division = {
 		name = "Chahar Jingbei"
 		location = 7158 
-		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		division_template = "Juntuán"
 		start_equipment_factor = 0.2
-
 	}
-	
 }
-
-### STARTING PRODUCTION ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

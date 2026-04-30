@@ -1,5 +1,4 @@
  l_english:
- # GER FATE OF CZECHOSLOVAKIA EVENTS
  GER_cze_fate.1.t:0 "The Fate of Czechoslovakia"
  GER_cze_fate.1.d:0 "Germany demands we hand over Czechoslovakia entirely. The German Reich has already seized the Sudetenland and now expects the rest of the country to fall under their influence — whether or not we agree. The choice is ours to make, but the consequences will be felt regardless."
  GER_cze_fate.1.a:0 "We accept. Czechoslovakia is theirs."
@@ -11,8 +10,6 @@
  GER_cze_fate.3.d:0 "The end of Czechoslovakia is at hand. Our forces stand ready to occupy Bohemia-Moravia. Now we must decide how to reshape Central Europe to serve German interests."
  GER_cze_fate.3.a:0 "Set up Slovakia as a puppet state."
  GER_cze_fate.3.b:0 "All of Czechoslovakia belongs to the Reich!"
-
- # GER SUDETENLAND DEMAND EVENTS
  GER_sudetenland.1.t:0 "Germany Demands the Sudetenland"
  GER_sudetenland.1.d:0 "The German Reich has issued a formal ultimatum demanding the cession of the Sudetenland — North Sudetenland (State 69), East Sudetenland (State 972), and South Sudetenland (State 74). Berlin insists that the large German-speaking population in these territories must be united with the Fatherland. Germany has already established claims and will use force if necessary. How shall we respond?"
  GER_sudetenland.1.a:0 "We accept. The Sudetenland is theirs."

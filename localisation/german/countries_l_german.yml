@@ -242,7 +242,7 @@
  AUS_neutrality_DEF: "das Österreichisch-Ungarische Reich"
  AUS_communism: "Volksrepublik Österreich-Ungarn"
  AUS_communism_DEF: "die Volksrepublik Österreich-Ungarn"
- AUS_stalinism: "Volksrepublik Österreich-Ungarn" #to signify change to full soviet politics rather than a little soviet politics
+ AUS_stalinism: "Volksrepublik Österreich-Ungarn"
  AUS_stalinism_DEF: "die Volksrepublik Österreich-Ungarn"
  AUS_fascism_ADJ: "Österreichisch-Ungarisch"
  AUS_democratic_ADJ: "Österreichisch-Ungarisch"
@@ -601,7 +601,7 @@
  ARG_subject_DEF: "das $OVERLORDADJ$e $ARG$"
  BOL_fascism: "Falangistisches Bolivien"
  BOL_fascism_DEF: "das falangistische Bolivien"
- BOL_democratic: "Bolivianische Republik" #Was Plurinational Bolivia
+ BOL_democratic: "Bolivianische Republik"
  BOL_democratic_DEF: "die Bolivianische Republik"
  BOL_neutrality: "Bolivien"
  BOL_neutrality_DEF: "Bolivien"
@@ -683,7 +683,6 @@
  CHI_autonomy_supervised_state_DEF: "das $OVERLORDADJ$e China"
  CHI_PRC_subject: "Provinz Mittel- und Ostchina"
  CHI_PRC_subject_DEF: "die Provinz Mittel- und Ostchina"
- #For specific Japanese Puppet names, see countries_cosmetic
  PRC_fascism: "China"
  PRC_fascism_DEF: "das chinesische Reich"
  PRC_democratic: "Republik China"
@@ -1694,7 +1693,7 @@
  GEO_GER_fascism_subject_DEF: "das Reichskommissariat Kaukasien"
  GEO_democratic: "Republik Georgien"
  GEO_democratic_DEF: "die Republik Georgien"
- GEO_neutrality: "Königreich Georgien" #Was Free State of St. George
+ GEO_neutrality: "Königreich Georgien"
  GEO_neutrality_DEF: "das Königreich Georgien"
  GEO_communism: "Georgische Sozialistische Republik"
  GEO_communism_DEF: "die Georgische Sozialistische Republik"
@@ -2170,7 +2169,7 @@
  TRI: "Trinidad und Tobago"
  TRI_DEF: "Trinidad und Tobago"
  TRI_ADJ: "Trinidad-tobagisch"
- TMS_fascism: "Neo-Seldschukisches Reich" #Changed from Khiva due to Khiva being added to the game
+ TMS_fascism: "Neo-Seldschukisches Reich"
  TMS_fascism_DEF: "das Neo-Seldschukische Reich"
  TMS_democratic: "Republik Turkmenistan"
  TMS_democratic_DEF: "die Republik Turkmenistan"
@@ -2200,7 +2199,7 @@
  UAE: "Arabische Emirate"
  UAE_DEF: "die Arabischen Emirate"
  UAE_ADJ: "Emiratisch"
- UZB_fascism: "Usbekisches Khanat" #Changed from Bukhara due to Bukhara being added to the game
+ UZB_fascism: "Usbekisches Khanat"
  UZB_fascism_DEF: "das Usbekische Khanat"
  UZB_democratic: "Republik Usbekistan"
  UZB_democratic_DEF: "die Republik Usbekistan"
@@ -4118,8 +4117,6 @@
  PAP_communism_DEF: "die Römische Volksrepublik"
  PAP_neutrality: "Kirchenstaat"
  PAP_neutrality_DEF: "der Kirchenstaat"
- #PAP_subject: "Vatican"
- #PAP_subject_DEF: "the Vatican State"
  PAP_autonomy_supervised_state: "$OVERLORDADJ$e Besatzungszone Rom"
  PAP_autonomy_supervised_state_DEF: "die $OVERLORDADJ$e Besatzungszone Rom"
  PAP_fascism_ADJ: "Päpstlich"
@@ -5660,5 +5657,4 @@
  HBC_autonomy_sea_integrated_warlord_subject_DEF: "die Region Hebei-Chahar"
  HBC_PRC_communism_subject: "Region Hebei-Chahar"
  HBC_PRC_communism_subject_DEF: "die Region Hebei-Chahar"
-
  faction_stahlpakt:0 "Stahlpakt"

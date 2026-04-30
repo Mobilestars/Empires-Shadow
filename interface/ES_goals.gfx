@@ -1,6 +1,4 @@
 spriteTypes = {
-
-    # EmpiresShadow visual replacements
     SpriteType = {
         name = "GFX_focus_generic_africa"
         texturefile = "gfx/interface/goals/focus_generic_africa.dds"
@@ -145,5 +143,4 @@ spriteTypes = {
         name = "GFX_focus_ger_war_economy"
         texturefile = "gfx/interface/goals/focus_ger_war_economy.dds"
     }
-
 }

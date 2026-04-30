@@ -1,11 +1,6 @@
 ﻿division_template = {
-
-	name = "Huncheng Lu" 		# Manchurian Army Mixed Brigade: 1 infantry regiment, 1 cavalry regiment, 1 artillery squadron
+	name = "Huncheng Lu"
 	division_names_group = MAN_INF_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -23,14 +18,9 @@
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 division_template = {
-
-	name = "Bubing Shi"		# Regular Infantry Division (brigade sized)
+	name = "Bubing Shi"
 	division_names_group = MAN_INF_02
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -47,13 +37,9 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
-	name = "Qu Jun"			# "District Army" (garrison)
+	name = "Qu Jun"
 	division_names_group = MAN_GAR_01
-
-	# Garrison / Border Guard 6W (minimal cost/equipment)
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -65,15 +51,9 @@ division_template = {
 	support = {
 		engineer = { x = 0 y = 0 }
 	}}
-
 division_template = {
-
-	name = "Qibing Shi"	# Cavalry Division
+	name = "Qibing Shi"
 	division_names_group = MAN_CAV_02
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -91,20 +71,15 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
-
-##### OOB #####
 units = {
-
 	division = {
-		name = "Jing'an Jun" # Mixed Japanese-Manchurian force
+		name = "Jing'an Jun"
 		location = 4572
 		division_template = "Huncheng Lu"
 		force_equipment_variants = { infantry_equipment_0 = { owner = JAP } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5		
 	}
-
 	division = {
 		name = "Jinwei Bubing Tuan"
 		location = 4572
@@ -112,8 +87,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = JAP } }
 		start_equipment_factor = 0.1	
 	}
-	
-	division = { # "1 Qu Jun"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
@@ -123,8 +97,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
-
-	division = { # "2 Qu Jun"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -134,8 +107,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
-
-	division = { # "3 Qu Jun"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
@@ -145,7 +117,6 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
-
 	division = {
 		name = "4 Qu Jun"
 		division_name = {
@@ -157,8 +128,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
-
-	division = { # "5 Qu Jun"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
@@ -168,8 +138,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
-
-	division = { # "1 Qibing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
@@ -179,8 +148,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
-
-	division = { # "2 Qibing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -190,8 +158,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
-
-	division = { # "3 Qibing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
@@ -201,8 +168,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
-
-	division = { # "4 Qibing Shi"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4
@@ -212,13 +178,8 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
-
 }
-
-
-########## STARTING PRODUCTION ##########
 instant_effect = {
-
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
@@ -229,5 +190,4 @@ instant_effect = {
 		efficiency = 100
 		industrial_manufacturer = mio:CHI_mukden_arsenal_organization
 	}
-
 }

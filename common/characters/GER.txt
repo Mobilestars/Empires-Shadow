@@ -1,17 +1,4 @@
 characters = {
-
-
- ######   #######  ##     ## ##    ## ######## ########  ##    ##    ##       ########    ###    ########  ######## ########   ######  
-##    ## ##     ## ##     ## ###   ##    ##    ##     ##  ##  ##     ##       ##         ## ##   ##     ## ##       ##     ## ##    ## 
-##       ##     ## ##     ## ####  ##    ##    ##     ##   ####      ##       ##        ##   ##  ##     ## ##       ##     ## ##       
-##       ##     ## ##     ## ## ## ##    ##    ########     ##       ##       ######   ##     ## ##     ## ######   ########   ######  
-##       ##     ## ##     ## ##  ####    ##    ##   ##      ##       ##       ##       ######### ##     ## ##       ##   ##         ## 
-##    ## ##     ## ##     ## ##   ###    ##    ##    ##     ##       ##       ##       ##     ## ##     ## ##       ##    ##  ##    ## 
- ######   #######   #######  ##    ##    ##    ##     ##    ##       ######## ######## ##     ## ########  ######## ##     ##  ######  
-
-
-
-	### FASCIST ###
 	GER_adolf_hitler = {
 		name = GER_adolf_hitler
 		portraits = {
@@ -26,7 +13,6 @@ characters = {
 			id = -1
 		}
 	}
-
 	GER_eva_braun = {
 		name = GER_eva_braun
 		portraits = {
@@ -36,14 +22,7 @@ characters = {
 			}
 		}
 		gender = female
-		#country_leader = {
-		#	ideology = nazism
-		#	traits = { GER_the_iron_maiden }
-		#	expire = "1965.1.1.1"
-		#	id = -1
-		#}
 	}
-
 	GER_otto_strasser = {
 		name = GER_otto_strasser
 		portraits = {
@@ -52,20 +31,12 @@ characters = {
 				small = GFX_portrait_GER_otto_strasser_small
 			}
 		}
-		#country_leader = {
-		#	ideology = nazism
-		#	traits = { }
-		#	expire = "1954.1.1.1"
-		#	id = -1
-		#}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = GER_otto_strasser
 			allowed = {
 				original_tag = GER
 			}
-			# He is meant to be quite hidden since he is an easter-egg for the most part
 			visible = {
 				has_completed_focus = GER_expatriate_the_communists_ww
 				has_country_flag = GER_strasserism_relevant_in_germany_flag
@@ -77,10 +48,7 @@ characters = {
 			}
 		}
 	}
-
-	### NON-ALIGNED ###
-
-	GER_wilhelm_ii = { #EmpiresShadow: Kaiserreich - Wilhelm II als Staatsoberhaupt
+	GER_wilhelm_ii = {
 		name = GER_wilhelm_ii
 		portraits = {
 			civilian = {
@@ -94,8 +62,7 @@ characters = {
 			id = -1
 		}
 	}
-
-	GER_wilhelm_iii = { #Empty Wilhelm III so he doesn't become ruler automatically if the neutrals are in power
+	GER_wilhelm_iii = {
 		name = GER_wilhelm_iii
 		portraits = {
 			civilian = {
@@ -103,8 +70,7 @@ characters = {
 			}	
 		}
 	}
-
-	GER_wilhelm_iv = { #Empty Wilhelm IV so he doesn't become ruler automatically if the neutrals are in power
+	GER_wilhelm_iv = {
 		name = GER_wilhelm_iv
 		portraits = {
 			civilian = {
@@ -113,8 +79,7 @@ characters = {
 			}	
 		}
 	}
-
-	GER_victoria = { #Empty Vicky3 
+	GER_victoria = {
 		name = GER_victoria
 		gender = female
 		portraits = {
@@ -123,7 +88,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_august_von_mackensen = {
 		name = GER_august_von_mackensen
 		portraits = {
@@ -147,8 +111,7 @@ characters = {
 			}
 		}
 	}
-
-	GER_oberste_heeresleitung_character = { #Empty Military Council so they don't become ruler automatically if the neutrals are in power
+	GER_oberste_heeresleitung_character = {
 		name = GER_oberste_heeresleitung_character
 		portraits = {
 			civilian = {
@@ -156,8 +119,6 @@ characters = {
 			}	
 		}
 	}
-
-	### DEMOCRATIC ###
 	GER_konrad_adenauer = {
 		name = GER_konrad_adenauer
 		portraits = {
@@ -172,7 +133,6 @@ characters = {
 			id = -1
 		}
 	}
-
 	GER_hans_vogel = {
 		name = GER_hans_vogel
 		portraits = {
@@ -181,14 +141,7 @@ characters = {
 				small = GFX_portrait_GER_hans_vogel_small
 			}
 		}
-		#country_leader = { #Gets his role through an event
-		#	ideology = socialism
-		#	traits = { GER_staunch_social_democrat }
-		#	expire = "1965.1.1.1"
-		#	id = -1
-		#}
 	}
-
 	GER_otto_grotewohl = { 
 		name = GER_otto_grotewohl
 		portraits = {
@@ -197,16 +150,7 @@ characters = {
 				small = GFX_portrait_GER_otto_grotewohl_small
 			}
 		}
-		#country_leader = { #Gets his role through an event
-		#	ideology = marxism
-		#	traits = { GER_pragmatic_socialist }
-		#	expire = "1965.1.1.1"
-		#}
 	}
-
-
-	### COMMUNIST ###
-
 	GER_wilhelm_pieck = {
 		name = GER_wilhelm_pieck
 		portraits = {
@@ -221,8 +165,7 @@ characters = {
 			id = -1
 		}
 	}
-
-	GER_heinrich_brandler = { #shell character activated in Legacy of the Spartacus League
+	GER_heinrich_brandler = {
 		name = GER_heinrich_brandler
 		portraits = {
 			civilian = {
@@ -231,18 +174,6 @@ characters = {
 			}
 		}
 	}
-
-
-######## #### ######## ##       ########     ##     ##    ###    ########   ######  ##     ##    ###    ##        ######  
-##        ##  ##       ##       ##     ##    ###   ###   ## ##   ##     ## ##    ## ##     ##   ## ##   ##       ##    ## 
-##        ##  ##       ##       ##     ##    #### ####  ##   ##  ##     ## ##       ##     ##  ##   ##  ##       ##       
-######    ##  ######   ##       ##     ##    ## ### ## ##     ## ########   ######  ######### ##     ## ##        ######  
-##        ##  ##       ##       ##     ##    ##     ## ######### ##   ##         ## ##     ## ######### ##             ## 
-##        ##  ##       ##       ##     ##    ##     ## ##     ## ##    ##  ##    ## ##     ## ##     ## ##       ##    ## 
-##       #### ######## ######## ########     ##     ## ##     ## ##     ##  ######  ##     ## ##     ## ########  ######  
-
-
-
 	GER_werner_von_blomberg = {
 		name = GER_werner_von_blomberg
 		portraits = {
@@ -251,7 +182,6 @@ characters = {
 				small = GFX_portrait_GER_werner_von_blomberg_small
 			}
 		}
-
 		field_marshal = { 
 			traits = { defensive_doctrine thorough_planner }
 			skill = 3
@@ -265,7 +195,6 @@ characters = {
 				}
 			}
 		}
-
 		advisor = {
 			cost = 150
 			slot = theorist
@@ -289,7 +218,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_gerd_von_rundstedt = {
 		name = GER_gerd_von_rundstedt
 		portraits = {
@@ -313,7 +241,6 @@ characters = {
 				factor = 1.500
 			}
 		}
-		
 		corps_commander = { 
 			traits = { trait_cautious brilliant_strategist old_guard }
 			skill = 4
@@ -324,7 +251,6 @@ characters = {
 			legacy_id = 1
 		}
 	}
-
 	GER_gunther_von_kluge = {
 		name = GER_gunther_von_kluge
 		portraits = {
@@ -343,7 +269,6 @@ characters = {
 			legacy_id = 2
 		}
 	}
-
 	GER_walter_model = {
 		name = GER_walter_model
 		portraits = {
@@ -368,7 +293,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_vincenz_muller = {
 		name = GER_vincenz_muller
 		portraits = {
@@ -389,18 +313,6 @@ characters = {
 			}
 		}
 	}
-
-
- ######   ######## ##    ## ######## ########     ###    ##        ######  
-##    ##  ##       ###   ## ##       ##     ##   ## ##   ##       ##    ## 
-##        ##       ####  ## ##       ##     ##  ##   ##  ##       ##       
-##   #### ######   ## ## ## ######   ########  ##     ## ##        ######  
-##    ##  ##       ##  #### ##       ##   ##   ######### ##             ## 
-##    ##  ##       ##   ### ##       ##    ##  ##     ## ##       ##    ## 
- ######   ######## ##    ## ######## ##     ## ##     ## ########  ######  
-
-
-
 	GER_werner_von_fritsch = {
 		name = GER_werner_von_fritsch
 		portraits = {
@@ -409,7 +321,6 @@ characters = {
 				small = GFX_portrait_GER_werner_von_fritsch_small
 			}
 		}
-
 		advisor = {
 			slot = high_command
 			idea_token = werner_von_fritsch_high_command
@@ -441,7 +352,6 @@ characters = {
 				factor = 1.500
 			}
 		}
-
 		advisor = {
 			slot = army_chief
 			idea_token = werner_von_fritsch_army_chief
@@ -469,7 +379,6 @@ characters = {
 				factor = 1.500
 			}
 		}
-
 		corps_commander = {
 			traits = { trait_cautious old_guard }
 			skill = 3
@@ -484,7 +393,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_oswald_lutz = {
 		name = GER_oswald_lutz
 		portraits = {
@@ -507,7 +415,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_friedrich_paulus = {
 		name = GER_friedrich_paulus
 		portraits = {
@@ -526,7 +433,6 @@ characters = {
 			legacy_id = 3
 		}
 	}
-
 	GER_erwin_rommel = {
 		name = GER_erwin_rommel
 		portraits = {
@@ -560,7 +466,6 @@ characters = {
 				}
 			}
 		}
-		
 		corps_commander = {
 			visible = { has_completed_focus = GER_adopt_new_panzer_doctrine }
 			traits = { trait_reckless media_personality armor_officer war_hero trickster }
@@ -572,7 +477,6 @@ characters = {
 			legacy_id = 4
 		}
 	}
-
 	GER_erich_von_manstein = {
 		name = GER_erich_von_manstein
 		portraits = {
@@ -593,7 +497,6 @@ characters = {
 				mobile_warfare_expert
 			}
 		}
-		
 		corps_commander = {
 			traits = { brilliant_strategist armor_officer trickster trait_engineer }
 			skill = 4
@@ -604,7 +507,6 @@ characters = {
 			legacy_id = 5
 		}
 	}
-
 	GER_heinz_guderian = {
 		name = GER_heinz_guderian
 		portraits = {
@@ -628,7 +530,6 @@ characters = {
 				blitzkrieg_theorist
 			}
 		}
-		
 		corps_commander = {
 			visible = { has_completed_focus = GER_adopt_new_panzer_doctrine }
 			traits = { brilliant_strategist career_officer armor_officer trickster panzer_leader }
@@ -640,7 +541,6 @@ characters = {
 			legacy_id = 6
 		}
 	}
-
 	GER_wilhelm_list = {
 		name = GER_wilhelm_list
 		portraits = {
@@ -659,7 +559,6 @@ characters = {
 			legacy_id = 7
 		}
 	}
-
 	GER_ewald_von_kleist = {
 		name = GER_ewald_von_kleist
 		portraits = {
@@ -678,7 +577,6 @@ characters = {
 			legacy_id = 8
 		}
 	}
-
 	GER_fedor_von_bock = {
 		name = GER_fedor_von_bock
 		portraits = {
@@ -697,7 +595,6 @@ characters = {
 			legacy_id = 9
 		}
 	}
-
 	GER_maximilian_von_weichs = {
 		name = GER_maximilian_von_weichs
 		portraits = {
@@ -716,7 +613,6 @@ characters = {
 			legacy_id = 11
 		}
 	}
-
 	GER_wilhelm_ritter_von_leeb = {
 		name = GER_wilhelm_ritter_von_leeb
 		portraits = {
@@ -735,7 +631,6 @@ characters = {
 			legacy_id = 13
 		}
 	}
-
 	GER_georghans_reinhardt = {
 		name = GER_georghans_reinhardt
 		portraits = {
@@ -754,7 +649,6 @@ characters = {
 			legacy_id = 14
 		}
 	}
-
 	GER_kurt_student = {
 		name = GER_kurt_student
 		portraits = {
@@ -777,12 +671,10 @@ characters = {
 			ai_will_do = {
 				factor = 1.000
 			}
-
 			available = {
 				has_completed_focus = GER_fallschirmjager
 			}
 		}
-		
 		corps_commander = {
 			traits = { trait_reckless commando }
 			skill = 4
@@ -796,7 +688,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_erwin_von_witzleben = {
 		name = GER_erwin_von_witzleben
 		portraits = {
@@ -815,7 +706,6 @@ characters = {
 			legacy_id = 17
 		}
 	}
-
 	GER_hermann_hoth = {
 		name = GER_hermann_hoth
 		portraits = {
@@ -840,7 +730,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_georg_von_kuchler = {
 		name = GER_georg_von_kuchler
 		portraits = {
@@ -858,7 +747,6 @@ characters = {
 			legacy_id = 22
 		}
 	}
-
 	GER_alfred_jodl = {
 		name = GER_alfred_jodl
 		portraits = {
@@ -877,7 +765,6 @@ characters = {
 			legacy_id = 23
 		}
 	}
-
 	GER_hasso_von_manteuffel = {
 		name = GER_hasso_von_manteuffel
 		portraits = {
@@ -894,13 +781,11 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 25
-
 			visible = {
 				has_completed_focus = GER_panzer_troops_school
 			}
 		}
 	}
-
 	GER_albert_kesselring = {
 		name = GER_albert_kesselring
 		portraits = {
@@ -925,7 +810,6 @@ characters = {
 				factor = 1.000
 			}
 		}
-		
 		corps_commander = {
 			traits = { inflexible_strategist trait_cautious war_hero }
 			skill = 4
@@ -936,7 +820,6 @@ characters = {
 			legacy_id = 32
 		}
 	}
-
 	GER_gotthard_heinrici = {
 		name = GER_gotthard_heinrici
 		portraits = {
@@ -955,7 +838,6 @@ characters = {
 			legacy_id = 33
 		}
 	}
-
 	GER_ernsteberhard_hell = {
 		name = GER_ernsteberhard_hell
 		portraits = {
@@ -972,13 +854,11 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 2
 			legacy_id = 34
-
 			visible = {
 				has_completed_focus = GER_lessons_of_the_great_war
 			}
 		}
 	}
-
 	GER_johannes_blaskowitz = {
 		name = GER_johannes_blaskowitz
 		portraits = {
@@ -997,7 +877,6 @@ characters = {
 			legacy_id = 19
 		}
 	}
-
 	GER_friedrich_schulz = {
 		name = GER_friedrich_schulz
 		portraits = {
@@ -1014,13 +893,11 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 3
 			legacy_id = 21
-
 			visible = {
 				has_completed_focus = GER_lessons_of_the_great_war
 			}
 		}
 	}
-
 	GER_felix_steiner = {
 		name = GER_felix_steiner
 		portraits = {
@@ -1037,7 +914,6 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 2
 			legacy_id = 35
-
 			visible = {
 				OR = {
 					has_completed_focus = GER_strengthen_the_waffen_ss
@@ -1046,7 +922,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_hans_krebs = {
 		name = GER_hans_krebs
 		portraits = {
@@ -1067,9 +942,6 @@ characters = {
 			}
 		}
 	}
-
-	### GER_hermann_erhardt is located by the other alt-hist advisors
-
 	GER_franz_ritter_von_epp = {
 		name = GER_franz_ritter_von_epp
 		portraits = {
@@ -1086,13 +958,11 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 2
 			legacy_id = -1
-
 			visible = {
 				has_completed_focus = GER_re_form_the_freikorps
 			}
 		}
 	}
-
 	GER_jurgen_von_blumenthal = {
 		name = GER_jurgen_von_blumenthal
 		portraits = {
@@ -1116,7 +986,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_walter_kruger = {
 		name = GER_walter_kruger
 		portraits = {
@@ -1133,7 +1002,6 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 3
 			legacy_id = 15
-
 			visible = {
 				OR = {
 					has_completed_focus = GER_strengthen_the_waffen_ss
@@ -1142,7 +1010,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_sepp_dietrich = {
 		name = GER_sepp_dietrich
 		portraits = {
@@ -1159,7 +1026,6 @@ characters = {
 			planning_skill = 4
 			logistics_skill = 4
 			legacy_id = 24
-
 			visible = {
 				OR = {
 					has_completed_focus = GER_strengthen_the_waffen_ss
@@ -1168,7 +1034,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_paul_hausser = {
 		name = GER_paul_hausser
 		portraits = {
@@ -1185,7 +1050,6 @@ characters = {
 			planning_skill = 4
 			logistics_skill = 3
 			legacy_id = 20
-
 			visible = {
 				OR = {
 					has_completed_focus = GER_strengthen_the_waffen_ss
@@ -1194,8 +1058,7 @@ characters = {
 			}
 		}
 	}
-
-	GER_alexander_von_falkenhausen = { #MM: Deal with the von Falkenhausen plague situation, there are 11 more von Falkenhausen impostors
+	GER_alexander_von_falkenhausen = {
 		name = CHI_alexander_von_falkenhausen
 		portraits = {
 			army = {
@@ -1216,17 +1079,14 @@ characters = {
 			}
 		}
 	}
-
 	GER_paul_von_lettow_vorbeck = { 
 		name = GER_paul_von_lettow_vorbeck
-
 		portraits = {
 			army = {
 				large = GFX_portrait_ger_von_lettow_vorbeck
 				small = GFX_idea_GER_von_lettow_vorbeck 
 			}
 		}
-
 		corps_commander = {
 			skill = 4
 			attack_skill = 3
@@ -1239,7 +1099,6 @@ characters = {
 				has_global_flag = von_lettow_is_in_a_country
 			}
 		}
-
 		advisor = {
 			slot = high_command
 			idea_token = GER_paul_von_lettow_vorbeck
@@ -1260,9 +1119,7 @@ characters = {
 				factor = 1
 			}
 		}
-
 	}
-
 	GER_walther_nehring = {
 		name = GER_walther_nehring
 		portraits = {
@@ -1283,7 +1140,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_hans_kahle = {
 		name = GER_hans_kahle
 		portraits = {
@@ -1304,7 +1160,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_hans_marchwitza = {
 		name = GER_hans_marchwitza
 		portraits = {
@@ -1325,7 +1180,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_arno_von_lenski = {
 		name = GER_arno_von_lenski
 		portraits = {
@@ -1346,18 +1200,6 @@ characters = {
 			}
 		}
 	}
-
-
-
-   ###    ########  ##     ## #### ########     ###    ##        ######  
-  ## ##   ##     ## ###   ###  ##  ##     ##   ## ##   ##       ##    ## 
- ##   ##  ##     ## #### ####  ##  ##     ##  ##   ##  ##       ##       
-##     ## ##     ## ## ### ##  ##  ########  ##     ## ##        ######  
-######### ##     ## ##     ##  ##  ##   ##   ######### ##             ## 
-##     ## ##     ## ##     ##  ##  ##    ##  ##     ## ##       ##    ## 
-##     ## ########  ##     ## #### ##     ## ##     ## ########  ######  
-
-
 	GER_karl_donitz = {
 		name = GER_karl_donitz
 		portraits = {
@@ -1386,7 +1228,6 @@ characters = {
 				base = 2
 			}
 		}
-		
 		navy_leader = {
 			traits = { navy_career_officer seawolf }
 			skill = 5
@@ -1397,7 +1238,6 @@ characters = {
 			legacy_id = 26
 		}
 	}
-
 	GER_erich_raeder = {
 		name = GER_erich_raeder
 		portraits = {
@@ -1431,7 +1271,6 @@ characters = {
 				base = 1
 			}
 		}
-		
 		navy_leader = {
 			traits = { battleship_adherent naval_lineage }
 			skill = 4
@@ -1442,7 +1281,6 @@ characters = {
 			legacy_id = 27
 		}
 	}
-
 	GER_alfred_saalwachter = {
 		name = GER_alfred_saalwachter
 		portraits = {
@@ -1469,7 +1307,6 @@ characters = {
 				submarine_specialist
 			}
 		}
-		
 		navy_leader = {
 			traits = { old_guard_navy bold }
 			skill = 4
@@ -1480,7 +1317,6 @@ characters = {
 			legacy_id = 28
 		}
 	}
-
 	GER_hermann_boehm = {
 		name = GER_hermann_boehm
 		portraits = {
@@ -1499,7 +1335,6 @@ characters = {
 			legacy_id = 29
 		}
 	}
-
 	GER_wilhelm_marschall = {
 		name = GER_wilhelm_marschall
 		portraits = {
@@ -1518,7 +1353,6 @@ characters = {
 			legacy_id = 30
 		}
 	}
-
 	GER_gunther_lutjens = {
 		name = GER_gunther_lutjens
 		portraits = {
@@ -1545,7 +1379,6 @@ characters = {
 				factor = 1.000
 			}
 		}
-		
 		navy_leader = {
 			traits = { gentlemanly navy_career_officer superior_tactician }
 			skill = 3
@@ -1556,23 +1389,6 @@ characters = {
 			legacy_id = 31
 		}
 	}
-
-
-######## ##     ## ########  #######  ########  ####  ######  ########  ######  
-   ##    ##     ## ##       ##     ## ##     ##  ##  ##    ##    ##    ##    ## 
-   ##    ##     ## ##       ##     ## ##     ##  ##  ##          ##    ##       
-   ##    ######### ######   ##     ## ########   ##   ######     ##     ######  
-   ##    ##     ## ##       ##     ## ##   ##    ##        ##    ##          ## 
-   ##    ##     ## ##       ##     ## ##    ##   ##  ##    ##    ##    ##    ## 
-   ##    ##     ## ########  #######  ##     ## ####  ######     ##     ######  
-
-
-	# Von Manstein up there
-
-	# Guderian up there
-
-	# Saalwachter up there
-
 	GER_wolfram_von_richthofen = {
 		name = GER_wolfram_von_richthofen
 		portraits = {
@@ -1593,8 +1409,7 @@ characters = {
 			}
 		}
 	}
-
-	GER_walther_wever = { #MM: Died in June 1936, probably remove him
+	GER_walther_wever = {
 		name = GER_walther_wever
 		portraits = {
 			army = {
@@ -1612,7 +1427,6 @@ characters = {
 			traits = { air_warfare_theorist }
 		}
 	}
-
 	GER_ernst_udet = {
 		name = GER_ernst_udet
 		portraits = {
@@ -1636,7 +1450,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_otto_ciliax = {
 		name = GER_otto_ciliax
 		portraits = {
@@ -1655,18 +1468,6 @@ characters = {
 			traits = { naval_theorist }
 		}
 	}
-
-
-
-   ###    ########  ##     ## ##    ##     ######  ##     ## #### ######## ########  ######  
-  ## ##   ##     ## ###   ###  ##  ##     ##    ## ##     ##  ##  ##       ##       ##    ## 
- ##   ##  ##     ## #### ####   ####      ##       ##     ##  ##  ##       ##       ##       
-##     ## ########  ## ### ##    ##       ##       #########  ##  ######   ######    ######  
-######### ##   ##   ##     ##    ##       ##       ##     ##  ##  ##       ##             ## 
-##     ## ##    ##  ##     ##    ##       ##    ## ##     ##  ##  ##       ##       ##    ## 
-##     ## ##     ## ##     ##    ##        ######  ##     ## #### ######## ##        ######  
-
-
 	GER_ludwig_beck = {
 		name = GER_ludwig_beck
 		portraits = {
@@ -1689,7 +1490,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_wilhelm_keitel = {
 		name = GER_wilhelm_keitel
 		portraits = {
@@ -1718,7 +1518,6 @@ characters = {
 			}
 		}		
 	}
-
 	GER_franz_halder = {
 		name = GER_franz_halder
 		portraits = {
@@ -1744,7 +1543,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_walther_von_brauchitsch = {
 		name = GER_walther_von_brauchitsch
 		portraits = {
@@ -1770,23 +1568,6 @@ characters = {
 			}
 		}
 	}
-
-
-
-##    ##    ###    ##     ## ##    ##     ######  ##     ## #### ######## ########  ######  
-###   ##   ## ##   ##     ##  ##  ##     ##    ## ##     ##  ##  ##       ##       ##    ## 
-####  ##  ##   ##  ##     ##   ####      ##       ##     ##  ##  ##       ##       ##       
-## ## ## ##     ## ##     ##    ##       ##       #########  ##  ######   ######    ######  
-##  #### #########  ##   ##     ##       ##       ##     ##  ##  ##       ##             ## 
-##   ### ##     ##   ## ##      ##       ##    ## ##     ##  ##  ##       ##       ##    ## 
-##    ## ##     ##    ###       ##        ######  ##     ## #### ######## ##        ######  
-
-
-	# Dönitz up there
-
-	# Raeder up there
-
-
 	GER_rolf_carls = {
 		name = GER_rolf_carls
 		portraits = {
@@ -1822,19 +1603,6 @@ characters = {
 			legacy_id = -1
 		}
 	}
-
-
-   ###    #### ########      ######  ##     ## #### ######## ########  ######  
-  ## ##    ##  ##     ##    ##    ## ##     ##  ##  ##       ##       ##    ## 
- ##   ##   ##  ##     ##    ##       ##     ##  ##  ##       ##       ##       
-##     ##  ##  ########     ##       #########  ##  ######   ######    ######  
-#########  ##  ##   ##      ##       ##     ##  ##  ##       ##             ## 
-##     ##  ##  ##    ##     ##    ## ##     ##  ##  ##       ##       ##    ## 
-##     ## #### ##     ##     ######  ##     ## #### ######## ##        ######  
-
-
-	# Kesselring up there
-
 	GER_hermann_goring = {
 		name = GER_hermann_goring
 		portraits = {
@@ -1843,10 +1611,9 @@ characters = {
 			}
 			civilian = {
 				large = GFX_portrait_GER_hermann_goring
-				small = GFX_portrait_GER_hermann_goring_small #GFX_portrait_GER_hermann_goring_civilian_small
+				small = GFX_portrait_GER_hermann_goring_small
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = GER_hermann_goring
@@ -1858,7 +1625,7 @@ characters = {
 				NOT = { has_completed_focus = GER_ascension_of_goring }
 			}
 			visible = {
-				always = no #MM: Part of Inner Circle.
+				always = no
 				has_government = fascism
 				NOT = {
 					has_completed_focus = GER_oppose_hitler_ww
@@ -1868,7 +1635,6 @@ characters = {
 				GER_overseer_four_year_plan
 			}
 		}
-		
 		advisor = {
 			slot = air_chief
 			idea_token = goering
@@ -1924,7 +1690,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_ritter_von_greim = {
 		name = GER_ritter_von_greim
 		portraits = {
@@ -1950,7 +1715,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_helmuth_wilberg = {
 		name = GER_helmuth_wilberg
 		portraits = {
@@ -1977,29 +1741,6 @@ characters = {
 			}
 		}
 	}
-
-
-
-##     ## #### ##       #### ########    ###    ########  ##    ##    ##     ## ####  ######   ##     ##     ######   #######  ##     ## ##     ##    ###    ##    ## ########  
-###   ###  ##  ##        ##     ##      ## ##   ##     ##  ##  ##     ##     ##  ##  ##    ##  ##     ##    ##    ## ##     ## ###   ### ###   ###   ## ##   ###   ## ##     ## 
-#### ####  ##  ##        ##     ##     ##   ##  ##     ##   ####      ##     ##  ##  ##        ##     ##    ##       ##     ## #### #### #### ####  ##   ##  ####  ## ##     ## 
-## ### ##  ##  ##        ##     ##    ##     ## ########     ##       #########  ##  ##   #### #########    ##       ##     ## ## ### ## ## ### ## ##     ## ## ## ## ##     ## 
-##     ##  ##  ##        ##     ##    ######### ##   ##      ##       ##     ##  ##  ##    ##  ##     ##    ##       ##     ## ##     ## ##     ## ######### ##  #### ##     ## 
-##     ##  ##  ##        ##     ##    ##     ## ##    ##     ##       ##     ##  ##  ##    ##  ##     ##    ##    ## ##     ## ##     ## ##     ## ##     ## ##   ### ##     ## 
-##     ## #### ######## ####    ##    ##     ## ##     ##    ##       ##     ## ####  ######   ##     ##     ######   #######  ##     ## ##     ## ##     ## ##    ## ########  
-
-
-
-	# Von Rundstedt up there
-
-	# Rommel up there
-
-	# Student up there
-
-	# Lütjens up there
-
-	# Von Fritsch up there
-
 	GER_ferdinand_schorner = {
 		name = GER_ferdinand_schorner
 		portraits = {
@@ -2023,7 +1764,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_erich_bey = {
 		name = GER_erich_bey
 		portraits = {
@@ -2047,8 +1787,6 @@ characters = {
 			}
 		}
 	}
-
-
 	GER_viktor_schutze = {
 		name = GER_viktor_schutze
 		portraits = {
@@ -2072,7 +1810,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_hugo_sperrle = {
 		name = GER_hugo_sperrle
 		portraits = {
@@ -2099,7 +1836,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_erhard_milch = {
 		name = GER_erhard_milch
 		portraits = {
@@ -2126,7 +1862,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_robert_knauss = {
 		name = GER_robert_knauss
 		portraits = {
@@ -2153,7 +1888,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_josef_kammhuber = {
 		name = GER_josef_kammhuber
 		portraits = {
@@ -2177,7 +1911,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_alfred_becker = {
 		name = GER_alfred_becker
 		portraits = {
@@ -2204,7 +1937,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_walter_dornberger = {
 		name = GER_walter_dornberger
 		portraits = {
@@ -2235,9 +1967,7 @@ characters = {
 			}
 		}
 	}
-
-
-	GER_nikolaus_von_falkenhorst = { # USED IN FINLAND
+	GER_nikolaus_von_falkenhorst = {
 		name = GER_nikolaus_von_falkenhorst
 		portraits = {
 			army = {
@@ -2265,19 +1995,6 @@ characters = {
 			}
 		}		
 	}
-	
-
-
-########   #######  ##       #### ######## ####  ######     ###    ##             ###    ########  ##     ## ####  ######   #######  ########   ######  
-##     ## ##     ## ##        ##     ##     ##  ##    ##   ## ##   ##            ## ##   ##     ## ##     ##  ##  ##    ## ##     ## ##     ## ##    ## 
-##     ## ##     ## ##        ##     ##     ##  ##        ##   ##  ##           ##   ##  ##     ## ##     ##  ##  ##       ##     ## ##     ## ##       
-########  ##     ## ##        ##     ##     ##  ##       ##     ## ##          ##     ## ##     ## ##     ##  ##   ######  ##     ## ########   ######  
-##        ##     ## ##        ##     ##     ##  ##       ######### ##          ######### ##     ##  ##   ##   ##        ## ##     ## ##   ##         ## 
-##        ##     ## ##        ##     ##     ##  ##    ## ##     ## ##          ##     ## ##     ##   ## ##    ##  ##    ## ##     ## ##    ##  ##    ## 
-##         #######  ######## ####    ##    ####  ######  ##     ## ########    ##     ## ########     ###    ####  ######   #######  ##     ##  ######  
-
-
-
 	GER_joachim_von_ribbentrop = {
 		name = GER_joachim_von_ribbentrop
 		portraits = {
@@ -2311,9 +2028,7 @@ characters = {
 					has_country_flag = GER_reinstated_nazi_leadership 
 				}
 			}
-
 			cost = 50
-
 			traits = {
 				GER_reich_minister_foreign_affairs_ribbentrop
 			}
@@ -2322,7 +2037,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_konstantin_von_neurath = {
 		name = GER_konstantin_von_neurath
 		portraits = {
@@ -2355,7 +2069,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_fritz_todt = {
 		name = GER_fritz_todt
 		portraits = {
@@ -2363,7 +2076,6 @@ characters = {
 				large = GFX_portrait_GER_fritz_todt
 				small = GFX_portrait_GER_fritz_todt_small
 			}
-			
 		}
 		advisor = {
 			slot = political_advisor
@@ -2385,7 +2097,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_albert_speer = { 
 		name = GER_albert_speer
 		portraits = {
@@ -2411,7 +2122,6 @@ characters = {
 			}
 		}		
 	}
-
 	GER_hjalmar_schacht = {
 		name = GER_hjalmar_schacht
 		portraits = {
@@ -2425,7 +2135,7 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
-			cost = 75 #as soon as the MEFO Bills are gone, so is Schacht
+			cost = 75
 			available = {
 				has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
 				NOT = { has_government = communism }
@@ -2460,7 +2170,6 @@ characters = {
 			}
 		}		
 	}
-
 	GER_walther_funk = {
 		name = GER_walther_funk
 		portraits = {
@@ -2504,7 +2213,6 @@ characters = {
 			}
 		}		
 	}
-
 	GER_joseph_goebbels = {
 		name = GER_joseph_goebbels
 		portraits = {
@@ -2547,7 +2255,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_rudolf_hess = {
 		name = GER_rudolf_hess
 		portraits = {
@@ -2576,7 +2283,7 @@ characters = {
 				}
 			}
 			visible = {
-				always = no #MM: Part of Inner Circle.
+				always = no
 				has_government = fascism
 				NOT = {
 					has_completed_focus = GER_oppose_hitler_ww
@@ -2587,7 +2294,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_heinrich_himmler = {
 		name = GER_heinrich_himmler
 		portraits = {
@@ -2616,7 +2322,7 @@ characters = {
 				NOT = { has_completed_focus = GER_ascension_of_himmler }
 			}
 			visible = {
-				always = no #MM: Part of Inner Circle.
+				always = no
 				has_government = fascism
 				NOT = {
 					has_completed_focus = GER_oppose_hitler_ww
@@ -2630,7 +2336,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_martin_bormann = {
 		name = GER_martin_bormann
 		portraits = {
@@ -2658,7 +2363,7 @@ characters = {
 				}
 			}
 			visible = {
-				always = no #MM: Part of Inner Circle.
+				always = no
 				has_government = fascism
 				NOT = {
 					has_completed_focus = GER_oppose_hitler_ww
@@ -2672,19 +2377,14 @@ characters = {
 			}
 		}		
 	}
-
 	GER_leni_riefenstahl = {	
-
 		name = GER_leni_riefenstahl
-
 		gender = female 
-
 		portraits = {
 			army = {
 				small = GFX_portrait_GER_leni_riefenstahl_small
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = GER_leni_riefenstahl
@@ -2707,19 +2407,14 @@ characters = {
 				GER_film_director
 			}
 		}
-			
 	}
-
 	GER_franz_seldte = {	
-
 		name = GER_franz_seldte
-
 		portraits = {
 			army = {
 				small = GFX_portrait_GER_franz_seldte_small
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = GER_franz_seldte
@@ -2742,19 +2437,14 @@ characters = {
 				GER_reich_minister_for_labor
 			}
 		}
-			
 	}
-
 	GER_hanns_kerrl = {	
-
 		name = GER_hanns_kerrl
-
 		portraits = {
 			army = {
 				small = GFX_portrait_GER_hanns_kerrl_small
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = GER_hanns_kerrl
@@ -2781,13 +2471,11 @@ characters = {
 			}
 		}	
 	}
-
 	GER_reinhard_heydrich = {
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
 			}
-
 			name = GER_reinhard_heydrich
 			portraits = {
 				army = {
@@ -2817,14 +2505,12 @@ characters = {
 				}
 			}
 		}
-
 		instance = {
 			allowed = {
 				NOT = {
 					has_dlc = "La Resistance"
 				}
 			}
-
 			name = GER_reinhard_heydrich
 			portraits = {
 				army = {
@@ -2851,7 +2537,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_wilhelm_canaris = {
  		name = GER_wilhelm_canaris
 		portraits = {
@@ -2881,7 +2566,6 @@ characters = {
 			}
 		}		
 	}
-
 	GER_hans_oster = {
 		name = GER_hans_oster
 		portraits = {
@@ -2915,7 +2599,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_gregor_strasser = {
 		name = GER_gregor_strasser
 		portraits = {
@@ -2947,7 +2630,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_alfred_hugenberg = {
 		name = GER_alfred_hugenberg
 		portraits = {
@@ -2988,7 +2670,6 @@ characters = {
 			}
 		}
 	}
-	
 	GER_carl_friedrich_goerdeler = {
 		name = GER_carl_friedrich_goerdeler
 		portraits = {
@@ -2997,9 +2678,6 @@ characters = {
 				small = GFX_portrait_GER_carl_friedrich_goerdeler_small
 			}
 		}
-
-		#Can get Country Leader role after Operation Valkyrie
-
 		advisor = {
 			slot = political_advisor
 			idea_token = GER_carl_friedrich_goerdeler
@@ -3030,7 +2708,6 @@ characters = {
 			}
 		}	
 	}
-	
 	GER_julius_leber = {
 		name = GER_julius_leber
 		portraits = {
@@ -3077,7 +2754,6 @@ characters = {
 			}
 		}
 	}
-	
 	GER_kurt_schumacher = {
 		name = GER_kurt_schumacher
 		portraits = {
@@ -3128,7 +2804,6 @@ characters = {
 			}
 		}		
 	}
-
 	GER_theodor_heuss = {
 		name = GER_theodor_heuss
 		portraits = {
@@ -3175,7 +2850,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_alfred_rosenberg = {
 		name = GER_alfred_rosenberg
 		portraits = {
@@ -3184,9 +2858,7 @@ characters = {
 				small = GFX_portrait_GER_alfred_rosenberg_small
 			}
 		}
-		# Will work as a dynamic modifier for the Reichskommissariat system
 	}
-
 	GER_hans_luther = {
 		name = GER_hans_luther
 		portraits = {
@@ -3234,7 +2906,6 @@ characters = {
 			}
 		}		
 	}
-
 	GER_ludwig_erhard = {
 		name = GER_ludwig_erhard
 		portraits = {
@@ -3264,7 +2935,6 @@ characters = {
 			}
 		}		
 	}
-
 	GER_hermann_erhardt = {
 		name = GER_hermann_erhardt
 		portraits = {
@@ -3281,7 +2951,6 @@ characters = {
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = -1
-
 			visible = {
 				has_completed_focus = GER_re_form_the_freikorps
 			}
@@ -3312,12 +2981,8 @@ characters = {
 			}
 		}
 	}
-	
 	GER_adolf_friedrich_von_mecklenburg = {
 		name = GER_adolf_friedrich_von_mecklenburg
-
-		# He will be able to become country leader for reichskommisariats and grand duchies through decisions
-
 		portraits = {
 			civilian = {
 				large = GFX_portrait_GER_duke_adolf_friedrich_of_mecklenburg
@@ -3327,7 +2992,6 @@ characters = {
 				small = GFX_portrait_GER_duke_adolf_friedrich_of_mecklenburg_military_small
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = GER_adolf_friedrich_von_mecklenburg
@@ -3355,16 +3019,13 @@ characters = {
 			}
 		}		
 	}
-
 	GER_wilhelm_von_gayl = {
 		name = GER_wilhelm_von_gayl
-
 		portraits = {
 			civilian = {
 				small = GFX_portrait_GER_wilhelm_von_gayl_small
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = GER_wilhelm_von_gayl
@@ -3386,16 +3047,13 @@ characters = {
 			}
 		}		
 	}
-
 	GER_andreas_hermes = {
 		name = GER_andreas_hermes
-
 		portraits = {
 			civilian = {
 				small = GFX_portrait_GER_andreas_hermes_small
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = GER_andreas_hermes
@@ -3417,16 +3075,13 @@ characters = {
 			}
 		}		
 	}
-
 	GER_dietrich_bonhoeffer = {
 		name = GER_dietrich_bonhoeffer
-
 		portraits = {
 			civilian = {
 				small = GFX_portrait_GER_dietrich_bonhoffer_small
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = GER_dietrich_bonhoeffer
@@ -3450,7 +3105,6 @@ characters = {
 			}
 		}		
 	}
-
 	GER_ernst_thalmann = {
 		instance = {
 			allowed = {
@@ -3458,15 +3112,12 @@ characters = {
 					has_dlc = "Gotterdammerung"
 				}
 			}
-
 			name = GER_ernst_thalmann
-
 			portraits = {
 				civilian = {
 					small = GFX_idea_ernst_thalmann
 				}
 			}
-
 			advisor = {
 				slot = political_advisor
 				idea_token = ernst_thalmann
@@ -3484,38 +3135,30 @@ characters = {
 						}
 					}
 				}
-
 				traits = {
 					communist_revolutionary 
 				}
-
 				do_effect = {
 					NOT = {
 						has_government = communism 
 					}
 				}
-
 				ai_will_do = {
 					base = 0.000
 				}
 			}
-
 		}
 		instance = {
 			allowed = {
 				has_dlc = "Gotterdammerung"
 			}
-
 			name = GER_ernst_thalmann
-
 			portraits = {
 				civilian = {
 					large = GFX_portrait_GER_ernst_thalmann
 					small = GFX_portrait_GER_ernst_thalmann_imprisoned
-					# GFX_portrait_GER_ernst_thalmann_small when freed
 				}
 			}
-
 			advisor = {
 				slot = political_advisor
 				idea_token = ernst_thalmann
@@ -3535,19 +3178,15 @@ characters = {
 					has_country_flag = GER_thalmann_freed_from_prison_flag
 					is_country_leader = no
 				}
-
 				traits = {
 					GER_proletarian_leader 
 				}
-				
 				ai_will_do = {
 					base = 1
 				}
 			}
-
 		}
 	}
-
 	GER_walter_ulbricht = {
 		name = GER_walter_ulbricht
 		portraits = {
@@ -3590,16 +3229,13 @@ characters = {
 			}
 		}		
 	}
-
 	GER_wilhelm_zaisser = {
 		name = GER_wilhelm_zaisser
-
 		portraits = {
 			civilian = {
 				small = GFX_portrait_GER_wilhelm_zaisser_small
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = GER_wilhelm_zaisser
@@ -3619,26 +3255,21 @@ characters = {
 			available = {
 				has_completed_focus = GER_formalize_the_intelligence_wing
 			}
-
 			traits = {
 				GER_intelligence_coordinator
 			}
-
 			ai_will_do = {
 				base = 1
 			}
 		}
 	}
-
 	GER_otto_ruhle = {
 		name = GER_otto_ruhle
-
 		portraits = {
 			civilian = {
 				small = GFX_portrait_GER_otto_ruhle_small
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = GER_otto_ruhle
@@ -3657,26 +3288,21 @@ characters = {
 			available = {
 				has_completed_focus = GER_legacy_of_the_spartacus_league
 			}
-
 			traits = {
 				marxist_philosopher
 			}
-
 			ai_will_do = {
 				base = 1
 			}
 		}
 	}
-
 	GER_hermann_duncker = {
 		name = GER_hermann_duncker
-
 		portraits = {
 			civilian = {
 				small = GFX_portrait_GER_hermann_duncker_small
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = GER_hermann_duncker
@@ -3702,26 +3328,21 @@ characters = {
 			available = {
 				has_government = communism
 			}
-
 			traits = {
 				GER_workers_educator
 			}
-
 			ai_will_do = {
 				base = 1
 			}
 		}
 	}
-
 	GER_august_thalheimer = {
 		name = GER_august_thalheimer
-
 		portraits = {
 			civilian = {
 				small = GFX_portrait_GER_august_thalheimer_small
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = GER_august_thalheimer
@@ -3747,26 +3368,21 @@ characters = {
 			available = {
 				has_government = communism
 			}
-
 			traits = {
 				GER_stakhonovite_collectivist1
 			}
-
 			ai_will_do = {
 				base = 1
 			}
 		}
 	}
-
 	GER_bernhard_bastlein = {
 		name = GER_bernhard_bastlein
-
 		portraits = {
 			civilian = {
 				small = GFX_portrait_GER_bernhard_bastlein_small
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = GER_bernhard_bastlein
@@ -3785,39 +3401,14 @@ characters = {
 			available = {
 				has_completed_focus = GER_start_the_proletarian_revolution
 			}
-
 			traits = {
 				GER_seasoned_socialist_resistance_fighter
 			}
-
 			ai_will_do = {
 				base = 0.5
 			}
 		}
 	}
-
-
-
-
- ######   ######  #### ######## ##    ## ######## ####  ######  ########  ######  
-##    ## ##    ##  ##  ##       ###   ##    ##     ##  ##    ##    ##    ##    ## 
-##       ##        ##  ##       ####  ##    ##     ##  ##          ##    ##       
- ######  ##        ##  ######   ## ## ##    ##     ##   ######     ##     ######  
-      ## ##        ##  ##       ##  ####    ##     ##        ##    ##          ## 
-##    ## ##    ##  ##  ##       ##   ###    ##     ##  ##    ##    ##    ##    ## 
- ######   ######  #### ######## ##    ##    ##    ####  ######     ##     ######  
-
-
-
- #     #                                                 
- ##    #  #    #   ####   #       ######    ##    #####  
- # #   #  #    #  #    #  #       #        #  #   #    # 
- #  #  #  #    #  #       #       #####   #    #  #    # 
- #   # #  #    #  #       #       #       ######  #####  
- #    ##  #    #  #    #  #       #       #    #  #   #  
- #     #   ####    ####   ######  ######  #    #  #    # 
-                                                         
-
 	GER_heisenberg = {
 		name = GER_heisenberg
 		portraits = {
@@ -3826,7 +3417,6 @@ characters = {
 				small = GFX_idea_heisenberg
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_nuclear_specialist scientist_trait_bright }
 			skills = {
@@ -3834,7 +3424,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_peter_adolf_thiessen = {
 		name = GER_peter_adolf_thiessen
 		portraits = {
@@ -3842,7 +3431,6 @@ characters = {
 				large = GFX_portrait_GER_peter_adolf_thiessen
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_nuclear_warfare_expert scientist_trait_brilliant_theorist }
 			skills = {
@@ -3850,7 +3438,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_gustav_ludwig_hertz = {
 		name = GER_gustav_ludwig_hertz
 		portraits = {
@@ -3858,7 +3445,6 @@ characters = {
 				large = GFX_portrait_GER_gustav_ludwig_hertz
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_nuclear_power_expert scientist_trait_fast_learner }
 			skills = {
@@ -3866,18 +3452,6 @@ characters = {
 			}
 		}
 	}
-
-
-
- #                               
- #          ##    #    #  #####  
- #         #  #   ##   #  #    # 
- #        #    #  # #  #  #    # 
- #        ######  #  # #  #    # 
- #        #    #  #   ##  #    # 
- #######  #    #  #    #  #####  
-                                 
-
 	GER_eduard_grote = {
 		name = GER_eduard_grote
 		portraits = {
@@ -3885,7 +3459,6 @@ characters = {
 				large = GFX_portrait_GER_eduard_grote
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_armored_specialist }
 			skills = {
@@ -3893,7 +3466,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_karl_heinrich_emil_becker = {
 		name = GER_karl_heinrich_emil_becker
 		portraits = {
@@ -3901,7 +3473,6 @@ characters = {
 				large = GFX_portrait_GER_karl_heinrich_emil_becker
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_artillery_specialist scientist_trait_fast_learner }
 			skills = {
@@ -3909,7 +3480,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_ferdinand_porsche = {
 		name = GER_ferdinand_porsche
 		portraits = {
@@ -3917,16 +3487,14 @@ characters = {
 				large = GFX_portrait_GER_ferdinand_porsche
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_armored_specialist scientist_trait_gifted_engineer }
 			skills = {
 				specialization_land = 3
 			}
-
 			visible = {
 				owner = {
-					if = { #AAT
+					if = {
 						limit = {
 							has_dlc = "Arms Against Tyranny"
 						}
@@ -3934,7 +3502,7 @@ characters = {
 							is_mio_trait_completed = GER_mio_trait_involve_porsche_in_special_projects
 						}
 					}
-					else = { #NO-AAT
+					else = {
 						OR = {
 							has_idea = porsche
 							has_idea = GER_porsche_improved
@@ -3944,7 +3512,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_erwin_aders = {
 		name = GER_erwin_aders
 		portraits = {
@@ -3952,16 +3519,14 @@ characters = {
 				large = GFX_portrait_GER_erwin_aders
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_armored_specialist scientist_trait_brilliant_theorist }
 			skills = {
 				specialization_land = 3
 			}
-
 			visible = {
 				owner = {
-					if = { #AAT
+					if = {
 						limit = {
 							has_dlc = "Arms Against Tyranny"
 						}
@@ -3969,7 +3534,7 @@ characters = {
 							is_mio_trait_completed = GER_mio_trait_involve_henschel_in_special_projects
 						}
 					}
-					else = { #NO-AAT
+					else = {
 						OR = {
 							has_idea = henschel
 							has_idea = GER_henschel_improved
@@ -3979,18 +3544,6 @@ characters = {
 			}
 		}
 	}
-
-
-
- #     #                                 
- ##    #    ##    #    #    ##    #      
- # #   #   #  #   #    #   #  #   #      
- #  #  #  #    #  #    #  #    #  #      
- #   # #  ######  #    #  ######  #      
- #    ##  #    #   #  #   #    #  #      
- #     #  #    #    ##    #    #  ###### 
-                                         
-
 	GER_hermann_burkhardt = {
 		name = GER_hermann_burkhardt
 		portraits = {
@@ -3998,7 +3551,6 @@ characters = {
 				large = GFX_portrait_GER_hermann_burkhardt
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_surface_ship_specialist }
 			skills = {
@@ -4006,7 +3558,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_ulrich_gabler = {
 		name = GER_ulrich_gabler
 		portraits = {
@@ -4014,7 +3565,6 @@ characters = {
 				large = GFX_portrait_GER_ulrich_gabler
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_submarine_specialist }
 			skills = {
@@ -4022,7 +3572,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_hellmuth_walter = {
 		name = GER_hellmuth_walter
 		portraits = {
@@ -4030,7 +3579,6 @@ characters = {
 				large = GFX_portrait_GER_hellmuth_walter
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_submarine_specialist scientist_trait_bright }
 			skills = {
@@ -4038,17 +3586,6 @@ characters = {
 			}
 		}
 	}
-
-
-    #               
-   # #    #  #####  
-  #   #   #  #    # 
- #     #  #  #    # 
- #######  #  #####  
- #     #  #  #   #  
- #     #  #  #    # 
-
-
 	GER_von_braun = { 
 		name = GER_von_braun
 		portraits = {
@@ -4057,22 +3594,6 @@ characters = {
 				small = GFX_idea_von_braun
 			}
 		}
-		#advisor = { #MM: Old Theorist role -> Now Scientist
-		#	cost = 100
-		#	slot = theorist
-		#	idea_token = von_braun
-		#	ledger = air
-		#	allowed = {
-		#		original_tag = GER
-		#	}
-		#	research_bonus = {
-		#		rocketry = 0.150
-		#	}
-		#	traits = {
-		#		rocket_scientist
-		#	}
-		#}
-
 		scientist = {
 			traits = { scientist_trait_rocketry_specialist scientist_trait_brilliant_theorist }
 			skills = {
@@ -4080,7 +3601,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_hans_von_ohain = {
 		name = GER_hans_von_ohain
 		portraits = {
@@ -4088,7 +3608,6 @@ characters = {
 				large = GFX_portrait_GER_hans_von_ohain
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_jet_expert }
 			skills = {
@@ -4096,7 +3615,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_max_kramer = {
 		name = GER_max_kramer
 		portraits = {
@@ -4104,7 +3622,6 @@ characters = {
 				large = GFX_portrait_GER_max_kramer
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_guidance_systems_expert }
 			skills = {
@@ -4112,7 +3629,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_kurt_tank = {
 		name = GER_kurt_tank
 		portraits = {
@@ -4120,7 +3636,6 @@ characters = {
 				large = GFX_portrait_GER_kurt_tank
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_aircraft_specialist scientist_trait_fast_learner }
 			skills = {
@@ -4128,7 +3643,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_henrich_focke = {
 		name = GER_henrich_focke
 		portraits = {
@@ -4136,7 +3650,6 @@ characters = {
 				large = GFX_portrait_GER_henrich_focke
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_helicopter_expert scientist_trait_bright }
 			skills = {
@@ -4144,7 +3657,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_manfred_von_ardenne = {
 		name = GER_manfred_von_ardenne
 		portraits = {
@@ -4152,7 +3664,6 @@ characters = {
 				large = GFX_portrait_GER_manfred_von_ardenne
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_electronics_specialist scientist_trait_fast_learner }
 			skills = {
@@ -4160,7 +3671,6 @@ characters = {
 			}
 		}
 	}
-
 	GER_konrad_zuse = {
 		name = GER_konrad_zuse
 		portraits = {
@@ -4168,7 +3678,6 @@ characters = {
 				large = GFX_portrait_GER_konrad_zuse
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_electronics_specialist scientist_trait_bright }
 			skills = {
@@ -4176,5 +3685,4 @@ characters = {
 			}
 		}
 	}
-
 }

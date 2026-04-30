@@ -1,13 +1,7 @@
 ﻿start_equipment_factor = 0.3
 division_template = {
-
-	name = "Mixed Division"				# Mixed Division - Divisions raised in 1939, still at reserve levels at start of war
-
+	name = "Mixed Division"
 	division_names_group = PER_INF_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -26,13 +20,8 @@ division_template = {
 		maintenance_company = { x = 0 y = 3 }
 	}}
 division_template = {
-
-	name = "Infantry Group"				# Represents groups of independent infantry brigades
-
+	name = "Infantry Group"
 	division_names_group = PER_GAR_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -49,14 +38,9 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
-
 units = {
-	######## LAND OOB ########
-	##### Royal Iranian Army #####
 	division = {
-		#name = "1st Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
@@ -64,11 +48,9 @@ units = {
 		division_template = "Mixed Division"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "2nd Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -76,11 +58,9 @@ units = {
 		division_template = "Mixed Division"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "3rd Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
@@ -88,11 +68,9 @@ units = {
 		division_template = "Mixed Division"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "4th Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
@@ -100,11 +78,9 @@ units = {
 		division_template = "Mixed Division"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "5th Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 5
 		}
@@ -112,11 +88,9 @@ units = {
 		division_template = "Mixed Division"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "6th Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 6
 		}
@@ -124,35 +98,29 @@ units = {
 		division_template = "Mixed Division"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "7th Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
-			name_order = 9 # When looking into PER OOBS of the time, it looked like there was no 7th or 8th Div - could be wrong though, research very limited.
+			name_order = 9
 		}
 		location = 8117
 		division_template = "Mixed Division"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "8th Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
-			name_order = 10 # When looking into PER OOBS of the time, it looked like there was no 7th or 8th Div - could be wrong though, research very limited.
+			name_order = 10
 		}
 		location = 7953
 		division_template = "Mixed Division"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "9th Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 11
 		}
@@ -160,7 +128,6 @@ units = {
 		division_template = "Mixed Division"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "North Persia Group"
@@ -168,7 +135,6 @@ units = {
 		division_template = "Infantry Group"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "South Persia Group"
@@ -176,14 +142,8 @@ units = {
 		division_template = "Infantry Group"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	######## No Naval OOB ########
 }
-
-
-
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

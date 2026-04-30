@@ -1,10 +1,6 @@
 ﻿division_template = {
-
 	name = "Juntuán" 	
 	division_names_group = CHI_INF_01 
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -22,12 +18,8 @@
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
 	name = "Sanjiao Jun" 
 	division_names_group = CHI_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -44,15 +36,9 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
 	name = "Qibing Jun" 		
 	division_names_group = CHI_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -70,10 +56,7 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
-### OOB ###
 units = {
-	### Provincial Forces ###
 	division = {
 		name = "37th Division" 
 		location = 9843 
@@ -82,7 +65,6 @@ units = {
 		officer = {
 			name = HBC_feng_zhian
 		}
-
 	}
 	division = {
 		name = "38th Division" 
@@ -92,7 +74,6 @@ units = {
 		officer = {
 			name = HBC_zhang_zizhong
 		}
-
 	}
 	division = {
 		name = "132nd Division" 
@@ -102,7 +83,6 @@ units = {
 		officer = {
 			name = HBC_zhao_dengyu
 		}
-
 	}
 	division = {
 		name = "143rd Division" 
@@ -112,14 +92,12 @@ units = {
 		officer = {
 			name = HBC_liu_ruming
 		}
-
 	}
 	division = {
 		name = "Independent 39th Brigade" 
 		location = 9843 
 		division_template = "Juntuán"		
 		start_equipment_factor = 0.2
-
 	}
 	division = {
 		name = "North Hebei Security Force" 
@@ -129,7 +107,6 @@ units = {
 		officer = {
 			name = HBC_shi_yousan
 		}
-
 	}
 	division = {
 		name = "9th Cavalry Division" 
@@ -139,7 +116,6 @@ units = {
 		officer = {
 			name = HBC_zheng_dazhang
 		}
-
 	}
 	division = {
 		name = "13th Independent Cavalry Brigade" 
@@ -149,7 +125,6 @@ units = {
 		officer = {
 			name = HBC_yao_yingchuan
 		}
-
 	}
 	division = {
 		name = "4th Cavalry Division" 
@@ -159,9 +134,7 @@ units = {
 		officer = {
 			name = HBC_wang_qifeng
 		}
-
 	}
-
 	division = {
 		name = "116th Division" 
 		location = 9843 
@@ -170,7 +143,6 @@ units = {
 		officer = {
 			name = HBC_miao_yiliu
 		}
-
 	}
 	division = {
 		name = "119th Division" 
@@ -180,7 +152,6 @@ units = {
 		officer = {
 			name = HBC_sun_dequan
 		}
-
 	}
 	division = {
 		name = "129th Division" 
@@ -190,9 +161,7 @@ units = {
 		officer = {
 			name = HBC_zhou_fucheng
 		}
-
 	}
-
 	division = {
 		name = "130th Division" 
 		location = 12026 
@@ -201,9 +170,7 @@ units = {
 		officer = {
 			name = HBC_zhu_hongkun
 		}
-
 	}
-
 	division = {
 		name = "91st Division" 
 		location = 4190 
@@ -212,12 +179,8 @@ units = {
 		officer = {
 			name = HBC_feng_zhanhai
 		}
-
 	}
-
 }
-
-### STARTING PRODUCTION ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

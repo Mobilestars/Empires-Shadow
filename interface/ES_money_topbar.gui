@@ -1,19 +1,10 @@
-##──────────────────────────────────────────────────────────────────────────────
-## ES Money System – Topbar Widget
-## This container is attached to the topbar by ES_money_scripted_gui.
-## Position x=173 fits in the gap created by the stability/manpower shift
-## in the mod's topbar.gui.
-##──────────────────────────────────────────────────────────────────────────────
 guiTypes = {
-
 	containerWindowType = {
 		name = "ES_money_topbar_container"
 		position = { x = 173 y = 5 }
 		size = { width = 98 height = 28 }
 		Orientation = UPPER_LEFT
 		clipping = no
-
-		# Button serves as background and tooltip trigger (pdx_tooltip on containers doesn't fire)
 		buttonType = {
 			name = "es_money_tooltip_button"
 			position = { x = 0 y = 0 }
@@ -21,7 +12,6 @@ guiTypes = {
 			quadTextureSprite = "GFX_generic_box_96"
 			pdx_tooltip = ES_MONEY_TOPBAR_TOOLTIP
 		}
-
 		iconType = {
 			name = "es_money_icon"
 			spriteType = "GFX_es_money_icon"
@@ -30,7 +20,6 @@ guiTypes = {
 			pdx_tooltip = ES_MONEY_TOPBAR_TOOLTIP
 			alwaystransparent = yes
 		}
-
 		instantTextBoxType = {
 			name = "es_money_value"
 			position = { x = 33 y = 5 }

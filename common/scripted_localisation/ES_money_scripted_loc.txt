@@ -1,29 +1,17 @@
-# ──────────────────────────────────────────────────────────────────────────────
-# ES Money System – Scripted Localisation
-# ES_MONEY_TOPBAR_VALUE is referenced by the topbar GUI text box.
-# Because the scripted GUI uses context_type = player_context, ROOT here
-# is the player country, so [?money] correctly reads the player's variable.
-# ──────────────────────────────────────────────────────────────────────────────
-
 defined_text = {
 	name = ES_MONEY_TOPBAR_VALUE
-	# >= 1 000 000 → show as M (millions)
 	text = {
 		trigger = { check_variable = { money >= 1000000 } }
 		localization_key = ES_MONEY_TOPBAR_VALUE_M
 	}
-	# >= 1 000 → show as k (thousands)
 	text = {
 		trigger = { check_variable = { money >= 1000 } }
 		localization_key = ES_MONEY_TOPBAR_VALUE_K
 	}
-	# < 1 000 → show raw integer
 	text = {
 		localization_key = ES_MONEY_TOPBAR_VALUE_RAW
 	}
 }
-
-# Scripted tooltip so variable substitution is evaluated in player country scope
 defined_text = {
 	name = ES_MONEY_TOPBAR_TOOLTIP
 	text = {

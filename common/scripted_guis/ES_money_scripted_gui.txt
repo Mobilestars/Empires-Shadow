@@ -1,19 +1,9 @@
-# ──────────────────────────────────────────────────────────────────────────────
-# ES Money System – Topbar display
-# Attaches the money widget container to the topbar.
-# context_type = player_context means all scripted_localisation in this GUI
-# is evaluated with the player country as ROOT scope, so [?money] works.
-# dirty = money re-evaluates the GUI whenever money changes.
-# ──────────────────────────────────────────────────────────────────────────────
 scripted_gui = {
-
 	ES_money_topbar_gui = {
 		context_type = player_context
 		parent_window_token = top_bar
 		window_name = "ES_money_topbar_container"
-
 		dirty = money
-
 		visible = {
 			always = yes
 		}

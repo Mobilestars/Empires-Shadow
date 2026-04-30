@@ -2,9 +2,7 @@ state={
 	id=268
 	name="STATE_268"
 	manpower = 85232
-
 	state_category = enclave
-
 	history={
 		owner = ITA
 		add_core_of = ITA
@@ -25,6 +23,5 @@ state={
 	provinces={
 		4985 8124
 	}
-
 	local_supplies=0.0
 }

@@ -1,11 +1,6 @@
 ﻿division_template = {
-
-
 	name = "Infanterie Division"
 	division_names_group = AUS_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -22,15 +17,9 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
-
 	name = "Alpenjäger Division"
 	division_names_group = AUS_MNT_01
-
-	# Special Forces: Mountaineers + Line Arty ~30W
-	# Needs: Special Forces Doctrine (AaT) + Fire Concentration sub-doctrine
 	regiments = {
 		mountaineers      = { x = 0 y = 0 }
 		mountaineers      = { x = 0 y = 1 }
@@ -50,16 +39,9 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
-
-	name = "Schnelle Division"  		# Schnelle-Division (cavalry)
+	name = "Schnelle Division"
 	division_names_group = AUS_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -77,16 +59,9 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 division_template = {
-
-
-	name = "Gyalogdandár"				# Infantry Brigade
-
+	name = "Gyalogdandár"
 	division_names_group = HUN_INF_02
-
-	# Line Artillery Infantry ~30W (9 inf + 3 arty brigade)
-	# Needs: Fire Concentration sub-doctrine (effective ~27W)
 	regiments = {
 		infantry          = { x = 0 y = 0 }
 		infantry          = { x = 0 y = 1 }
@@ -106,17 +81,9 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_tank = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
-
-	name = "Huszár Dandár"			# Cavalry Brigade
-
+	name = "Huszár Dandár"
 	division_names_group = HUN_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -134,17 +101,9 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 division_template = {
-
-
-	name = "Motorizált Dandár"			# Motorized Brigade
-
+	name = "Motorizált Dandár"
 	division_names_group = HUN_MOT_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -162,80 +121,64 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
-
 units = {
-	##### Österreichisches Bundesheer #####
-	# I Korps
-	division= {	#Cavalry schnelle
+	division= {
 		name = "Schnelle Division" 
-		location = 11666  # Vienna
+		location = 11666
 		division_template = "Schnelle Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-
-	division= {	# "1. Division"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 3700  # Eisenstadt 
+		location = 3700
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-	division= {	# "2. Division"			# Used to form 44. Infanterie-division post-Anschluss
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 11666  # Vienna
+		location = 11666
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-	division= {	# "3. Division"			# Used to form 44. Infanterie--division post-Anschluss
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 9648 # Graz
+		location = 9648
 		division_template = "Infanterie Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	# II Korps
-	division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 4
 		}
-		location = 9665 # Linz
+		location = 9665
 		division_template = "Alpenjäger Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division= {	# "5. Division"			# Used to form 3. Gebirgs-division post-Anschluss
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 5
 		}
-		location = 9648  # Graz
+		location = 9648
 		division_template = "Alpenjäger Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	##### Honvédelmi Fõparancsnokság (Hungarian units merged into Austrian army) #####
-	# Gyorshadtest ('Rapid Corps') #
 	division= {
 		division_name = {
 			is_name_ordered = yes
@@ -245,7 +188,6 @@ units = {
 		division_template = "Motorizált Dandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {
 		division_name = {
@@ -256,7 +198,6 @@ units = {
 		division_template = "Motorizált Dandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {
 		division_name = {
@@ -267,7 +208,6 @@ units = {
 		division_template = "Huszár Dandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {
 		division_name = {
@@ -278,10 +218,7 @@ units = {
 		division_template = "Huszár Dandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
-	# I Hadtest #
 	division= {
 		division_name = {
 			is_name_ordered = yes
@@ -291,7 +228,6 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {
 		division_name = {
@@ -302,7 +238,6 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {
 		division_name = {
@@ -313,10 +248,7 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
-	# II Hadtest #
 	division= {
 		division_name = {
 			is_name_ordered = yes
@@ -326,7 +258,6 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {
 		division_name = {
@@ -337,7 +268,6 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {
 		division_name = {
@@ -348,10 +278,7 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
-	# III Hadtest #
 	division= {
 		division_name = {
 			is_name_ordered = yes
@@ -361,7 +288,6 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {
 		division_name = {
@@ -372,7 +298,6 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {
 		division_name = {
@@ -383,10 +308,7 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
-	# IV Hadtest #
 	division= {
 		division_name = {
 			is_name_ordered = yes
@@ -396,7 +318,6 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {
 		division_name = {
@@ -407,7 +328,6 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {
 		division_name = {
@@ -418,10 +338,7 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
-	# V Hadtest #
 	division= {
 		division_name = {
 			is_name_ordered = yes
@@ -431,7 +348,6 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {
 		division_name = {
@@ -442,7 +358,6 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {
 		division_name = {
@@ -453,10 +368,7 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
-	# VI Hadtest #
 	division= {
 		division_name = {
 			is_name_ordered = yes
@@ -466,7 +378,6 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {
 		division_name = {
@@ -477,7 +388,6 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {
 		division_name = {
@@ -488,10 +398,7 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
-	# VII Hadtest #
 	division= {
 		division_name = {
 			is_name_ordered = yes
@@ -501,7 +408,6 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {
 		division_name = {
@@ -512,7 +418,6 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division= {
 		division_name = {
@@ -523,12 +428,8 @@ units = {
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 }
-
-
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

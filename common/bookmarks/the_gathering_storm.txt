@@ -6,7 +6,6 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 		default_country = "GER"
 		default = yes
-		
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -81,7 +80,6 @@ bookmarks = {
 				ENG_war_with_italy
 			}
 		}
-
 		GER = {
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
@@ -97,7 +95,6 @@ bookmarks = {
 				GER_glory_to_the_imperial_army
 			}
 		}
-
 		GER = {
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
@@ -113,7 +110,6 @@ bookmarks = {
 				GER_reestablish_free_elections
 			}
 		}
-
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
@@ -162,7 +158,6 @@ bookmarks = {
 				JAP_support_the_kodoha_faction
 			}
 		}
-
 		JAP = {
 			minor = yes
 			history = "JAP_GATHERING_STORM_DESC"
@@ -211,9 +206,8 @@ bookmarks = {
 				SOV_the_supreme_soviet
 			}	
 		}
-
 		AUS = {
-			history = AUS_GATHERING_STORM_DESC #might need an edit because it is not very good at the moment.
+			history = AUS_GATHERING_STORM_DESC
 			ideology = neutrality
 			available = { has_dlc = "Gotterdammerung" }
 			ideas = {
@@ -241,13 +235,9 @@ bookmarks = {
 				AUS_second_brothers_war
 			}
 		}
-
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
-
-
-		# minors from DLC ####
 		"CAN"={
 			minor = yes
 			history = "CAN_GATHERING_STORM_DESC"
@@ -280,7 +270,6 @@ bookmarks = {
 			history = "NZL_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				
 			}
 			focuses = {
 				NZL_bob_semple_tank
@@ -302,7 +291,6 @@ bookmarks = {
 				SAF_anti_colonialist_crusade
 			}
 		}
-
 		RAJ = {
 			minor = yes
 			history = "RAJ_GATHERING_STORM_DESC"
@@ -318,7 +306,6 @@ bookmarks = {
 				RAJ_the_smiling_buddha
 			}
 		}
-
 		RAJ = {
 			minor = yes
 			history = "RAJ_GATHERING_STORM_DESC"
@@ -335,7 +322,6 @@ bookmarks = {
 				RAJ_a_peacock_prince
 			}
 		}
-
 		"CZE"={
 			minor = yes
 			history = "CZE_GATHERING_STORM_DESC"
@@ -350,7 +336,6 @@ bookmarks = {
 				CZE_czechoslovak_legion
 			}
 		}
-
 		HUN = {
 			minor = yes
 			history = "HUN_GATHERING_STORM_DESC"
@@ -366,7 +351,6 @@ bookmarks = {
 				HUN_renounce_the_treaty_of_trianon
 			}
 		}
-
 		"ROM"={
 			minor = yes
 			history = "ROM_GATHERING_STORM_DESC"
@@ -381,7 +365,6 @@ bookmarks = {
 				ROM_preserve_greater_romania
 			}
 		}
-		
 		"YUG"={
 			minor = yes
 			history = "YUG_GATHERING_STORM_DESC"
@@ -397,7 +380,6 @@ bookmarks = {
 				YUG_dissolve_serbia
 			}
 		}
-		# Check bottom for CHI with NCNS
 		"CHI"={
 			minor = yes
 			history = "CHI_GATHERING_STORM_DESC"
@@ -414,7 +396,6 @@ bookmarks = {
 				CHI_invite_the_flying_tigers
 			}
 		}
-		# Check bottom for PRC with NCNS
 		"PRC"={
 			minor = yes
 			history = "PRC_GATHERING_STORM_DESC"
@@ -431,7 +412,6 @@ bookmarks = {
 				PRC_anti_japanese_expedition
 			}
 		}
-		# Check bottom for MAN with NCNS
 		"MAN"={
 			minor = yes
 			history = "MAN_GATHERING_STORM_DESC"
@@ -448,7 +428,6 @@ bookmarks = {
 				MAN_claim_the_mandate_of_heaven
 			}
 		}
-		# Check bottom for GXC with NCNS
 		"GXC"={
 			minor = yes
 			available = { NOT = { has_dlc = "No Compromise, No Surrender" } }
@@ -465,7 +444,6 @@ bookmarks = {
 				CHI_join_the_chinese_soviet
 			}
 		}		
-		# Check bottom for YUN with NCNS
 		"YUN"={
 			minor = yes
 			available = { NOT = { has_dlc = "No Compromise, No Surrender" } }
@@ -482,7 +460,6 @@ bookmarks = {
 				CHI_join_the_chinese_soviet
 			}
 		}		
-		# Check bottom for SHX with NCNS
 		"SHX"={
 			minor = yes
 			available = { NOT = { has_dlc = "No Compromise, No Surrender" } }
@@ -499,7 +476,6 @@ bookmarks = {
 				CHI_join_the_chinese_soviet
 			}
 		}		
-		# Check bottom for XSM with NCNS
 		"XSM"={
 			minor = yes
 			available = { NOT = { has_dlc = "No Compromise, No Surrender" } }
@@ -516,7 +492,6 @@ bookmarks = {
 				CHI_join_the_chinese_soviet
 			}
 		}		
-		# Check bottom for SIK with NCNS
 		"SIK"={
 			minor = yes
 			available = { NOT = { has_dlc = "No Compromise, No Surrender" } }
@@ -533,7 +508,6 @@ bookmarks = {
 				CHI_join_the_chinese_soviet
 			}
 		}
-		
 		"MEX"={
 			minor = yes
 			history = "MEXICO_GATHERING_STORM_DESC"
@@ -549,7 +523,6 @@ bookmarks = {
 				MEX_focus_smash_the_bureaucrats
 			}
 		}
-
 		"HOL"={
 			minor = yes
 			history = "NETHERLANDS_GATHERING_STORM_DESC"
@@ -565,7 +538,6 @@ bookmarks = {
 				HOL_prepare_the_inundation_lines
 			}
 		}
-
 		"SPR"={
 			minor = yes
 			history = "SPAIN_GATHERING_STORM_DESC"
@@ -581,7 +553,6 @@ bookmarks = {
 				SPR_anarchism_knows_no_borders
 			}
 		}
-
 		"POR"={
 			minor = yes
 			history = "PORTUGAL_GATHERING_STORM_DESC"
@@ -596,7 +567,6 @@ bookmarks = {
 				POR_luso_tropicalism
 			}
 		}
-
 		"BUL"={
 			minor = yes
 			history = "BUL_GATHERING_STORM_DESC"
@@ -612,7 +582,6 @@ bookmarks = {
 				BUL_prussia_of_the_balkans
 			}
 		}
-
 		"GRE"={
 			minor = yes
 			history = "GRE_GATHERING_STORM_DESC"
@@ -628,7 +597,6 @@ bookmarks = {
 				GRE_stage_an_incident_in_the_bosporus
 			}
 		}
-
 		"TUR"={
 			minor = yes
 			history = "TUR_GATHERING_STORM_DESC"
@@ -644,8 +612,6 @@ bookmarks = {
 				TUR_pivot_to_the_past
 			}
 		}
-		
-		
 		"LIT"={
 			minor = yes
 			history = "LIT_GATHERING_STORM_DESC"
@@ -660,7 +626,6 @@ bookmarks = {
 				LIT_reminder_of_true_enemy
 			}
 		}
-		
 		"LAT"={
 			minor = yes
 			history = "LAT_GATHERING_STORM_DESC"
@@ -675,7 +640,6 @@ bookmarks = {
 				LAT_the_old_ways
 			}
 		}
-		
 		"EST"={
 			minor = yes
 			history = "EST_GATHERING_STORM_DESC"
@@ -829,9 +793,6 @@ bookmarks = {
 			ideology = democratic
 			available = { has_dlc = "Trial of Allegiance" }
 			ideas = {
-				#BRA_undiversified_economy_modifier
-				#SMB_MTG_naval_arms_race_legacy
-				#BRA_aftermath_of_the_coup
 				BRA_undiversified_economy_modifier_dummy_idea
 				BRA_weak_government_dummy_idea
 				BRA_aftermath_of_the_coup_dummy_idea
@@ -961,7 +922,7 @@ bookmarks = {
 		}
 		AFG = {
 			minor = yes
-			history = "AFG_GATHERING_STORM_DESC" #might need an edit because it is not very good at the moment.
+			history = "AFG_GATHERING_STORM_DESC"
 			ideology = neutrality
 			available = { has_dlc = "Graveyard of Empires" }
 			ideas = {
@@ -988,7 +949,6 @@ bookmarks = {
 			focuses = {
 				IRQ_rally_behind_the_hashemite_dynasty
 				IRQ_bakr_sidqi_coup
-				#Replace this with KUR focus
 				IRQ_decouple_from_the_pound
 			}
 		}
@@ -1163,8 +1123,7 @@ bookmarks = {
 			}
 		}
 		effect = {
-			randomize_weather = 22345 # <- Obligatory in every bookmark !
-			#123 = { rain_light = yes }
+			randomize_weather = 22345
 		}
 	}
 }

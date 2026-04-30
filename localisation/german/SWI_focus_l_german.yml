@@ -1,5 +1,4 @@
 ﻿l_german:
- # WIRTSCHAFT
  SWI_bankenplatz:0 "Bankenplatz Schweiz"
  SWI_bankenplatz_desc:0 "Die Schweiz hat sich als eines der bedeutendsten Finanzzentren Europas etabliert. Unsere neutralen Banken genießen das Vertrauen aller Nationen – Freund wie Feind. Nutzen wir diese einzigartige Stellung, um unsere Wirtschaft weiter zu stärken."
  SWI_nationalbank:0 "Schweizerische Nationalbank"
@@ -12,8 +11,6 @@
  SWI_praezisionstechnik_desc:0 "Die Tradition der Uhrmacherei hat in der Schweiz Generationen von Ingenieuren und Technikern hervorgebracht. Mit Investitionen in Forschung und Entwicklung können wir diese Expertise auf neue Industriezweige ausdehnen."
  SWI_exportwirtschaft:0 "Exportwirtschaft"
  SWI_exportwirtschaft_desc:0 "Die Schweiz hat keine natürlichen Großmachtsressourcen – doch was wir exportieren, steht für Qualität und Zuverlässigkeit. Maschinen, Uhren, Chemikalien und Präzisionsinstrumente: die Welt braucht, was wir produzieren."
-
- # NEUTRALITÄT / AUSSENPOLITIK
  SWI_ewige_neutralitaet:0 "Ewige Neutralität"
  SWI_ewige_neutralitaet_desc:0 "Seit dem Wiener Kongress von 1815 ist die Neutralität der Schweiz international anerkannt. In einer Welt voller Großmächte und Bündnisse ist unsere Neutralität kein Zeichen der Schwäche, sondern eine strategische Stärke, die es um jeden Preis zu bewahren gilt."
  SWI_rotes_kreuz:0 "Das Rote Kreuz"
@@ -26,8 +23,6 @@
  SWI_genf_als_zentrum_desc:0 "Genf beherbergt bereits den Völkerbund und das Rote Kreuz. Wir werden weitere internationale Organisationen und Botschaften einladen, unsere Stadt zur Welthauptstadt der Diplomatie zu machen."
  SWI_internationalismus:0 "Schweizer Internationalismus"
  SWI_internationalismus_desc:0 "Die Schweiz steht für internationale Zusammenarbeit, humanitäres Recht und friedliche Konfliktlösung. Diese Werte sind nicht nur moralisch richtig – sie schützen auch unsere Unabhängigkeit gegenüber den Großmächten."
-
- # INNENPOLITIK
  SWI_bundesrat:0 "Bundesrat"
  SWI_bundesrat_desc:0 "Der Schweizer Bundesrat regiert im Kollegialprinzip – kein Kanzler, kein Kaiser, nur sieben gleichberechtigte Bundesräte. Dieses System bringt Stabilität und Kompromissfindung, doch in der heutigen Zeit müssen wir unsere Strukturen stärken."
  SWI_direktdemokratie:0 "Direkte Demokratie"
@@ -38,38 +33,28 @@
  SWI_volksrechte_desc:0 "Referendum und Initiative sind die mächtigsten Waffen des Schweizer Bürgers. Wir werden die Volksrechte ausbauen und das Vertrauen der Bevölkerung in unsere Institutionen festigen."
  SWI_partei_staerken:0 "Politische Ausrichtung"
  SWI_partei_staerken_desc:0 "Die Welt um uns herum verändert sich rasant. Neue politische Strömungen gewinnen an Boden. Die Schweiz muss entscheiden, in welche Richtung sie gehen will – demokratisch, autoritär oder revolutionär."
-
- # Partei-Pfade
  SWI_demokratie_staerken:0 "Demokratie stärken"
  SWI_demokratie_staerken_desc:0 "Die Freisinnigen, Konservativen und Sozialdemokraten – trotz aller Differenzen eint sie die Überzeugung, dass Demokratie das beste System für unser Land ist. Wir werden die demokratischen Kräfte der Schweiz vereinen."
  SWI_faschismus_staerken:0 "Frontenbewegung fördern"
  SWI_faschismus_staerken_desc:0 "Die Nationalen Fronten und ähnliche Bewegungen gewinnen auch in der Schweiz an Anhänger. Sie rufen nach nationaler Erneuerung, Stärke und der Abkehr von parliamentary Kompromissen. Ob dies der richtige Weg ist, muss sich noch zeigen."
  SWI_kommunismus_staerken:0 "Arbeiterbewegung stärken"
  SWI_kommunismus_staerken_desc:0 "Der Landesstreik von 1918 hat gezeigt, dass sich die Schweizer Arbeiterschaft organisieren kann. Die kommunistischen Ideen aus dem Osten finden auch hier Anhänger. Die Zeit könnte für eine Revolution reif sein."
-
- # Demokratischer Pfad
  SWI_freie_presse:0 "Freie Presse"
  SWI_freie_presse_desc:0 "In einer Demokratie ist eine freie Presse unerlässlich. Die Zeitungen der Schweiz informieren die Bürger und halten Macht in Schach. Wir werden die Pressefreiheit schützen und fördern."
  SWI_sozialreformen:0 "Sozialreformen"
  SWI_sozialreformen_desc:0 "Der Sozialstaat ist die beste Antwort auf den Kommunismus und den Faschismus. Wir werden in Bildung, Gesundheit und Sozialversicherung investieren, damit kein Schweizer Bürger vergessen wird."
  SWI_bundesstaat_konsolidieren:0 "Bundesstaat konsolidieren"
  SWI_bundesstaat_konsolidieren_desc:0 "Ein starker demokratischer Bundesstaat ist das Fundament unserer Sicherheit. Wir werden die Institutionen der Eidgenossenschaft festigen und für die kommenden Herausforderungen stärken."
-
- # Faschistischer Pfad
  SWI_nationale_erneuerung:0 "Nationale Erneuerung"
  SWI_nationale_erneuerung_desc:0 "Die Frontisten und Nationalsozialisten predigen nationale Erneuerung und die Rückkehr zu alten Tugenden. Die Schweiz, einst das Land der Eidgenossen und tapferen Kämpfer, soll wieder zu ihrer Stärke finden."
  SWI_frontenfruhling:0 "Frontenfrühling"
  SWI_frontenfruhling_desc:0 "Die nationalen Fronten haben die Macht übernommen. Ein neues Schweizer Erwachen beginnt. Der Parlamentarismus weicht einem starken, einheitlichen Willen der Nation."
  SWI_anschluss_an_deutschland:0 "Anschluss an das Reich"
  SWI_anschluss_an_deutschland_desc:0 "Ist die Schweiz nicht im Kern ein deutsches Land? Die deutschsprachige Mehrheit blickt mit Bewunderung auf das mächtige Kaiserreich. Vielleicht ist es an der Zeit, die Trennung zu überwinden und dem Deutschen Reich beizutreten."
-
- # Kommunistischer Pfad
  SWI_arbeiterbewegung:0 "Arbeiterbewegung"
  SWI_arbeiterbewegung_desc:0 "Die Arbeiter der Schweiz erheben ihre Stimme. Gewerkschaften und kommunistische Parteiorganisationen mobilisieren die Fabrikarbeiter, die Bergbauern und die städtischen Armen."
  SWI_rote_schweiz:0 "Rote Schweiz"
  SWI_rote_schweiz_desc:0 "Die Schweizer Räterepublik ist ausgerufen! Die direktdemokratische Tradition der Schweiz bekommt eine neue revolutionäre Bedeutung. Gemeinsam aufgebaut, den Kapitalisten entrissen."
-
- # MILITÄR
  SWI_bewaffnete_neutralitaet:0 "Bewaffnete Neutralität"
  SWI_bewaffnete_neutralitaet_desc:0 "Der Schweizer Grundsatz: Wir greifen niemanden an, aber wir wehren uns mit aller Kraft. Unsere Milizarmee ist kein Angriffswerkzeug, sondern ein Schild. Wir werden unsere Verteidigung zur stärksten in den Alpen machen."
  SWI_milizreform:0 "Milizreform"
@@ -82,8 +67,6 @@
  SWI_reduit_desc:0 "Das Nationale Réduit ist unser letzter Rückhalt: ein System von tief in die Alpen gehauenen Festungen, Tunneln und Waffenlagern. Kein Feind, der die Schweizer Vorstädte einnimmt, kann auch das Réduit nehmen."
  SWI_festung_schweiz:0 "Festung Schweiz"
  SWI_festung_schweiz_desc:0 "Die Schweiz ist zur uneinnehmbarsten Festung Europas geworden. Alpenjäger, Réduit und Befestigungen bilden ein unüberwindliches Triumvirat. Wer die Schweiz angreift, greift Stein an."
-
- # IDEEN
  SWI_nationalbank_idea:0 "Schweizerische Nationalbank"
  SWI_nationalbank_idea_desc:0 "Der starke Schweizer Franken und die solide Geldpolitik der Nationalbank sichern wirtschaftliche Stabilität und fördern Investitionen."
  SWI_devisenreserven_idea:0 "Devisenreserven"
@@ -128,8 +111,6 @@
  SWI_reduit_idea_desc:0 "Das Réduit-Konzept macht jeden Meter Schweizer Boden zur Verteidigungsposition."
  SWI_festung_schweiz_idea:0 "Festung Schweiz"
  SWI_festung_schweiz_idea_desc:0 "Die Schweiz ist zu einem uneinnehmlichen Bollwerk geworden. Verteidigung ist unsere Stärke."
-
- # PLAN RÉDUIT
  SWI_plan_reduit:0 "Plan Réduit"
  SWI_plan_reduit_desc:0 "Die Schweizer Armee zieht sich ins Gebirge zurück und bildet eine letzte Verteidigungslinie. Ermöglicht die Rekrutierung von bis zu 24 Elite-\"Réduit\"-Divisionen."
  plan_reduit_unlock_tt:0 "Erlaubt die Rekrutierung von bis zu 24 Réduit-Divisionen. Alle anderen Templates bleiben gesperrt."

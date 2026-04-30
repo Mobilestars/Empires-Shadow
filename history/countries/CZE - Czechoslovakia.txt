@@ -1,5 +1,4 @@
 capital = 9
-
 if = {
 	limit = {
 		NOT = {
@@ -36,7 +35,6 @@ if = {
 		}
 	}
 }
-
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -49,7 +47,6 @@ set_technology = {
 	fuel_silos = 1
 	basic_train = 1
 }
-
 recruit_character = CZE_karl_albrecht
 recruit_character = CZE_edvard_benesh
 recruit_character = CZE_jaroslav_krejchi
@@ -78,8 +75,6 @@ recruit_character = CZE_vojtech_tuka
 recruit_character = CZE_konrad_henlein
 recruit_character = CZE_gustav_husak
 recruit_character = CZE_albrecht_franz
-
-
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
@@ -100,30 +95,25 @@ if = {
 		improved_light_tank_chassis = 1
 	}
 }
-
 IF = {
 	limit = {
 		has_dlc = "La Resistance"
 	}
 	CZE_create_paul_thummel_operative = yes
 }
-
 set_research_slots = 3
-
 set_politics = {
 	ruling_party = democratic
 	last_election = "1935.5.19"
 	election_frequency = 60
 	elections_allowed = yes
 }
-
 set_popularities = {
 	democratic = 65
 	neutrality = 20
 	fascism = 5
 	communism = 10
 }
-
 if = {
 	limit = {
 		has_dlc = "Death or Dishonor"
@@ -135,7 +125,6 @@ if = {
 	give_guarantee = YUG
 	give_guarantee = ROM
 }
-
 if = {
 	limit = {
 		has_dlc = "No Step Back"
@@ -192,7 +181,6 @@ if = {
 		}
 	}
 }
-
 if = {
 	limit = {
 		has_dlc = "By Blood Alone"
@@ -226,7 +214,6 @@ if = {
 		}
 	}
 }
-
 if = {
 	limit = {
 		NOT = { has_dlc = "Death or Dishonor" }
@@ -235,8 +222,6 @@ if = {
 		CZE_fortification_focus
 	}
 }
-
-# EmpiresShadow - Vojcechovsky as starting country leader
 CZE_sergej_vojcechovsky = {
 	promote_character = yes
 }

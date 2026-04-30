@@ -1,11 +1,7 @@
 ﻿start_equipment_factor = 0.2
 division_template = {
-
-	name = "Infanteri Division"	# represents first part of enlarged divisions
+	name = "Infanteri Division"
 	division_names_group = DEN_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -23,13 +19,8 @@ division_template = {
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Binær Division"	# represents second part of enlarged divisions
+	name = "Binær Division"
 	division_names_group = DEN_INF_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -48,13 +39,8 @@ division_template = {
 		maintenance_company = { x = 0 y = 3 }
 	}}
 division_template = {
-
 	name = "Kavaleri Brigade"
 	division_names_group = DEN_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -72,58 +58,49 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 units = {
-	##### Kongelige Danske Overkommandoen #####
 	division = { 
 		name =  "1. Sjællandske Division"
-		location = 6287  # Copenhagen
+		location = 6287
 		division_template = "Infanteri Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division = { # "2. Sjællandske Division"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 3325  # Odense
+		location = 3325
 		division_template = "Infanteri Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division = { # "1. Jyske Division"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 394  # Aalborg
+		location = 394
 		division_template = "Infanteri Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = { 
 		name = "2. Jyske Division"
-		location = 11251  # Sonderborg
+		location = 11251
 		division_template = "Binær Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "Gardehussar Regiment"
-		location = 6364  # Aarhus
+		location = 6364
 		division_template = "Kavaleri Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 }
-
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

@@ -1,13 +1,11 @@
 state={
 	id=21
-	name="STATE_21" # Bouches-du-Rhône
+	name="STATE_21"
 	manpower = 1670310
 	resources={
-		aluminium=60 # was: 120
+		aluminium=60
 	}
-
 	state_category = city
-
 	history={
 		owner = ITA
 		controller = ITA
@@ -28,10 +26,8 @@ state={
 		}
 		add_core_of = ITA
 	}
-
 	provinces={
 		958 3762 11834 11849 11875 
 	}
-
 	local_supplies=0.0 
 }

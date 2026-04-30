@@ -1,12 +1,7 @@
 ﻿start_equipment_factor = 0.25
 division_template = {
-
-	name = "Pekhotna Divizija"			# Infantry Division
-
+	name = "Pekhotna Divizija"
 	division_names_group = BUL_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -24,14 +19,8 @@ division_template = {
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Konna Divizija" 			# Cavalry Division
-
+	name = "Konna Divizija"
 	division_names_group = BUL_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -50,14 +39,8 @@ division_template = {
 		maintenance_company = { x = 0 y = 3 }
 	}}
 division_template = {
-
-	name = "Tankov Polk" 				# Tank Regiment
-
+	name = "Tankov Polk"
 	division_names_group = BUL_ARM_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -75,172 +58,135 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 units = {
-	##### Bulgarski Glavno Komandvane #####
 	division = {
-		#name = "1-va Konna divizija"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 949  # Sofia
+		location = 949
 		division_template = "Konna Divizija"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "2-ra Konna divizija"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 949  # Sofia
+		location = 949
 		division_template = "Konna Divizija"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "Nezavisim Tankov Polk"
-		location = 949  # Sofia
+		location = 949
 		division_template = "Tankov Polk"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-
-	# 1-va Armija
 	division = {
-		#name = "1-va 'Sofiya' Pekhotna Divizija"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 949  # Sofia
+		location = 949
 		division_template = "Pekhotna Divizija"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "7-ma 'Dupnica' Pekhotna Divizija"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 7
 		}
-		location = 949  # Sofia
+		location = 949
 		division_template = "Pekhotna Divizija"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	# 2-ra Armija
 	division = {
-		#name = "2-ra 'Plovdiv' Pekhotna Divizija"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 6923  # Plovdiv
+		location = 6923
 		division_template = "Pekhotna Divizija"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "8-a 'Stara Zagora' Pekhotna Divizija"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 6923  # Plovdiv
+		location = 6923
 		division_template = "Pekhotna Divizija"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "10-a 'Kirdzali' Pekhotna Divizija"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 10
 		}
-		location = 6923  # Plovdiv
+		location = 6923
 		division_template = "Pekhotna Divizija"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	# 3-ta Armija
 	division = {
-		#name = "3-ta 'Sliven' Pekhotna Divizija"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 9783  # Varna
+		location = 9783
 		division_template = "Pekhotna Divizija"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "4-ta 'Schumen' Pekhotna Divizija"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 9783  # Varna
+		location = 9783
 		division_template = "Pekhotna Divizija"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	# 4-va Armija
 	division = {
-		#name = "5-ta 'Russe' Pekhotna Divizija"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 9610  # Pleven
+		location = 9610
 		division_template = "Pekhotna Divizija"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "6-ta 'Vraca' Pekhotna Divizija"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 9610  # Pleven
+		location = 9610
 		division_template = "Pekhotna Divizija"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "9-a 'Pleven' Pekhotna Divizija"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 9
 		}
-		location = 9610  # Pleven
+		location = 9610
 		division_template = "Pekhotna Divizija"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 }
-
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

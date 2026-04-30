@@ -1,5 +1,4 @@
 ﻿ l_german:
- # WIRTSCHAFT
  GER_wirtschaftswunder:0 "Wirtschaftswunder"
  GER_wirtschaftswunder_desc:0 "Seit unserem Sieg im Großen Krieg floriert die deutsche Wirtschaft. Nutzen wir diesen Schwung, um noch größeren Wohlstand für das Vaterland zu schaffen."
  GER_kaiserliche_industrie:0 "Kaiserliche Industrie"
@@ -16,14 +15,10 @@
  GER_synthol_forschung_desc:0 "Deutschland verfügt kaum über natürliches Öl. Unsere Wissenschaftler müssen effiziente Methoden zur Herstellung von synthetischen Kraftstoffen entwickeln."
  GER_ru_stungsexporte:0 "Rüstungsexporte"
  GER_ru_stungsexporte_desc:0 "Deutsche Ingenieurskunst ist weltbekannt. Durch den Export unserer überlegenen Waffen an befreundete und neutrale Nationen können wir wertvolle Devisen erwirtschaften."
-
- # INNENPOLITIK - ALLGEMEIN (alle Regierungen)
  GER_innenpolitik:0 "Innenpolitik"
  GER_innenpolitik_desc:0 "Die innere Ordnung des Reiches muss gesichert werden. Ob wir als Kaiser, Demokraten, Sozialisten oder Nationalisten regieren — die politische Ausrichtung Deutschlands muss festgelegt werden."
  GER_partei_verstaerkung:0 "Partei stärken"
  GER_partei_verstaerkung_desc:0 "Politische Macht entsteht nicht von selbst. Wir müssen entscheiden, welche politische Kraft wir fördern wollen, und unsere Ressourcen entsprechend einsetzen."
-
- # PARTEI-STÄRKUNG (gegenseitig exklusiv, für alle sichtbar)
  GER_kaiserreich_staerken:0 "Das Kaiserreich stärken"
  GER_kaiserreich_staerken_desc:0 "Wir werden die Unterstützung für die kaiserliche Sache stärken — die Junker, den Militärapparat und die konservativen Massen hinter dem Banner des Kaisers versammeln."
  GER_demokraten_staerken:0 "Die Demokraten stärken"
@@ -32,8 +27,6 @@
  GER_kommunisten_staerken_desc:0 "Die revolutionäre Linke gewinnt an Boden. Die Kommunistische Partei Deutschlands soll unsere Unterstützung erhalten, um die kapitalistische Ordnung herauszufordern."
  GER_faschisten_staerken:0 "Die Faschisten stärken"
  GER_faschisten_staerken_desc:0 "Eine neue radikalnationalistische Bewegung entsteht. Wir sollen den Zorn der Veteranen, Nationalisten und der Vergessenen in eine mächtige politische Kraft kanalisieren."
-
- # KAISERREICH-PFAD (nur sichtbar wenn Kaiserreich an der Macht)
  GER_kaiser_unterstuetzung:0 "Kaiserliche Unterstützung"
  GER_kaiser_unterstuetzung_desc:0 "Kaiser Wilhelm steht als Symbol der deutschen Macht. Wir werden seine Stellung stärken und das Volk um seinen Thron scharen."
  GER_reichsverfassung:0 "Reichsverfassung"
@@ -54,24 +47,18 @@
  GER_wilhelminisches_militaer_desc:0 "Die Traditionen des kaiserlichen deutschen Militärs, geschmiedet in den Einigungskriegen und gehärtet auf den Schlachtfeldern des Großen Krieges, sollen bewahrt werden."
  GER_bund_der_kaiser:0 "Bund der Kaiser"
  GER_bund_der_kaiser_desc:0 "Deutschland soll Bündnisse mit anderen großen Monarchien schmieden und einen 'Bund der Kaiser' als Gegenpol zur demokratischen und kommunistischen Welt schaffen."
-
- # DEMOKRATISCHER PFAD (nur sichtbar wenn Demokraten an der Macht)
  GER_verfassungskonvent:0 "Verfassungskonvent"
  GER_verfassungskonvent_desc:0 "Ein großer Verfassungskonvent soll einberufen werden, mit Vertretern aller gesellschaftlichen Schichten Deutschlands, um eine neue Verfassung zu entwerfen."
  GER_weimarer_weg:0 "Der Weimarer Weg"
  GER_weimarer_weg_desc:0 "Die Monarchie wird zugunsten einer demokratischen Republik beiseitegeschoben. Deutschland tritt in ein neues Zeitalter ein."
  GER_parlamentarismus:0 "Parlamentarismus"
  GER_parlamentarismus_desc:0 "Wahre Demokratie erfordert ein Parlament mit echter Gesetzgebungskraft. Wir werden die Rechte der gewählten Vertreter verankern und ein stabiles Mehrparteiensystem aufbauen."
-
- # KOMMUNISTISCHER PFAD (nur sichtbar wenn Kommunisten an der Macht)
  GER_rote_front:0 "Rote Front"
  GER_rote_front_desc:0 "Die Kommunistische Partei Deutschlands erhebt sich, organisiert und militant. Die Rote Front ist bereit, die bürgerliche Ordnung herauszufordern."
  GER_raetemacht:0 "Rätemacht"
  GER_raetemacht_desc:0 "Alle Macht den Räten! Deutschland soll eine Räterepublik werden, regiert vom Volk und für das Volk."
  GER_sowjet_buendnis:0 "Bündnis mit den Sowjets"
  GER_sowjet_buendnis_desc:0 "Die proletarischen Revolutionen Deutschlands und Russlands sollen zusammenfinden. Ein deutsch-sowjetisches Bündnis wird die Grundfesten der kapitalistischen Welt erschüttern."
-
- # FASCHISTISCHER PFAD
  GER_beer_hall_putsch:0 "Beer Hall Putsch"
  GER_beer_hall_putsch_desc:0 "Die Nationalsozialisten versuchen, die alte Ordnung durch einen entschlossenen Machtgriff zu brechen. Wenn ihre Bewegung stark genug ist, kann der Putsch das Reich in ihre Haende legen und Hitler an die Spitze des Staates bringen."
  GER_adopt_new_panzer_doctrine:0 "Neue Panzerdoktrin uebernehmen"
@@ -170,8 +157,6 @@
  GER_vierjahresplan_desc:0 "Die Wirtschaft wird vollständig für die Ziele des Staates mobilisiert. Aufrüstung, Autarkie und industrielle Expansion haben absolute Priorität."
  GER_achsenmaechte:0 "Achsenmächte"
  GER_achsenmaechte_desc:0 "Das faschistische Deutschland soll Kontakt zu gleichgesinnten Regimes in Europa aufnehmen. Gemeinsam schmieden wir eine Machtsachse, die die Landkarte der Welt neu zeichnen wird."
-
- # MILITÄR
  GER_kaiserliches_heer:0 "Kaiserliches Heer"
  GER_kaiserliches_heer_desc:0 "Das Kaiserliche Deutsche Heer ging siegreich aus dem Großen Krieg hervor. Nun müssen wir es modernisieren und stärken."
  GER_sturmbataillon:0 "Sturmbataillone"
@@ -184,8 +169,6 @@
  GER_artillerie_programm_desc:0 "Die deutsche Artillerie war der Schrecken unserer Feinde im Großen Krieg. Wir werden in neue Artilleriesysteme investieren."
  GER_blitzkrieg_doktrin:0 "Blitzkrieg-Doktrin"
  GER_blitzkrieg_doktrin_desc:0 "Kombinierte Kriegsführung — Panzer, Infanterie, Artillerie und Luftunterstützung in perfekter Koordination — wird das Heer Deutschlands unaufhaltsam machen."
-
- # MARINE
  GER_kaiserliche_marine:0 "Kaiserliche Marine"
  GER_kaiserliche_marine_desc:0 "Die Kaiserliche Deutsche Marine beherrscht die Wellen nach ihrem Triumph bei Skagerrak. Wir werden diese Streitmacht ausbauen und modernisieren."
  GER_hochseeflotte:0 "Hochseeflotte"
@@ -196,8 +179,6 @@
  GER_weltmacht_zur_see_desc:0 "Deutsche Seemacht soll sich über den gesamten Globus erstrecken. Die Fahne des Kaisers wird auf jedem Ozean wehen."
  GER_marinebasis_ausbau:0 "Marinebasis-Ausbau"
  GER_marinebasis_ausbau_desc:0 "Die großen Marinebasen in Kiel und Wilhelmshaven sollen ausgebaut werden, um unsere wachsende Flotte zu versorgen."
-
- # LUFTWAFFE
  GER_luftstreitkraefte:0 "Kaiserliche Luftstreitkräfte"
  GER_luftstreitkraefte_desc:0 "Von den kühnen Jagdfliegern des Großen Krieges zu einer modernen Luftwaffe — Deutschland soll die Lüfte beherrschen."
  GER_jagdflieger:0 "Jagdflieger"
@@ -208,8 +189,6 @@
  GER_luftueberlegenheit_desc:0 "Deutschland soll den Himmel über jedem Schlachtfeld kontrollieren. Ohne Luftüberlegenheit kann keine Bodenoperation erfolgreich sein."
  GER_luftwaffe_ausbau:0 "Ausbau der Luftwaffe"
  GER_luftwaffe_ausbau_desc:0 "Neue Flugplätze und ausgeweitete Produktion sichern Deutschlands entscheidenden Vorteil in der Luft."
-
- # DIPLOMATIE & EXPANSION
  GER_weltpolitik:0 "Weltpolitik"
  GER_weltpolitik_desc:0 "Seit der Erklärung der Weltpolitik durch den Kaiser verfolgt Deutschland eine globale Rolle. Nun müssen wir festlegen, was das in dieser neuen Ära bedeutet."
  GER_mitteleuropa:0 "Mitteleuropa"
@@ -230,22 +209,17 @@
  GER_angebot_luxemburg_desc:0 "Das Großherzogtum Luxemburg, derzeit unter deutscher Verwaltung, verdient die Anerkennung als freie Nation. Wir werden seine Souveränität wiederherstellen — und es dennoch fest durch gegenseitigen Schutz und Mitgliedschaft im Deutschen Pakt an Deutschland binden."
  GER_anschluss_antreiben:0 "Den Anschluss vorantreiben"
  GER_anschluss_antreiben_desc:0 "Österreich und Deutschland sind ein Volk, eine Kultur, ein Schicksal. Wir werden die deutschsprachigen Länder unter der Krone des Kaisers wiedervereinigen."
-
- # Anschluss-Event-Lokalisation
  GER_anschluss.1.t:0 "Deutschland fordert die Vereinigung"
  GER_anschluss.1.d:0 "Kaiserliche Gesandte aus Berlin haben Deutschlands formelle Forderung nach Vereinigung überbracht. Das Kaiserreich verlangt von Österreich-Ungarn eine Antwort — unterwirft sich die Doppelmonarchie mit ihren österreichischen Ländern teilweise, ergibt sie sich vollständig oder verweigert sie und riskiert einen Feldzug unter deutschen Waffen?"
  GER_anschluss.1.a:0 "Teilweiser Anschluss: Die österreichischen Gebiete schließen sich Deutschland an, Ungarn bleibt frei"
  GER_anschluss.1.b:0 "Vollständiger Anschluss: Ganz Österreich-Ungarn wird deutsches Territorium"
  GER_anschluss.1.c:0 "Wien verweigert — wir werden nicht nachgeben!"
-
  GER_sudetenland_forderung:0 "Das Sudetenland fordern"
  GER_sudetenland_forderung_desc:0 "Millionen von Deutschen leben unter tschechischer Herrschaft im Sudetenland. Wir werden fordern, dass diese Gebiete dem Reich zurückgegeben werden."
  GER_tschechoslowakei_teilen:0 "Tschechoslowakei aufteilen"
  GER_tschechoslowakei_teilen_desc:0 "Mit dem Sudetenland gesichert müssen wir das Schicksal des Restes der Tschechoslowakei bestimmen. Die Slowaken verdienen ihren eigenen Staat und der tschechische Rumpf muss unter deutschen Schutz fallen."
  GER_plan_oranje:0 "Plan Oranje"
  GER_plan_oranje_desc:0 "Die Niederlande, eine kleine Nation an Deutschlands westlicher Flanke, besitzen riesige Kolonialgebiete und strategisch wichtige Häfen an der Rheinmündung. Der Kaiserliche Generalstab hat einen Notfallplan — Plan Oranje — für die schnelle Unterwerfung der Holländer ausgearbeitet. Mit ihrem Territorium unter kaiserlicher Kontrolle würde Deutschland die Nordseeküste sichern und die Zugänge zu Großbritannien beherrschen."
-
- # FORSCHUNG
  GER_wissenschaft_und_forschung:0 "Wissenschaft und Forschung"
  GER_wissenschaft_und_forschung_desc:0 "Die deutsche Wissenschaft hat die Welt seit Langem angeführt. Wir werden in unsere größten Universitäten und Forschungsinstitute investieren."
  GER_universitaeten_foerdern:0 "Universitäten fördern"
@@ -256,8 +230,6 @@
  GER_chemische_industrie_desc:0 "Deutschlands chemische Industrie ist die fortschrittlichste der Welt. Wir werden sicherstellen, dass sie dem Reich dient."
  GER_atomforschung:0 "Atomforschung"
  GER_atomforschung_desc:0 "Die Spaltung des Atoms könnte den Schlüssel zu unbegrenzter Energie oder der fürchterlichsten Waffe bergen. Deutschland muss als erstes ihre Geheimnisse lüften."
-
- # IDEAS
  GER_wirtschaftswunder_idea:0 "Wirtschaftswunder"
  GER_wirtschaftswunder_idea_desc:0 "Die deutsche Wirtschaft boomt, angetrieben durch Sieg, Gebietsausweitung und eine solide kaiserliche Wirtschaftspolitik."
  GER_reichsbahn_idea:0 "Ausgebaute Reichsbahn"

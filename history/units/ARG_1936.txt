@@ -1,10 +1,6 @@
 ﻿division_template = {
-
-	name = "División de Infanteria"		# Infantry Division
+	name = "División de Infanteria"
 	division_names_group = SPAN_INF_02
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -22,12 +18,8 @@
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Brigada Montaña"			# Mountain Brigade
+	name = "Brigada Montaña"
 	division_names_group = SPAN_MNT_02
-
-	# Special Forces: Mountaineers + Line Arty ~30W
-	# Needs: Special Forces Doctrine (AaT) + Fire Concentration sub-doctrine
 	regiments = {
 		mountaineers      = { x = 0 y = 0 }
 		mountaineers      = { x = 0 y = 1 }
@@ -48,13 +40,8 @@ division_template = {
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "División de Caballería"  	# Cavalry Division
+	name = "División de Caballería"
 	division_names_group = SPAN_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -72,90 +59,79 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 units = {
-	##### Ejército Argentino #####
-	division= {	# "1era División del Ejercito"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 12364 # Buenos Aires
+		location = 12364
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division= {	# "2da División del Ejercito"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 10953 # Southern Argentina
+		location = 10953
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division= {	# "3era División del Ejercito"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 7500 # Parana
+		location = 7500
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division= {	# "4ta División del Ejercito"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 4
 		}
-		location = 12942 # Cordoba
+		location = 12942
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division= {	# "5ta División del Ejercito"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 5
 		}
-		location = 8216 # Salta
+		location = 8216
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
 	division= {	
 		name = "División de Caballería"
-		location = 12364 # Buenos Aires
+		location = 12364
 		division_template = "División de Caballería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
 	division= {	
 		name = "Destacamento de Montaña Cuyo"
-		location = 10992 # Mendoza
+		location = 10992
 		division_template = "Brigada Montaña"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
 	division= {	
 		name = "Destacamento de Montaña Norte"
-		location = 8216 # Salta
+		location = 8216
 		division_template = "Brigada Montaña"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
 }
-
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

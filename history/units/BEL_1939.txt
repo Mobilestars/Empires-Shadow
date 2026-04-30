@@ -1,11 +1,7 @@
 ﻿start_equipment_factor = 0.2
 division_template = {
-
-	name = "Division d'Infanterie"		# Same for "Active" and "Reserve" Infantry Divisions
+	name = "Division d'Infanterie"
 	division_names_group = BEL_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -23,13 +19,8 @@ division_template = {
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Division de Cavalerie"  	# Cavalry Division
+	name = "Division de Cavalerie"
 	division_names_group = BEL_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -48,13 +39,8 @@ division_template = {
 		maintenance_company = { x = 0 y = 3 }
 	}}
 division_template = {
-
-	name = "Cavalerie Motorisée"  	# Motorized Cavalry Brigade
+	name = "Cavalerie Motorisée"
 	division_names_group = BEL_MOT_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -73,12 +59,8 @@ division_template = {
 		maintenance_company = { x = 0 y = 3 }
 	}}
 division_template = {
-
-	name = "Division Coloniale"		# Colonial militia, lower experience, equipment
+	name = "Division Coloniale"
 	division_names_group = BEL_GAR_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -95,166 +77,137 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 units = {
-	##### L'Armée Belge #####
-	# I Corps d'Armée (CO: ) #
-	division= {	# "4ème Division d'Infanterie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 4
 		}
-		location = 9574  # Hoeselt
+		location = 9574
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	division= {	# "7ème Division d'Infanterie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 7
 		}
-		location = 9574  # Hoeselt
-		division_template = "Division d'Infanterie"			# Reserve division (lower experience, older equip, reserve levels)
+		location = 9574
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	# II Corps d'Armée (CO: ) #
-	division= {	# "6ème Division d'Infanterie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 6
 		}
-		location = 13068  # Leuven
+		location = 13068
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	division= {	# "9ème Division d'Infanterie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 9
 		}
-		location = 13068  # Leuven
-		division_template = "Division d'Infanterie"			# Reserve division (lower experience, older equip, reserve levels)
+		location = 13068
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division= {	# "11ème Division d'Infanterie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 11
 		}
-		location = 13068  # Leuven
-		division_template = "Division d'Infanterie"			# Reserve division (lower experience, older equip, reserve levels)
+		location = 13068
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	# III Corps d'Armée (CO: ) #
-	division= {	# "2ème Division d'Infanterie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 11519  # Liege
+		location = 11519
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	division= {	# "3ème Division d'Infanterie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 11519  # Liege
+		location = 11519
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-
-	# IV Corps d'Armée (CO: ) #
-	division= {	# "5ème Division d'Infanterie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 5
 		}
-		location = 516  #Brussels
+		location = 516
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	division= {	# "12ème Division d'Infanterie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 12
 		}
-		location = 516  #Brussels
-		division_template = "Division d'Infanterie"			# Reserve division (lower experience, older equip, reserve levels)
+		location = 516
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	# V Corps d'Armée (CO: ) #
-	division= {	# "2ème Division de Chasseurs Ardennais"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 102
 		}
-		location = 6598  #Antwerp
-		division_template = "Division d'Infanterie"			# elite bicycle infantry
+		location = 6598
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 	}
-
-	# VI Corps d'Armée (CO: ) #
-	division= {	# "10ème Division d'Infanterie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 10
 		}
-		location = 516  #Brussels
-		division_template = "Division d'Infanterie"			# Reserve division (lower experience, older equip, reserve levels)
+		location = 516
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	# VII Corps d'Armée (CO: ) #
-	division= {	# "8ème Division d'Infanterie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 8
 		}
-		location = 3516 #Namur
-		division_template = "Division d'Infanterie"			# Reserve division (lower experience, older equip, reserve levels)
+		location = 3516
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	# Corps d'Cavalerie (CO: ) #
-	division= {	# "1ère Division d'Infanterie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 11519  # Liege
+		location = 11519
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	division= {	# "2ème Division de Cavalerie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
@@ -263,7 +216,6 @@ units = {
 		division_template = "Division de Cavalerie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
 	division= {	
 		name = "Brigade de Cavalerie Motorisée"
@@ -271,45 +223,35 @@ units = {
 		division_template = "Cavalerie Motorisée"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-
-	# Groupement K (CO: ) #
-	division= {	# "1ère Division de Chasseurs Ardennais"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 101
 		}
-		location = 11407  # St Hubert
-		division_template = "Division d'Infanterie"			# elite bicycle infantry
+		location = 11407
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 	}
-	division= {	# "1ère Division de Cavalerie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 11407  # St Hubert
+		location = 11407
 		division_template = "Division de Cavalerie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-
-
-	### Belgian Congo (CO: ) ###
 	division= {	
 		name = "Force Publique du Congo Belge"
-		location = 10968  # Leopoldville
+		location = 10968
 		division_template = "Division Coloniale"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "BEL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 }
-
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

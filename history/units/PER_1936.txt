@@ -1,11 +1,6 @@
 ﻿division_template = {
-
-	name = "Infantry Division"			# Infantry Brigade
-
+	name = "Infantry Division"
 	division_names_group = PER_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -23,14 +18,8 @@
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Cavalry Division"			# Cavalry Brigade
-
+	name = "Cavalry Division"
 	division_names_group = PER_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -49,13 +38,8 @@ division_template = {
 		maintenance_company = { x = 0 y = 3 }
 	}}
 division_template = {
-
-	name = "Iranian Gendarmerie"			# Infantry Brigade
-
+	name = "Iranian Gendarmerie"
 	division_names_group = PER_GAR_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -72,18 +56,13 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
-
 units = {
-	######## LAND OOB ########
-	##### Royal Iranian Army #####
 	division = {
 		name = "1st Cavalry Division"
 		location = 1896
 		division_template = "Cavalry Division"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
 	division = {
 		name = "2nd Cavalry Division"
@@ -91,7 +70,6 @@ units = {
 		division_template = "Cavalry Division"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
 	division = {
 		name = "1st Infantry Division"
@@ -99,7 +77,6 @@ units = {
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
 	division = {
 		name = "2nd Infantry Division"
@@ -107,7 +84,6 @@ units = {
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
 	division = {
 		name = "3rd Infantry Division"
@@ -115,7 +91,6 @@ units = {
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
 	division = {
 		name = "1st Iranian Gendarmerie"
@@ -123,16 +98,8 @@ units = {
 		division_template = "Iranian Gendarmerie"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-
-	######## No Naval OOB ########
 }
-
-
-
-
-
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

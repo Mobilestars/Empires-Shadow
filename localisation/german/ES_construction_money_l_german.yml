@@ -1,9 +1,6 @@
 l_german:
- # Beschriftungen im Bau-Tooltip
  STAT_COMMON_BUILD_COST_IC_T:0 "§TBaukosten (IK):§! §YGeldkosten = IK x 0,02§!\n"
  STAT_COMMON_BUILD_COST_IC_T_CONVERTING:0 "§TUmbaukosten (IK):§! §YGeldkosten = IK x 0,02§!\n"
-
- # Gebaeude-Tooltiptexte mit Basis-Geldkosten
  industrial_complex_desc:0 "Dieses Gebaeude ermoeglicht der Region die Produktion von Zivilguetern oder den Bau neuer Gebaeude. Kann bei Bedarf in eine Militaerfabrik umgewandelt werden.\n\nBasis-Geldkosten fuer Bau: §Y200§!\nUmbau-Geldkosten (zu Zivilfabrik): §Y200§!"
  arms_factory_desc:0 "Dieses Gebaeude ermoeglicht der Region die Produktion neuer militaerischer Ausruestung. Kann bei Bedarf in eine Zivilfabrik umgewandelt werden.\n\nBasis-Geldkosten fuer Bau: §Y150§!\nUmbau-Geldkosten (zu Militaerfabrik): §Y150§!"
  dockyard_desc:0 "Dieses Gebaeude liefert dem Staat Industrie zum Bau neuer Schiffe.\n\nBasis-Geldkosten fuer Bau: §Y130§!"

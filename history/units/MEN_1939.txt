@@ -1,10 +1,6 @@
 ﻿division_template = {
-
-	name = "Juntuán"				# Represents a corps of 3 NRA divisions (2 brigades of 2 regiments each)
+	name = "Juntuán"
 	division_names_group = MEN_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -21,15 +17,9 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
-	name = "Qibing Jun"			# Cavalry Division
+	name = "Qibing Jun"
 	division_names_group = MEN_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -47,11 +37,8 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
-
-##### OOB #####
 units = {
-	division = { # "1 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
@@ -59,7 +46,7 @@ units = {
 		location = 828
 		division_template = "Juntuán"		
 	}
-	division = { # "1 Qibing Jun"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
@@ -67,7 +54,7 @@ units = {
 		location = 1590
 		division_template = "Qibing Jun"
 	}
-	division = { # "2 Qibing Jun"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -76,9 +63,6 @@ units = {
 		division_template = "Qibing Jun"
 	}
 }
-
-
-########## STARTING PRODUCTION ##########
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

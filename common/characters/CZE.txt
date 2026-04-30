@@ -1,6 +1,4 @@
 ﻿characters = {
-
-	### The King of Bohemia
 	CZE_karl_albrecht = {
 		name=POL_karl_albrecht
 		portraits = {
@@ -9,7 +7,6 @@
 			}
 		}
 	}
-
 	CZE_edvard_benesh={
 		name="Edvard BeneÅ¡"
 		portraits={
@@ -26,7 +23,6 @@
 			}
 		}
 	}
-
 	CZE_jaroslav_krejchi={
 		name="Jaroslav KrejÄÃ­"
 		portraits={
@@ -40,7 +36,6 @@
 			id=-1
 		}
 	}
-
 	CZE_frantishek_havlik={
 		name=CZE_frantishek_havlik
 		portraits={
@@ -55,7 +50,6 @@
 			id=-1
 		}
 	}
-
 	CZE_albrecht_franz = {
 		name = CZE_albrecht_franz
 		portraits = {
@@ -70,7 +64,6 @@
 			traits = { duke_of_teschen_king_of_bohemia }
 		}
 	}
-
 	CZE_klement_gottwald={
 		name=CZE_klement_gottwald
 		portraits={
@@ -95,14 +88,12 @@
 				factor = 1.000
 			}
 		}
-		
 		country_leader={
 			ideology=stalinism
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
-
 	CZE_vojtyech_luzha={
 		name=CZE_vojtyech_luzha
 		portraits={
@@ -121,7 +112,6 @@
 			legacy_id=-1
 		}
 	}
-
 	CZE_josef_shnejdarek={
 		name=CZE_josef_shnejdarek
 		portraits={
@@ -140,7 +130,6 @@
 			legacy_id=-1
 		}
 	}
-
 	CZE_richard_tesarzhik={
 		name=CZE_richard_tesarzhik
 		portraits={
@@ -159,7 +148,6 @@
 			legacy_id=-1
 		}
 	}
-
 	CZE_sergej_vojcechovsky={
 		name=CZE_sergej_vojcechovsky
 		portraits={
@@ -186,10 +174,6 @@
 			legacy_id=-1
 		}
 	}
-
-
-	### THEORISTS ###
-
 	CZE_karel_vaclav_petrik={
 		name="Karel VÃ¡clav PetrÃ­k"
 		portraits={
@@ -205,13 +189,11 @@
 			allowed = {
 				original_tag = CZE
 			}
-			
 			traits = {
 				military_theorist
 			}
 		}		
 	}
-
 	CZE_alois_vicherek={
 		name=CZE_alois_vicherek
 		portraits={
@@ -227,16 +209,11 @@
 			allowed = {
 				original_tag = CZE
 			}
-			
 			traits = {
 				air_warfare_theorist
 			}
 		}
 	}
-
-
-	### ARMY CHIEFS ###
-
 	CZE_rudolf_viest={
 		name=CZE_rudolf_viest
 		portraits={
@@ -259,7 +236,6 @@
 			}
 		}
 	}
-
 	CZE_ludvik_krejci={
 		name=CZE_ludvik_krejci
 		portraits={
@@ -282,7 +258,6 @@
 			}
 		}
 	}
-
 	CZE_ludvik_svoboda={
 		name=CZE_ludvik_svoboda
 		portraits={
@@ -305,12 +280,6 @@
 			}
 		}		
 	}
-
-
-	### NAVY CHIEFS ###
-
-	# Klement Gottwald up there (Communist Country Leader -> Stalinism)
-
 	CZE_antonin_hasal={
 		name=CZE_antonin_hasal
 		portraits={
@@ -333,9 +302,6 @@
 			}
 		}
 	}
-
-	### AIR CHIEFS ###
-
 	CZE_karel_janousek={
 		name=CZE_karel_janousek
 		portraits={
@@ -358,7 +324,6 @@
 			}
 		}
 	}
-
 	CZE_jaroslav_fajfr={
 		name=CZE_jaroslav_fajfr
 		portraits={
@@ -381,10 +346,6 @@
 			}
 		}
 	}
-
-
-	### MILITARY HIGH COMMAND ###
-
 	CZE_jan_golian={
 		name=CZE_jan_golian
 		portraits={
@@ -408,7 +369,6 @@
 			}
 		}		
 	}
-	
 	CZE_josef_frantisek={
 		name=CZE_josef_frantisek
 		portraits={
@@ -432,7 +392,6 @@
 			}
 		}
 	}
-
 	CZE_karel_kuttelwascher={
 		name=CZE_karel_kuttelwascher
 		portraits={
@@ -456,7 +415,6 @@
 			}
 		}
 	}
-	
 	CZE_frantisek_havel={
 		name=CZE_frantisek_havel
 		portraits={
@@ -480,10 +438,6 @@
 			}
 		}
 	}
-
-
-	### POLITICAL ADVISORS ###
-
 	CZE_vojtech_tuka={
 		name=CZE_vojtech_tuka
 		portraits={
@@ -502,7 +456,6 @@
 			}
 		}
 	}
-
 	CZE_ferdinand_catlos={
 		name=CZE_ferdinand_catlos
 		portraits={
@@ -521,7 +474,6 @@
 			}
 		}
 	}
-
 	CZE_jozef_tiso={
 		name=CZE_jozef_tiso
 		portraits={
@@ -543,7 +495,6 @@
 			}
 		}	
 	}
-
 	CZE_stefan_osusky={
 		name=CZE_stefan_osusky
 		portraits={
@@ -581,7 +532,6 @@
 			}
 		}
 	}
-
 	CZE_gustav_husak={
 		name=CZE_gustav_husak
 		portraits={
@@ -629,7 +579,6 @@
 			}
 		}
 	}
-	
 	CZE_konrad_henlein={
 		name=CZE_konrad_henlein
 		portraits={
@@ -677,8 +626,4 @@
 			}
 		}		
 	}
-
-	
-
-	# Illusive Gentleman auto-generated
 }

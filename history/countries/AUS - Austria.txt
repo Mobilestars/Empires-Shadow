@@ -1,5 +1,4 @@
-capital = 4 # Vienna
-
+capital = 4
 IF = {
 	limit = {
 		has_dlc = "Gotterdammerung"
@@ -14,7 +13,6 @@ IF = {
 		set_oob = "AUS_1936"
 	}
 }
-
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "AUS_1936_air_bba"
@@ -28,30 +26,19 @@ if = {
 		set_air_oob = "AUS_1936_air_legacy"
 		set_technology = {
 			early_fighter = 1
-
 		}
 	}
 }
-
-
-### Store Austrian initial states - Used for removing German cores in Austria when German capitulates after having done successful Anschluss
 every_owned_state = {
 	limit = {
 		is_core_of = ROOT
 	}
 	add_to_array = { ROOT.AUS_initial_states = THIS }
 }
-
-
 IF = {
 	limit = { 
 		has_dlc = "Gotterdammerung"
 	}
-
-	
-
-	#setting up all the dynamic modifiers
-
 	AUS_set_austrofascism_defaults = yes
 	AUS_set_monarchy_restored_defauts = yes
 	AUS_set_farr_defaults = yes
@@ -65,38 +52,27 @@ IF = {
 	AUS_set_army_monarcy_defaults = yes
 	AUS_set_navy_defaults = yes
 	AUS_set_compensation_for_guarantee_defaults = yes
-
-	#National spirits are set here
-
 	add_ideas = {
 		AUS_widespread_unemployment
 		AUS_phonix_insurance
 		AUS_recovering_from_the_depression
 	}
-
 	add_timed_idea = {
 		idea = AUS_treaty_of_saint_germain_en_laye
 		days = 1657
 	}
-
-	# EmpiresShadow - Habsburg monarchy from start
 	add_dynamic_modifier = {
 		modifier = AUS_habsburg_monarchy_restored
 	}
-
 	add_dynamic_modifier = {
 		modifier = AUS_empire_restored
 	}
-
-	# Boost monarchy variables so the modifiers have meaningful initial values
 	add_to_variable = { AUS_habsburg_monarchy_restored_neutrality_drift = 0.05 }
 	add_to_variable = { AUS_habsburg_monarchy_restored_drift_defence_factor = 0.3 }
 	add_to_variable = { AUS_habsburg_monarchy_restored_war_support_factor = 0.10 }
 	add_to_variable = { AUS_empire_restored_war_support_factor = 0.10 }
 	add_to_variable = { AUS_empire_restored_stability_factor = 0.10 }
 	add_to_variable = { AUS_empire_restored_conscription_factor = 0.05 }
-
-	# EmpiresShadow - Otto von Habsburg als österreichischer Kaiser
 	recruit_character = AUS_otto_von_habsburg
 	set_country_leader = {
 		character = AUS_otto_von_habsburg
@@ -106,25 +82,11 @@ IF = {
 		add_country_leader_trait = AUS_king_of_austria
 	}
 	set_global_flag = AUS_otto_von_habsburg_has_joined_austria_flag
-
-	# Set the Austrian Empire cosmetic tag ("Austrian Empire")
 	set_cosmetic_tag = AUS_austrian_empire
-
-	# rules are set here
-
 	country_lock_all_division_template = {
 		is_locked = yes
 		desc = AUS_cannot_train_due_to_treaty_of_saint_germain_en_laye
 	}
-
-
-	
-
-	#########################
-	##DLC-LOCKED CHARACTERS##
-	#########################
-
-	#Political
 	recruit_character = AUS_kurt_schuschnigg
 	recruit_character = AUS_karl_renner
 	recruit_character = AUS_arthur_seyss-inquart
@@ -161,9 +123,6 @@ IF = {
 	recruit_character = AUS_maximilian_ronge
 	recruit_character = AUS_egon_schonhof
 	recruit_character = AUS_friedrich_mandl
-
-	#Army
-
 	recruit_character = AUS_karl_eglseer
 	recruit_character = AUS_friedrich_materna
 	recruit_character = AUS_emil_liebitzky
@@ -193,23 +152,13 @@ IF = {
 	recruit_character = AUS_richard_steidle
 	recruit_character = AUS_godwin_von_brumowski
 	recruit_character = AUS_johann_jacob_reverta
-
-	#Navy
-
 	recruit_character = AUS_carl_heinz_birnbacher
 	recruit_character = AUS_franz_von_keil
-
-
-
-	#scientists, commented out before we know how to handle them
 	recruit_character = AUS_herbert_wagner
 	recruit_character = AUS_eugen_sanger
 	recruit_character = AUS_hedy_lamarr
 	recruit_character = AUS_egon_schweidler
 	recruit_character = AUS_paul_eisler
-
-	#Operatives
-
 	create_operative_leader = {
 		name = AUS_erwin_von_lahousen
 		bypass_recruitment = no 
@@ -218,7 +167,6 @@ IF = {
 		traits = { operative_double_agent operative_commando }
 		nationalities = { AUS GER }
 	}
-
 	create_operative_leader = {
 		name = AUS_wilhelm_ergert
 		bypass_recruitment = no 
@@ -227,22 +175,14 @@ IF = {
 		traits = { operative_double_agent operative_linguist operative_safe_cracker }
 		nationalities = { AUS GER YUG }
 	}
-
 	ELSE_IF = {
 		limit = {
 			NOT = {
 				has_dlc = "Gotterdammerung"
 			}
 		}
-
-		#########################
-		#####FREE CHARACTERS#####
-		#########################
-
-		# EmpiresShadow - Otto von Habsburg als österreichischer Kaiser
 		recruit_character = AUS_otto_von_habsburg
 		set_global_flag = AUS_otto_von_habsburg_has_joined_austria_flag
-
 		recruit_character = AUS_kurt_schuschnigg
 		recruit_character = AUS_karl_renner
 		recruit_character = AUS_arthur_seyss-inquart
@@ -250,11 +190,11 @@ IF = {
 		recruit_character = AUS_karl_eglseer
 		recruit_character = AUS_odilo_globocnik
 		recruit_character = AUS_alexander_lohr
-		recruit_character = AUS_paul_von_hegedus #complete boogus, remove?
+		recruit_character = AUS_paul_von_hegedus
 		recruit_character = AUS_julius_yllam
-		recruit_character = AUS_otto_meixner_von_zweienstamm #might be removed, is 80 at game start
+		recruit_character = AUS_otto_meixner_von_zweienstamm
 		recruit_character = AUS_wilhelm_zehner
-		recruit_character = AUS_josef_teufl #complete boogus, remove? 
+		recruit_character = AUS_josef_teufl
 		recruit_character = AUS_otto_schobel
 		recruit_character = AUS_viktor_seebauer
 		recruit_character = AUS_lothar_rendulic
@@ -266,12 +206,7 @@ IF = {
 		recruit_character = AUS_leopold_figl
 		recruit_character = AUS_friedrich_mandl
 	}
-
 }
-
-
-
-# EmpiresShadow - Austria-Hungary subjects
 set_autonomy = {
 target = YUG
 autonomous_state = autonomy_integrated_puppet
@@ -281,7 +216,6 @@ target = CZE
 autonomous_state = autonomy_integrated_puppet
 }
 set_research_slots = 4
-
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -293,46 +227,37 @@ set_technology = {
 	basic_train = 1
 	gw_artillery = 1
 }
-
 IF = {
 	limit = { has_dlc = "No Step Back" }
 	set_technology = {
 		gwtank_chassis = 1
 	}
-
 	ELSE = {
 		set_technology = {
 			gwtank = 1
 		}
 	}
 }
-
 IF = {
 	limit = { has_dlc = "La Resistance" }
 		set_technology = {
 			armored_car1 = 1
 		}
 }
-
-
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-
 set_popularities = {
 	neutrality = 72
 	fascism = 20
 	democratic = 5
 	communism = 3
 }
-
 set_stability = 0.30
 set_war_support = 0.4
-
 set_country_leader = {
 	character = AUS_otto_von_habsburg
 	ideology = despotism
