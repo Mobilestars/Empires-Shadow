@@ -52,4 +52,12 @@ spriteTypes = {
         name = "GFX_portrait_BUL_ivan_ivanov"
         texturefile = "gfx/leaders/BUL/portrait_bul_ivan_ivanov.dds"
     }
+    spriteType = {
+        name = "GFX_portrait_BUL_boris_iii"
+        texturefile = "gfx/leaders/BUL/Portrait_Bulgaria_Boris_III.dds"
+    }
+    spriteType = {
+        name = "GFX_portrait_cyp_archbishop_makarios_iii"
+        texturefile = "gfx/leaders/CYP/portrait_cyp_archbishop_makarios_iii.dds"
+    }
 }

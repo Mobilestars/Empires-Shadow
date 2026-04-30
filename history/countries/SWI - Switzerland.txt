@@ -10,7 +10,7 @@ set_popularities = {
 	fascism = 15
 	communism = 5
 	neutrality = 5
-	}
+ 
 
 	create_country_leader = {
 		name = "Hans Muster"
@@ -59,8 +59,9 @@ if = {
 add_ideas = {
 	SWI_neutralitaet_idea
 }
-set_stability = 0.72
-set_war_support = 0.15
+set_stability = 0.85
+set_war_support = 0.28
+recruit_character = SWI_federal_council
 set_country_leader = {
 	character = SWI_federal_council
 	ideology = conservatism

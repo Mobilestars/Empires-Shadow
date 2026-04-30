@@ -34,3 +34,8 @@ create_country_leader = {
 	traits = { army_chief_defensive }
 }
 add_to_faction = GER
+recruit_character = BUL_boris_iii
+set_country_leader = {
+	character = BUL_boris_iii
+	ideology = despotism
+}

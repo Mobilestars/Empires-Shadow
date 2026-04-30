@@ -57,6 +57,7 @@ set_popularities = {
 	communism = 15
 	neutrality = 27
 }
+recruit_character = CYP_archbishop_makarios_iii
 set_country_leader = {
     character = CYP_archbishop_makarios_iii
     ideology = democratic
