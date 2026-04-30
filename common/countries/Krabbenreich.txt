@@ -1,0 +1,4 @@
+# Krabbenreich
+# Tag: BAY (ersetzt Bayern nach Secret)
+color = { 255 0 0 }
+capital = 53

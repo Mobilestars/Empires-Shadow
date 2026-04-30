@@ -1,0 +1,108 @@
+focus_tree = {
+	id = BAY_focus
+	country = {
+		factor = 1
+		OR = {
+			tag = BAV
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	initial_show_position = {
+		focus = BAY_krabbenreich_start
+	}
+
+	focus = {
+		id = BAY_krabbenreich_start
+		icon = GFX_goal_generic_political_reform
+		x = 0
+		y = 0
+		cost = 10
+		available = {
+			original_tag = BAV
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = BAY_krabbenreich_demokratie
+		icon = GFX_goal_generic_democracy
+		prerequisite = { focus = BAY_krabbenreich_start }
+		mutually_exclusive = { focus = BAY_krabbenreich_faschismus focus = BAY_krabbenreich_kommunismus focus = BAY_krabbenreich_kaiserreich }
+		x = -3
+		y = 1
+		cost = 10
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 75
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_krabbenreich_faschismus
+		icon = GFX_goal_generic_fascist
+		prerequisite = { focus = BAY_krabbenreich_start }
+		mutually_exclusive = { focus = BAY_krabbenreich_demokratie focus = BAY_krabbenreich_kommunismus focus = BAY_krabbenreich_kaiserreich }
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 75
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_krabbenreich_kommunismus
+		icon = GFX_goal_generic_communist
+		prerequisite = { focus = BAY_krabbenreich_start }
+		mutually_exclusive = { focus = BAY_krabbenreich_demokratie focus = BAY_krabbenreich_faschismus focus = BAY_krabbenreich_kaiserreich }
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 75
+			}
+		}
+	}
+
+	focus = {
+		id = BAY_krabbenreich_kaiserreich
+		icon = GFX_goal_generic_monarchy
+		prerequisite = { focus = BAY_krabbenreich_start }
+		mutually_exclusive = { focus = BAY_krabbenreich_demokratie focus = BAY_krabbenreich_faschismus focus = BAY_krabbenreich_kommunismus }
+		x = 3
+		y = 1
+		cost = 10
+		completion_reward = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 75
+			}
+		}
+	}
+}

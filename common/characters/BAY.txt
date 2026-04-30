@@ -1,0 +1,45 @@
+# Krabbenreich Leader
+character = {
+	name = "Klaus Krabbe"
+	portraits = {
+		civilian = "gfx/leaders/BAY/krabben_leader.dds"
+	}
+	ideology = democratic
+	country_leader = {
+		ideology = democratic
+		traits = { charismatic }
+	}
+}
+character = {
+	name = "Klaus Krabbe"
+	portraits = {
+		civilian = "gfx/leaders/BAY/krabben_leader.dds"
+	}
+	ideology = fascism
+	country_leader = {
+		ideology = fascism
+		traits = { demagogue }
+	}
+}
+character = {
+	name = "Klaus Krabbe"
+	portraits = {
+		civilian = "gfx/leaders/BAY/krabben_leader.dds"
+	}
+	ideology = communism
+	country_leader = {
+		ideology = communism
+		traits = { stalwart }
+	}
+}
+character = {
+	name = "Klaus Krabbe"
+	portraits = {
+		civilian = "gfx/leaders/BAY/krabben_leader.dds"
+	}
+	ideology = neutrality
+	country_leader = {
+		ideology = neutrality
+		traits = { monarchist }
+	}
+}

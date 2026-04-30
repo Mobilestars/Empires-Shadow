@@ -10,14 +10,26 @@ country_event = {
     trigger = { }
     
     immediate = {
-        transfer_state = 52
-        transfer_state = 53
-        transfer_state = 54
-        if = {
-            limit = { tag != BAV }
-            create_country = BAV
-        }
-        set_player_country = BAV
+            transfer_state = 52
+            transfer_state = 53
+            transfer_state = 54
+            if = {
+                limit = { tag != BAV }
+                create_country = BAV
+            }
+            set_player_country = BAV
+            set_country_flag = krabbenreich_secret_unlocked
+            set_politics = {
+                ruling_party = democratic
+                elections_allowed = yes
+            }
+            set_popularities = {
+                democratic = 25
+                fascism = 25
+                communism = 25
+                neutrality = 25
+            }
+            set_focus_tree = BAY_focus
     }
     option = {
         name = GER_revolt_bavaria_option
