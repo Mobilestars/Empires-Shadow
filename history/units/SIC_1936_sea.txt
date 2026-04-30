@@ -1,10 +1,6 @@
 ﻿division_template = {
-
 	name = "Juntuán"				
 	division_names_group = CHI_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -22,12 +18,8 @@
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
 	name = "Sanjiao Jun"
 	division_names_group = CHI_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -44,12 +36,7 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
-
-### OOB ###
 units = {
-
-	### Provincial Forces - Divisions ###
 	division = {
 		name = "133rd Division"
 		location = 7948
@@ -58,7 +45,6 @@ units = {
 		officer = {
 			name = SIC_yang_hanyu
 		}
-
 	}
 	division = {
 		name = "134th Division"
@@ -68,7 +54,6 @@ units = {
 		officer = {
 			name = SIC_xia_jiong
 		}
-
 	}
 	division = {
 		name = "135th Division"
@@ -78,7 +63,6 @@ units = {
 		officer = {
 			name = SIC_yang_hanzhong
 		}
-
 	}
 	division = {
 		name = "145th Division" 
@@ -88,7 +72,6 @@ units = {
 		officer = {
 			name = SIC_rao_guohua
 		}
-
 	}
 	division = {
 		name = "146th Division" 
@@ -98,7 +81,6 @@ units = {
 		officer = {
 			name = SIC_fan_shaozeng
 		}
-
 	}
 	division = {
 		name = "162nd Division" 
@@ -108,7 +90,6 @@ units = {
 		officer = {
 			name = SIC_peng_chengfu
 		}
-
 	}
 	division = {
 		name = "13th Independent Brigade" 
@@ -118,7 +99,6 @@ units = {
 		officer = {
 			name = SIC_tian_guanwu
 		}
-
 	}
 	division = {
 		name = "14th Independent Brigade" 
@@ -128,7 +108,6 @@ units = {
 		officer = {
 			name = SIC_zhou_shaoxuan
 		}
-
 	}
 	division = {
 		name = "144th Division" 
@@ -138,7 +117,6 @@ units = {
 		officer = {
 			name = SIC_yang_guozheng
 		}
-
 	}
 	division = {
 		name = "148th Division" 
@@ -148,7 +126,6 @@ units = {
 		officer = {
 			name = SIC_chen_wanren
 		}
-
 	}
 	division = {
 		name = "10th Provisional Brigade" 
@@ -158,28 +135,24 @@ units = {
 		officer = {
 			name = SIC_mu_suzhong
 		}
-
 	}
 	division = {
 		name = "1st Division"
 		location = 6999
 		division_template = "Sanjiao Jun"		
 		start_equipment_factor = 0.1
-
 	}
 	division = {
 		name = "2nd Division" 
 		location = 6999
 		division_template = "Sanjiao Jun"		
 		start_equipment_factor = 0.1
-
 	}
 	division = {
 		name = "3rd Division"
 		location = 6999
 		division_template = "Sanjiao Jun"		
 		start_equipment_factor = 0.1
-
 	}
 	division = {
 		name = "20th Division" 
@@ -189,7 +162,6 @@ units = {
 		officer = {
 			name = SIC_guo_rudong
 		}
-
 	}
 	division = {
 		name = "149th Division" 
@@ -199,7 +171,6 @@ units = {
 		officer = {
 			name = SIC_liao_zhen
 		}
-
 	}
 	division = {
 		name = "150th Division"
@@ -209,7 +180,6 @@ units = {
 		officer = {
 			name = SIC_gou_changming
 		}
-
 	}
 	division = {
 		name = "163rd Division" 
@@ -219,7 +189,6 @@ units = {
 		officer = {
 			name = SIC_chen_lanting
 		}
-
 	}
 	division = {
 		name = "1st Division" 
@@ -229,7 +198,6 @@ units = {
 		officer = {
 			name = SIC_chen_dingxun
 		}
-
 	}
 	division = {
 		name = "2nd Division"
@@ -239,7 +207,6 @@ units = {
 		officer = {
 			name = SIC_huang_yin
 		}
-
 	}
 	division = {
 		name = "3rd Division" 
@@ -249,7 +216,6 @@ units = {
 		officer = {
 			name = SIC_ma_yuzhi
 		}
-
 	}
 	division = {
 		name = "Training Division" 
@@ -259,7 +225,6 @@ units = {
 		officer = {
 			name = SIC_yang_xiujun
 		}
-
 	}
 	division = {
 		name = "Model Division" 
@@ -269,7 +234,6 @@ units = {
 		officer = {
 			name = SIC_chen_li
 		}
-
 	}
 	division = {
 		name = "1st Independent Division" 
@@ -279,7 +243,6 @@ units = {
 		officer = {
 			name = SIC_xu_shaozong
 		}
-
 	}
 	division = {
 		name = "144th Independent Division" 
@@ -289,7 +252,6 @@ units = {
 		officer = {
 			name = SIC_guo_xunqi
 		}
-
 	}
 	division = {
 		name = "11th Independent Brigade" 
@@ -299,7 +261,6 @@ units = {
 		officer = {
 			name = SIC_deng_guozhang
 		}
-
 	}
 	division = {
 		name = "12th Independent Brigade" 
@@ -309,7 +270,6 @@ units = {
 		officer = {
 			name = SIC_fan_nanxuan
 		}
-
 	}
 	division = {
 		name = "16th Independent Brigade" 
@@ -319,7 +279,6 @@ units = {
 		officer = {
 			name = SIC_liu_shucheng
 		}
-
 	}
 	division = {
 		name = "17th Independent Brigade" 
@@ -329,7 +288,6 @@ units = {
 		officer = {
 			name = SIC_li_ruobi
 		}
-
 	}
 	division = {
 		name = "Special Forces Headquarters" 
@@ -339,7 +297,6 @@ units = {
 		officer = {
 			name = SIC_you_guangzhu
 		}
-
 	}
 	division = {
 		name = "New 6th Division" 
@@ -349,7 +306,6 @@ units = {
 		officer = {
 			name = SIC_li_jiayu
 		}
-
 	}
 	division = {
 		name = "New 23rd Division" 
@@ -359,7 +315,6 @@ units = {
 		officer = {
 			name = SIC_luo_zezhou
 		}
-
 	}
 	division = {
 		name = "136th Division" 
@@ -369,7 +324,6 @@ units = {
 		officer = {
 			name = SIC_chen_guangzao
 		}
-
 	}
 	division = {
 		name = "137th Division" 
@@ -379,7 +333,6 @@ units = {
 		officer = {
 			name = SIC_li_yuanyu
 		}
-
 	}
 	division = {
 		name = "138th Division" 
@@ -389,11 +342,8 @@ units = {
 		officer = {
 			name = SIC_tang_ying
 		}
-
 	}
 }
-
-### STARTING PRODUCTION ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

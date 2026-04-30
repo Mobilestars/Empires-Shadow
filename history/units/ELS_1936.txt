@@ -1,10 +1,6 @@
 ﻿division_template = {
-
-	name = "Brigada de Infanteria"		# Military dictatorships were supported by frontline army brigades during period
+	name = "Brigada de Infanteria"
 	division_names_group = SPAN_INFB_02
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -21,43 +17,35 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 units = {
-	##### Ejército de El Salvador #####
-	division= {	# "1a Brigada de Ejercito"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 12823 # San Salvador
+		location = 12823
 		division_template = "Brigada de Infanteria"
 		start_experience_factor = 0.2
 	}
-	division= {	# "2a Brigada de Ejercito"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 12823 # San Salvador
+		location = 12823
 		division_template = "Brigada de Infanteria"
 		start_experience_factor = 0.2
 	}
-	division= {	# "3a Brigada de Ejercito"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 12823 # San Salvador
+		location = 12823
 		division_template = "Brigada de Infanteria"
 		start_experience_factor = 0.2
 	}
-
-	##### No Notable Naval Forces #####
 }
-
-##### No Notable Air Forces #####
-
-
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

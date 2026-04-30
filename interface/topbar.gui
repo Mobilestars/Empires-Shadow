@@ -1,24 +1,20 @@
 guiTypes = {
-
 	containerWindowType = {
 		name = "topbar"
 		position = { x=-4 y=-1 }	
 		size = { width=100%% height=100%% }
-		
 		iconType = {
 			name ="background"
 			spriteType = "GFX_topbar_background_extended"
 			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}
-		
 		buttonType = {
 			name = "reopen_ingame_lobby"
 			quadTextureSprite ="GFX_reopen_lobby"
 			position = { x= 188 y = -22 }
 			Orientation = "LOWER_LEFT"
 		}
-		
 		instantTextBoxType = {
 			name ="reopen_ingame_lobby_label"
 			position = { x= 210 y = -16 }
@@ -31,14 +27,6 @@ guiTypes = {
 			Orientation = "LOWER_LEFT"
 			alwaystransparent = yes
 		}
-		
-#		iconType = {
-#			name ="topbar_date_overlay"
-#			spriteType = "GFX_topbar_date_overlay"
-#			position = { x= -357 y = 0 }
-#			Orientation = "UPPER_RIGHT"
-#		}
-
 		containerWindowType = {
 			name = "toggle_music_commands_win"
 			position = { x= -289 y = 39}
@@ -49,19 +37,16 @@ guiTypes = {
 			Orientation = upper_right	
 			clipping = no
 			size = { width=228 height=42 }
-	
 			background = {
 				name = "Background"		
 				quadTextureSprite ="GFX_playlist_bg"
 			}
-
 			buttonType = {
 				name = "music_pause_button"
 				quadTextureSprite ="GFX_music_pause_button"
 				position = { x= -195 y = 6 }
 				Orientation = "UPPER_RIGHT"
 			}	
-
 			buttonType = {
 				name = "music_next_button"
 				quadTextureSprite ="GFX_music_next_button"
@@ -69,16 +54,13 @@ guiTypes = {
 				Orientation = "UPPER_RIGHT"
 				pdx_tooltip = "MUSICPLAYER_NEXT"
 			}
-
 			buttonType = {
 				name = "musicplayer_button"
 				quadTextureSprite ="GFX_musicplayer_button"
 				position = { x= -130 y = 6 }
 				Orientation = "UPPER_RIGHT"
 			}			
-				
 		}		
-				
 		iconType = {
 			name ="armyoverview_buttons_bg"
 			spriteType = "GFX_armyoverview_buttons_bg"
@@ -86,7 +68,6 @@ guiTypes = {
 			Orientation = "UPPER_RIGHT"
 			alwaystransparent = yes
 		}
-		
 		buttonType = {
 			name = "player_flag"
 			quadTextureSprite ="GFX_shield_medium"
@@ -96,7 +77,6 @@ guiTypes = {
 			oversound = ui_menu_over
 			shortcut = "q"
 		}
-		
 		iconType = {
 			name = "observer_flag_overlay"
 			spriteType = "GFX_observer_flag_overlay"
@@ -104,21 +84,18 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
-
 		iconType ={
 			name ="pol_power_value_bg"
 			spriteType = "GFX_generic_box_smallest"
 			position = { x = 100 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
-
 		iconType ={
 			name ="pol_power_icon"
 			spriteType = "GFX_pol_power_icon"
 			position = { x= 103 y = 3 }
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name ="pol_power"
 			position = { x= 120 y = 8 }
@@ -129,21 +106,18 @@ guiTypes = {
 			maxHeight = 24
 			fixedsize = yes
 		}
-		
 		iconType ={
 			name ="manpower_value_bg"
 			spriteType = "GFX_generic_box_96"
 			position = { x = 417 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
-
 		iconType ={
 			name ="manpower_icon"
 			spriteType = "GFX_manpower_icon"
 			position = { x= 419 y = 3 }
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name ="manpower"
 			position = { x= 450 y = 8 }
@@ -154,21 +128,18 @@ guiTypes = {
 			maxHeight = 24
 			fixedsize = yes
 		}
-		
 		iconType ={
 			name ="sability_value_bg"
 			spriteType = "GFX_generic_box_smallest"
 			position = { x = 271 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
-		
 		iconType ={
 			name ="stability_icon"
 			spriteType = "GFX_stability_icon"
 			position = { x= 272 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name ="stability"
 			position = { x= 278 y = 8 }
@@ -179,21 +150,18 @@ guiTypes = {
 			maxHeight = 24
 			fixedsize = yes
 		}
-		
 		iconType ={
 			name ="war_support_value_bg"
 			spriteType = "GFX_generic_box_smallest"
 			position = { x = 344 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
-		
 		iconType ={
 			name ="war_support_icon"
 			spriteType = "GFX_war_support_icon"
 			position = { x= 345 y = 6 }
 			Orientation = "UPPER_LEFT"
 		}
-
 		instantTextBoxType = {
 			name ="war_support"
 			position = { x= 351 y = 8 }
@@ -204,19 +172,16 @@ guiTypes = {
 			maxHeight = 24
 			fixedsize = yes
 		}
-
 		containerWindowType = {
 			name = "land"
 			position = { x= 871 y = 5}
 			clipping = no
 			size = { width=56 height=28 }
 			Orientation = UPPER_LEFT
-
 			background = {
 				name = "land_xp_bg"
 				quadTextureSprite ="GFX_tiled_generic_bg_1"
 			}
-
 			iconType = {
 				name ="experience_icon"
 				spriteType = "GFX_army_experience"
@@ -224,7 +189,6 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}
-			
 			instantTextBoxType = {
 				name ="experience_value"
 				position = { x= 23 y = 5 }
@@ -237,19 +201,16 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 		}
-
 		containerWindowType = {
 			name = "navy"
 			position = { x= 929 y = 5}
 			clipping = no
 			size = { width=56 height=28 }
 			Orientation = UPPER_LEFT
-				
 			background = {
 				name = "navy_xp_bg"
 				quadTextureSprite ="GFX_tiled_generic_bg_1"
 			}
-
 			iconType = {
 				name ="navy_experience_icon"
 				spriteType = "GFX_navy_experience"
@@ -257,7 +218,6 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}		
-			
 			instantTextBoxType = {
 				name ="navy_experience_value"
 				position = { x= 23 y = 5 }
@@ -270,19 +230,16 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 		}
-
 		containerWindowType = {
 			name = "air"
 			position = { x= 987 y = 5}
 			clipping = no
 			size = { width=56 height=28 }
 			Orientation = UPPER_LEFT
-			
 			background = {
 				name = "air_xp_bg"
 				quadTextureSprite ="GFX_tiled_generic_bg_1"
 			}
-
 			iconType = {
 				name ="air_experience_icon"
 				spriteType = "GFX_air_experience"
@@ -290,7 +247,6 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}
-			
 			instantTextBoxType = {
 				name ="air_experience_value"
 				position = { x= 23 y = 5 }
@@ -303,19 +259,16 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 		}
-
 		containerWindowType = {
 			name = "nukes"
 			position = { x= 1045 y = 5}
 			clipping = no
 			size = { width=56 height=30 }
 			Orientation = UPPER_LEFT
-
 			background = {
 				name = "nukes_bg"
 				quadTextureSprite ="GFX_mini_tooltip"
 			}
-
 			iconType = {
 				name = "nuke_icon"
 				spriteType = "GFX_topbar_nuke"
@@ -324,7 +277,6 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}
-
 			instantTextBoxType = {
 				name = "nukes_value"
 				position = { x= 26 y = 5 }
@@ -336,19 +288,16 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 		}
-
 		containerWindowType = {
 			name = "cp"
 			position = { x= 807 y = 5}
 			clipping = no
 			size = { width=62 height=28 }
 			Orientation = UPPER_LEFT
-
 				background = {
 					name = "cp_bg"
 					quadTextureSprite ="GFX_tiled_generic_bg_1"
 				}
-		
 			iconType = {
 				name ="command_power_icon"
 				spriteType = "GFX_command_power"
@@ -356,7 +305,6 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}
-		
 			instantTextBoxType = {
 				name ="command_power_value"
 				position = { x= 30 y = 5 }
@@ -369,23 +317,18 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 		}
-		
-		## industry
-
 		iconType ={
 			name ="industrial_capacity_bg" 
 			spriteType = "GFX_generic_box_smallest"
 			position = { x=516 y = 5 } 
 			Orientation = "UPPER_LEFT"
 		}
-		
 		iconType ={
 			name ="industrial_capacity_icon"
 			spriteType = "GFX_industrial_capacity_icon"
 			position = { x= 510 y = 3 } 
 			Orientation = "UPPER_LEFT"
 		}
-        
 		instantTextBoxType = {
 			name ="industrial_capacity"
 			position = { x= 536 y = 4 } 
@@ -396,7 +339,6 @@ guiTypes = {
 			maxHeight = 24
 			fixedsize = yes
 		}	
-
 		iconType = {
 			name ="industrial_ratio_bar"
 			spriteType = "GFX_topbar_fuel_bar" 
@@ -404,23 +346,18 @@ guiTypes = {
 			frame = 50
 			alwaystransparent = yes
 		}
-
-		## convoy
-		
 		iconType ={
 			name ="convoy_text_bg"
 			spriteType = "GFX_generic_box_smallest"
 			position = { x=735 y=5 }
 			Orientation = "UPPER_LEFT"
 		}
-		
 		iconType ={
 			name ="convoys_icon"
 			spriteType = "GFX_topbar_convoys"
 			position = { x= 734 y = 9 }
 			Orientation = "UPPER_LEFT"
 		}
-		
 		instantTextBoxType = {
 			name ="convoys_count"
 			position = { x= 760 y = 4 }
@@ -429,9 +366,7 @@ guiTypes = {
 			format = center
 			maxWidth = 44
 			maxHeight = 24
-#			fixedsize = yes
 		}
-		
 		iconType = {
 			name ="convoys_ratio_bar"
 			spriteType = "GFX_topbar_fuel_bar"
@@ -439,23 +374,18 @@ guiTypes = {
 			frame = 50
 			alwaystransparent = yes
 		}
-		
-		## fuel
-		
 		iconType ={
 			name ="fuel_value_bg"
 			spriteType = "GFX_generic_box_smallest"
 			position = { x=589 y=5 }
 			Orientation = "UPPER_LEFT"
 		}
-		
 		iconType = {
 			name ="fuel_icon"
 			spriteType = "GFX_fuel_state"
 			position = { x= 588 y = 6 }
 			Orientation = "UPPER_LEFT"
 		}		
-		
 		instantTextBoxType = {
 			name ="fuel_value"
 			position = { x= 611 y = 4 }
@@ -466,7 +396,6 @@ guiTypes = {
 			maxHeight = 24
 			fixedsize = yes
 		}
-		
 		iconType = {
 			name ="fuel_ratio_bar"
 			spriteType = "GFX_topbar_fuel_bar"
@@ -474,23 +403,18 @@ guiTypes = {
 			frame = 50
 			alwaystransparent = yes
 		}
-		
-		## supply
-		
 		iconType ={
 			name ="supply_value_bg"
 			spriteType = "GFX_generic_box_smallest"
 			position = { x=662 y=5 }
 			Orientation = "UPPER_LEFT"
 		}
-		
 		iconType = {
 			name ="supply_icon"
 			spriteType = "GFX_equipment_icon"
 			position = { x= 663 y = 8 }
 			Orientation = "UPPER_LEFT"
 		}		
-		
 		instantTextBoxType = {
 			name ="supply_value"
 			position = { x= 684 y = 4 }
@@ -501,7 +425,6 @@ guiTypes = {
 			maxHeight = 24
 			fixedsize = yes
 		}
-		
 		iconType = {
 			name ="supply_ratio_bar"
 			spriteType = "GFX_topbar_fuel_bar"
@@ -509,8 +432,6 @@ guiTypes = {
 			frame = 50
 			alwaystransparent = yes
 		}
-		
-		##
 		buttonType ={
 			name ="threat_button"
 			spriteType = "GFX_world_tension_icon_big_strip"
@@ -518,7 +439,6 @@ guiTypes = {
 			Orientation = "UPPER_RIGHT"
 			clicksound = click_default
 		}
-
 		iconType ={
 			name ="threat_icon_glow"
 			spriteType = "GFX_WT_anim_strip"
@@ -526,7 +446,6 @@ guiTypes = {
 			Orientation = "UPPER_RIGHT"
 			alwaystransparent = yes
 		}
-		
 		buttonType ={
 			name ="threat_value_button"
 			spriteType = "GFX_world_tension_icon_big_strip"
@@ -536,7 +455,6 @@ guiTypes = {
 			size = { x=50 y=20 }
 			quadTextureSprite ="GFX_tiled_window_transparent"
 		}
-		
 		instantTextBoxType = {
 			name ="threat_value"
 			position = { x=-98 y=74 }
@@ -549,31 +467,27 @@ guiTypes = {
 			Orientation = "UPPER_RIGHT"
 			alwaystransparent = yes
 		}	
-		
 		containerWindowType = {
 			name = "time_control_window"
 			position = { x=-378 y=7 }
 			size = { width=253 height=30 }
 			Orientation = UPPER_RIGHT
-
 			buttonType = {
 				name = "pause_button_date"
 				quadTextureSprite ="GFX_date_pause_button_bg"
 				position = { x = -197 y = 0 }
 				Orientation = "UPPER_RIGHT"
-				shortcut = "SPACE" #Will be disabled in MP from code
+				shortcut = "SPACE"
 				clicksound = pause_button
 			}
-			
 			buttonType = {
 				name = "pause_button_date_paused"
 				quadTextureSprite ="GFX_date_pause_button"
 				position = { x = -197 y = 0 }
 				Orientation = "UPPER_RIGHT"
-				shortcut = "SPACE" #Will be disabled in MP from code
+				shortcut = "SPACE"
 				clicksound = pause_button
 			}
-			
 			buttonType = {
 				name = "button_speeddown"
 				quadTextureSprite ="GFX_zoom_out"
@@ -583,42 +497,36 @@ guiTypes = {
 				clicksound = time_down
 				oversound = ui_menu_over
 			}
-		
 			buttonType = {
 				name = "button_speedstep1"
 				quadTextureSprite ="GFX_speed_step"
 				position = { x=94 y =27 }
 				clicksound = click_default
 			}
-			
 			buttonType = {
 				name = "button_speedstep2"
 				quadTextureSprite ="GFX_speed_step"
 				position = { x=119 y =27 }
 				clicksound = click_default
 			}
-			
 			buttonType = {
 				name = "button_speedstep3"
 				quadTextureSprite ="GFX_speed_step"
 				position = { x=144 y =27 }
 				clicksound = click_default
 			}
-			
 			buttonType = {
 				name = "button_speedstep4"
 				quadTextureSprite ="GFX_speed_step"
 				position = { x=169 y =27 }
 				clicksound = click_default
 			}
-			
 			buttonType = {
 				name = "button_speedstep5"
 				quadTextureSprite ="GFX_speed_step"
 				position = { x=194 y =27 }
 				clicksound = click_default
 			}
-		
 			buttonType = {
 				name = "button_speedup"
 				quadTextureSprite ="GFX_zoom_in"
@@ -628,7 +536,6 @@ guiTypes = {
 				clicksound = time_up
 				oversound = ui_menu_over
 			}
-			
 			instantTextBoxType = {
 				name = "DateText"
 				position = { x = -175 y = 4 }
@@ -642,8 +549,6 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 		}
-	
-
 		buttonType = {
 			name = "menu_button"
 			position = { x = -35 y = 7 }
@@ -655,7 +560,6 @@ guiTypes = {
 			Orientation = "UPPER_RIGHT"
 			pdx_tooltip = "MAIN_MENU"
 		}
-		
 		buttonType = {
 			name = "help_button"
 			position = { x = -29 y = 34 }
@@ -668,7 +572,6 @@ guiTypes = {
 			pdx_tooltip = "HELP_MENU"
 			web_link = ""
 		}
-
 		buttonType = {
 			name = "achievements_button"
 			position = { x = -131 y = 62 }
@@ -679,7 +582,6 @@ guiTypes = {
 			oversound = ui_menu_over
 			Orientation = "UPPER_RIGHT"
 		}
-		
 		buttonType = {
 			name = "playlist_button"
 			position = { x = -311 y = 46 }
@@ -691,7 +593,6 @@ guiTypes = {
 			Orientation = "UPPER_RIGHT"
 			pdx_tooltip = "MUSICPLAYER_TOGGLE_CONTROLLER"
 		}		
-		
 		buttonType = {
 			name = "dismissed_alerts_button"
 			position = { x = -35 y = 62 }
@@ -702,18 +603,14 @@ guiTypes = {
 			oversound = ui_menu_over
 			Orientation = "UPPER_RIGHT"
 		}
-		
-		
 		containerWindowType = {
 			name = "country_menu_window"
 			position = { x=217 y=36 }
 			size = { width=100%% height=30 }
-			
 			containerWindowType= {
 				name="faction_button_container"
 				position = { x=-115 y=0 }
 				size = { width=30 height=30 }
-				
 				buttonType = {
 					name = "faction_button"
 					quadTextureSprite ="GFX_topbar_faction_empty"
@@ -723,7 +620,6 @@ guiTypes = {
 					oversound = ui_menu_over
 					shortcut = "ctrl+q"
 				}
-	
 				instantTextBoxType = {
 					name ="initiative_text"
 					position = { x= -15 y = 8 }
@@ -735,7 +631,6 @@ guiTypes = {
 					maxHeight = 24
 					fixedsize = yes
 				}
-	
 				iconType = {
 					name = "faction_icon"
 					spriteType = "GFX_faction_logo_generic_democratic_miniature"
@@ -744,18 +639,15 @@ guiTypes = {
 					alwaystransparent = yes
 				}
 			}
-
 			containerWindowType = {
 					name = "after_faction_button"
 					position = { x=17 y=0 }
-
 				iconType = {
 					name ="decision_view_alert_glow"
 					spriteType = "GFX_decisions_glow"	
 					position = { x =-104 y = 0 }
 					alwaystransparent = yes
 				}
-
 				buttonType = {
 					name = "decisionview_button"
 					quadTextureSprite ="GFX_topbar_decisionview_button"
@@ -765,16 +657,13 @@ guiTypes = {
 					oversound = ui_menu_over
 					shortcut = "shift+q"
 				}
-
 				iconType = {
 					name = "decisionview_amount_timeout_bg"
 					spriteType = "GFX_topbar_alert_bg"
 					position = { x = -100 y = 4}
 					alwaystransparent = yes
 					frame = 2
-
 				}
-
 				instantTextBoxType = {
 					name ="decisionview_amount_timeout_items"
 					position = { x= -102 y = 4 }
@@ -785,7 +674,6 @@ guiTypes = {
 					maxHeight = 24
 					fixedsize = yes
 				}
-
 				iconType = {
 					name = "decisionview_amount_to_take_bg"
 					spriteType = "GFX_topbar_alert_bg"
@@ -793,7 +681,6 @@ guiTypes = {
 					alwaystransparent = yes
 					frame = 1
 				}
-
 				instantTextBoxType = {
 					name ="decisionview_amount_to_take_items"
 					position = { x= -102 y = 20 }
@@ -804,7 +691,6 @@ guiTypes = {
 					maxHeight = 24
 					fixedsize = yes
 				}
-
 				buttonType = {
 					name = "intel_agency_button"
 					quadTextureSprite ="GFX_topbar_intelligence" 
@@ -814,7 +700,6 @@ guiTypes = {
 					oversound = ui_menu_over
 					shortcut = "shift+w"
 				}
-
 				iconType = {
 					name = "intelview_ops_prepared_or_completed_bg"
 					spriteType = "GFX_topbar_alert_bg"
@@ -822,7 +707,6 @@ guiTypes = {
 					alwaystransparent = yes
 					frame = 4
 				}
-
 				instantTextBoxType = {
 					name ="intelview_ops_prepared_or_completed_items"
 					position = { x= -51 y = 4 }
@@ -833,7 +717,6 @@ guiTypes = {
 					maxHeight = 24
 					fixedsize = yes
 				}
-
 				iconType = {
 					name = "intelview_ops_available_bg"
 					spriteType = "GFX_topbar_alert_bg"
@@ -841,7 +724,6 @@ guiTypes = {
 					alwaystransparent = yes
 					frame = 1
 				}
-
 				instantTextBoxType = {
 					name ="intelview_ops_available_items"
 					position = { x= -51 y = 20 }
@@ -852,12 +734,9 @@ guiTypes = {
 					maxHeight = 24
 					fixedsize = yes
 				}
-
-				# Here, several buttons are put in the container "after_intel_agency_button", to be easily moved if the player don't have the DLC required by "intel_agency_button".
 				containerWindowType = {
 					name = "after_intel_agency_button"
 					position = { x=55 y=0 }
-
 					buttonType = {
 						name = "technology_button"
 						quadTextureSprite ="GFX_topbar_technology"
@@ -867,7 +746,6 @@ guiTypes = {
 						clicksound = click_close
 						oversound = ui_menu_over
 					}
-
 					iconType = {
 						name = "prototype_rewards_aquired_bg"
 						spriteType = "GFX_topbar_alert_bg"
@@ -875,7 +753,6 @@ guiTypes = {
 						alwaystransparent = yes
 						frame = 1
 					}
-
 					instantTextBoxType = {
 						name ="prototype_rewards_aquired"
 						position = { x= -31 y = 20 }
@@ -887,7 +764,6 @@ guiTypes = {
 						maxHeight = 24
 						fixedsize = yes
 					}
-
 					buttonType = {
 						name = "diplomacy_button"
 						quadTextureSprite ="GFX_topbar_diplomacy"
@@ -900,7 +776,6 @@ guiTypes = {
 					containerWindowType = {
 						name = "non_delivering_contracts"
 						position = { x=9 y=4 }
-
 						iconType = {
 							name = "non_delivering_contract_amount_bg"
 							spriteType = "GFX_topbar_alert_bg"
@@ -908,7 +783,6 @@ guiTypes = {
 							alwaystransparent = yes
 							frame = 2
 						}
-
 						instantTextBoxType = {
 							name ="non_delivering_contract_amount"
 							position = { x= 0 y = 0 }
@@ -920,11 +794,9 @@ guiTypes = {
 							fixedsize = yes
 						}
 					}
-
 					containerWindowType = {
 						name = "delivering_contracts"
 						position = { x=9 y=20 }
-
 						iconType = {
 							name = "ongoing_contract_amount_bg"
 							spriteType = "GFX_topbar_alert_bg"
@@ -932,7 +804,6 @@ guiTypes = {
 							alwaystransparent = yes
 							frame = 1
 						}
-
 						instantTextBoxType = {
 							name ="ongoing_contract_amount"
 							position = { x= 0 y = 0 }
@@ -944,7 +815,6 @@ guiTypes = {
 							fixedsize = yes
 						}
 					}
-
 					buttonType = {
 						name = "trade_button"
 						position = { x= 61 y = 0 }
@@ -954,7 +824,6 @@ guiTypes = {
 						clicksound = click_close
 						oversound = ui_menu_over
 					}	
-
 					buttonType = {
 						name = "construction_button"
 						position = { x = 116 y = 0 }
@@ -964,14 +833,12 @@ guiTypes = {
 						clicksound = click_close
 						oversound = ui_menu_over
 					}
-
 					iconType = {
 						name = "production_button_glow"
 						position = { x = 171 y = 0 }
 						spriteType = "GFX_decisions_glow_yellow"
 						alwaystransparent = yes
 					}
-
 					buttonType = {
 						name = "production_button"
 						position = { x = 171 y = 0 }
@@ -981,7 +848,6 @@ guiTypes = {
 						clicksound = click_close
 						oversound = ui_menu_over
 					}
-
 					buttonType = {
 						name = "deployment_button"
 						position = { x = 226 y = 0 }
@@ -991,7 +857,6 @@ guiTypes = {
 						clicksound = click_close
 						oversound = ui_menu_over
 					}		
-
 					buttonType = {
 						name = "logistics_button"
 						position = { x = 281 y = 0 }
@@ -1001,7 +866,6 @@ guiTypes = {
 						clicksound = click_close
 						oversound = ui_menu_over
 					}
-
 					buttonType = {
 						name = "officer_corp_button"
 						position = { x = 336 y = 0 }
@@ -1013,7 +877,6 @@ guiTypes = {
 					}
 				}
 			}
-			
 			buttonType = {
 				name = "army_button"
 				position = { x = -275 y = 8 }
@@ -1023,7 +886,6 @@ guiTypes = {
 				clicksound = click_close
 				oversound = ui_menu_over
 			}
-			
 			buttonType = {
 				name = "navy_button"
 				position = { x = -226 y = 8 }
@@ -1033,7 +895,6 @@ guiTypes = {
 				clicksound = click_close
 				oversound = ui_menu_over
 			}
-			
 			buttonType = {
 				name = "air_button"
 				position = { x = -180 y = 8 }
@@ -1044,33 +905,5 @@ guiTypes = {
 				oversound = ui_menu_over
 			}
 		}
-		
-		#windowType = {
-		#	name = "pause_window"
-		#	backGround=""
-		#	position = { x=-203 y= 100 }
-		#	size = { x=406 y=70 }
-		#	dontRender = ""
-		#	horizontalBorder= ""
-		#	verticalBorder= ""
-		#	fullScreen = no
-		#	moveable = 0
-		#	Orientation = "CENTER_UP"
-		#	
-
-		#	
-		#	#Needs localisation change
-		#	instantTextBoxType = {
-		#		name = "pause_banner_text"
-		#		position = { x = 140 y = 9 }
-		#		textureFile = ""
-		#		font = "vic_22"
-		#		borderSize = {x = 4 y = 4}
-		#		text = "CORE_PAUSED"
-		#		maxWidth = 120
-		#		maxHeight = 27
-		#		format = center
-		#	}
-		#}
 	}
 }

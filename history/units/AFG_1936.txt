@@ -1,12 +1,6 @@
 ﻿division_template = {
-
 	name = "Royal Guard"
-
 	division_names_group = AFG_ARM_01
-
-	# Space Marines ~20W (9 inf + 1 Medium SP-Artillery)
-	# Tank design: cap speed 4 km/h, Wet Ammo (Reliability), Howitzer (Soft Attack)
-	# SPG is ~20% cheaper than regular tanks
 	regiments = {
 		infantry            = { x = 0 y = 0 }
 		infantry            = { x = 0 y = 1 }
@@ -25,14 +19,8 @@
 		anti_air            = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Militia"				# Militia units (lowest experience, oldest equipment)
-
+	name = "Militia"
 	division_names_group = AFG_GAR_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -50,9 +38,7 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 units = {
-	#Royal Afghani Army
 	division = {
 		name = "Royal Afghan Household Division"
 		location = 10737
@@ -60,99 +46,78 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		#name = "Farah Military District"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 26
 		}
 		location = 10737
 		division_template = "Militia"
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "Ghazni Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
 		location = 4893
 		division_template = "Militia"
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "Faizabad Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
 		location = 4893
 		division_template = "Militia"
 		start_equipment_factor = 0.3
-
 	}
-	#Herat Army
 	division = {
-		#name = "Herat Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
 		location = 4893
 		division_template = "Militia"
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "Mazar-e Shar Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 7
 		}
 		location = 10852
 		division_template = "Militia"
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "Maymeneh Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 6
 		}
 		location = 1948
 		division_template = "Militia"
 		start_equipment_factor = 0.3
-
 	}
-	#Kandahar Army
 	division = {
-		#name = "Kandahar Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 5
 		}
 		location = 1948
 		division_template = "Militia"
 		start_equipment_factor = 0.3
-
 	}
 	division = {
-		#name = "Jalalabad Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
 		location = 10852
 		division_template = "Militia"
 		start_equipment_factor = 0.3
-
 	}	
-
 }
-
-### Starting Equipment ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

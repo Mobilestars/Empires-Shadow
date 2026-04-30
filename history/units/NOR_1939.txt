@@ -1,11 +1,7 @@
 ﻿start_equipment_factor = 0.2
 division_template = {
-
 	name = "Infanteridivisjon"		
 	division_names_group = NOR_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -23,12 +19,8 @@ division_template = {
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
 	name = "Binærdivisjon"		
 	division_names_group = NOR_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -46,13 +38,8 @@ division_template = {
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
 	name = "Dragonregiment" 
 	division_names_group = NOR_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -70,12 +57,8 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
-
 units = {
-	######## LAND UNITS ########
-	##### Kongelige Norwegan Overkommando #####
-	division = { # "1. Divisjon"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
@@ -84,7 +67,6 @@ units = {
 		division_template = "Infanteridivisjon"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "1. Dragonregiment"
@@ -92,10 +74,8 @@ units = {
 		division_template = "Dragonregiment"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	division = { # "2. Divisjon"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
@@ -104,7 +84,6 @@ units = {
 		division_template = "Binærdivisjon"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "2. Dragonregiment"
@@ -116,10 +95,8 @@ units = {
 		division_template = "Dragonregiment"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	division = { # "3. Divisjon"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
@@ -128,10 +105,8 @@ units = {
 		division_template = "Binærdivisjon"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	division = { # "4. Divisjon"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 4
@@ -140,10 +115,8 @@ units = {
 		division_template = "Binærdivisjon"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	division = { # "5. Divisjon"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 5
@@ -152,7 +125,6 @@ units = {
 		division_template = "Binærdivisjon"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "3. Dragonregiment"
@@ -160,10 +132,8 @@ units = {
 		division_template = "Dragonregiment"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	division = { # "6. Divisjon"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 6
@@ -172,7 +142,6 @@ units = {
 		division_template = "Binærdivisjon"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "Finnmark Brigaden"
@@ -180,13 +149,8 @@ units = {
 		division_template = "Binærdivisjon"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 }
-
-
-
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

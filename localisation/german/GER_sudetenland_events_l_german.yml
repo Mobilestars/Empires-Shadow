@@ -1,5 +1,4 @@
  l_german:
- # GER SCHICKSAL DER TSCHECHOSLOWAKEI EVENTS
  GER_cze_fate.1.t:0 "Das Schicksal der Tschechoslowakei"
  GER_cze_fate.1.d:0 "Deutschland fordert, dass wir die Tschechoslowakei vollständig übergeben. Das Deutsche Reich hat bereits das Sudetenland annektiert und erwartet nun, dass der Rest des Landes unter deutschen Einfluss fällt — egal ob wir zustimmen oder nicht. Die Entscheidung liegt bei uns, doch die Konsequenzen werden wir in jedem Fall tragen."
  GER_cze_fate.1.a:0 "Wir akzeptieren. Die Tschechoslowakei gehört ihnen."
@@ -11,8 +10,6 @@
  GER_cze_fate.3.d:0 "Das Ende der Tschechoslowakei ist nah. Unsere Truppen stehen bereit, Böhmen-Mähren zu besetzen. Nun müssen wir entscheiden, wie Mitteleuropa im deutschen Interesse neu geordnet wird."
  GER_cze_fate.3.a:0 "Die Slowakei als Puppenstaat einrichten."
  GER_cze_fate.3.b:0 "Die gesamte Tschechoslowakei gehört dem Reich!"
-
- # GER SUDETENLAND FORDERUNGS-EVENTS
  GER_sudetenland.1.t:0 "Deutschland fordert das Sudetenland"
  GER_sudetenland.1.d:0 "Das Deutsche Reich hat ein förmliches Ultimatum gestellt und verlangt die Abtretung des Sudetenlandes — Nordsudetenland (Staat 69), Ostsudetenland (Staat 972) und Südsudetenland (Staat 74). Berlin besteht darauf, dass die deutschsprachige Bevölkerung in diesen Gebieten mit dem Mutterland vereint werden muss. Deutschland hat bereits Ansprüche erhoben und wird notfalls Gewalt einsetzen. Wie sollen wir reagieren?"
  GER_sudetenland.1.a:0 "Wir akzeptieren. Das Sudetenland gehört ihnen."

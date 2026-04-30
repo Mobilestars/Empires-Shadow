@@ -6,7 +6,6 @@ state={
 	resources={
 		steel=31
 	}
-
 	history={
 		owner = ITA
 		add_core_of = ITA
@@ -29,10 +28,8 @@ state={
 			}
 		}
 	}
-
 	provinces={
 		1037 1046 4061 4129 4163 7077 7162 7180 9994 10091 11921 11969 
 	}
-
 	local_supplies=0.0 
 }

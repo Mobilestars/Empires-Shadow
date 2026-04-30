@@ -1,12 +1,6 @@
 ﻿division_template = {
-
-	name = "Dabeşa siwarî"			# Cavalry Division
-
+	name = "Dabeşa siwarî"
 	division_names_group = TUR_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -24,15 +18,9 @@
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 division_template = {
-
-	name = "Peyayên Kurd"			# Kurdish Footmen
-
+	name = "Peyayên Kurd"
 	division_names_group = TUR_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -49,9 +37,7 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 units = {
-	
 	division = {
 		division_name = {    
 			is_name_ordered = yes
@@ -61,7 +47,6 @@ units = {
 		division_template = "Dabeşa siwarî"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
-
 	}
 	division = {
 		division_name = {    
@@ -72,7 +57,6 @@ units = {
 		division_template = "Dabeşa siwarî"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
-
 	}
 	division = {
 		division_name = {    
@@ -83,7 +67,6 @@ units = {
 		division_template = "Dabeşa siwarî"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
-
 	}
 	division = {
 		division_name = {    
@@ -94,7 +77,6 @@ units = {
 		division_template = "Peyayên Kurd"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
-
 	}
 	division = {
 		division_name = {    
@@ -105,7 +87,6 @@ units = {
 		division_template = "Peyayên Kurd"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
-
 	}
 	division = {
 		division_name = {    
@@ -116,7 +97,6 @@ units = {
 		division_template = "Peyayên Kurd"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
-
 	}
 	division = {
 		division_name = {    
@@ -127,7 +107,6 @@ units = {
 		division_template = "Peyayên Kurd"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
-
 	}
 	division = {
 		division_name = {    
@@ -138,7 +117,5 @@ units = {
 		division_template = "Peyayên Kurd"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
-
 	}
-	
 }

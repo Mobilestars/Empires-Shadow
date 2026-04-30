@@ -1,9 +1,5 @@
 ﻿division_template = {
-
 	name = "Motorised Division"
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -21,13 +17,9 @@
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 division_template = {
-
-	name = "Armoured Car Company" 	# Represents the RAF Armoured Car Companies used in the Middle East Front
+	name = "Armoured Car Company"
 	division_names_group = ENG_CAR_01
-
-	# Garrison / Border Guard 6W (minimal cost/equipment)
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -39,37 +31,7 @@ division_template = {
 	support = {
 		engineer = { x = 0 y = 0 }
 	}}
-
-
-#units = {
-#
-#	##### Armoured Car Company RAF #####
-#	
-#	division = { 
-#		name =  "No.1 Armoured Car Company RAF"
-#		location = 12046  # Fallujah - RAF Hinaidi - Iraq
-#		division_template = "Armoured Car Company"
-#		start_experience_factor = 0.1
-#		start_equipment_factor = 0.9
-#	}
-#
-#	division = { 
-#		name =  "No.2 Armoured Car Company RAF"
-#		location = 7151  # Amman - British Transjordan
-#		division_template = "Armoured Car Company"
-#		start_experience_factor = 0.1
-#		start_equipment_factor = 0.8
-#	}
-#
-#}
-
-
-#########################
-## STARTING PRODUCTION ##
-#########################
-
 instant_effect = {
-
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
@@ -80,7 +42,6 @@ instant_effect = {
 		efficiency = 80
 		industrial_manufacturer = mio:ENG_vauxhall_automotive_organization
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = gw_armored_car_equipment
@@ -91,5 +52,4 @@ instant_effect = {
 		efficiency = 100
 		industrial_manufacturer = mio:ENG_crossley_motors_organization
 	}
-	
 }

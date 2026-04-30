@@ -1,10 +1,6 @@
 ﻿division_template = {
-
-	name = "Infantry Division"			# 1st - 5th divisions = fully equipped, others = reserve divisions
+	name = "Infantry Division"
 	division_names_group = ENG_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -21,15 +17,9 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
 	name = "Cavalry Brigade"
 	division_names_group = ENG_CAV_02
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -47,15 +37,9 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 division_template = {
-
 	name = "Tank Brigade"
 	division_names_group = ENG_ARM_02
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -73,13 +57,8 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 division_template = {
-
 	name = "Motorised Division"
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -97,13 +76,9 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 division_template = {
-
 	name = "Colonial Garrison"
 	division_names_group = ENG_COL_01
-
-	# Garrison / Border Guard 6W (minimal cost/equipment)
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -115,11 +90,8 @@ division_template = {
 	support = {
 		engineer = { x = 0 y = 0 }
 	}}
-
-
 units = {
-	#Aldershot Command
-	division= {	# "1st Infantry Division"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
@@ -128,7 +100,7 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	# "2nd Infantry Division"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -137,8 +109,7 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	#Scottish Command
-	division= {	# "51st 'Highland' Infantry Division"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 51
@@ -147,9 +118,8 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division= {	# "52nd 'Lowland' Infantry Division"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 52
@@ -158,18 +128,15 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	#Northern Command
 	division= {	
 		name = "5th Cavalry Brigade"
 		location = 11297
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division= {	# "5th Infantry Division"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
@@ -178,7 +145,7 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	# "50th 'Northumbrian' Motorized Division"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 50
@@ -187,9 +154,8 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division= {	# "49th 'West Riding' Infantry Division"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 49
@@ -198,10 +164,8 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	#Eastern Command
-	division= {	# "4th Infantry Division"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4
@@ -210,7 +174,7 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	# "44th 'Home Counties' Infantry Division"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 44
@@ -219,9 +183,8 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division= {	# "54th 'East Anglia' Infantry Division"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 54
@@ -230,18 +193,15 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	#Western Command	
 	division= {	
 		name = "6th Cavalry Brigade"
 		location = 407
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division= {	# "42nd 'East Lancashire' Infantry Division"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 42
@@ -250,9 +210,8 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division= {	# "53rd 'Welsh' Infantry Division"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 53
@@ -261,9 +220,8 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division= {	# "55th 'West Lancashire' Infantry Division"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 55
@@ -272,16 +230,14 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	#Southern Command
 	division= {	
 		name = "Royal Tank Regiment"
 		location = 9239
 		division_template = "Tank Brigade"
 		start_experience_factor = 0.3
 	}
-	division= {	# "3rd Infantry Division"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
@@ -290,7 +246,7 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	# "43rd 'Wessex' Infantry Division"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 43
@@ -299,9 +255,8 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division= {	# "48th 'South Midland' Infantry Division"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 48
@@ -310,11 +265,7 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	
-	### Middle East Command ###
-	#Sudan
 	division= {	
 		name = "Sudan Defense Force"
 		location = 12806
@@ -322,9 +273,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.4
-
 	}
-	#Palestine & Transjordan
 	division= {	
 		name = "Jerusalem & Lydda Area"
 		location = 4206
@@ -332,9 +281,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-	#Aden
 	division= {	
 		name = "Aden Defense Force"
 		location = 12821
@@ -342,16 +289,13 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-	#Egypt
 	division= {	
 		name = "Cairo Force"
 		location = 7011
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
 	division= {	
 		name = "Canal Brigade"
@@ -359,7 +303,6 @@ units = {
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.15
-
 	}
 	division= {	
 		name = "The Cavalry Brigade (Egypt)"
@@ -367,36 +310,27 @@ units = {
 		division_template = "Cavalry Brigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-	#Gibraltar
 	division= {	
 		name = "Gibraltar Defense Force"
 		location = 4135
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.15
-
 	}
-	
-	#Malta
 	division= {	
 		name = "Malta Command"
 		location = 12003
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.15
-
 	}
-	
-	###East Africa
 	division= {	
 		name = "East Africa Force"
 		location = 1939
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division= {	  
 		name = "Southern Africa Force"
@@ -404,53 +338,41 @@ units = {
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "Northern Rhodesia Groups"
 		location = 1939
-		division_template = "Colonial Garrison"			# Colonial militia (lowest equipment and experience)
+		division_template = "Colonial Garrison"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_equipment_factor = 0.3
-
 	}
-
-	###West Africa
 	division= {	
 		name = "1 West African Force"
 		location = 2050
-		division_template = "Colonial Garrison"			# Colonial militia (lowest equipment and experience)
+		division_template = "Colonial Garrison"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_equipment_factor = 0.15
-
 	}
 	division= {	  
 		name = "2 West African Force"
 		location = 10862 
-		division_template = "Colonial Garrison"			# Colonial militia (lowest equipment and experience)
+		division_template = "Colonial Garrison"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_equipment_factor = 0.15
-
 	}
-	
-	### Far East Command ###
-	###China
 	division= {	
 		name = "Hong Kong VDF"
 		location = 10062
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.2
-
 	}
-	###Malaya
 	division= {	
 		name = "Singapore Fortress"
 		location = 12299
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
-
 	}
 	division= {	
 		name = "Penang Fortress"
@@ -458,9 +380,7 @@ units = {
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.15
-
 	}
-	###Ceylon
 	division= {	
 		name = "Ceylon Defense Force"
 		location = 7260
@@ -468,18 +388,9 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.15
-
 	}
 }
-
-###airwings in their own file
-
-
-#########################
-## STARTING PRODUCTION ##
-#########################
 instant_effect = {
-
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
@@ -490,7 +401,6 @@ instant_effect = {
 		efficiency = 50
 		industrial_manufacturer = mio:ENG_rsaf_enfield_organization
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
@@ -501,7 +411,6 @@ instant_effect = {
 		efficiency = 50
 		industrial_manufacturer = mio:ENG_royal_arsenal_organization
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -511,7 +420,6 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_equipment_1
@@ -522,7 +430,6 @@ instant_effect = {
 		efficiency = 50
 		industrial_manufacturer = mio:ENG_vauxhall_organization
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
@@ -533,6 +440,4 @@ instant_effect = {
 		efficiency = 80
 		industrial_manufacturer = mio:ENG_vauxhall_automotive_organization
 	}
-	
 }
-#####################

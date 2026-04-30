@@ -1,11 +1,6 @@
 ﻿division_template = {
-
-
-	name = "Pestininku Divizija"			# Infantry Division
+	name = "Pestininku Divizija"
 	division_names_group = LIT_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -22,15 +17,9 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
-
-	name = "Artilerija Divizija"			# Artillery Division
+	name = "Artilerija Divizija"
 	division_names_group = LIT_INF_01
-
-	# Line Artillery Infantry ~30W (9 inf + 3 arty brigade)
-	# Needs: Fire Concentration sub-doctrine (effective ~27W)
 	regiments = {
 		infantry          = { x = 0 y = 0 }
 		infantry          = { x = 0 y = 1 }
@@ -50,14 +39,9 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_tank = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
-
-	name = "Valstybės Sienos Apsaugos Skyrius"			# Border guard
+	name = "Valstybės Sienos Apsaugos Skyrius"
 	division_names_group = LIT_INF_01
-
-	# Garrison / Border Guard 6W (minimal cost/equipment)
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -69,11 +53,8 @@ division_template = {
 	support = {
 		engineer = { x = 0 y = 0 }
 	}}
-
 units = {
-	######## LAND OOB ########
-	##### Lietuva Aukaèiausiosios Vadaviete #####
-	division = { # "I. Divizija"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
@@ -83,9 +64,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
-
 	}
-	division = { # "II. Divizija"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
@@ -95,9 +75,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
-
 	}
-	division = { # "III. Divizija"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
@@ -107,60 +86,48 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
-
 	}
-	
-	division = { # "District Kaunas"
+	division = {
 		name = "District Kaunas"
 		location = 327
 		division_template = "Valstybės Sienos Apsaugos Skyrius"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
-
 	}
-	
-	division = { # "District Utenos"
+	division = {
 		name = "District Utenos"
 		location = 6281
 		division_template = "Valstybės Sienos Apsaugos Skyrius"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
-
 	}
-	
-	division = { # "District Telsiu"
+	division = {
 		name = "District Telsiu"
 		location = 9404
 		division_template = "Valstybės Sienos Apsaugos Skyrius"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
-
 	}
-	
-	division = { # "District Taurage"
+	division = {
 		name = "District Taurage"
 		location = 11498
 		division_template = "Valstybės Sienos Apsaugos Skyrius"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
-
 	}
-	
-	division = { # "District Klaipėda"
+	division = {
 		name = "District Klaipėda"
 		location = 9499
 		division_template = "Valstybės Sienos Apsaugos Skyrius"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
-
 	}
-	
-	division = { # "Artillery Division"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
@@ -170,15 +137,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
-
 	}
-
-	##### No Naval OOB #####
 }
-
-
-
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

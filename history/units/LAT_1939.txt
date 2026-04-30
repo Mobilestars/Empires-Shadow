@@ -1,10 +1,6 @@
 ﻿division_template = {
-
-	name = "Kajnieku Divizija"				# Infantry Division	
+	name = "Kajnieku Divizija"
 	division_names_group = LAT_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -21,11 +17,8 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 units = {
-	######## LAND OOB ########
-	##### Latvijas Augstas Komandu #####
-	division = { # "1. Kurzemes Divizija"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
@@ -35,9 +28,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "2. Vidzemes Divizija"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
@@ -47,9 +39,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "3. Zemgales Divizija"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
@@ -59,9 +50,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "4. Latgales Divizija"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 4
@@ -71,11 +61,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
 }
-
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

@@ -1,11 +1,6 @@
 ﻿division_template = {
-
-	name = "Infantry Division"	# Divisions were reserves assigned to various military districts
-
+	name = "Infantry Division"
 	division_names_group = AST_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -23,14 +18,8 @@
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
 	name = "Cavalry Division"
-
 	division_names_group = AST_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -48,16 +37,9 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 division_template = {
-
 	name = "Armoured Division"
-
 	division_names_group = AST_ARM_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -75,105 +57,78 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
-
-
 units = {
-	##### Royal Australian Army #####
 	division= {	
-		#name = "5th Infantry Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 1652 # Perth
+		location = 1652
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
-		#name = "1st Cavalry Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 7564 # Brisbane
+		location = 7564
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	# 2nd Military District -- New South Wales
 	division= {	
-		#name = "1st Infantry Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 12406 # Sydney
+		location = 12406
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
-		#name = "2nd Infantry Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 7859 # Canberra
+		location = 7859
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	# 3rd Military District -- New South Wales
 	division= {	
-		#name = "3rd Infantry Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 7798 # Melbourne
+		location = 7798
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
-		#name = "4th Infantry Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 7798 # Melbourne
+		location = 7798
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
-		#name = "2nd Cavalry Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 7798 # Melbourne
+		location = 7798
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
 }
-
-
-
-
-##### Starting Production #####
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

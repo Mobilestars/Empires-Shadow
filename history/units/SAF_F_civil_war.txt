@@ -1,8 +1,5 @@
 ﻿division_template = {
-
-	name = "Nationalist Partisans"			# Civilian Partisans
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
+	name = "Nationalist Partisans"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -19,7 +16,6 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 units = {
 	division = {
 		name = "Partisan Brigade I"

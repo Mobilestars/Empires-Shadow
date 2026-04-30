@@ -1,10 +1,6 @@
 ﻿division_template = {
-
-	name = "Juntuán"				  # Represents a corps of 3 NRA divisions (2 brigades of 2 regiments each)
-	division_names_group = MEN_INF_01 # Militia-level training and equipment
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
+	name = "Juntuán"
+	division_names_group = MEN_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -21,15 +17,9 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
-	name = "Morit Diviziin"			# Cavalry Division
+	name = "Morit Diviziin"
 	division_names_group = MEN_CAV_02
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -47,15 +37,9 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 division_template = {
-
-	name = "Qibing Jun"				  # Cavalry Division
+	name = "Qibing Jun"
 	division_names_group = MEN_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -73,10 +57,8 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 units = {
-
-	division = { # "1 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
@@ -86,7 +68,6 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -97,7 +78,6 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -108,7 +88,6 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -119,7 +98,6 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -130,7 +108,6 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -141,13 +118,8 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-
 }
-
-
-########## STARTING PRODUCTION ##########
 instant_effect = {
-
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
@@ -157,5 +129,4 @@ instant_effect = {
 		progress = 0.52
 		efficiency = 100
 	}
-
 }

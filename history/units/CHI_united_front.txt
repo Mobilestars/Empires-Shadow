@@ -1,10 +1,6 @@
 ﻿division_template = {
-
-	name = "Juntuán"				# Binary infantry corps (Chinese divisions were brigade-sized units)
+	name = "Juntuán"
 	division_names_group = CHI_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -21,10 +17,8 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 units = {
-
-	division = { # "90 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 90
@@ -32,7 +26,7 @@ units = {
 		location = 11913
 		division_template = "Juntuán"
 	}
-	division = { # "91 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 91
@@ -40,7 +34,7 @@ units = {
 		location = 11913
 		division_template = "Juntuán"
 	}
-	division = { # "92 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 92
@@ -48,7 +42,7 @@ units = {
 		location = 11913
 		division_template = "Juntuán"
 	}
-	division = { # "96 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 96
@@ -56,7 +50,7 @@ units = {
 		location = 11913
 		division_template = "Juntuán"
 	}
-	division = { # "98 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 98
@@ -64,7 +58,7 @@ units = {
 		location = 11913
 		division_template = "Juntuán"
 	}
-	division = { # "99 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 99
@@ -72,7 +66,7 @@ units = {
 		location = 11913
 		division_template = "Juntuán"
 	}
-	division = { # "100 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 100

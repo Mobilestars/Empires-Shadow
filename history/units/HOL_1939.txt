@@ -1,11 +1,7 @@
 ﻿start_equipment_factor = 0.25
 division_template = {
-
-	name = "Infanterie Divisie"		# Regular European divisions (best equipment, most experience) and full Colonial Divisions (old equipment, low experience)
+	name = "Infanterie Divisie"
 	division_names_group = HOL_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -23,12 +19,8 @@ division_template = {
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Lichte Divisie"			# Light Division - elite bicycle infantry
+	name = "Lichte Divisie"
 	division_names_group = HOL_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -46,12 +38,8 @@ division_template = {
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Koloniaal Garnizoen"		# Colonial militia forces (lowest experience, oldest equipment)
+	name = "Koloniaal Garnizoen"
 	division_names_group = INS_GAR_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -68,14 +56,9 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
-	name = "Mariniersdivisie"		# Marines
+	name = "Mariniersdivisie"
 	division_names_group = HOL_MAR_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -92,36 +75,28 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 units = {
-	##### OLZ Nederland (CO: )#####
-	# 1e Legerkorps (CO: ) #
-	division= {	# "1e Divisie"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 9498  # Rotterdam
+		location = 9498
 		division_template = "Infanterie Divisie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division= {	# "3e Divisie"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 9498  # Rotterdam
+		location = 9498
 		division_template = "Infanterie Divisie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-
-	### Commandant Veldleger (CO: ) ###
-	# 2e Legerkorps (CO: ) #
-	division= {	# "2e Divisie"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -130,9 +105,8 @@ units = {
 		division_template = "Infanterie Divisie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division= {	# "4e Divisie"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4
@@ -141,31 +115,27 @@ units = {
 		division_template = "Infanterie Divisie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	# 3e Legerkorps (CO: ) #
-	division= {	# "5e Divisie"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 6500  # Venlo
+		location = 6500
 		division_template = "Infanterie Divisie"
 		start_equipment_factor = 0.5
-
 	}
-	division= {	# "6e Divisie"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 11562  # Maastricht
+		location = 11562
 		division_template = "Infanterie Divisie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division= {	# "Leichte Divisie"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 101
@@ -174,7 +144,7 @@ units = {
 		division_template = "Lichte Divisie"
 		start_experience_factor = 0.2
 	}
-	division= {	# "Divisie Peel"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 102
@@ -183,58 +153,46 @@ units = {
 		division_template = "Infanterie Divisie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	# 4e Legerkorps (CO: ) #
-	division= {	# "7e Divisie"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 7
 		}
-		location = 9335  # Gronigen
+		location = 9335
 		division_template = "Infanterie Divisie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	division= {	# "8e Divisie"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 9335  # Gronigen
+		location = 9335
 		division_template = "Infanterie Divisie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-
-	### Vesting Holland (CO: ) ###
 	division= {	
 		name = "Oostfront VH"
-		location = 391  # Amsterdam
+		location = 391
 		division_template = "Infanterie Divisie"
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "Westfront VH"
-		location = 3211 # The Hague
+		location = 3211
 		division_template = "Infanterie Divisie"
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "Groep Spui & Kil VH"
-		location = 391  # Amsterdam
+		location = 391
 		division_template = "Infanterie Divisie"
 		start_equipment_factor = 0.3
-
 	}
-
 }
-
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

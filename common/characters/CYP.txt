@@ -1,0 +1,15 @@
+characters={
+	CYP_archbishop_makarios_iii={
+		name=CYP_archbishop_makarios_iii
+		portraits={
+			civilian={
+				large="GFX_portrait_cyp_archbishop_makarios_iii"
+			}
+		}
+		country_leader={
+			ideology=democratic
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

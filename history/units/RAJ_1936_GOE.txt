@@ -1,10 +1,6 @@
 ﻿division_template = {
-
 	name = "Infantry Division"
 	division_names_group = RAJ_GAR_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -21,14 +17,9 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
 	name = "Rajput Regiment"
 	division_names_group = RAJ_GAR_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -45,13 +36,9 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
-	name = "District Garrison"			# Represents precursors to Indian Infantry Divisions (district divisions) #GOE: Remade to cav for garrison since its just duplicated
+	name = "District Garrison"
 	division_names_group = RAJ_GAR_01
-
-	# Garrison / Border Guard 6W (minimal cost/equipment)
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -63,15 +50,9 @@ division_template = {
 	support = {
 		engineer = { x = 0 y = 0 }
 	}}
-
 division_template = {
-
 	name = "Armored-Division"
 	division_names_group = RAJ_ARM_01
-
-	# Space Marines ~20W (9 inf + 1 Medium SP-Artillery)
-	# Tank design: cap speed 4 km/h, Wet Ammo (Reliability), Howitzer (Soft Attack)
-	# SPG is ~20% cheaper than regular tanks
 	regiments = {
 		infantry            = { x = 0 y = 0 }
 		infantry            = { x = 0 y = 1 }
@@ -89,15 +70,8 @@ division_template = {
 		maintenance_company = { x = 0 y = 1 }
 		anti_air            = { x = 0 y = 2 }
 	}}
-
-
-####### OOB #######
 units = {
-	#India Command
-	
-	#Northern Command
-	
-	division= {	# "Pashawar District"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 101
@@ -107,7 +81,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-	division= {	# "Kohat District"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 102
@@ -117,7 +91,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-	division= {	# "Rawalpindi District"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 103
@@ -127,7 +101,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-	division= {	# "Lahore District"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 104
@@ -137,7 +111,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-	division= {	# "Waziristan District"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 105
@@ -147,9 +121,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-	
-	#Eastern Command
-	division= {	# "Meerut District"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 106
@@ -159,7 +131,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-	division= {	# "Lucknow District"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 107
@@ -176,9 +148,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-	
-	#Southern Command
-	division= {	# "Deccan District"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 109
@@ -188,7 +158,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-	division= {	# "Bombay District"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 110
@@ -198,7 +168,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-	division= {	# "Madras District"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 111
@@ -208,8 +178,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-
-	division= {	# "Rajpuit District"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 111
@@ -219,8 +188,7 @@ units = {
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.3
 	}
-
-	division= {	# "Rajpuit District"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 111
@@ -230,8 +198,7 @@ units = {
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.3
 	}
-
-	division= {	# "Rajpuit District"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 111
@@ -241,8 +208,7 @@ units = {
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.3
 	}
-
-	division= {	# "Rajpuit District"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 111
@@ -252,8 +218,7 @@ units = {
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.3
 	}
-
-	division= {	# "Rajpuit District"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 111
@@ -263,8 +228,7 @@ units = {
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.3
 	}
-
-	division= {	# "Rajpuit District"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 111
@@ -274,12 +238,7 @@ units = {
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.3
 	}
-
-	
 }
-
-
-##### Starting Production #####
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

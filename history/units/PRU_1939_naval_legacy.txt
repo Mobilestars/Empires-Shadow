@@ -1,13 +1,11 @@
 ﻿
 units= {
-
-	##### Naval OOB #####
 	fleet = {
 		name = "Marina de Guerra"			
-		naval_base = 12997 # Lima
+		naval_base = 12997
 		task_force = {				
 			name = "Escuadrón Naval"			
-			location = 12997 # Lima
+			location = 12997
 			ship = { name = "BAP Almirante Grau" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRU } } }
 			ship = { name = "BAP Coronel Bolognesi" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRU } } }
 			ship = { name = "BAP Almirante Villar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRU } } }
@@ -15,7 +13,7 @@ units= {
 		}				
 		task_force = {				
 			name = "Flotilla de Submarinos"			
-			location = 12997 # Lima
+			location = 12997
 			ship = { name = "BAP R1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRU } } }
 			ship = { name = "BAP R2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRU } } }
 			ship = { name = "BAP R3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRU } } }
@@ -23,4 +21,3 @@ units= {
 		}				
 	}
 } 
-

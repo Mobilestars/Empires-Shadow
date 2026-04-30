@@ -1,10 +1,6 @@
 ﻿division_template = {
-
-	name = "District Force"		# Military District Forces (reserve/garrison forces)
-
+	name = "District Force"
 	division_names_group = NZL_MIL_01
-
-	# Garrison / Border Guard 6W (minimal cost/equipment)
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -16,16 +12,9 @@
 	support = {
 		engineer = { x = 0 y = 0 }
 	}}
-
 division_template = {
-
 	name = "Armoured Division"
-
 	division_names_group = NZL_ARM_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -43,51 +32,38 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 units = {
-	##### Royal New Zealand Army #####
 	division= {	
-		#name = "Northern Military District"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 4543 # Auckland
+		location = 4543
 		division_template = "District Force"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
-		#name = "Central Military District"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 1814 # Wellington
+		location = 1814
 		division_template = "District Force"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
-		#name = "Southern Military District"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 2197 # Christchurch
+		location = 2197
 		division_template = "District Force"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	##### No Naval OOB (receives first RN ships in 1941) #####
 }
-
-
-##### Starting Production #####
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

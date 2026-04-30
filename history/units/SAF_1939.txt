@@ -1,11 +1,6 @@
 ﻿division_template = {
-
-	name = "District Force"	# For 2-brigade Military Districts
-
+	name = "District Force"
 	division_names_group = SAF_GAR_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -23,13 +18,8 @@
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "District Brigade"	# For 1-brigade Military Districts
-
+	name = "District Brigade"
 	division_names_group = SAF_GAR_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -46,16 +36,9 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
 	name = "Armored-Division"
-
 	division_names_group = SAF_ARM_01
-
-	# Space Marines ~20W (9 inf + 1 Medium SP-Artillery)
-	# Tank design: cap speed 4 km/h, Wet Ammo (Reliability), Howitzer (Soft Attack)
-	# SPG is ~20% cheaper than regular tanks
 	regiments = {
 		infantry            = { x = 0 y = 0 }
 		infantry            = { x = 0 y = 1 }
@@ -73,89 +56,68 @@ division_template = {
 		maintenance_company = { x = 0 y = 1 }
 		anti_air            = { x = 0 y = 2 }
 	}}
-
-
-##### OOB #####
 units = {
-	##### Royal South African Army #####
 	division= {	
-		#name = "Cape Command"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 12589 # Capetown
+		location = 12589
 		division_template = "District Force"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
-		#name = "Natal Command"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 1468 # Durbin
+		location = 1468
 		division_template = "District Force"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
-		#name = "Orange Free State Cmd."
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 12648  # Bloemfontein
+		location = 12648
 		division_template = "District Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
-		#name = "Eastern Province Cmd."
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 4696 # East London
+		location = 4696
 		division_template = "District Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
-		#name = "RH-Transvaal Command"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 10400 # Pretoria
+		location = 10400
 		division_template = "District Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
-		#name = "Witwatersrand Command"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 10400 # Johannesburg
+		location = 10400
 		division_template = "District Force"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	##### No Naval OOB #####
 }
-
-
-##### Starting Production #####
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

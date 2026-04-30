@@ -1,19 +1,9 @@
-###########################
-# ES WAR SUPPORT EVENTS
-# Hidden monthly event that manages war support tier spirits for every country.
-# Also handles the permanent removal of ES_echoes_of_the_trenches at 100% war support.
-###########################
-
 add_namespace = ES_war_support
-
-# Fires every month for every country via on_monthly_pulse.
 country_event = {
 	id = ES_war_support.1
 	hidden = yes
 	is_triggered_only = yes
-
 	immediate = {
-		# ── Remove all war support tier spirits ──────────────────────────────
 		if = {
 			limit = { has_idea = ES_ws_national_fervor }
 			remove_ideas = ES_ws_national_fervor
@@ -30,15 +20,10 @@ country_event = {
 			limit = { has_idea = ES_ws_brink_of_collapse }
 			remove_ideas = ES_ws_brink_of_collapse
 		}
-
-		# ── Apply the correct tier ───────────────────────────────────────────
-		# 100 %: National Fervor
 		if = {
 			limit = { has_war_support = 1.0 }
 			add_ideas = ES_ws_national_fervor
 		}
-		# 50–99 %: no spirit (debuff-free zone)
-		# 30–49 %: Wavering Resolve
 		else_if = {
 			limit = {
 				NOT = { has_war_support = 0.50 }
@@ -46,7 +31,6 @@ country_event = {
 			}
 			add_ideas = ES_ws_wavering_resolve
 		}
-		# 10–29 %: Crumbling Morale
 		else_if = {
 			limit = {
 				NOT = { has_war_support = 0.30 }
@@ -54,13 +38,10 @@ country_event = {
 			}
 			add_ideas = ES_ws_crumbling_morale
 		}
-		# <10 %: On the Brink of Collapse
 		else_if = {
 			limit = { NOT = { has_war_support = 0.10 } }
 			add_ideas = ES_ws_brink_of_collapse
 		}
-
-		# ── WWI spirit: permanently remove once war support hits 100 % ───────
 		if = {
 			limit = {
 				has_idea = ES_echoes_of_the_trenches
@@ -69,7 +50,6 @@ country_event = {
 			remove_ideas = ES_echoes_of_the_trenches
 		}
 	}
-
 	option = {
 		name = ES_war_support.1.a
 	}

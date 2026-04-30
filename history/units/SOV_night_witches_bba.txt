@@ -1,5 +1,4 @@
 ﻿air_wings = {
-	
 	219 = {
 		medium_plane_airframe_0 =  {		
 				owner = "SOV" 
@@ -7,13 +6,13 @@
 				version_name = "DB-3"
 			}
 			name = "588. Night Bomber Regiment"
-		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+		ace={
 			modifier="support_unique"
 			name="Yevdokia"
 			surname="Bershanskaya"
 			callsign="Witch"
 			is_female = yes
-			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
+			portrait=1
 		}
 	}
 }

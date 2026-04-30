@@ -1,10 +1,6 @@
 ﻿division_template = {
-
-	name = "Dywizja Piechoty"			# Represents both regular and reserve infantry divisions
+	name = "Dywizja Piechoty"
 	division_names_group = POL_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -22,12 +18,8 @@
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Dywizja Piechoty Górskiej"			# 21st, 22nd Infantry Divisions
+	name = "Dywizja Piechoty Górskiej"
 	division_names_group = POL_MNT_01
-
-	# Special Forces: Mountaineers + Line Arty ~30W
-	# Needs: Special Forces Doctrine (AaT) + Fire Concentration sub-doctrine
 	regiments = {
 		mountaineers      = { x = 0 y = 0 }
 		mountaineers      = { x = 0 y = 1 }
@@ -48,12 +40,8 @@ division_template = {
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Brygada Piechoty Górskiej"			# Mixed units of regular and KOP mountain troops
+	name = "Brygada Piechoty Górskiej"
 	division_names_group = POL_MNT_01
-
-	# Special Forces: Mountaineers + Line Arty ~30W
-	# Needs: Special Forces Doctrine (AaT) + Fire Concentration sub-doctrine
 	regiments = {
 		mountaineers      = { x = 0 y = 0 }
 		mountaineers      = { x = 0 y = 1 }
@@ -74,13 +62,8 @@ division_template = {
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
 	name = "Brygada Kawalerii" 
 	division_names_group = POL_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -99,13 +82,8 @@ division_template = {
 		maintenance_company = { x = 0 y = 3 }
 	}}
 division_template = {
-
 	name = "Brygada Motorowej"
 	division_names_group = POL_MOT_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -124,13 +102,8 @@ division_template = {
 		maintenance_company = { x = 0 y = 3 }
 	}}
 division_template = {
-
-	name = "Grupa Pancerna"				# represents reserve armor assets (FT-17s and some R-35s)
+	name = "Grupa Pancerna"
 	division_names_group = POL_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -149,12 +122,8 @@ division_template = {
 		maintenance_company = { x = 0 y = 3 }
 	}}
 division_template = {
-
-	name = "Brygada Ochrony Pogranicza"			# Represents groupings of Korpus Brygada Ochrony Pogranicza (KOP) and 
+	name = "Brygada Ochrony Pogranicza"
 	division_names_group = POL_GAR_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -171,20 +140,15 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 units = {
-	######## Sztab Generalny Wojska Polskiego (CO: Smgly-Ridz) ########
 	division= {	
-		name = "Nadbrzezne Grupa Obrony"					# Marine forces in Danzig
+		name = "Nadbrzezne Grupa Obrony"
 		location = 362
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-
-	### Armia Pomorze (CO: Bortnowski) ###
-	division= {	# "9 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 9
@@ -193,7 +157,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 	}
-	division= {	# "15 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 15
@@ -202,7 +166,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 	}
-	division= {	# "27 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 27
@@ -211,8 +175,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.2
 	}
-	# Grupa Operacyjna Wschód (CO: Boltuc) #
-	division= {	# "4 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4
@@ -221,7 +184,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 	}
-	division= {	# "16 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 16
@@ -230,8 +193,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 	}
-	# Dowództwo Operacyjne Czersk (CO: Grzmot-Skotnicki) #
-	division= {	# "Pomorska B.K."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 107
@@ -241,7 +203,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.2
 	}
-	division= {	# "Czersk Grupa KOP"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 8
@@ -251,9 +213,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.2
 	}
-
-	### Armia Poznan (CO: Kutzreba) ###	
-	division= {	# "14 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 14
@@ -262,18 +222,17 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 	}
-	division= {	# "17 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 17
 		}
 		location = 11232
-		division_template = "Dywizja Piechoty"			# Under-strength on 1.9.1939
+		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	division= {	# "25 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 25
@@ -282,7 +241,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.2
 	}
-	division= {	# "26 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 26
@@ -291,7 +250,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.2
 	}
-	division= {	# "Podolska B.K."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 106
@@ -301,7 +260,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.2
 	}
-	division= {	# "Wielkopolska B.K."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 109
@@ -311,7 +270,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.2
 	}
-	division= {	# "Poznan Grupa KOP"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 9
@@ -321,11 +280,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-
-	### Armia Lódz (CO: Rommel) ###	
-	division= {	# "2 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -334,7 +290,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 	}
-	division= {	# "10 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 10
@@ -343,7 +299,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 	}
-	division= {	# "28 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 28
@@ -352,7 +308,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.2
 	}
-	division= {	# "Kresowa B.K."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 102
@@ -362,8 +318,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.2
 	}
-	# Grupa Operacyjna Piotrkrow (CO: Thomnee) #
-	division= {	# "30 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 30
@@ -372,7 +327,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.2
 	}
-	division= {	# "Wolynska B.K."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 111
@@ -382,9 +337,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.2
 	}
-
-	### Armia Kraków (CO: Szylling) ###	
-	division= {	# "6 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 6
@@ -393,7 +346,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 	}
-	division= {	# "7 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 7
@@ -402,7 +355,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 	}
-	division= {	# "11 Karpacka Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 11
@@ -417,7 +370,7 @@ units = {
 		division_template = "Brygada Motorowej"
 		start_experience_factor = 0.3
 	}
-	division= {	# "Krakowska B.K."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 101
@@ -427,8 +380,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.2
 	}
-	# Grupa Operacyjna Slask (CO: Sadowski) #
-	division= {	# "23 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 23
@@ -437,7 +389,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.2
 	}
-	division= {	# "55 Dywizja Piechoty Rezerwy"		# Reserve Division (low experience, poor equipment)
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 55
@@ -446,10 +398,8 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-	# Grupa Operacyjna Bielsko (CO: Wager) #
-	division= {	# "21 Dywizja Piechoty Górskiej"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 21
@@ -464,17 +414,13 @@ units = {
 		division_template = "Brygada Piechoty Górskiej"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-	
-	### Armia Karpaty (CO: Szylling) ###	
 	division= {	
 		name = "2 Brygada Piechoty Górskiej"
 		location = 417
 		division_template = "Brygada Piechoty Górskiej"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
 	division= {	
 		name = "3 Brygada Piechoty Górskiej"
@@ -482,9 +428,8 @@ units = {
 		division_template = "Brygada Piechoty Górskiej"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
-
 	}
-	division= {	# "Grupa Granicznej Wegry"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 17
@@ -494,11 +439,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-
-	### Armia Modlin ###	
-	division= {	# "8 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 8
@@ -507,7 +449,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 	}
-	division= {	# "20 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 20
@@ -516,7 +458,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 	}
-	division= {	# "Nowogródzka B.K."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 104
@@ -526,7 +468,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.2
 	}
-	division= {	# "Mazowiecka B.K."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 103
@@ -536,7 +478,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.2
 	}
-	division= {	# "Modlin Grupa KOP"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 7
@@ -546,11 +488,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-
-	## Specjalna Grupa Operacyjna Narew (CO: Mlot-Fijakowski) ##	
-	division= {	# "18 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 18
@@ -559,19 +498,18 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 	}
-	division= {	# "33 Dywizja Piechoty Rezerwy"			# Reserve Division (low experience, poor equipment)
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 33
 		}
-		location = 11357								# Mobilized using KOP troops, equipment (even lower than normal levels)
+		location = 11357
 		division_template = "Dywizja Piechoty"		
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
-
 	}
-	division= {	# "Suwalska B.K."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 108
@@ -581,7 +519,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.2
 	}
-	division= {	# "Podalska B.K."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 105
@@ -591,18 +529,14 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.2
 	}
-
-	### Armia Prusy (CO: Dab-Biernacki) ###	
 	division= {	
 		name = "Grupa Pancerna Prusy"
 		location = 11532
-		division_template = "Grupa Pancerna" 			# Was still being mobilized on 1939.9.1
+		division_template = "Grupa Pancerna"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
-
 	}
-	# Grupa Operacyjna Pólnocna (CO: Sadowski) #
-	division= {	# "13 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 13
@@ -611,7 +545,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 	}
-	division= {	# "19 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 19
@@ -620,7 +554,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 	}
-	division= {	# "29 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 29
@@ -629,18 +563,17 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.2
 	}
-	division= {	# "44 Dywizja Piechoty Rezerwy"			# Reserve Division (low experience, poor equipment)
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 44
 		}
-		location = 11532								# Was still being mobilized on 1939.9.1
+		location = 11532
 		division_template = "Dywizja Piechoty"		
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
-
 	}
-	division= {	# "Wilenska B.K."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 110
@@ -650,8 +583,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.2
 	}
-	# Grupa Operacyjna Poludniowa (CO: Sadowski) #
-	division= {	# "3 Dywizja Piechoty Legionów"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
@@ -660,7 +592,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 	}
-	division= {	# "12 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 12
@@ -669,41 +601,34 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 	}
-	division= {	# "36 Dywizja Piechoty Rezerwy"			# Reserve Division (low experience, poor equipment)
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 36
 		}
-		location = 11430								# Was still being mobilized on 1939.9.1
+		location = 11430
 		division_template = "Dywizja Piechoty"		
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
-
 	}
-
-	
-	#### SHQ Reserves ####	
-	division= {	# "39 Dywizja Piechoty Rezerwy"		# Reserve Division (low experience, poor equipment)
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 39
 		}
-		location = 3544								# Was still being mobilized on 1939.9.1
+		location = 3544
 		division_template = "Dywizja Piechoty"		
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
-
 	}
 	division= {	
-		name = "Brygada Motorowej Warszawska"		# Was still being mobilized on 1939.9.1
+		name = "Brygada Motorowej Warszawska"
 		location = 3544
 		division_template = "Brygada Motorowej"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
-
 	}
-	## Grupa Operacyjna Kutno (CO: )  ##	
-	division= {	# "5 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
@@ -712,7 +637,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 	}
-	division= {	# "24 Dywizja Piechoty"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 24
@@ -721,8 +646,7 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.2
 	}
-	## Grupa Operacyjna Tarnow (CO: )  ##	
-	division= {	# "22 Dywizja Piechoty Górskiej"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 22
@@ -731,19 +655,17 @@ units = {
 		division_template = "Dywizja Piechoty Górskiej"
 		start_experience_factor = 0.3
 	}
-	division= {	# "38 Dywizja Piechoty Rezerwy"		# Reserve Division (low experience, poor equipment)
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 38
 		}
-		location = 562								# Was still being mobilized on 1939.9.1
+		location = 562
 		division_template = "Dywizja Piechoty"		
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
-
 	}
-	## Grupa Operacyjna Wyszkow (CO: Kowalski)  ##	
-	division= {	# "1 DP Legionów im. Pilsudskiego"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
@@ -752,18 +674,17 @@ units = {
 		division_template = "Dywizja Piechoty"
 		start_experience_factor = 0.3
 	}
-	division= {	# "35 Dywizja Piechoty Rezerwy"		# Reserve Division (low experience, poor equipment)
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 35
 		}
-		location = 524								# Was still being mobilized on 1939.9.1
+		location = 524
 		division_template = "Dywizja Piechoty"		
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
-
 	}
-	division= {	# "41 Dywizja Piechoty Rezerwy"		# Reserve Division (low experience, poor equipment)
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 41
@@ -772,12 +693,8 @@ units = {
 		division_template = "Dywizja Piechoty"		
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
-
-
-	## Independent KOP Units ##	
-	division= {	# "Stryj Grupa KOP"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 16
@@ -787,9 +704,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-	division= {	# "Czortkow Grupa KOP"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 11
@@ -799,9 +715,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-	division= {	# "Luniniec Grupa KOP"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 15
@@ -811,9 +726,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-	division= {	# "Wilejka Grupa KOP"
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 13
@@ -823,14 +737,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-
 }
-
-#########################
-## STARTING PRODUCTION ##
-#########################
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
@@ -871,6 +779,4 @@ instant_effect = {
 		efficiency = 100
 		industrial_manufacturer = mio:POL_lrl_organization
 	}
-
 }
-#####################

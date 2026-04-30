@@ -1,12 +1,7 @@
-﻿### British Malaya OOB ###
-
+﻿
 division_template = {
-
 	name = "Malaya Infantry Brigade"		
-	division_names_group = BRENGL_INFB_01		# Uses generic English templates
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
+	division_names_group = BRENGL_INFB_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -23,13 +18,8 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
-
-
 units = {
-	######## LAND OOB ########
-	##### Malayan High Command #####
-	division = { # "1st Malaya Infantry Brigade"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
@@ -38,8 +28,7 @@ units = {
 		division_template = "Malaya Infantry Brigade"		
 		start_experience_factor = 0.0
 	}
-	
-	division = { # "2nd Malaya Infantry Brigade"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -49,16 +38,7 @@ units = {
 		start_experience_factor = 0.0
 	}
 }
-
-
-
-
-#########################
-## STARTING PRODUCTION ##
-#########################
-
 instant_effect = {
-
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
@@ -68,7 +48,4 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 50
 	}
-
 }
-
-#################################

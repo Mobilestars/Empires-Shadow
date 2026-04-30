@@ -1,11 +1,7 @@
 ﻿start_equipment_factor = 0.25
 division_template = {
-
-	name = "Divisão de Infantaria"		# Infantry Division
+	name = "Divisão de Infantaria"
 	division_names_group = POR_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -23,12 +19,8 @@ division_template = {
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Força de Caçadores"		# Elite light infantry, always fully mobilized w best equipment
+	name = "Força de Caçadores"
 	division_names_group = POR_CAC_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -46,13 +38,8 @@ division_template = {
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Brigada de Cavalaria" 		# Cavalry Brigade
+	name = "Brigada de Cavalaria"
 	division_names_group = POR_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -70,19 +57,15 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 units = {
-	###### Exército Portugues (CO: Cabral) #####
-	# Governo Militar Portugues (CO: Cunha) #
 	division = {
 		name = "Governo Militar Portugues"
 		location = 11805
 		division_template = "Divisão de Infantaria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division = { # "2a Brigada de Cavalaria"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
@@ -91,9 +74,8 @@ units = {
 		division_template = "Brigada de Cavalaria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division = { # "5a Força de Caçadores"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 5
@@ -102,9 +84,7 @@ units = {
 		division_template = "Força de Caçadores"
 		start_experience_factor = 0.3
 	}
-
-	# 1a Distrito Militar (CO: Junior) #
-	division = { # "1a Divisão de Infantaria"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
@@ -113,9 +93,8 @@ units = {
 		division_template = "Divisão de Infantaria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division = { # "Cavalaria do Porto"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 21
@@ -124,9 +103,8 @@ units = {
 		division_template = "Brigada de Cavalaria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division = { # "1a Força de Caçadores"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
@@ -135,9 +113,7 @@ units = {
 		division_template = "Força de Caçadores"
 		start_experience_factor = 0.3
 	}
-
-	# 2a Distrito Militar (CO: Franco) #
-	division = { # "2a Divisão de Infantaria"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
@@ -146,9 +122,8 @@ units = {
 		division_template = "Divisão de Infantaria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division = { # "2a Força de Caçadores"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
@@ -157,9 +132,7 @@ units = {
 		division_template = "Força de Caçadores"
 		start_experience_factor = 0.3
 	}
-
-	# 3a Distrito Militar )CO: Meneses) #
-	division = { # "3a Divisão de Infantaria"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
@@ -168,9 +141,8 @@ units = {
 		division_template = "Divisão de Infantaria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division = { # "3a Força de Caçadores"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
@@ -179,9 +151,7 @@ units = {
 		division_template = "Força de Caçadores"
 		start_experience_factor = 0.3
 	}
-
-	# 4a Distrito Militar (CO: Correia) #
-	division = { # "4a Divisão de Infantaria"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 4
@@ -190,9 +160,8 @@ units = {
 		division_template = "Divisão de Infantaria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division = { # "4a Brigada de Cavalaria"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 4
@@ -201,9 +170,8 @@ units = {
 		division_template = "Brigada de Cavalaria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division = { # "4a Força de Caçadores"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 4
@@ -212,9 +180,7 @@ units = {
 		division_template = "Força de Caçadores"
 		start_experience_factor = 0.3
 	}
-
-	### Colonial Forces ###
-	division = { # "Caçadores de Azores"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 21
@@ -223,8 +189,7 @@ units = {
 		division_template = "Força de Caçadores"
 		start_experience_factor = 0.3
 	}
-
-	division = { # "1a Caçadores de Angola"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 22
@@ -233,7 +198,7 @@ units = {
 		division_template = "Força de Caçadores"
 		start_experience_factor = 0.3
 	}
-	division = { # "2a Caçadores de Angola"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 23
@@ -242,8 +207,7 @@ units = {
 		division_template = "Força de Caçadores"
 		start_experience_factor = 0.3
 	}
-
-	division = { # "1a Caçadores de Moçambique"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 24
@@ -252,7 +216,7 @@ units = {
 		division_template = "Força de Caçadores"
 		start_experience_factor = 0.3
 	}
-	division = { # "2a Caçadores de Moçambique"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 25
@@ -262,11 +226,6 @@ units = {
 		start_experience_factor = 0.3
 	}
 }
-
-
-
-
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

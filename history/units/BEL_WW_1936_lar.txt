@@ -1,10 +1,6 @@
 ﻿division_template = {
-
-	name = "Division d'Infanterie"		# Same for "Active" and "Reserve" Infantry Divisions
+	name = "Division d'Infanterie"
 	division_names_group = BEL_INF_01
-
-	# Line Artillery Infantry ~30W (9 inf + 3 arty brigade)
-	# Needs: Fire Concentration sub-doctrine (effective ~27W)
 	regiments = {
 		infantry          = { x = 0 y = 0 }
 		infantry          = { x = 0 y = 1 }
@@ -24,14 +20,9 @@
 		artillery = { x = 0 y = 1 }
 		anti_tank = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
-	name = "Chasseurs Ardennais"		# Chasseurs Ardennais, technically mountaineers but they gain forest buffs later. Doubled historic unit size to make them actually usful in game mechanics terms.
+	name = "Chasseurs Ardennais"
 	division_names_group = BEL_Mnt_01
-
-	# Special Forces: Mountaineers + Line Arty ~30W
-	# Needs: Special Forces Doctrine (AaT) + Fire Concentration sub-doctrine
 	regiments = {
 		mountaineers      = { x = 0 y = 0 }
 		mountaineers      = { x = 0 y = 1 }
@@ -51,15 +42,9 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
-	name = "Division de Cavalerie"  	# Cavalry Division
+	name = "Division de Cavalerie"
 	division_names_group = BEL_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -77,14 +62,9 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 division_template = {
-
-	name = "Cycliste Frontière"  	# Bike Division
+	name = "Cycliste Frontière"
 	division_names_group = BEL_CYC_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -101,13 +81,9 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 create_colonial_division_template = {
     	name = "Force Publique"		
-    	division_names_group = FREN_INFB_01				# Uses French-language generic division names
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
+    	division_names_group = FREN_INFB_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -124,184 +100,137 @@ create_colonial_division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
-### OOB ###
 units = {
-	##### L'Armée Belge #####
-	# I Corps d'Armée
-	division= {	# "4ème Division d'Infanterie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 4
 		}
-		location = 9574  # Hoeselt
+		location = 9574
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
-	division= {	# "5ème Division d'Infanterie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 5
 		}
-		location = 516  #Brussels
+		location = 516
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
-	# II Corps d'Armée
-	division= {	# "6ème Division d'Infanterie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 6
 		}
-		location = 13068  # Leuven
+		location = 13068
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
-	division= {	# "1ère Division d'Infanterie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 11519  #Liege
+		location = 11519
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
-	# III Corps d'Armée
-	division= {	# "2ème Division d'Infanterie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 11519  # Liege
+		location = 11519
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-	division= {	# "3ème Division d'Infanterie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 6598  # Antwerpen
+		location = 6598
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
-	# Corps d'Cavalerie
-	division= {	# "1ère Division d'Cavalerie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 11519  # Liege
+		location = 11519
 		division_template = "Division de Cavalerie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-	division= {	# "2ème Division de Cavalerie"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 13068  # Leuven
+		location = 13068
 		division_template = "Division de Cavalerie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
-	# Chasseurs Ardennais
-	division= {	# "1ère Division de Chasseurs Ardennais"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 3488  # Ardennes border with Germany
-		division_template = "Chasseurs Ardennais"		# elite forest infantry
+		location = 3488
+		division_template = "Chasseurs Ardennais"
 		start_experience_factor = 0.4
 	}
-
-	division= {	# "2ème Division de Chasseurs Ardennais"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 6537  # Ardennes east of Liege
-		division_template = "Chasseurs Ardennais"		# elite forest infantry
+		location = 6537
+		division_template = "Chasseurs Ardennais"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
 	}
-
-	division= {	# "3ème Division de Chasseurs Ardennais"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 11407  # Ardennes south-east of Liege
-		division_template = "Chasseurs Ardennais"		# elite forest infantry
+		location = 11407
+		division_template = "Chasseurs Ardennais"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 	}
-
-	# Cycliste Frontière
-
-	division= {	# "1ère Cycliste Frontière"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 3516  # Namur
-		division_template = "Cycliste Frontière"		# Bikes
+		location = 3516
+		division_template = "Cycliste Frontière"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
-
-	division= {	# "2ème Cycliste Frontière"
+	division= {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 9418  # Arlon
-		division_template = "Cycliste Frontière"		# Bikes
+		location = 9418
+		division_template = "Cycliste Frontière"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
-
-	#### Belgian Congo ###
-	#division = { 
-	#	name =  "1. Groupes de Force Publique du Congo Belge"
-	#	location = 5117  # Leopoldville
-	#	division_template = "Force Publique"
-	#	start_experience_factor = 0.1
-	#	start_equipment_factor = 0.6
-	#}
-
-	#division = { 
-	#	name =  "2. Groupes de Force Publique du Congo Belge"
-	#	location = 10968  # Fort de Shinakasa
-	#	division_template = "Force Publique"
-	#	start_experience_factor = 0.1
-	#	start_equipment_factor = 0.4
-	#}
 }
-
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

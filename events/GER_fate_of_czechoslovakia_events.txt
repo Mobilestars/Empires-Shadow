@@ -1,43 +1,15 @@
-###########################
-# GERMANY - FATE OF CZECHOSLOVAKIA EVENTS
-# Adapted from vanilla Germany.txt (germany.53 / germany.54 / germany.55)
-# Triggered by GER_bhp_fate_of_czechoslovakia focus
-#
-# Routing:
-#   CZE is subject of AUS  → event fires on AUS (overlord decides)
-#   CZE is independent     → event fires on CZE
-#
-# They accept → GER_cze_fate.3 on GER (peaceful partition like vanilla)
-# They refuse → GER_cze_fate.2 on GER (wargoal: vs AUS if they were overlord, vs CZE if independent)
-#
-# Partition (vanilla-style):
-#   States 70, 71, 664, 73 → Slovakia (puppet of GER)
-#   State  72              → whoever owns state 88
-#   Bohemia/Moravia rump   → annexed by GER
-###########################
-
 add_namespace = GER_cze_fate
-
-# ============================================================
-# EVENT 1: Fires ON AUS (if CZE is their subject) or ON CZE (if independent)
-# ROOT = AUS or CZE
-# FROM = GER
-# ============================================================
 country_event = {
 	id = GER_cze_fate.1
 	title = GER_cze_fate.1.t
 	desc = GER_cze_fate.1.d
 	picture = GFX_report_event_german_politician_speech
-
 	is_triggered_only = yes
-
-	# Option A: Accept — hand over Czechoslovakia to Germany
 	option = {
 		name = GER_cze_fate.1.a
 		ai_chance = {
 			base = 70
 			modifier = {
-				# Resist if already at war with GER or clearly stronger
 				add = -50
 				OR = {
 					has_war_with = GER
@@ -54,8 +26,6 @@ country_event = {
 		}
 		FROM = { country_event = { id = GER_cze_fate.3 days = 1 } }
 	}
-
-	# Option B: Refuse — Germany will use force
 	option = {
 		name = GER_cze_fate.1.b
 		ai_chance = {
@@ -78,29 +48,19 @@ country_event = {
 		FROM = { country_event = { id = GER_cze_fate.2 days = 1 } }
 	}
 }
-
-# ============================================================
-# EVENT 2: Fires ON GER — Sie widersetzen sich
-# FROM = AUS (wenn CZE ihr Vasall war) oder CZE (wenn unabhängig)
-# GER bekommt Kriegsziel gegen den Ablehnenden
-# ============================================================
 country_event = {
 	id = GER_cze_fate.2
 	title = GER_cze_fate.2.t
 	desc = GER_cze_fate.2.d
 	picture = GFX_report_event_czech_soldiers_01
-
 	is_triggered_only = yes
-
 	option = {
 		name = GER_cze_fate.2.a
-		# Kriegsziel gegen AUS wenn sie als Overlord abgelehnt haben, sonst gegen CZE
 		if = {
 			limit = {
 				country_exists = CZE
 				CZE = { is_subject_of = FROM }
 			}
-			# FROM = AUS (Overlord hat abgelehnt) → Krieg gegen AUS
 			create_wargoal = {
 				type = annex_everything
 				target = FROM
@@ -108,7 +68,6 @@ country_event = {
 		}
 		else_if = {
 			limit = { country_exists = CZE }
-			# FROM = CZE (unabhängig und hat abgelehnt)
 			if = {
 				limit = { 75 = { is_owned_by = CZE } }
 				add_state_claim = 75
@@ -124,21 +83,12 @@ country_event = {
 		}
 	}
 }
-
-# ============================================================
-# EVENT 3: Fires ON GER — The Fate of Czechoslovakia (CZE accepted)
-# Partition options: release Slovakia, give Hungary a piece, or annex all
-# Adapted from vanilla germany.55
-# ============================================================
 country_event = {
 	id = GER_cze_fate.3
 	title = GER_cze_fate.3.t
 	desc = GER_cze_fate.3.d
 	picture = GFX_report_event_german_inspect_troops
-
 	is_triggered_only = yes
-
-	# Option A: Release Slovakia as puppet, give Hungary Carpatho-Ukraine (historical)
 	option = {
 		name = GER_cze_fate.3.a
 		ai_chance = {
@@ -151,23 +101,20 @@ country_event = {
 		trigger = {
 			any_state = {
 				OR = {
-					state = 70  # Slovakia West
-					state = 71  # Slovakia East
-					state = 73  # Carpatho-Ukraine
-					state = 664 # Central Slovakia
+					state = 70
+					state = 71
+					state = 73
+					state = 664
 				}
 				is_controlled_by = CZE
 			}
 		}
-
-		# --- Slovakia gets its states ---
 		if = {
 			limit = {
 				NOT = { SLO = { exists = yes } }
 			}
 			set_country_flag = GER_cze_fate_slo_not_exists
 		}
-
 		if = {
 			limit = {
 				70 = {
@@ -201,8 +148,6 @@ country_event = {
 			}
 			SLO = { transfer_state = 664 }
 		}
-
-		# --- Carpatho-Ukraine: Hungary gets it if they border it, else Slovakia ---
 		if = {
 			limit = {
 				country_exists = HUN
@@ -227,8 +172,6 @@ country_event = {
 			}
 			SLO = { transfer_state = 73 }
 		}
-
-		# --- Zaolzie (State 72) geht an den Besitzer von State 88 ---
 		if = {
 			limit = {
 				88 = {
@@ -247,16 +190,12 @@ country_event = {
 			}
 			88 = { owner = { transfer_state = 72 } }
 		}
-
-		# --- GER annexes the Bohemian rump ---
 		if = {
 			limit = { country_exists = CZE }
 			SLO = { inherit_technology = CZE }
 			annex_country = { target = CZE }
 			add_war_support = 0.1
 		}
-
-		# --- Puppet Slovakia if it holds land ---
 		if = {
 			limit = {
 				has_country_flag = GER_cze_fate_slo_not_exists
@@ -272,9 +211,7 @@ country_event = {
 			}
 			puppet = SLO
 		}
-
 		add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
-
 		hidden_effect = {
 			every_state = {
 				limit = { is_controlled_by = SLO }
@@ -283,8 +220,6 @@ country_event = {
 			SLO = { add_manpower = 9876 }
 		}
 	}
-
-	# Option B: Fully annex Czechoslovakia
 	option = {
 		name = GER_cze_fate.3.b
 		ai_chance = {

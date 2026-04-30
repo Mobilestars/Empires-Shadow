@@ -1,37 +1,29 @@
 state = {
 	id = 762
 	name = "STATE_762"
-	
 	manpower = 1000000
-
 	resources = {
-		steel = 60 # was: 19
-		aluminium = 20 # was: 7
-		coal = 32 # initial distribution
+		steel = 60
+		aluminium = 20
+		coal = 32
 	}
-
 	state_category = city
-
 	history = {
 		owner = GER
 		controller = GER
 		add_core_of = GER
 		add_core_of = SIL
 		add_core_of = PRE
-
 		victory_points = {
-			6464 5 # Katovice
+			6464 5
 		}
-
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 3
 			industrial_complex = 1
 		}
 	}
-
 	provinces = {
 		506 6464
 	}
-
 	local_supplies = 0.0 
 }

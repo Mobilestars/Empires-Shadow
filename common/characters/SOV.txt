@@ -1,17 +1,4 @@
-# Aleksandra Kollontay has an unsed portrait
-# Viktor Baydalakov has an unused portrait
-
 characters = {
-
-
-  ####    ####   #    #  #    #  #####  #####   #   #      #       ######    ##    #####   ######  #####    ####  
- #    #  #    #  #    #  ##   #    #    #    #   # #       #       #        #  #   #    #  #       #    #  #      
- #       #    #  #    #  # #  #    #    #    #    #        #       #####   #    #  #    #  #####   #    #   ####  
- #       #    #  #    #  #  # #    #    #####     #        #       #       ######  #    #  #       #####        # 
- #    #  #    #  #    #  #   ##    #    #   #     #        #       #       #    #  #    #  #       #   #   #    # 
-  ####    ####    ####   #    #    #    #    #    #        ######  ######  #    #  #####   ######  #    #   ####  
-                                                                                                                  
-
 	SOV_iosif_stalin = {
 		name = SOV_iosif_stalin
 		portraits = {
@@ -46,8 +33,6 @@ characters = {
 			traits = { ES_advisor_stalin }
 		}
 	}
-
-	### EmpiresShadow: Vladimir Ilyich Lenin ###
 	SOV_vladimir_ilyich_ulyanov = {
 		name = SOV_vladimir_ilyich_ulyanov
 		portraits = {
@@ -62,8 +47,6 @@ characters = {
 			id = -1
 		}
 	}
-
-	#TODO: This should be a country leader token added to Stalin in the appropriate event/focus/whatever
 	SOV_tsar_iosif_stalin = {
 		name = "Tsar Joseph I"
 		portraits = {
@@ -77,9 +60,6 @@ characters = {
 			id = -1
 		}
 	}
-
-	# Kerensky and Rodzaevsky moved to the bottom of the file
-
 	SOV_tsar_vladimir_kirillovich = {
 		name = SOV_tsar_vladimir_kirillovich
 		portraits = {
@@ -109,7 +89,6 @@ characters = {
 			id = -1
 		}
 	}
-
 	SOV_metropolitan_meletius = {
 		name = SOV_metropolitan_meletius
 		portraits = {
@@ -154,20 +133,16 @@ characters = {
 			}
 		}	
 	}
-
-	SOV_supreme_soviet = { #Country Leader role added via focus
+	SOV_supreme_soviet = {
 		name = SOV_supreme_soviet
-
 		portraits = {
 			civilian = {
 				large = GFX_portrait_SOV_supreme_soviet
 			}
 		}
 	}
-
 	SOV_provisional_government = {
 		name = SOV_provisional_government
-
 		portraits = {
 			civilian = {
 				large = "GFX_portrait_SOV_white_transitionary_council"
@@ -182,26 +157,14 @@ characters = {
 			}
 		}
 	}
-
-
-   # #    #####   #    #  #   #      #        ######    ##    #####   ######  #####    ####  
-  #   #   #    #  ##  ##   # #       #        #        #  #   #    #  #       #    #  #      
- #     #  #    #  # ## #    #        #        #####   #    #  #    #  #####   #    #   ####  
- #######  #####   #    #    #        #        #       ######  #    #  #       #####        # 
- #     #  #   #   #    #    #        #        #       #    #  #    #  #       #   #   #    # 
- #     #  #    #  #    #    #        #######  ######  #    #  #####   ######  #    #   ####  
-                                                                                             
-
 	SOV_georgy_zhukov = {
 		name = SOV_georgy_zhukov
-
 		portraits = {
 			army = {
 				small = "GFX_idea_georgy_zhukov"
 				large = GFX_portrait_SOV_georgy_zhukov
 			}
 		}
-
 		corps_commander = {
 			traits = { media_personality armor_officer war_hero winter_specialist }
 			skill = 5
@@ -212,7 +175,6 @@ characters = {
 			legacy_id = 410
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
-
 		advisor = {
 			cost = 150
 			slot = theorist
@@ -238,17 +200,14 @@ characters = {
 			}
 		}		
 	}
-
 	SOV_konstantin_rokossovsky = {
 		name = SOV_konstantin_rokossovsky
-
 		portraits = {
 			army = {
 				small = "GFX_idea_konstantin_rokossovsky"
 				large = GFX_portrait_SOV_konstantin_rokossovsky
 			}
 		}
-
 		corps_commander = {
 			traits = { brilliant_strategist trait_cautious armor_officer }
 			skill = 4
@@ -259,7 +218,6 @@ characters = {
 			legacy_id = 402
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
-
 		advisor = {
 			slot = high_command
 			idea_token = konstantin_rokossovsky
@@ -294,7 +252,6 @@ characters = {
 			}
 		}		
 	}
-
 	SOV_aleksandr_vasilevsky = {
 		name = SOV_aleksandr_vasilevsky
 		portraits = {
@@ -313,7 +270,6 @@ characters = {
 			legacy_id = 407
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
-
 		advisor = {
 			slot = high_command
 			idea_token = aleksandr_vasilevsky
@@ -347,7 +303,6 @@ characters = {
 			}
 		}	
 	}
-
 	SOV_boris_shaposhnikov = {
 		name = SOV_boris_shaposhnikov
 		portraits = {
@@ -371,7 +326,6 @@ characters = {
 				base = 1
 			}
 		}
-
 		corps_commander = {
 			traits = { career_officer trait_cautious }
 			skill = 3
@@ -383,7 +337,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_nikolay_vatutin = {
 		name = SOV_nikolay_vatutin
 		portraits = {
@@ -403,7 +356,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_ivan_konev = {
 		name = SOV_ivan_konev
 		portraits = {
@@ -445,7 +397,6 @@ characters = {
 				base = 1
 			}
 		}
-
 		corps_commander = {
 			traits = { harsh_leader armor_officer politically_connected }
 			skill = 5
@@ -457,7 +408,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_semyon_timoshenko = {
 		name = SOV_semyon_timoshenko
 		portraits = {
@@ -497,7 +447,6 @@ characters = {
 				base = 4
 			}
 		}
-
 		corps_commander = {
 			traits = { career_officer cavalry_officer politically_connected }
 			skill = 3
@@ -509,10 +458,8 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_kliment_voroshilov = {
 		name = SOV_kliment_voroshilov
-
 		portraits = {
 			army = {
 				small = "GFX_idea_kliment_voroshilov"
@@ -554,7 +501,6 @@ characters = {
 				}
 			}
 		}
-
 		field_marshal = {
 			traits = { old_guard inflexible_strategist politically_connected }
 			skill = 1
@@ -566,7 +512,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_mikhail_tukhachevsky = {
 		name = SOV_mikhail_tukhachevsky
 		portraits = {
@@ -598,7 +543,6 @@ characters = {
 				base = 1
 			}
 		}
-
 		field_marshal = {
 			traits = { brilliant_strategist career_officer trait_reckless infantry_officer offensive_doctrine }
 			skill = 4
@@ -610,7 +554,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_semyon_budyonny = {
 		name = SOV_semyon_budyonny
 		portraits = {
@@ -630,7 +573,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_ivan_chernyakhovsky = {
 		name = SOV_ivan_chernyakhovsky
 		portraits = {
@@ -650,7 +592,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_issa_pliyev = {
 		name = SOV_issa_pliyev
 		portraits = {
@@ -670,7 +611,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_leonid_govorov = {
 		name = SOV_leonid_govorov
 		portraits = {
@@ -689,7 +629,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_grigory_kulik = {
 		name = SOV_grigory_kulik
 		portraits = {
@@ -709,7 +648,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_kirill_meretskov = {
 		name = SOV_kirill_meretskov
 		portraits = {
@@ -729,7 +667,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_filipp_golikov = {
 		name = SOV_filipp_golikov
 		portraits = {
@@ -749,7 +686,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_andrey_yeryomenko = {
 		name = SOV_andrey_yeryomenko
 		portraits = {
@@ -769,7 +705,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_georgy_zakharov = {
 		name = SOV_georgy_zakharov
 		portraits = {
@@ -789,7 +724,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_yakov_cherevichenko = {
 		name = SOV_yakov_cherevichenko
 		portraits = {
@@ -809,7 +743,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_maks_reyter = {
 		name = SOV_maks_reyter
 		portraits = {
@@ -829,7 +762,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_nikandr_chibisov = {
 		name = SOV_nikandr_chibisov
 		portraits = {
@@ -849,7 +781,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_vasily_kuznetsov = {
 		name = SOV_vasily_kuznetsov
 		portraits = {
@@ -869,7 +800,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_andrey_vlasov = {
 		name = SOV_andrey_vlasov
 		portraits = {
@@ -904,7 +834,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_bronislav_kaminski = {
 		name = SOV_bronislav_kaminski
 		portraits = {
@@ -931,7 +860,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_konstantin_voskoboinik = {
 		name = SOV_konstantin_voskoboinik
 		portraits = {
@@ -958,7 +886,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_ivan_fedyuninsky = {
 		name = SOV_ivan_fedyuninsky
 		portraits = {
@@ -978,7 +905,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_maksim_purkayev = {
 		name = SOV_maksim_purkayev
 		portraits = {
@@ -998,7 +924,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_kuzma_galitsky = {
 		name = SOV_kuzma_galitsky
 		portraits = {
@@ -1018,7 +943,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_markian_popov = {
 		name = SOV_markian_popov
 		portraits = {
@@ -1038,7 +962,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_nikolay_berzarin = {
 		name = SOV_nikolay_berzarin
 		portraits = {
@@ -1058,7 +981,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_aleksandr_gorbatov = {
 		name = SOV_aleksandr_gorbatov
 		portraits = {
@@ -1078,7 +1000,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_kirill_moskalenko = {
 		name = SOV_kirill_moskalenko
 		portraits = {
@@ -1097,7 +1018,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_dmitry_lelyushenko = {
 		name = SOV_dmitry_lelyushenko
 		portraits = {
@@ -1117,7 +1037,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_andrey_grechko = {
 		name = SOV_andrey_grechko
 		portraits = {
@@ -1137,7 +1056,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_rodion_malinovsky = {
 		name = SOV_rodion_malinovsky
 		portraits = {
@@ -1157,7 +1075,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_vasily_chuykov = {
 		name = SOV_vasily_chuykov
 		portraits = {
@@ -1177,7 +1094,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_aleksandr_cherepanov = {
 		name = SOV_aleksandr_cherepanov
 		portraits = {
@@ -1197,11 +1113,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
-######################
-#### NAVY LEADRES ####
-######################
-
 	SOV_filipp_oktyabrsky = {
 		name = SOV_filipp_oktyabrsky
 		portraits = {
@@ -1221,7 +1132,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_sergey_gorshkov = {
 		name = SOV_sergey_gorshkov
 		portraits = {
@@ -1253,7 +1163,6 @@ characters = {
 				base = 0
 			}
 		}
-
 		navy_leader = {
 			traits = { bold navy_career_officer }
 			skill = 3
@@ -1265,7 +1174,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_gordey_levchenko = {
 		name = SOV_gordey_levchenko
 		portraits = {
@@ -1308,7 +1216,6 @@ characters = {
 				base = 0.200
 			}
 		}
-
 		navy_leader = {
 			traits = { green_water_expert }
 			skill = 2
@@ -1320,7 +1227,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_arseny_golovko = {
 		name = SOV_arseny_golovko
 		portraits = {
@@ -1363,7 +1269,6 @@ characters = {
 				base = 0.200
 			}
 		}
-
 		navy_leader = {
 			traits = { spotter arctic_water_expert }
 			skill = 4
@@ -1375,7 +1280,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_vladimir_kasatonov = {
 		name = SOV_vladimir_kasatonov
 		portraits = {
@@ -1418,7 +1322,6 @@ characters = {
 				base = 0.200
 			}
 		}
-
 		navy_leader = {
 			traits = { seawolf }
 			skill = 2
@@ -1430,7 +1333,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_stepan_krasovsky = {
 		name = SOV_stepan_krasovsky
 		portraits = {
@@ -1438,7 +1340,6 @@ characters = {
 				small = "GFX_idea_stepan_krasovsky"
 			}
 		}
-
 		advisor = {
 			slot = high_command
 			idea_token = stepan_krasovsky
@@ -1455,7 +1356,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_vladimir_tributs = {
 		name = SOV_vladimir_tributs
 		portraits = {
@@ -1463,7 +1363,6 @@ characters = {
 				small = "GFX_idea_vladimir_tributs"
 			}
 		}
-
 		advisor = {
 			cost = 150
 			slot = theorist
@@ -1480,7 +1379,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_sergey_khudyakov = {
 		name = SOV_sergey_khudyakov
 		portraits = {
@@ -1488,7 +1386,6 @@ characters = {
 				small = "GFX_idea_sergei_khudyakov"
 			}
 		}
-
 		advisor = {
 			slot = high_command
 			idea_token = sergei_khudyakov
@@ -1505,7 +1402,6 @@ characters = {
 			}
 		}		
 	}
-
 	SOV_konstantin_vershinin = {
 		name = SOV_konstantin_vershinin
 		portraits = {
@@ -1513,7 +1409,6 @@ characters = {
 				small = "GFX_idea_konstantin_vershinin"
 			}
 		}
-
 		advisor = {	
 			slot = air_chief
 			idea_token = konstantin_vershinin
@@ -1529,7 +1424,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_sergey_rudenko = {
 		name = SOV_sergey_rudenko
 		portraits = {
@@ -1537,17 +1431,14 @@ characters = {
 				small = "GFX_idea_sergei_rudenko"
 			}
 		}
-
 		advisor = {
 			cost = 150
-			
 			slot = theorist
 			idea_token = sergei_rudenko
 			ledger = air
 			allowed = {
 				original_tag = SOV
 			}
-			
 			traits = {
 				close_air_support_proponent
 			}
@@ -1556,7 +1447,6 @@ characters = {
 			}
 		}		
 	}
-
 	SOV_ivan_yumashev = {
 		name = SOV_ivan_yumashev
 		portraits = {
@@ -1564,7 +1454,6 @@ characters = {
 				small = "GFX_idea_ivan_yumashev"
 			}
 		}
-
 		advisor = {
 			slot = navy_chief
 			idea_token = ivan_yumashev
@@ -1580,7 +1469,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_nikolay_kuznetsov = {
 		name = SOV_nikolay_kuznetsov
 		portraits = {
@@ -1588,7 +1476,6 @@ characters = {
 				small = "GFX_idea_nikolay_kuznetsov"
 			}
 		}
-
 		advisor = {
 			slot = navy_chief
 			idea_token = nikolay_kuznetsov
@@ -1604,7 +1491,6 @@ characters = {
 			}
 		}		
 	}
-
 	SOV_yakov_smushkevich = {
 		name = SOV_yakov_smushkevich
 		portraits = {
@@ -1612,7 +1498,6 @@ characters = {
 				small = "GFX_idea_yakov_smushkevich"
 			}
 		}
-
 		advisor = {	
 			slot = air_chief
 			idea_token = yakov_smushkevich
@@ -1628,7 +1513,6 @@ characters = {
 			}
 		}	
 	}
-
 	SOV_pavel_rychagov = {
 		name = SOV_pavel_rychagov
 		portraits = {
@@ -1636,7 +1520,6 @@ characters = {
 				small = "GFX_idea_pavel_rychagov"
 			}
 		}
-
 		advisor = {
 			slot = air_chief
 			idea_token = pavel_rychagov
@@ -1652,7 +1535,6 @@ characters = {
 			}
 		}		
 	}
-
 	SOV_aleksandr_golovanov = {
 		name = SOV_aleksandr_golovanov
 		portraits = {
@@ -1660,7 +1542,6 @@ characters = {
 				small = "GFX_idea_alexander_golovanov"
 			}
 		}
-
 		advisor = {
 			cost = 100
 			slot = theorist
@@ -1675,7 +1556,6 @@ characters = {
 			}
 		}		
 	}
-
 	SOV_mikhail_frinovsky = {
 		name = SOV_mikhail_frinovsky
 		portraits = {
@@ -1683,7 +1563,6 @@ characters = {
 				small = "GFX_idea_mikhail_frinovsky"
 			}
 		}
-
 		advisor = {
 			slot = navy_chief
 			idea_token = mikhail_frinovsky
@@ -1699,7 +1578,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_pavel_zhigarev = {
 		name = SOV_pavel_zhigarev
 		portraits = {
@@ -1707,7 +1585,6 @@ characters = {
 				small = "GFX_idea_pavel_zhigarev"
 			}
 		}
-
 		advisor = {
 			slot = high_command
 			idea_token = pavel_zhigarev
@@ -1724,7 +1601,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_pyotr_smirnov = {
 		name = SOV_pyotr_smirnov
 		portraits = {
@@ -1732,7 +1608,6 @@ characters = {
 				small = "GFX_idea_pyotr_smirnov"
 			}
 		}
-
 		advisor = {
 			slot = navy_chief
 			idea_token = pyotr_smirnov
@@ -1753,7 +1628,6 @@ characters = {
 			}
 		}		
 	}
-
 	SOV_aleksandr_yegorov = {
 		name = SOV_aleksandr_yegorov
 		portraits = {
@@ -1780,7 +1654,6 @@ characters = {
 				}
 			}
 		}
-
 		field_marshal = {
 			traits = { career_officer inflexible_strategist trait_reckless }
 			skill = 3
@@ -1792,12 +1665,11 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}	
 	}
-
 	SOV_vasily_blyukher = {
 		name = SOV_vasily_blyukher
 		portraits = {
 			army = {
-				small = "GFX_portrait_SOV_blyukher_small" #"gfx/interface/ideas/idea_SOV_blyukher.dds"
+				small = "GFX_portrait_SOV_blyukher_small"
 				large = "GFX_portrait_SOV_blyukher"
 			}
 		}
@@ -1819,7 +1691,6 @@ characters = {
 				}
 			}
 		}
-
 		field_marshal = {
 			traits = { old_guard career_officer infantry_officer organizer }
 			skill = 3
@@ -1831,7 +1702,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_aleksandr_novikov = {
 		name = SOV_aleksandr_novikov
 		portraits = {
@@ -1854,20 +1724,14 @@ characters = {
 			}
 		}
 	}
-
-
-	##### NSB #####
-
 	SOV_vitaly_primakov = {
 		name = SOV_vitaly_primakov
-
 		portraits = {
 			army = {
 				large = "GFX_portrait_SOV_vasily_primakov"
 				small = "GFX_portrait_SOV_vasily_primakov_small"
 			}
 		}
-
 		corps_commander = {
 			traits = { cavalry_officer trait_reckless war_hero cavalry_leader }
 			skill = 3
@@ -1879,7 +1743,6 @@ characters = {
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
 	SOV_vasily_korzh = {
 		name = SOV_vasily_korzh
 		portraits = {
@@ -1888,7 +1751,6 @@ characters = {
 				small = GFX_portrait_SOV_vasily_korzh_small
 			}
 		}
-
 		corps_commander = {
 			traits = { trait_cautious war_hero trickster }
 			skill = 3
@@ -1903,7 +1765,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_sidor_kovpak = {
 		name = SOV_sidor_kovpak
 		portraits = {
@@ -1912,7 +1773,6 @@ characters = {
 				small = GFX_portrait_SOV_sidor_kovpak_small
 			}
 		}
-
 		corps_commander = {
 			traits = { trait_reckless war_hero commando }
 			skill = 3
@@ -1927,7 +1787,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_lev_dovator = {
 		name = SOV_lev_dovator
 		portraits = {
@@ -1936,7 +1795,6 @@ characters = {
 				small = GFX_portrait_SOV_lev_dovator_small
 			}
 		}
-
 		corps_commander = {
 			traits = { cavalry_officer trait_reckless cavalry_leader ranger trickster }
 			skill = 3
@@ -1951,7 +1809,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_pavel_rybalko = {
 		name = SOV_pavel_rybalko
 		portraits = {
@@ -1960,7 +1817,6 @@ characters = {
 				small = GFX_portrait_SOV_pavel_rybalko_small
 			}
 		}
-
 		corps_commander = {
 			traits = { cavalry_officer armor_officer panzer_leader panzer_expert }
 			skill = 3
@@ -1975,13 +1831,6 @@ characters = {
 			}
 		}
 	}
-
-
-	###  ##   ##  ##  ###  ## ###      ##  ###  #   # #   #         
-	#   #  # #   #  #  #  #    #      #  # #  # ## ##  # #  {~._.~} 
-	##  ####  #  #     #   #   #      #### ###  # # #   #    ( Y )  
-	#   #  #   # #  #  #    #  #      #  # #  # #   #   #   ()~*~() 
-	#   #  # ##   ##  ### ##   #      #  # #  # #   #   #   (_)-(_) 
 	SOV_anton_denikin = {
 		name = SOV_anton_denikin
 		portraits = {
@@ -2012,7 +1861,6 @@ characters = {
 				base = 1
 			}
 		}
-		
 		field_marshal = {
 			traits = { old_guard inflexible_strategist }
 			skill = 1
@@ -2026,9 +1874,6 @@ characters = {
 			}
 		}
 	}
-
-
-
 	SOV_pyotr_krasnov = {
 		name = SOV_pyotr_krasnov
 		portraits = {
@@ -2056,7 +1901,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_konstantin_nechayev = {
 		name = SOV_konstantin_nechayev
 		portraits = {
@@ -2078,7 +1922,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_vladimir_kosmin = {
 		name = SOV_vladimir_kosmin
 		portraits = {
@@ -2100,7 +1943,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_aleksandr_rodzyanko = {
 		name = SOV_aleksandr_rodzyanko
 		portraits = {
@@ -2122,17 +1964,14 @@ characters = {
 			}
 		}
 	}
-
 	SOV_andrey_shkuro = {
 		name = SOV_andrey_shkuro
-
 		portraits = {
 			army = {
 				large = "GFX_portrait_SOV_andrey_shkuro"
 				small = "GFX_idea_SOV_andrey_shkuro"
 			}
 		}
-
 		corps_commander = {
 			traits = { trait_reckless cavalry_officer }
 			skill = 3
@@ -2152,15 +1991,6 @@ characters = {
 			}
 		}
 	}
-
-
-	###   ##  #   ### ### ###  ##   ##  #        ##  ###  #   # ###  ##  ##  ###   ## 
-	#  # #  # #    #   #   #  #  # #  # #       #  # #  # #   #  #  #   #  # #  # #   
-	###  #  # #    #   #   #  #    #### #       #### #  #  # #   #   #  #  # ###   #  
-	#    #  # #    #   #   #  #  # #  # #       #  # #  #  # #   #    # #  # #  #   # 
-	#     ##  ### ###  #  ###  ##  #  # ###     #  # ###    #   ### ##   ##  #  # ##  
-
-
 	SOV_mikhail_kalinin = {
 		name = SOV_mikhail_kalinin
 		portraits = {
@@ -2176,14 +2006,12 @@ characters = {
 			}
 			has_government = communism
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = mikhail_kalinin
 			allowed = {
 				original_tag = SOV
 			}
-			
 			visible = {
 				NOT = {
 					has_character_flag = SOV_character_purged_flag 
@@ -2205,7 +2033,6 @@ characters = {
 			}
 		}
 	}
-	
 	SOV_nikita_khrushchyov = {
 		name = SOV_nikita_khrushchyov
 		portraits = {
@@ -2221,7 +2048,6 @@ characters = {
 			}
 			has_government = communism
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = nikita_khrushchyov
@@ -2257,10 +2083,8 @@ characters = {
 			}
 		}
 	}
-
 	SOV_nikolay_voznesensky = {
 		name = SOV_nikolay_voznesensky
-
 		portraits = {
 			army = {
 				small = "GFX_idea_SOV_nikolay_voznesensky"
@@ -2269,7 +2093,6 @@ characters = {
 		allowed_civil_war = {
 				has_government = communism
 			}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_nikolay_voznesensky
@@ -2277,7 +2100,6 @@ characters = {
 			allowed = {
 				original_tag = SOV
 			}
-			
 			visible = {
 				NOT = {
 					has_character_flag = SOV_character_purged_flag 
@@ -2291,7 +2113,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_lazar_kaganovich = {
 		name = SOV_lazar_kaganovich
 		portraits = {
@@ -2302,7 +2123,6 @@ characters = {
 		allowed_civil_war = {
 				has_government = communism
 			}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_lazar_kaganovich
@@ -2317,7 +2137,6 @@ characters = {
 			available = {
 				has_completed_focus = SOV_finish_the_five_year_plan 
 			}
-			
 			traits = {
 				iron_lazar 
 			}
@@ -2326,20 +2145,17 @@ characters = {
 			}
 		}
 	}
-
 	SOV_genrikh_yagoda = {
 		name = SOV_genrikh_yagoda
-
 		portraits = {
 			army = {
 				small = "GFX_idea_SOV_genrikh_yagoda"
 			}
 		}
-
 		allowed_civil_war = {
 			OR = {
-				has_completed_focus = SOV_the_plan_for_the_coup #Goes to right oppo if aligned via Plan for the Coup
-				AND = { #If not aligned by Right oppo, then stays with Stalin
+				has_completed_focus = SOV_the_plan_for_the_coup
+				AND = {
 					original_tag = SOV
 					NOT = { tag = SOV }
 					NOT = {
@@ -2352,7 +2168,6 @@ characters = {
 			}
 			has_government = communism
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_genrikh_yagoda
@@ -2378,7 +2193,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_nikolay_yezhov = {
 		name = SOV_nikolay_yezhov
 		portraits = {
@@ -2386,11 +2200,10 @@ characters = {
 				small = "GFX_idea_SOV_nikolay_yezhov"
 			}
 		}
-
 		allowed_civil_war = {
 			OR = {
-				has_completed_focus = SOV_the_plan_for_the_coup #Goes to right oppo if aligned via Plan for the Coup
-				AND = { #If not aligned by Right oppo, then stays with Stalin
+				has_completed_focus = SOV_the_plan_for_the_coup
+				AND = {
 					original_tag = SOV
 					NOT = { tag = SOV }
 					NOT = {
@@ -2403,7 +2216,6 @@ characters = {
 			}
 			has_government = communism
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_nikolay_yezhov
@@ -2428,9 +2240,7 @@ characters = {
 			}
 		}
 	}
-
 	SOV_lavrenty_beriya = {
-		#LA RESISTANCE
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
@@ -2449,7 +2259,6 @@ characters = {
 					small = "GFX_idea_SOV_lavrenty_beriya"
 				}
 			}
-
 			advisor = {
 				slot = political_advisor
 				idea_token = SOV_lavrenty_beriya
@@ -2468,7 +2277,6 @@ characters = {
 					NOT = { has_idea = SOV_genrikh_yagoda }
 					NOT = { is_country_leader = yes }
 				}
-
 				traits = {
 					head_of_the_nkvd_beriya_initial
 				}
@@ -2482,7 +2290,6 @@ characters = {
 				}
 			}
 		}
-		#NO LA RESISTANCE
 		instance = {
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
@@ -2518,7 +2325,6 @@ characters = {
 					NOT = { has_idea = SOV_nikolay_yezhov }
 					NOT = { has_idea = SOV_genrikh_yagoda }
 				}
-
 				traits = {
 					head_of_the_nkvd_beriya_initial
 				}
@@ -2533,7 +2339,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_vsevolod_merkulov = {
 		name = SOV_vsevolod_merkulov
 		portraits = {
@@ -2549,7 +2354,6 @@ characters = {
 			}
 			has_government = communism
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_vsevolod_merkulov
@@ -2579,7 +2383,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_vyacheslav_molotov = {
 		name = SOV_vyacheslav_molotov
 		portraits = {
@@ -2590,7 +2393,6 @@ characters = {
 		allowed_civil_war = {
 			has_government = communism
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_vyacheslav_molotov
@@ -2613,7 +2415,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_maksim_litvinov = {
 		name = SOV_maksim_litvinov
 		portraits = {
@@ -2624,7 +2425,6 @@ characters = {
 		allowed_civil_war = {
 			has_government = communism
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_maksim_litvinov
@@ -2647,7 +2447,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_lev_trotsky = {
 		name = SOV_lev_trotsky
 		portraits = {
@@ -2670,7 +2469,6 @@ characters = {
 				}
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = ES_SOV_trotsky_under_lenin
@@ -2709,7 +2507,6 @@ characters = {
 					NOR = { country_event = { id = mexico.22 } }
 				}
 			}
-			
 			visible = {
 				NOT = {
 					has_character_flag = SOV_character_purged_flag 
@@ -2751,7 +2548,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_ivan_smirnov = {
 		name = SOV_ivan_smirnov
 		portraits = {
@@ -2774,7 +2570,6 @@ characters = {
 				}
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_ivan_smirnov
@@ -2783,7 +2578,6 @@ characters = {
 			}
 			visible = {
 				NOT = { has_character_flag = SOV_character_purged_flag }
-				
 			}
 			available = {
 				OR = {
@@ -2799,7 +2593,7 @@ characters = {
 					limit = {
 						has_character_flag = SOV_imprisoned_flag
 					}
-					NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
+					NOT = { has_character_flag = SOV_imprisoned_flag }
 				}
 				if = {
 					limit = {
@@ -2816,7 +2610,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_ivar_smilga = {
 		name = SOV_ivar_smilga
 		portraits = {
@@ -2836,7 +2629,6 @@ characters = {
 				}
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_ivar_smilga
@@ -2857,7 +2649,7 @@ characters = {
 					limit = {
 						has_character_flag = SOV_imprisoned_flag
 					}
-					NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
+					NOT = { has_character_flag = SOV_imprisoned_flag }
 				}
 				if = {
 					limit = {
@@ -2874,17 +2666,13 @@ characters = {
 			}
 		}
 	}
-
-
 	SOV_karl_radek = {
 		name = SOV_karl_radek
-
 		portraits = {
 			army = {
 				small = "GFX_idea_SOV_karl_radek"
 			}
 		}
-
 		allowed_civil_war = {
 			OR = {
 				AND = {
@@ -2903,7 +2691,6 @@ characters = {
 				}
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_karl_radek
@@ -2941,7 +2728,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_yevgeny_preobrazhensky = {
 		name = SOV_yevgeny_preobrazhensky
 		portraits = {
@@ -2949,7 +2735,6 @@ characters = {
 				small = "GFX_idea_SOV_yevgeny_preobrazhensky"
 			}
 		}
-
 		allowed_civil_war = {
 			OR = {
 				AND = {
@@ -2968,7 +2753,6 @@ characters = {
 				}
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_yevgeny_preobrazhensky
@@ -3008,7 +2792,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_aleksandr_shlyapnikov = {
 		name = SOV_aleksandr_shlyapnikov
 		portraits = {
@@ -3028,7 +2811,6 @@ characters = {
 				}
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_aleksandr_shlyapnikov
@@ -3049,7 +2831,7 @@ characters = {
 					limit = {
 						has_character_flag = SOV_imprisoned_flag
 					}
-					NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
+					NOT = { has_character_flag = SOV_imprisoned_flag }
 				}
 				if = {
 					limit = {
@@ -3066,7 +2848,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_nikolay_bukharin = {
 		name = SOV_nikolay_bukharin
 		portraits = {
@@ -3077,7 +2858,6 @@ characters = {
 				small = "GFX_idea_SOV_nikolay_bukharin"
 			}
 		}
-
 		allowed_civil_war = {
 			OR = {
 				SOV_is_right_opposition = yes 
@@ -3090,9 +2870,7 @@ characters = {
 					has_government = communism 
 				}
 			}
-
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_nikolay_bukharin
@@ -3128,10 +2906,8 @@ characters = {
 			}
 		}
 	}
-	
 	SOV_aleksey_rykov = {
 		name = SOV_aleksey_rykov
-
 		portraits = {
 			civilian = {
 				large = "GFX_portrait_SOV_aleksey_rykov"
@@ -3140,7 +2916,6 @@ characters = {
 				small = "GFX_idea_SOV_aleksey_rykov"
 			}
 		}
-
 		allowed_civil_war = {
 			OR = {
 				SOV_is_right_opposition = yes 
@@ -3154,7 +2929,6 @@ characters = {
 				}
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_aleksey_rykov
@@ -3182,7 +2956,6 @@ characters = {
 					NOT = { has_character_flag = SOV_exiled_flag }
 				}
 			}
-			
 			traits = {
 				peoples_commissar_for_posts_and_telegraphs 
 			}
@@ -3191,7 +2964,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_mikhail_tomsky = {
 		name = SOV_mikhail_tomsky
 		portraits = {
@@ -3211,7 +2983,6 @@ characters = {
 				}
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_mikhail_tomsky
@@ -3243,7 +3014,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_grigory_sokolnikov = {
 		name = SOV_grigory_sokolnikov
 		portraits = {
@@ -3254,7 +3024,6 @@ characters = {
 		allowed_civil_war = {
 			has_government = communism
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_grigory_sokolnikov
@@ -3286,7 +3055,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_grigory_zinovyev = {
 		name = SOV_grigory_zinovyev
 		portraits = {
@@ -3309,7 +3077,6 @@ characters = {
 				}
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_grigory_zinovyev
@@ -3335,7 +3102,7 @@ characters = {
 					limit = {
 						has_character_flag = SOV_imprisoned_flag
 					}
-					NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
+					NOT = { has_character_flag = SOV_imprisoned_flag }
 				}
 				if = {
 					limit = {
@@ -3352,7 +3119,6 @@ characters = {
 			}
 		}		
 	}
-	
 	SOV_lev_kamenev = {
 		name = SOV_lev_kamenev
 		portraits = {
@@ -3375,7 +3141,6 @@ characters = {
 				}
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_lev_kamenev
@@ -3397,7 +3162,7 @@ characters = {
 					limit = {
 						has_character_flag = SOV_imprisoned_flag
 					}
-					NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
+					NOT = { has_character_flag = SOV_imprisoned_flag }
 				}
 				if = {
 					limit = {
@@ -3414,7 +3179,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_martemyan_ryutin = {
 		name = SOV_martemyan_ryutin
 		portraits = {
@@ -3422,7 +3186,6 @@ characters = {
 				small = "GFX_idea_SOV_martemyan_ryutin_imprisoned"
 			}
 		}
-
 		allowed_civil_war = {
 			OR = {
 				AND = {
@@ -3439,8 +3202,6 @@ characters = {
 				}
 			}
 		}
-
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_martemyan_ryutin
@@ -3462,7 +3223,7 @@ characters = {
 					limit = {
 						has_character_flag = SOV_imprisoned_flag
 					}
-					NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
+					NOT = { has_character_flag = SOV_imprisoned_flag }
 				}
 				if = {
 					limit = {
@@ -3479,7 +3240,6 @@ characters = {
 			}
 		}
 	}
-	
 	SOV_patriarch_sergy = {
 		name = SOV_patriarch_sergy
 		portraits = {
@@ -3493,7 +3253,6 @@ characters = {
 				has_government = fascism
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_patriarch_sergy
@@ -3514,7 +3273,6 @@ characters = {
 			}
 		}
 	}
-	
 	SOV_metropolitan_anastasy = {
 		name = SOV_metropolitan_anastasy
 		portraits = {
@@ -3548,7 +3306,6 @@ characters = {
 			}
 		}		
 	}
-
 	SOV_metropolitan_nikolay = {
 		name = SOV_metropolitan_nikolay
 		portraits = {
@@ -3562,7 +3319,6 @@ characters = {
 				has_government = fascism
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_metropolitan_nikolay
@@ -3583,7 +3339,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_metropolitan_aleksy = {
 		name = SOV_metropolitan_aleksy
 		portraits = {
@@ -3597,7 +3352,6 @@ characters = {
 				has_government = fascism
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_metropolitan_aleksy
@@ -3618,7 +3372,6 @@ characters = {
 			}
 		}		
 	}
-
 	SOV_anastasy_vonsyatsky = {
 		name = SOV_anastasy_vonsyatsky
 		portraits = {
@@ -3632,7 +3385,6 @@ characters = {
 				has_government = fascism
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_anastasy_vonsyatsky
@@ -3660,7 +3412,6 @@ characters = {
 			}
 		}		
 	}
-
 	SOV_grigory_semyonov = {
 		name = SOV_grigory_semyonov
 		portraits = {
@@ -3669,7 +3420,6 @@ characters = {
 				large = "GFX_portrait_SOV_grigory_semyonov"
 			}
 		}
-
 		corps_commander = {
 			traits = { cavalry_officer cavalry_leader }
 			skill = 3
@@ -3685,14 +3435,13 @@ characters = {
 				}
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_grigory_semyonov
 			allowed = {
 				OR = {
 					original_tag = SOV
-					original_tag = MAN # This is where he starts the game
+					original_tag = MAN
 				}
 			}
 			available = {
@@ -3710,7 +3459,6 @@ characters = {
 					 	}
 					}
 				}
-				
 				if = {
 					limit = { original_tag = SOV }
 					has_completed_focus = SOV_approach_semyonov
@@ -3735,7 +3483,6 @@ characters = {
 			}
 		}		
 	}
-
 	SOV_nikolay_ustryalov = {
 		name = SOV_nikolay_ustryalov
 		portraits = {
@@ -3749,7 +3496,6 @@ characters = {
 				has_government = fascism
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_nikolay_ustryalov
@@ -3767,7 +3513,6 @@ characters = {
 			}
 		}		
 	}
-
 	SOV_aleksandr_kazembek = {
 		name = SOV_aleksandr_kazembek
 		portraits = {
@@ -3781,7 +3526,6 @@ characters = {
 				has_government = fascism
 			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_aleksandr_kazembek
@@ -3810,17 +3554,6 @@ characters = {
 			}
 		}
 	}
-
-
- #######                                         #     #                                                     #                                                       
- #        #    #  #  #       ######   ####       ##   ##  #  #       #  #####    ##    #####   #   #        # #    #####   #    #  #   ####    ####   #####    ####  
- #         #  #   #  #       #       #           # # # #  #  #       #    #     #  #   #    #   # #        #   #   #    #  #    #  #  #       #    #  #    #  #      
- #####      ##    #  #       #####    ####       #  #  #  #  #       #    #    #    #  #    #    #        #     #  #    #  #    #  #   ####   #    #  #    #   ####  
- #          ##    #  #       #            #      #     #  #  #       #    #    ######  #####     #        #######  #    #  #    #  #       #  #    #  #####        # 
- #         #  #   #  #       #       #    #      #     #  #  #       #    #    #    #  #   #     #        #     #  #    #   #  #   #  #    #  #    #  #   #   #    # 
- #######  #    #  #  ######  ######   ####       #     #  #  ######  #    #    #    #  #    #    #        #     #  #####     ##    #   ####    ####   #    #   ####  
-                                                                                                                                                                     
- 	#THEORIST - AIR
 	SOV_aleksandr_prokofyev_seversky = {
 		name = SOV_aleksandr_prokofyev_seversky
 		portraits = {
@@ -3861,11 +3594,8 @@ characters = {
 			}
 		}
 	}
-
-	#CHIEF OF AIRFORCE
 	SOV_vyacheslav_tkachyov = {
 		name = SOV_vyacheslav_tkachyov
-
 		portraits = {
 			army = {
 				small = "GFX_idea_SOV_vyacheslav_tkachyov"
@@ -3877,7 +3607,6 @@ characters = {
 				has_government = fascism
 			}
 		}
-
 		advisor = {
 			cost = 100
 			slot = air_chief
@@ -3904,11 +3633,8 @@ characters = {
 			}
 		}
 	}
-
-	#CHIEF OF AIRFORCE
 	SOV_yan_nagursky = {
 		name = SOV_yan_nagursky
-
 		portraits = {
 			army = {
 				small = "GFX_idea_SOV_yan_nagursky"
@@ -3920,7 +3646,6 @@ characters = {
 				has_government = fascism
 			}
 		}
-		
 		advisor = {
 			cost = 100
 			slot = air_chief
@@ -3947,11 +3672,8 @@ characters = {
 			}
 		}
 	}
-
-	#MHC - Air
 	SOV_vasily_yanchenko = {
 		name = SOV_vasily_yanchenko
-
 		portraits = {
 			army = {
 				small = "GFX_idea_SOV_vasily_yanchenko"
@@ -3963,7 +3685,6 @@ characters = {
 				has_government = fascism
 			}
 		}
-		
 		advisor = {
 			cost = 100
 			slot = high_command
@@ -3991,22 +3712,12 @@ characters = {
 			}
 		}
 	}	
-
-
-  ####    ####   #    #  #    #  #####  #####   #   #      #       ######    ##    #####   ######  #####    ####  
- #    #  #    #  #    #  ##   #    #    #    #   # #       #       #        #  #   #    #  #       #    #  #      
- #       #    #  #    #  # #  #    #    #    #    #        #       #####   #    #  #    #  #####   #    #   ####  
- #       #    #  #    #  #  # #    #    #####     #        #       #       ######  #    #  #       #####        # 
- #    #  #    #  #    #  #   ##    #    #   #     #        #       #       #    #  #    #  #       #   #   #    # 
-  ####    ####    ####   #    #    #    #    #    #        ######  ######  #    #  #####   ######  #    #   ####  
-
 	SOV_konstantin_rodzayevsky = {
 		instance = {
 			allowed = {
 				has_dlc = "No Step Back"
 			}
 			name = SOV_konstantin_rodzayevsky
-
 			portraits = {
 				civilian = {
 					large = GFX_portrait_SOV_konstantin_rodzayevsky
@@ -4015,7 +3726,6 @@ characters = {
 					small = "GFX_idea_konstantin_rodzaevsky"
 				}
 			}
-
 			country_leader = {
 				ideology = fascism_ideology
 				traits = { fascist_orchestrator }
@@ -4028,7 +3738,6 @@ characters = {
 				NOT = { has_dlc = "No Step Back" }
 			}
 			name = SOV_konstantin_rodzayevsky
-
 			portraits = {
 				army = {
 					small = "GFX_idea_konstantin_rodzaevsky"
@@ -4075,10 +3784,8 @@ characters = {
 			}
 		}
 	}
-
 	SOV_aleksandr_kerensky = {
 		name = SOV_aleksandr_kerensky
-
 		portraits = {
 			civilian = {
 				large = GFX_portrait_SOV_aleksandr_kerensky
@@ -4093,7 +3800,6 @@ characters = {
 			id = -1
 		}
 		allowed_civil_war = { tag = SOV}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_aleksandr_kerensky
@@ -4134,17 +3840,6 @@ characters = {
 			}
 		}
 	}
-
-
-  #####                                                              
- #     #   ####   #  ######  #    #  #####  #   ####   #####   ####  
- #        #    #  #  #       ##   #    #    #  #         #    #      
-  #####   #       #  #####   # #  #    #    #   ####     #     ####  
-       #  #       #  #       #  # #    #    #       #    #         # 
- #     #  #    #  #  #       #   ##    #    #  #    #    #    #    # 
-  #####    ####   #  ######  #    #    #    #   ####     #     ####  
-
-
 	SOV_igor_kurchatov = {
 		name = SOV_igor_kurchatov
 		portraits = {
@@ -4153,7 +3848,6 @@ characters = {
 				small = GFX_idea_igor_kurchatov
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_nuclear_specialist scientist_trait_fast_learner }
 			skills = {
@@ -4161,24 +3855,7 @@ characters = {
 				specialization_naval = 2
 			}
 		}
-
-		#advisor = {
-		#	cost = 100
-		#	slot = theorist
-		#	idea_token = igor_kurchatov
-		#	ledger = army
-		#	allowed = {
-		#		original_tag = SOV
-		#	}
-		#	research_bonus = {
-		#		nuclear = 0.150
-		#	}
-		#	traits = {
-		#		nuclear_scientist
-		#	}
-		#}
 	}
-
 	SOV_abram_ioffe = {
 		name = SOV_abram_ioffe
 		portraits = {
@@ -4186,7 +3863,6 @@ characters = {
 				large = GFX_portrait_SOV_abram_ioffe
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_nuclear_power_expert }
 			skills = {
@@ -4194,7 +3870,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_sergey_korolyov = {
 		name = SOV_sergey_korolyov
 		portraits = {
@@ -4203,31 +3878,13 @@ characters = {
 				small = GFX_idea_sergei_korolev
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_rocketry_specialist scientist_trait_gifted_engineer }
 			skills = {
 				specialization_air = 2
 			}
 		}
-
-		#advisor = {
-		#	cost = 100
-		#	slot = theorist
-		#	idea_token = sergei_korolev
-		#	ledger = air
-		#	allowed = {
-		#		original_tag = SOV
-		#	}
-		#	research_bonus = {
-		#		rocketry = 0.150
-		#	}
-		#	traits = {
-		#		rocket_scientist
-		#	}
-		#}		
 	}
-
 	SOV_boris_stechkin = {
 		name = SOV_boris_stechkin
 		portraits = {
@@ -4235,7 +3892,6 @@ characters = {
 				large = GFX_portrait_SOV_boris_stechkin
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_jet_expert scientist_trait_brilliant_theorist }
 			skills = {
@@ -4243,7 +3899,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_arkady_nazarov = {
 		name = SOV_arkady_nazarov
 		portraits = {
@@ -4251,7 +3906,6 @@ characters = {
 				large = GFX_portrait_SOV_arkady_nazarov
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_aircraft_specialist scientist_trait_fast_learner }
 			skills = {
@@ -4259,7 +3913,6 @@ characters = {
 			}
 		}
 	}
-
 	SOV_vladimir_kotelnikov = {
 		name = SOV_vladimir_kotelnikov
 		portraits = {
@@ -4267,7 +3920,6 @@ characters = {
 				large = GFX_portrait_SOV_vladimir_kotelnikov
 			}
 		}
-
 		scientist = {
 			traits = { scientist_trait_electronics_specialist }
 			skills = {
@@ -4275,6 +3927,4 @@ characters = {
 			}
 		}
 	}
-
-
 }

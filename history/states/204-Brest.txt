@@ -1,29 +1,22 @@
 state = {
 	id = 204
-	name = "STATE_204" # Bobruysk
+	name = "STATE_204"
 	manpower = 1041084
-	
 	state_category = rural
-
 	history = {
-
 		owner = BLR
 		controller = BLR
 		add_core_of = SOV
 		add_core_of = BLR
-
 		victory_points = {
 			3350 3
 		}
-
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 3
 		}
 	}
-
 	provinces = {
 		304 331 360 386 3350 3759 6373 11313 
 	}
-
 	local_supplies = 0.0 
 }

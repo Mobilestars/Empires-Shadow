@@ -1,22 +1,18 @@
-﻿####### OOB #######
+﻿
 units = {
-	##### NAVAL UNITS #####
-	### HOME COMMAND ###
 	fleet = {
 		name = "Mixed Fleet Early"
-		naval_base = 7660 # Scapa Flow
+		naval_base = 7660
 		task_force = {				
-			name = "Red Fleet"					# CO: Forbes	
-			location = 7660 # Scapa Flow
+			name = "Red Fleet"
+			location = 7660
 			ship = { name = "Red BB1" definition = battleship equipment = { battleship_1 = { amount = 1 owner = DOM } } }
 			ship = { name = "Red BB2" definition = battleship equipment = { battleship_1 = { amount = 1 owner = DOM } } }
-			
 			ship = { name = "Red CA1" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = DOM } } }
 			ship = { name = "Red CA2" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = DOM } } }
 			ship = { name = "Red CA3" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = DOM } } }
 			ship = { name = "Red CA4" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = DOM } } }
 			ship = { name = "Red CA5" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = DOM } } }
-
 			ship = { name = "Red CL2" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = DOM } } }
 			ship = { name = "Red CL3" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = DOM } } }
 			ship = { name = "Red CL4" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = DOM } } }
@@ -24,7 +20,6 @@ units = {
 			ship = { name = "Red CL6" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = DOM } } }
 			ship = { name = "Red CL7" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = DOM } } }
 			ship = { name = "Red CL8" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = DOM } } }
-			
 			ship = { name = "Red DD1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM } } }			
 			ship = { name = "Red DD2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM } } }
 			ship = { name = "Red DD3" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = DOM } } }			

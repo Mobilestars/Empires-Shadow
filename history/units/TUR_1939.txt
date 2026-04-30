@@ -1,11 +1,6 @@
 ﻿division_template = {
-
-	name = "Piyade Tümeni"  				# Infantry Division
-
+	name = "Piyade Tümeni"
 	division_names_group = TUR_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -23,13 +18,8 @@
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Dag Tugayi" 					# Mountain Brigade
-
+	name = "Dag Tugayi"
 	division_names_group = TUR_MTN_01
-
-	# Special Forces: Mountaineers + Line Arty ~30W
-	# Needs: Special Forces Doctrine (AaT) + Fire Concentration sub-doctrine
 	regiments = {
 		mountaineers      = { x = 0 y = 0 }
 		mountaineers      = { x = 0 y = 1 }
@@ -50,12 +40,8 @@ division_template = {
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Bogazi Tugay" 				# Fortress Brigade - garrison brigade, lower experience and equipment
-
+	name = "Bogazi Tugay"
 	division_names_group = TUR_GAR_01
-
-	# Garrison / Border Guard 6W (minimal cost/equipment)
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -68,14 +54,8 @@ division_template = {
 		engineer = { x = 0 y = 0 }
 	}}
 division_template = {
-
 	name = "Süvari Tümeni" 			
-
 	division_names_group = TUR_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -93,16 +73,9 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 division_template = {
-
-	name = "Zirhli Tümeni" 				# Armour Division
-
+	name = "Zirhli Tümeni"
 	division_names_group = TUR_ARM_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -120,13 +93,9 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
 units = {
-	######## LAND UNITS ########
-	##### Türk Ordusu #####
 	division = {
-		#name = "14. Süvari Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 14
 		}
@@ -134,12 +103,9 @@ units = {
 		division_template = "Süvari Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-	## VI. Kolordu ##
 	division = {
-		#name = "7. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 7
 		}
@@ -147,11 +113,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "17. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 17
 		}
@@ -159,11 +123,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "20. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 20
 		}
@@ -171,13 +133,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
-	### Birinci Ordu (CO: Altay) ###
 	division = {
-		#name = "11. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 11
 		}
@@ -185,11 +143,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "2. Zirhli Tümeni (armored)"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -197,11 +153,9 @@ units = {
 		division_template = "Zirhli Tümeni" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
-
 	}
 	division = {
-		#name = "3. Süvari Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
@@ -209,11 +163,9 @@ units = {
 		division_template = "Süvari Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "Kirklareli Dag Tugayi"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -221,12 +173,9 @@ units = {
 		division_template = "Dag Tugayi" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-	## III. Kolordu ##
 	division = {
-		#name = "1. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
@@ -234,11 +183,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "23. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 23
 		}
@@ -246,11 +193,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "24. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 24
 		}
@@ -258,12 +203,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-	## IV. Kolordu ##
 	division = {
-		#name = "8. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 8
 		}
@@ -271,11 +213,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "22. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 22
 		}
@@ -283,11 +223,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "1. Dag Tugayi"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
@@ -295,13 +233,9 @@ units = {
 		division_template = "Dag Tugayi" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
-	### Ikinci Ordu (CO: Çalislar) ###
 	division = {
-		#name = "39. Dag Tugayi"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 39
 		}
@@ -309,11 +243,10 @@ units = {
 		division_template = "Dag Tugayi" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
 		name = "Antalya Dag Tugayi"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
@@ -321,12 +254,9 @@ units = {
 		division_template = "Dag Tugayi" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-	## I. Kolordu ##
 	division = {
-		#name = "6. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 6
 		}
@@ -334,11 +264,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "16. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 16
 		}
@@ -346,11 +274,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "Çanakkale Bogazi Tugay"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 14
 		}
@@ -359,12 +285,9 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-	## II.  Kolordu ##
 	division = {
-		#name = "4. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
@@ -372,11 +295,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "18. Dag Tugayi"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 18
 		}
@@ -384,12 +305,9 @@ units = {
 		division_template = "Dag Tugayi" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-	## V. Kolordu ##
 	division = {
-		#name = "5. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 5
 		}
@@ -397,11 +315,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "25. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 25
 		}
@@ -409,14 +325,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
-	### Üçüncüsü Ordu (CO: Orbay) ###
-	## VII. Kolordu ##
 	division = {
-		#name = "2. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -424,11 +335,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "10. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 10
 		}
@@ -436,12 +345,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-	## VIII. Kolordu ##
 	division = {
-		#name = "12. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 12
 		}
@@ -449,11 +355,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "15. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 15
 		}
@@ -461,12 +365,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-	## IX. Kolordu ##
 	division = {
-		#name = "3. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
@@ -474,11 +375,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "9. Piyade Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 9
 		}
@@ -486,11 +385,9 @@ units = {
 		division_template = "Piyade Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "1. Süvari Tümeni"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
@@ -498,11 +395,8 @@ units = {
 		division_template = "Süvari Tümeni" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 }
-
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

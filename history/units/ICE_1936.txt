@@ -1,8 +1,5 @@
 ﻿division_template = {
-
-	name = "Ríkislögreglan"	# represents first part of enlarged divisions
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
+	name = "Ríkislögreglan"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -19,8 +16,6 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

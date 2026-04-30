@@ -1,10 +1,6 @@
 ﻿division_template = {
-
-	name = "Kajnieku Divizija"		# Infantry Division
+	name = "Kajnieku Divizija"
 	division_names_group = LAT_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -21,14 +17,9 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
-	name = "Artilerijas Pulks"			# Artillery Division
+	name = "Artilerijas Pulks"
 	division_names_group = LAT_INF_01
-
-	# Line Artillery Infantry ~30W (9 inf + 3 arty brigade)
-	# Needs: Fire Concentration sub-doctrine (effective ~27W)
 	regiments = {
 		infantry          = { x = 0 y = 0 }
 		infantry          = { x = 0 y = 1 }
@@ -48,13 +39,9 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_tank = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
-	name = "Aizsargi"			# Border guard
+	name = "Aizsargi"
 	division_names_group = LAT_INF_01
-
-	# Garrison / Border Guard 6W (minimal cost/equipment)
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -66,11 +53,8 @@ division_template = {
 	support = {
 		engineer = { x = 0 y = 0 }
 	}}
-
 units = {
-	######## LAND OOB ########
-	##### Latvijas Augstas Komandu #####
-	division = { # "1. Kurzemes Divizija"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
@@ -80,9 +64,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
-
 	}
-	division = { # "2. Vidzemes Divizija"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
@@ -92,9 +75,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
-
 	}
-	division = { # "3. Zemgales Divizija"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
@@ -104,9 +86,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
-
 	}
-	division = { # "4. Latgales Divizija"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 4
@@ -116,60 +97,48 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
-
 	}
-	
-	division = { # "District Kurzeme"
+	division = {
 		name = "Kurzemes Pulks"
 		location = 3194
 		division_template = "Aizsargi"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
-
 	}
-	
-	division = { # "District Vidzemes"
+	division = {
 		name = "Vidzemes Pulks"
 		location = 10493
 		division_template = "Aizsargi"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
-
 	}
-	
-	division = { # "District Latgales"
+	division = {
 		name = "Latgales Pulks"
 		location = 9275
 		division_template = "Aizsargi"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
-
 	}
-	
-	division = { # "District Zemgales"
+	division = {
 		name = "Zemgales Pulks"
 		location = 3255
 		division_template = "Aizsargi"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
-
 	}
-	
-	division = { # "District Riga"
+	division = {
 		name = "Rīgas Pulks"
 		location = 9340
 		division_template = "Aizsargi"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
-
 	}
-	
-	division = { # "Artillery Division"
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
@@ -179,11 +148,8 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LAT" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.2
-
 	}
 }
-
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

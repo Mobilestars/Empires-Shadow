@@ -7,8 +7,6 @@ focus_tree = {
 			tag = SOV
 		}
 	}
-
-	# 1. Ukraine integrieren
 	focus = {
 		id = SOV_integrate_ukraine
 		icon = GFX_goal_generic_political_reform
@@ -25,8 +23,6 @@ focus_tree = {
 			}
 		}
 	}
-
-	# 2. Ukraine eingliedern (nur wenn Kommunisten an der Macht)
 	focus = {
 		id = SOV_annex_ukraine
 		icon = GFX_goal_generic_territory_or_war
@@ -44,6 +40,4 @@ focus_tree = {
 			}
 		}
 	}
-
-	# Weitere Fokusse werden analog ergänzt...
 }

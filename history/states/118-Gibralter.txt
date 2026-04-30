@@ -3,7 +3,6 @@ state=
 	id=118
 	name="STATE_118"
 	manpower=21372
-
 	state_category = enclave
 	history={
 		owner = SPR
@@ -21,6 +20,5 @@ state=
 	provinces={
 		4135
 	}
-
 	local_supplies=0.0
 }

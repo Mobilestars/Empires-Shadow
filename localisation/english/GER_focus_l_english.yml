@@ -1,5 +1,5 @@
+﻿
 ﻿l_english:
- # WIRTSCHAFT (Economy)
  GER_wirtschaftswunder:0 "Economic Miracle"
  GER_wirtschaftswunder_desc:0 "Since our victory in the Great War, the German economy has flourished. Let us harness this momentum and press for even greater prosperity for the Fatherland."
  GER_kaiserliche_industrie:0 "Imperial Industry"
@@ -16,14 +16,10 @@
  GER_synthol_forschung_desc:0 "Germany lacks natural oil. Our scientists must develop efficient methods of producing synthetic fuel to fuel our war machine and industry alike."
  GER_ru_stungsexporte:0 "Arms Exports"
  GER_ru_stungsexporte_desc:0 "German engineering is world-renowned. By exporting our superior weapons to allied and neutral nations, we can generate valuable foreign exchange and spread our influence."
-
- # INNENPOLITIK - GENERAL (all governments)
  GER_innenpolitik:0 "Domestic Policy"
  GER_innenpolitik_desc:0 "The internal order of the Reich must be addressed. Whether we govern as Kaisers, democrats, socialists or nationalists, the political direction of Germany must be set."
  GER_partei_verstaerkung:0 "Strengthen the Party"
  GER_partei_verstaerkung_desc:0 "Political power in Germany does not arise on its own. We must decide which political force we wish to promote and invest our resources accordingly."
-
- # PARTY STRENGTHENING (mutual exclusive, visible to all)
  GER_kaiserreich_staerken:0 "Strengthen the Kaiserreich"
  GER_kaiserreich_staerken_desc:0 "We shall invest in shoring up support for the Imperial cause — rallying the Junkers, the military establishment and the conservative masses behind the Kaiser's banner."
  GER_demokraten_staerken:0 "Strengthen the Democrats"
@@ -32,8 +28,6 @@
  GER_kommunisten_staerken_desc:0 "The revolutionary left is gaining ground. The Communist Party of Germany shall receive our backing to challenge the capitalist order."
  GER_faschisten_staerken:0 "Strengthen the Fascists"
  GER_faschisten_staerken_desc:0 "A new radical nationalist movement is rising. We shall channel the anger of veterans, nationalists and those who feel left behind into a powerful political force."
-
- # KAISERREICH PATH (visible only when Kaiserreich in power)
  GER_kaiser_unterstuetzung:0 "Imperial Support"
  GER_kaiser_unterstuetzung_desc:0 "Kaiser Wilhelm stands as the symbol of German power. We shall strengthen his position and rally the people around his throne."
  GER_reichsverfassung:0 "Imperial Constitution"
@@ -54,8 +48,6 @@
  GER_wilhelminisches_militaer_desc:0 "The traditions of the Imperial German military, forged through the wars of unification and hardened on the battlefields of the Great War, shall be preserved and celebrated."
  GER_bund_der_kaiser:0 "League of Kaisers"
  GER_bund_der_kaiser_desc:0 "Germany shall forge alliances with other great monarchies and authoritarian powers, creating a 'League of Kaisers' to stand against the democratic and communist worlds."
-
- # DEMOCRATIC PATH (visible only when democratic)
  GER_kieler_matrosenaufstand:0 "Kiel Mutiny"
  GER_kieler_matrosenaufstand_desc:0 "Sailors and workers in Kiel have risen against the old order! If the democratic movement is strong enough, this popular uprising can place the Reich in the hands of the people and establish a democratic government."
  GER_verfassungskonvent:0 "Constitutional Convention"
@@ -64,8 +56,6 @@
  GER_weimarer_weg_desc:0 "The monarchy is swept aside in favor of a democratic republic. Germany enters a new age — but stability must be found before freedom can flourish."
  GER_parlamentarismus:0 "Parliamentarism"
  GER_parlamentarismus_desc:0 "True democracy requires a parliament with real legislative power. We shall entrench the rights of elected representatives and build a stable multi-party system."
-
- # COMMUNIST PATH (visible only when communist)
  GER_spartakusaufstand:0 "Spartacist Uprising"
  GER_spartakusaufstand_desc:0 "The Spartacist League leads a revolutionary uprising against the bourgeois order. If the communist movement is strong enough, the insurrection can seize power and place Germany on the path to a socialist state."
  GER_rote_front:0 "Red Front"
@@ -74,8 +64,6 @@
  GER_raetemacht_desc:0 "Power to the workers! Germany shall become a council republic, governed by the people and for the people."
  GER_sowjet_buendnis:0 "Alliance with the Soviets"
  GER_sowjet_buendnis_desc:0 "The proletarian revolutions of Germany and Russia shall join hands. A German-Soviet alliance will shake the foundations of the capitalist world."
-
- # FASCIST PATH
  GER_beer_hall_putsch:0 "Beer Hall Putsch"
  GER_beer_hall_putsch_desc:0 "The National Socialists attempt to shatter the old order through a decisive seizure of power. If their movement is strong enough, the putsch can place the Reich in their hands and elevate Hitler to the head of state."
  GER_adopt_new_panzer_doctrine:0 "Adopt New Panzer Doctrine"
@@ -174,8 +162,6 @@
  GER_vierjahresplan_desc:0 "The economy shall be fully mobilized for the goals of the state. Rearmament, autarky and industrial expansion take absolute priority."
  GER_achsenmaechte:0 "Axis Powers"
  GER_achsenmaechte_desc:0 "Fascist Germany shall reach out to like-minded regimes across Europe. Together we will forge an axis of power that will redraw the map of the world."
-
- # MILITÄR (Military)
  GER_kaiserliches_heer:0 "Imperial Army"
  GER_kaiserliches_heer_desc:0 "The Imperial German Army emerged victorious from the Great War. Now we must modernize and strengthen it to meet the challenges of the coming era."
  GER_sturmbataillon:0 "Storm Battalions"
@@ -188,8 +174,6 @@
  GER_artillerie_programm_desc:0 "German artillery was the terror of our enemies in the Great War. We shall invest in new artillery platforms and doctrines to support our advancing forces."
  GER_blitzkrieg_doktrin:0 "Blitzkrieg Doctrine"
  GER_blitzkrieg_doktrin_desc:0 "Combined arms warfare — tanks, infantry, artillery, and air support working in perfect coordination — will make Germany's army an unstoppable force."
-
- # MARINE (Navy)
  GER_kaiserliche_marine:0 "Imperial Navy"
  GER_kaiserliche_marine_desc:0 "The Imperial German Navy, our great Hochseeflotte, rules the waves after its triumph at Jutland. We shall invest in expanding and modernizing this force."
  GER_hochseeflotte:0 "High Seas Fleet"
@@ -200,8 +184,6 @@
  GER_weltmacht_zur_see_desc:0 "German naval power shall extend across the globe. The Kaiser's flag will fly on every ocean."
  GER_marinebasis_ausbau:0 "Naval Base Expansion"
  GER_marinebasis_ausbau_desc:0 "The great naval bases at Kiel and Wilhelmshaven shall be expanded to support our growing fleet."
-
- # LUFTWAFFE (Air Force)
  GER_luftstreitkraefte:0 "Imperial Air Force"
  GER_luftstreitkraefte_desc:0 "From the bold eagle knights of the Great War to a modern air force — Germany shall dominate the skies."
  GER_jagdflieger:0 "Fighter Pilots"
@@ -212,8 +194,6 @@
  GER_luftueberlegenheit_desc:0 "Germany shall control the skies above any battlefield. Without air superiority, no ground campaign can succeed."
  GER_luftwaffe_ausbau:0 "Air Force Expansion"
  GER_luftwaffe_ausbau_desc:0 "New airfields and expanded production will ensure Germany maintains a decisive advantage in the air."
-
- # DIPLOMATIE & EXPANSION (Diplomacy)
  GER_weltpolitik:0 "World Policy"
  GER_weltpolitik_desc:0 "Since the Kaiser's declaration of Weltpolitik, Germany has pursued a global role. We must now define what that means in this new era."
  GER_mitteleuropa:0 "Mitteleuropa"
@@ -234,22 +214,17 @@
  GER_angebot_luxemburg_desc:0 "The Grand Duchy of Luxembourg, currently under German administration, deserves recognition as a free nation. We shall restore its sovereignty — yet bind it firmly to Germany through mutual protection and membership in the Deutscher Pakt."
  GER_anschluss_antreiben:0 "Drive the Anschluss"
  GER_anschluss_antreiben_desc:0 "Austria and Germany are one people, one culture, one destiny. We shall confront Austria-Hungary with the question of unification. How they respond will determine whether this is achieved peacefully or by force."
-
- # Anschluss Event Localisation
  GER_anschluss.1.t:0 "Germany Demands Unification"
  GER_anschluss.1.d:0 "Imperial envoys from Berlin have delivered Germany's formal demand for unification. The Kaiserreich calls upon Austria-Hungary to answer — does the Dual Monarchy submit its Austrian lands, surrender entirely, or refuse and face German arms?"
  GER_anschluss.1.a:0 "Partial Anschluss: Austrian lands join Germany, Hungary remains free"
  GER_anschluss.1.b:0 "Complete Anschluss: All of Austria-Hungary becomes German territory"
  GER_anschluss.1.c:0 "Vienna refuses — we will not yield!"
-
  GER_sudetenland_forderung:0 "Claim the Sudetenland"
  GER_sudetenland_forderung_desc:0 "Millions of Germans live under Czech rule in the Sudetenland. We will demand that these lands — rightfully German — are returned to the Reich."
  GER_tschechoslowakei_teilen:0 "Divide Czechoslovakia"
  GER_tschechoslowakei_teilen_desc:0 "With the Sudetenland secured, we must decide the fate of what remains of Czechoslovakia. The Slovaks deserve their own state, and the Czech rump must fall under German protection."
  GER_plan_oranje:0 "Plan Oranje"
  GER_plan_oranje_desc:0 "The Netherlands, a small nation nestled on Germany's western flank, controls vast colonial holdings and strategically vital ports at the mouth of the Rhine. The Imperial General Staff has prepared a contingency plan — Plan Oranje — for the swift subjugation of the Dutch. With their territory under Imperial control, Germany would secure the North Sea coast and dominate the approaches to Britain."
-
- # FORSCHUNG (Research)
  GER_wissenschaft_und_forschung:0 "Science and Research"
  GER_wissenschaft_und_forschung_desc:0 "German science has long led the world. We shall invest in our greatest universities and research institutes to maintain this edge."
  GER_universitaeten_foerdern:0 "Promote Universities"
@@ -260,8 +235,6 @@
  GER_chemische_industrie_desc:0 "Germany's chemical industry — led by firms like IG Farben — is the most advanced in the world. We shall ensure it serves the Reich."
  GER_atomforschung:0 "Atomic Research"
  GER_atomforschung_desc:0 "The splitting of the atom may hold the key to limitless energy — or the most terrible weapon ever conceived. Germany must be first to unlock its secrets."
-
- # IDEAS
  GER_wirtschaftswunder_idea:0 "Economic Miracle"
  GER_wirtschaftswunder_idea_desc:0 "The German economy is booming, fueled by victory, territorial expansion, and sound Imperial economic policy."
  GER_reichsbahn_idea:0 "Expanded Reichsbahn"

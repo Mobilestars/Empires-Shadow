@@ -1,12 +1,7 @@
-﻿##### Division Templates #####
+﻿
 division_template = {
-
-	name = "Pesi Divize"					# Infantry Division
-
+	name = "Pesi Divize"
 	division_names_group = SLO_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -24,13 +19,8 @@ division_template = {
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Mobilná Skupina" 				# Mobile Group
+	name = "Mobilná Skupina"
 	division_names_group = SLO_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -48,13 +38,9 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
-
 units = {
-	##### Slovenská Polná Armádna (CO: Catlos) #####
 	division = {
-		#name = "1. Pesi Divize 'Janosík'"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
@@ -63,8 +49,7 @@ units = {
 		start_experience_factor = 0.2
 	}
 	division = {
-		#name = "2. Pesi Divize 'Skultéty'"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -73,8 +58,7 @@ units = {
 		start_experience_factor = 0.2
 	}
 	division = {
-		#name = "3. Pesi Divize 'Razus'"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
@@ -89,8 +73,6 @@ units = {
 		start_experience_factor = 0.2
 	}
 }
-
-### Starting Production ###	
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

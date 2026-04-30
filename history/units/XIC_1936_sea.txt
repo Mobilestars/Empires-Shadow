@@ -1,10 +1,6 @@
 ﻿division_template = {
-
 	name = "Sanjiao Jun" 				
 	division_names_group = CHI_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -22,13 +18,8 @@
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
 	name = "Qibing Jun" 		
 	division_names_group = CHI_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -46,11 +37,7 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
-
-### OOB ###
 units = {
-	### Provincial Forces ###
 	division = {
 		name = "113th Division"
 		location = 2022 
@@ -59,7 +46,6 @@ units = {
 		officer = {
 			name = XIC_li_zhentang
 		}
-
 	}
 	division = {
 		name = "114th Division" 
@@ -69,7 +55,6 @@ units = {
 		officer = {
 			name = XIC_chen_guangqun
 		}
-
 	}
 	division = {
 		name = "118th Division" 
@@ -79,7 +64,6 @@ units = {
 		officer = {
 			name = XIC_zhou_guanglie
 		}
-
 	}
 	division = {
 		name = "111th Division" 
@@ -89,7 +73,6 @@ units = {
 		officer = {
 			name = XIC_chang_endao
 		}
-
 	}
 	division = {
 		name = "115th Division" 
@@ -99,7 +82,6 @@ units = {
 		officer = {
 			name = XIC_xiong_zhengping
 		}
-
 	}
 	division = {
 		name = "120th Division" 
@@ -109,7 +91,6 @@ units = {
 		officer = {
 			name = XIC_chang_jingwu
 		}
-
 	}
 	division = {
 		name = "107th Division" 
@@ -119,7 +100,6 @@ units = {
 		officer = {
 			name = XIC_liu_handong
 		}
-
 	}
 	division = {
 		name = "108th Division" 
@@ -129,7 +109,6 @@ units = {
 		officer = {
 			name = XIC_jiang_weiren
 		}
-
 	}
 	division = {
 		name = "110th Division" 
@@ -139,7 +118,6 @@ units = {
 		officer = {
 			name = XIC_chang_enduo
 		}
-
 	}
 	division = {
 		name = "117th Division" 
@@ -149,7 +127,6 @@ units = {
 		officer = {
 			name = XIC_wu_keren
 		}
-
 	}
 	division = {
 		name = "39th Division"
@@ -159,7 +136,6 @@ units = {
 		officer = {
 			name = XIC_pang_bingxun
 		}
-
 	}
 	division = {
 		name = "42nd Division"
@@ -169,7 +145,6 @@ units = {
 		officer = {
 			name = XIC_feng_qinzai
 		}
-
 	}
 	division = {
 		name = "17th Division"
@@ -179,10 +154,7 @@ units = {
 		officer = {
 			name = XIC_sun_weiru
 		}
-
 	}
-	
-	
 	division = {
 		name = "3rd Cavalry Division" 
 		location = 1647 
@@ -191,7 +163,6 @@ units = {
 		officer = {
 			name = XIC_meng_qingpeng
 		}
-
 	}
 	division = {
 		name = "6th Cavalry Division" 
@@ -201,7 +172,6 @@ units = {
 		officer = {
 			name = XIC_bai_fengxiang
 		}
-
 	}
 	division = {
 		name = "7th Cavalry Division" 
@@ -211,7 +181,6 @@ units = {
 		officer = {
 			name = XIC_men_bingyue
 		}
-
 	}
 	division = {
 		name = "10th Cavalry Division" 
@@ -221,12 +190,8 @@ units = {
 		officer = {
 			name = XIC_tan_zixin
 		}
-
 	}
-
 }
-
-### STARTING PRODUCTION ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

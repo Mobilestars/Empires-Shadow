@@ -1,7 +1,3 @@
-
-# Bulgaria - Stahlpakt Integration
-# Add Bulgaria to the Stahlpakt at game start
-
 capital = 48
 
 set_politics = {
@@ -37,5 +33,4 @@ create_country_leader = {
 	ideology = neutrality
 	traits = { army_chief_defensive }
 }
-
 add_to_faction = GER

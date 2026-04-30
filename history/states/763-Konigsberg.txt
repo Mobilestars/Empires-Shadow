@@ -3,19 +3,15 @@ state = {
 	name = "STATE_763"
 	manpower = 2140234
 	state_category = city
-
 	history = {
-
 		owner = GER
 		add_core_of = GER
 		add_core_of = PRE
-		
 		victory_points = {
-			6332 10 # Königsberg
+			6332 10
 		}
-
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 3
 			industrial_complex = 2
 			anti_air_building = 5
 			6332 = {
@@ -25,10 +21,8 @@ state = {
 			air_base = 6
 		}
 	}
-
 	provinces = {
 		281 348 395 3384 6332 11265
 	}
-
 	local_supplies = 0.0 
 }

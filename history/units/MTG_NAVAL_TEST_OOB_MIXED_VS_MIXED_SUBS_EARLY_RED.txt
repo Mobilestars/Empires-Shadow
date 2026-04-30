@@ -1,25 +1,23 @@
-﻿####### OOB #######
+﻿
 units = {
-	##### NAVAL UNITS #####
-	### HOME COMMAND ###
 	fleet = {
 		name = "Mixed Fleet Early"
-		naval_base = 7660 # Scapa Flow
+		naval_base = 7660
 		task_force = {				
-			name = "Red Fleet"					# CO: Forbes	
-			location = 7660 # Scapa Flow
+			name = "Red Fleet"
+			location = 7660
 			ship = { name = "Red CV1" definition = carrier equipment = { carrier_1 = { amount = 1 owner = DOM } } 
 				air_wings = {
-					cv_fighter_equipment_1 =  { owner = "DOM" amount = 18 }				# Sea Gladiator (REVISIT -- can be variant)
-					cv_nav_bomber_equipment_1 =  { owner = "DOM" amount = 18 }			# Swordfish
-					cv_CAS_equipment_1 =  { owner = "DOM" amount = 9 }					# Blackburn Skua
+					cv_fighter_equipment_1 =  { owner = "DOM" amount = 18 }
+					cv_nav_bomber_equipment_1 =  { owner = "DOM" amount = 18 }
+					cv_CAS_equipment_1 =  { owner = "DOM" amount = 9 }
 				}
 			}
 			ship = { name = "Red CV2" definition = carrier equipment = { carrier_1 = { amount = 1 owner = DOM } } 
 				air_wings = {
-					cv_fighter_equipment_1 =  { owner = "DOM" amount = 18 }				# Sea Gladiator (REVISIT -- can be variant)
-					cv_nav_bomber_equipment_1 =  { owner = "DOM" amount = 18 }			# Swordfish
-					cv_CAS_equipment_1 =  { owner = "DOM" amount = 9 }					# Blackburn Skua
+					cv_fighter_equipment_1 =  { owner = "DOM" amount = 18 }
+					cv_nav_bomber_equipment_1 =  { owner = "DOM" amount = 18 }
+					cv_CAS_equipment_1 =  { owner = "DOM" amount = 9 }
 				}
 			}		
 			ship = { name = "Red CA1" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = DOM } } }

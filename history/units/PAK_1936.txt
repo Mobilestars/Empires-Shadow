@@ -1,12 +1,7 @@
-﻿### Pakistan OOB ###
-
+﻿
 division_template = {
-
 	name = "Infantry Division"
-	division_names_group = BRENGL_INF_01		# Uses generic English templates
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
+	division_names_group = BRENGL_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -23,15 +18,9 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 division_template = {
-
 	name = "Armoured Division"
-	division_names_group = BRENGL_ARM_01		# Uses generic English templates
-
-	# Space Marines ~20W (9 inf + 1 Medium SP-Artillery)
-	# Tank design: cap speed 4 km/h, Wet Ammo (Reliability), Howitzer (Soft Attack)
-	# SPG is ~20% cheaper than regular tanks
+	division_names_group = BRENGL_ARM_01
 	regiments = {
 		infantry            = { x = 0 y = 0 }
 		infantry            = { x = 0 y = 1 }
@@ -49,21 +38,9 @@ division_template = {
 		maintenance_company = { x = 0 y = 1 }
 		anti_air            = { x = 0 y = 2 }
 	}}
-
 units = {}
-	#India Command
-	
-	#Northern Command
-	
-	
-
 air_wings = {
-	### AHQ India
-	
 }
-
-
-##### Starting Production #####
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

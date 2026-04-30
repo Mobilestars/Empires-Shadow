@@ -1,11 +1,4 @@
-# EmpiresShadow on_actions additions
-# This file ADDS to vanilla on_actions (does not replace them).
-
 on_actions = {
-
-	# Fires once at game start, after all history files have been processed.
-	# Re-adds SOV and ITA to the Stahlpakt if they were auto-kicked by
-	# generic joining-rule triggers during history loading.
 	on_startup = {
 		effect = {
 			if = {
@@ -31,12 +24,8 @@ on_actions = {
             }
 		}
 	}
-
-	# Fires when a country leaves a faction.
-	# ROOT = the country leaving, FROM = the faction leader.
 	on_leave_faction = {
 		effect = {
-			# SOV cannot leave the Stahlpakt while Lenin is still in power.
 			if = {
 				limit = {
 					ROOT = { original_tag = SOV }
@@ -51,8 +40,6 @@ on_actions = {
 			}
 		}
 	}
-
-	# Weekly check – re-add SOV to Stahlpakt while Lenin lives (backup enforcement).
 	on_weekly_SOV = {
 		effect = {
 			if = {
@@ -69,9 +56,6 @@ on_actions = {
 			}
 		}
 	}
-
-	# Weekly check – re-add ITA to Stahlpakt in the early game (backup enforcement).
-	# Stops after 1938 so ITA can choose its own path via events/focuses after that.
 	on_weekly_ITA = {
 		effect = {
 			if = {
@@ -84,9 +68,6 @@ on_actions = {
 			}
 		}
 	}
-
-    # Weekly check – re-add BUL to Stahlpakt in the early game (backup enforcement).
-    # Stops after 1938 so BUL can choose its own path via events/focuses after that.
     on_weekly_BUL = {
         effect = {
             if = {
@@ -99,10 +80,6 @@ on_actions = {
             }
         }
     }
-
-	# ── WWI Fatigue: "Echoes of the Trenches" ───────────────────────────────
-	# Added once at game start to all nations that fought in WWI.
-	# Permanently removed via ES_war_support.1 when that nation reaches 100% war support.
 	on_startup = {
 		effect = {
 			every_country = {
@@ -126,10 +103,6 @@ on_actions = {
 			}
 		}
 	}
-
-	# ── Money System: Initialise money for every country ─────────────────────
-	# Start capital is population-based using owned state manpower declarations.
-	# State manpower is in people, so convert to thousands.
 	on_startup = {
 		effect = {
 			every_country = {
@@ -150,18 +123,12 @@ on_actions = {
 				add_to_variable = { var = total_population_k value = non_core_population_k }
 				if = {
 					limit = { check_variable = { total_population_k <= 0 } }
-					# Fallback when state manpower is not exposed in script evaluation.
 					set_variable = { var = total_population_k value = manpower }
 					divide_variable = { var = total_population_k value = 1000 }
 				}
-
-				# Tune this multiplier to scale starting treasury with population.
 				set_variable = { var = start_capital value = total_population_k }
 				multiply_variable = { var = start_capital value = 1.0 }
-
 				set_variable = { var = money value = start_capital }
-
-				# ── Building tracker: snapshot current counts so first month charges nothing ──
 				set_variable = { var = es_prev_civfac  value = num_of_civilian_factories }
 				set_variable = { var = es_prev_milfac  value = num_of_military_factories }
 				set_variable = { var = es_prev_dock    value = num_of_dockyards }
@@ -179,13 +146,10 @@ on_actions = {
 					ROOT = { add_to_variable = { var = es_prev_fuelsilo value = fuel_silo           } }
 					ROOT = { add_to_variable = { var = es_prev_radar    value = radar_station       } }
 				}
-
-				# Populate current monthly values immediately so a fresh game does not show 0/0 until the first monthly tick.
 				set_variable = { var = fielded_manpower_k value = 0 }
 				set_variable = { var = training_manpower_k value = 0 }
 				set_variable = { var = free_manpower_k value = manpower }
 				divide_variable = { var = free_manpower_k value = 1000 }
-
 				every_unit_leader = {
 					every_led_unit = {
 						if = { limit = { has_type = armored }
@@ -211,7 +175,6 @@ on_actions = {
 						}
 					}
 				}
-
 				every_training_unit = {
 					if = { limit = { has_type = armored }
 						ROOT = { add_to_variable = { var = training_manpower_k value = 10 } }
@@ -226,7 +189,6 @@ on_actions = {
 						ROOT = { add_to_variable = { var = training_manpower_k value = 8 } }
 					}
 				}
-
 				if = {
 					limit = { check_variable = { total_population_k <= 0 } }
 					set_variable = { var = total_population_k value = free_manpower_k }
@@ -238,7 +200,6 @@ on_actions = {
 						set_variable = { var = money value = start_capital }
 					}
 				}
-
 				set_variable = { var = taxable_population_k value = total_population_k }
 				subtract_from_variable = { var = taxable_population_k value = fielded_manpower_k }
 				subtract_from_variable = { var = taxable_population_k value = training_manpower_k }
@@ -246,18 +207,14 @@ on_actions = {
 					limit = { check_variable = { taxable_population_k < 0 } }
 					set_variable = { var = taxable_population_k value = 0 }
 				}
-
 				set_variable = { var = monthly_income value = taxable_population_k }
 				multiply_variable = { var = monthly_income value = 0.005 }
 				set_variable = { var = es_income_taxes value = monthly_income }
-
-				# ── Factory income (civilian factories produce, +8/month each) ───────────
 				set_variable = { var = es_civfac_curr value = num_of_civilian_factories }
 				set_variable = { var = es_fac_income  value = es_civfac_curr }
 				multiply_variable = { var = es_fac_income value = 8 }
 				set_variable = { var = es_income_civ_factories value = es_fac_income }
 				add_to_variable = { var = monthly_income value = es_fac_income }
-
 				set_variable = { var = monthly_wages value = 0 }
 				every_unit_leader = {
 					every_led_unit = {
@@ -284,7 +241,6 @@ on_actions = {
 						}
 					}
 				}
-
 				every_training_unit = {
 					if = { limit = { has_type = armored }
 						ROOT = { add_to_variable = { var = monthly_wages value = 7 } }
@@ -300,8 +256,6 @@ on_actions = {
 					}
 				}
 				set_variable = { var = es_expense_divisions value = monthly_wages }
-
-				# ── Factory upkeep (mil factories consume resources, -5/month; dockyards -4) ─
 				set_variable = { var = es_milfac_curr value = num_of_military_factories }
 				set_variable = { var = es_dock_curr   value = num_of_dockyards }
 				set_variable = { var = es_expense_military_factories value = es_milfac_curr }
@@ -312,11 +266,9 @@ on_actions = {
 				set_variable = { var = es_dock_cost value = es_expense_dockyards }
 				add_to_variable = { var = es_fac_cost value = es_dock_cost }
 				add_to_variable = { var = monthly_wages value = es_fac_cost }
-
 				set_variable = { var = es_expense_build_military_factories value = 0 }
 				set_variable = { var = es_expense_build_dockyards value = 0 }
 				set_variable = { var = es_expense_build_total value = 0 }
-
 				set_variable = { var = monthly_net value = monthly_income }
 				subtract_from_variable = { var = monthly_net value = monthly_wages }
 				subtract_from_variable = { var = monthly_net value = es_expense_build_total }
@@ -328,28 +280,14 @@ on_actions = {
 			}
 		}
 	}
-
-	# ── War Support tier spirits ─────────────────────────────────────────────
-	# Fires every month for every country to update war support penalty/bonus spirits.
 	on_monthly_pulse = {
 		events = {
 			ES_war_support.1
 		}
 	}
-
-	# ── Money System: Monthly Tax Income & Division Wages ────────────────────
-	# Tax base  = owned core + non-core state manpower population
-	#             MINUS free manpower pool
-	#             MINUS fielded soldiers
-	#             MINUS soldiers in training.
-	#   → Free manpower pool are conscripted reserves – they don't pay civilian taxes.
-	#   → Soldiers in training & in field pay no civilian tax but DO draw army wages.
-	# Rate: 0.005 Dollar per 1 000 taxable civilians per month.
-	# Division wages are based on template type (armoured > mechanised > motorised > infantry).
 	on_monthly = {
 		effect = {
 			every_country = {
-				# Existing saves: initialize once if startup init was never run.
 				if = {
 					limit = {
 						NOT = { check_variable = { money_initialized >= 1 } }
@@ -374,7 +312,6 @@ on_actions = {
 						set_variable = { var = total_population_k value = manpower }
 						divide_variable = { var = total_population_k value = 1000 }
 					}
-
 					set_variable = { var = start_capital value = total_population_k }
 					multiply_variable = { var = start_capital value = 1.0 }
 					set_variable = { var = money value = start_capital }
@@ -387,7 +324,6 @@ on_actions = {
 					set_variable = { var = es_expense_build_military_factories value = 0 }
 					set_variable = { var = es_expense_build_dockyards value = 0 }
 					set_variable = { var = es_expense_build_total value = 0 }
-					# Also init building trackers so the first monthly charge is zero
 					set_variable = { var = es_prev_civfac  value = num_of_civilian_factories }
 					set_variable = { var = es_prev_milfac  value = num_of_military_factories }
 					set_variable = { var = es_prev_dock    value = num_of_dockyards }
@@ -406,8 +342,6 @@ on_actions = {
 						ROOT = { add_to_variable = { var = es_prev_radar    value = radar_station      } }
 					}
 				}
-
-				# ── 1. Total population from owned state manpower ────────────
 				set_variable = { var = core_population_k value = 0 }
 				set_variable = { var = non_core_population_k value = 0 }
 				every_owned_state = {
@@ -428,14 +362,10 @@ on_actions = {
 					set_variable = { var = total_population_k value = manpower }
 					divide_variable = { var = total_population_k value = 1000 }
 				}
-
-				# ── 2. Estimate soldiers not paying civilian taxes ───────────
-				# Values are manpower in thousands per division (k).
 				set_variable = { var = fielded_manpower_k value = 0 }
 				set_variable = { var = training_manpower_k value = 0 }
 				set_variable = { var = free_manpower_k value = manpower }
 				divide_variable = { var = free_manpower_k value = 1000 }
-
 				every_unit_leader = {
 					every_led_unit = {
 						if = { limit = { has_type = armored }
@@ -461,7 +391,6 @@ on_actions = {
 						}
 					}
 				}
-
 				every_training_unit = {
 					if = { limit = { has_type = armored }
 						ROOT = { add_to_variable = { var = training_manpower_k value = 10 } }
@@ -476,16 +405,12 @@ on_actions = {
 						ROOT = { add_to_variable = { var = training_manpower_k value = 8 } }
 					}
 				}
-
 				if = {
 					limit = { check_variable = { total_population_k <= 0 } }
 					set_variable = { var = total_population_k value = free_manpower_k }
 					add_to_variable = { var = total_population_k value = fielded_manpower_k }
 					add_to_variable = { var = total_population_k value = training_manpower_k }
 				}
-
-				# ── 3. Taxable civilians = total_pop − non-taxable military ──
-				# All components are in thousands here.
 				set_variable = { var = taxable_population_k value = total_population_k }
 				subtract_from_variable = { var = taxable_population_k value = fielded_manpower_k }
 				subtract_from_variable = { var = taxable_population_k value = training_manpower_k }
@@ -493,25 +418,15 @@ on_actions = {
 					limit = { check_variable = { taxable_population_k < 0 } }
 					set_variable = { var = taxable_population_k value = 0 }
 				}
-
-				# ── 4. Tax income ────────────────────────────────────────────
 				set_variable = { var = monthly_income value = taxable_population_k }
 				multiply_variable = { var = monthly_income value = 0.005 }
 				set_variable = { var = es_income_taxes value = monthly_income }
-
-				# ── 4b. Factory income (civ factories, +8/month each) ──────────────
 				set_variable = { var = es_civfac_curr value = num_of_civilian_factories }
 				set_variable = { var = es_fac_income  value = es_civfac_curr }
 				multiply_variable = { var = es_fac_income value = 8 }
 				set_variable = { var = es_income_civ_factories value = es_fac_income }
 				add_to_variable = { var = monthly_income value = es_fac_income }
-
-				# ── 5. Division wages (deployed + training) ──────────────────
-				# Wage per division depends on template type, which reflects
-				# battalion composition (e.g. a template heavy with tanks costs more).
 				set_variable = { var = monthly_wages value = 0 }
-
-				# Deployed divisions – iterate all generals/field-marshals and their led units
 				every_unit_leader = {
 					every_led_unit = {
 						if = { limit = { has_type = armored }
@@ -532,13 +447,11 @@ on_actions = {
 						else_if = { limit = { has_type = garrison }
 							ROOT = { add_to_variable = { var = monthly_wages value = 1 } }
 						}
-						else = { # infantry and all others
+						else = {
 							ROOT = { add_to_variable = { var = monthly_wages value = 3 } }
 						}
 					}
 				}
-
-				# Divisions in training – half the deployed wage
 				every_training_unit = {
 					if = { limit = { has_type = armored }
 						ROOT = { add_to_variable = { var = monthly_wages value = 7 } }
@@ -554,8 +467,6 @@ on_actions = {
 					}
 				}
 				set_variable = { var = es_expense_divisions value = monthly_wages }
-
-				# ── 5b. Factory upkeep (mil factories -5/month; dockyards -4/month) ──
 				set_variable = { var = es_milfac_curr value = num_of_military_factories }
 				set_variable = { var = es_dock_curr   value = num_of_dockyards }
 				set_variable = { var = es_expense_military_factories value = es_milfac_curr }
@@ -566,57 +477,43 @@ on_actions = {
 				set_variable = { var = es_dock_cost value = es_expense_dockyards }
 				add_to_variable = { var = es_fac_cost value = es_dock_cost }
 				add_to_variable = { var = monthly_wages value = es_fac_cost }
-
 				set_variable = { var = es_expense_build_military_factories value = 0 }
 				set_variable = { var = es_expense_build_dockyards value = 0 }
 				set_variable = { var = es_expense_build_total value = 0 }
-
-				# ── 6. Apply net change ──────────────────────────────────────
 				add_to_variable = { var = money value = monthly_income }
 				subtract_from_variable = { var = money value = monthly_wages }
-
-				# ── 6b. Building construction costs ──────────────────────────
-				# Detect newly completed buildings (current count – last month count).
-				# Conversion is charged at the build rate (can't distinguish the two).
-				# Cost formula: base_cost × 0.02 (1 IC = 0.02 money).
-				#
-				# --- Factories (country-scope triggers) ---
 				set_variable = { var = es_new_civ value = es_civfac_curr }
 				subtract_from_variable = { var = es_new_civ value = es_prev_civfac }
 				if = {
 					limit = { check_variable = { es_new_civ > 0 } }
 					set_variable = { var = es_build_cost value = es_new_civ }
-					multiply_variable = { var = es_build_cost value = 200 }  # 10800 IC × 0.02
+					multiply_variable = { var = es_build_cost value = 200 }
 					add_to_variable = { var = es_expense_build_total value = es_build_cost }
 					subtract_from_variable = { var = money value = es_build_cost }
 				}
 				set_variable = { var = es_prev_civfac value = es_civfac_curr }
-
 				set_variable = { var = es_new_mil value = es_milfac_curr }
 				subtract_from_variable = { var = es_new_mil value = es_prev_milfac }
 				if = {
 					limit = { check_variable = { es_new_mil > 0 } }
 					set_variable = { var = es_build_cost value = es_new_mil }
-					multiply_variable = { var = es_build_cost value = 150 }  # 7200 IC × 0.02
+					multiply_variable = { var = es_build_cost value = 150 }
 					set_variable = { var = es_expense_build_military_factories value = es_build_cost }
 					add_to_variable = { var = es_expense_build_total value = es_build_cost }
 					subtract_from_variable = { var = money value = es_build_cost }
 				}
 				set_variable = { var = es_prev_milfac value = es_milfac_curr }
-
 				set_variable = { var = es_new_dock value = es_dock_curr }
 				subtract_from_variable = { var = es_new_dock value = es_prev_dock }
 				if = {
 					limit = { check_variable = { es_new_dock > 0 } }
 					set_variable = { var = es_build_cost value = es_new_dock }
-					multiply_variable = { var = es_build_cost value = 130 }  # 6400 IC × 0.02
+					multiply_variable = { var = es_build_cost value = 130 }
 					set_variable = { var = es_expense_build_dockyards value = es_build_cost }
 					add_to_variable = { var = es_expense_build_total value = es_build_cost }
 					subtract_from_variable = { var = money value = es_build_cost }
 				}
 				set_variable = { var = es_prev_dock value = es_dock_curr }
-
-				# --- Other buildings (state iteration) ---
 				set_variable = { var = es_infra_curr    value = 0 }
 				set_variable = { var = es_airbase_curr  value = 0 }
 				set_variable = { var = es_antiair_curr  value = 0 }
@@ -631,84 +528,73 @@ on_actions = {
 					ROOT = { add_to_variable = { var = es_fuelsilo_curr value = fuel_silo          } }
 					ROOT = { add_to_variable = { var = es_radar_curr    value = radar_station      } }
 				}
-
 				set_variable = { var = es_new_infra value = es_infra_curr }
 				subtract_from_variable = { var = es_new_infra value = es_prev_infra }
 				if = {
 					limit = { check_variable = { es_new_infra > 0 } }
 					set_variable = { var = es_build_cost value = es_new_infra }
-					multiply_variable = { var = es_build_cost value = 120 }  # 6000 IC × 0.02
+					multiply_variable = { var = es_build_cost value = 120 }
 					add_to_variable = { var = es_expense_build_total value = es_build_cost }
 					subtract_from_variable = { var = money value = es_build_cost }
 				}
 				set_variable = { var = es_prev_infra value = es_infra_curr }
-
 				set_variable = { var = es_new_airbase value = es_airbase_curr }
 				subtract_from_variable = { var = es_new_airbase value = es_prev_airbase }
 				if = {
 					limit = { check_variable = { es_new_airbase > 0 } }
 					set_variable = { var = es_build_cost value = es_new_airbase }
-					multiply_variable = { var = es_build_cost value = 25 }   # 1250 IC × 0.02
+					multiply_variable = { var = es_build_cost value = 25 }
 					add_to_variable = { var = es_expense_build_total value = es_build_cost }
 					subtract_from_variable = { var = money value = es_build_cost }
 				}
 				set_variable = { var = es_prev_airbase value = es_airbase_curr }
-
 				set_variable = { var = es_new_antiair value = es_antiair_curr }
 				subtract_from_variable = { var = es_new_antiair value = es_prev_antiair }
 				if = {
 					limit = { check_variable = { es_new_antiair > 0 } }
 					set_variable = { var = es_build_cost value = es_new_antiair }
-					multiply_variable = { var = es_build_cost value = 50 }   # 2500 IC × 0.02
+					multiply_variable = { var = es_build_cost value = 50 }
 					add_to_variable = { var = es_expense_build_total value = es_build_cost }
 					subtract_from_variable = { var = money value = es_build_cost }
 				}
 				set_variable = { var = es_prev_antiair value = es_antiair_curr }
-
 				set_variable = { var = es_new_refinery value = es_refinery_curr }
 				subtract_from_variable = { var = es_new_refinery value = es_prev_refinery }
 				if = {
 					limit = { check_variable = { es_new_refinery > 0 } }
 					set_variable = { var = es_build_cost value = es_new_refinery }
-					multiply_variable = { var = es_build_cost value = 290 }  # 14500 IC × 0.02
+					multiply_variable = { var = es_build_cost value = 290 }
 					add_to_variable = { var = es_expense_build_total value = es_build_cost }
 					subtract_from_variable = { var = money value = es_build_cost }
 				}
 				set_variable = { var = es_prev_refinery value = es_refinery_curr }
-
 				set_variable = { var = es_new_fuelsilo value = es_fuelsilo_curr }
 				subtract_from_variable = { var = es_new_fuelsilo value = es_prev_fuelsilo }
 				if = {
 					limit = { check_variable = { es_new_fuelsilo > 0 } }
 					set_variable = { var = es_build_cost value = es_new_fuelsilo }
-					multiply_variable = { var = es_build_cost value = 100 }  # 5000 IC × 0.02
+					multiply_variable = { var = es_build_cost value = 100 }
 					add_to_variable = { var = es_expense_build_total value = es_build_cost }
 					subtract_from_variable = { var = money value = es_build_cost }
 				}
 				set_variable = { var = es_prev_fuelsilo value = es_fuelsilo_curr }
-
 				set_variable = { var = es_new_radar value = es_radar_curr }
 				subtract_from_variable = { var = es_new_radar value = es_prev_radar }
 				if = {
 					limit = { check_variable = { es_new_radar > 0 } }
 					set_variable = { var = es_build_cost value = es_new_radar }
-					multiply_variable = { var = es_build_cost value = 70 }   # 3375 IC × 0.02
+					multiply_variable = { var = es_build_cost value = 70 }
 					add_to_variable = { var = es_expense_build_total value = es_build_cost }
 					subtract_from_variable = { var = money value = es_build_cost }
 				}
 				set_variable = { var = es_prev_radar value = es_radar_curr }
-
-				# ── Clamp, net display and topbar formatting ─────────────────
 				if = {
 					limit = { check_variable = { money < 0 } }
 					set_variable = { var = money value = 0 }
 				}
-				# Store net for tooltip display
 				set_variable = { var = monthly_net value = monthly_income }
 				subtract_from_variable = { var = monthly_net value = monthly_wages }
 				subtract_from_variable = { var = monthly_net value = es_expense_build_total }
-
-				# Display variables for k/m topbar formatting
 				set_variable = { var = money_k value = money }
 				divide_variable = { var = money_k value = 1000 }
 				set_variable = { var = money_m value = money }
@@ -716,6 +602,4 @@ on_actions = {
 			}
 		}
 	}
-
 }
-

@@ -1,10 +1,6 @@
 ﻿division_template = {
-
-	name = "Paidala Dibhijana"		# Represents groupings of independent Nepalese battalions	
+	name = "Paidala Dibhijana"
 	division_names_group = NEP_MTN_01
-
-	# Special Forces: Mountaineers + Line Arty ~30W
-	# Needs: Special Forces Doctrine (AaT) + Fire Concentration sub-doctrine
 	regiments = {
 		mountaineers      = { x = 0 y = 0 }
 		mountaineers      = { x = 0 y = 1 }
@@ -25,13 +21,8 @@
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Royal Nepalese Division"		# Represents the Nepali royal guards division
-
+	name = "Royal Nepalese Division"
 	division_names_group = NEP_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -48,12 +39,9 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 units = {
-	##### Sahi Nepali Sena #####
 	division = {
-		#name = "1 Nepali Dibhijana"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
@@ -61,11 +49,9 @@ units = {
 		division_template = "Paidala Dibhijana"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "2 Nepali Dibhijana"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -73,12 +59,8 @@ units = {
 		division_template = "Paidala Dibhijana"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
-
 	}
 }
-
-### No notable air forces until 1960s ###
-
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

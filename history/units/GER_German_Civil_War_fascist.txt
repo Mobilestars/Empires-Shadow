@@ -1,11 +1,6 @@
 ﻿division_template = {
-
 	name = "SS-Sturmbrigade"
-
 	division_names_group = GER_Inf_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -22,7 +17,6 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 units = {
 	division = {
 		name = "1. SS-Sturmbrigade"
@@ -36,7 +30,7 @@ units = {
 	}
 	division = {
 		name = "3. SS-Sturmbrigade"
-		location = 708  # Augsburg
+		location = 708
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
@@ -46,17 +40,17 @@ units = {
 	}
 	division = {
 		name = "5. SS-Sturmbrigade"
-		location = 692  # Munich
+		location = 692
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "6. SS-Sturmbrigade"
-		location = 692  # Munich
+		location = 692
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "7. SS-Sturmbrigade"
-		location = 11544  # Nuremberg
+		location = 11544
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
@@ -86,7 +80,7 @@ units = {
 	}
 	division = {
 		name = "13. SS-Sturmbrigade"
-		location = 6521 # Berlin
+		location = 6521
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
@@ -96,22 +90,22 @@ units = {
 	}
 	division = {
 		name = "15. SS-Sturmbrigade"
-		location = 3561  # Erfurt
+		location = 3561
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "16. SS-Sturmbrigade"
-		location = 3561  # Erfurt
+		location = 3561
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "17. SS-Sturmbrigade"
-		location = 425  # Weimar
+		location = 425
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "18. SS-Sturmbrigade"
-		location = 425  # Weimar
+		location = 425
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
@@ -121,7 +115,7 @@ units = {
 	}
 	division = {
 		name = "20. SS-Sturmbrigade"
-		location = 3522  # Magdeburg
+		location = 3522
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
@@ -141,12 +135,12 @@ units = {
 	}
 	division = {
 		name = "24. SS-Sturmbrigade"
-		location = 11305  # Lubeck
+		location = 11305
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "25. SS-Sturmbrigade 'Leibstandarte Adolf Hitler'"
-		location = 9471  # Chemnitz
+		location = 9471
 		division_template = "SS-Sturmbrigade"
 	}
 }

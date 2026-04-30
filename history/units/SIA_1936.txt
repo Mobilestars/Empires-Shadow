@@ -1,11 +1,6 @@
 ﻿division_template = {
-
 	name = "Infantry Division"		
-
 	division_names_group = SIA_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -22,14 +17,9 @@
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
-
 units = {
-	######## LAND OOB ########
-	##### Royal Siamese Army #####
 	division = {
-		#name = "1st Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
@@ -37,11 +27,9 @@ units = {
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "2nd Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -49,11 +37,9 @@ units = {
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "3rd Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
@@ -61,11 +47,9 @@ units = {
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
 	division = {
-		#name = "4th Division"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
@@ -73,10 +57,8 @@ units = {
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
-
 	}
 }
-
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

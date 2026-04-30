@@ -1,4 +1,4 @@
-﻿air_wings = { #BBA-Exculsive OOB 
+﻿air_wings = {
 	2 = {
 		large_plane_airframe_3 = {
 			amount = 20
@@ -6,9 +6,9 @@
 			version_name = "Aquila Magna"
 		}
 		name = "Angeli Mortis"
-		ace = { # Order is important. Ace will be assigned to the wing above (large_plane_airframe_3).
+		ace = {
 			modifier = "bomber_unique"
-			name = "Carlo" #Carlo Emmanuele (historically torpedo bomber)
+			name = "Carlo"
 			surname = "Buscaglia"
 			callsign = "Anserem Mortis"
 		}

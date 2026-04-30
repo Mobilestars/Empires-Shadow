@@ -1,10 +1,6 @@
 ﻿division_template = {
-
-	name = "Juntuán"				# Represents: two-division infantry corps (generally poorly-equipped, but decent experience),
+	name = "Juntuán"
 	division_names_group = PRC_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -22,12 +18,8 @@
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
-	name = "Renmin Jundui"				# Represents three-column local militia groups (Triangular Corps); poorly-equipped, lowest experience
+	name = "Renmin Jundui"
 	division_names_group = PRC_GAR_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -44,16 +36,13 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		anti_air  = { x = 0 y = 2 }
 	}}
-
 units = {
-	##### Eighth Route Army (CO: Mao Zedong, Zhu De) #####
 	division = {
 		name = "115 Bubing Shi"
 		location = 5007
 		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "120 Bubing Shi"
@@ -61,7 +50,6 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
 	division = {
 		name = "129 Bubing Shi"
@@ -69,63 +57,53 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
 	}
-	
-	### Provincial Forces ###
-	division = { #  "1 Shensi Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
 		location = 12156
-		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		division_template = "Renmin Jundui"
 		start_equipment_factor = 0.5
-
 	}
-	division = { #  "2 Shensi Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
 		location = 10733
-		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		division_template = "Renmin Jundui"
 		start_equipment_factor = 0.5
-
 	}
-	division = { #  "3 Shensi Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
 		location = 10733
-		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		division_template = "Renmin Jundui"
 		start_equipment_factor = 0.5
-
 	}
-	division = { #  "4 Shensi Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
 		location = 8049
-		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		division_template = "Renmin Jundui"
 		start_equipment_factor = 0.5
-
 	}
-	division = { #  "5 Shensi Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
 		}
 		location = 8049
-		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		division_template = "Renmin Jundui"
 		start_equipment_factor = 0.5
-
 	}
 }
-
-##### STARTING PRODUCTION #####
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

@@ -1,10 +1,6 @@
 ﻿division_template = {
-
 	name = "Juntuán"		
 	division_names_group = XSM_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -22,12 +18,8 @@
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
 	name = "Juntuán Reformed" 	
 	division_names_group = XSM_INF_01
-
-	# Standard Infantry 18W (9 inf)
-	# No special doctrine required.
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -45,13 +37,8 @@ division_template = {
 		anti_air  = { x = 0 y = 2 }
 	}}
 division_template = {
-
 	name = "Qibing Jun" 	
 	division_names_group = XSM_CAV_01
-
-	# Elite Motorized/Mechanized 18W
-	# Speed: design all vehicles to exactly 8 km/h (Mech Inf Tier 1 speed)
-	# Upgrade motorized -> mechanized when available
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -69,8 +56,6 @@ division_template = {
 		logistics_company   = { x = 0 y = 2 }
 		maintenance_company = { x = 0 y = 3 }
 	}}
-
-
 units = {
 	division = { 
 		name = "Yushu Jingbei"
@@ -78,7 +63,6 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-
 	}
 	division = { 
 		name = "Dulan Jingbei"
@@ -86,7 +70,6 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-
 	}
 	division = { 
 		name = "Labrang Jingbei"
@@ -94,14 +77,12 @@ units = {
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-
 	}
 	division = {
 		name = "Xining Jingbei" 
 		location = 12732 
 		division_template = "Juntuán"		
 		start_equipment_factor = 0.3
-
 	}
 	division = {
 		name = "1st South Qinghai Guard Brigade" 
@@ -111,7 +92,6 @@ units = {
 		officer = {
 			name = XSM_ma_biao
 		}
-
 	}
 	division = { 
 		name = "100th Cavalry Brigade"
@@ -122,7 +102,6 @@ units = {
 		officer = {
 			name = XSM_ma_pu
 		}
-
 	}
 	division = { 
 		name = "101st Cavalry Brigade"
@@ -130,11 +109,8 @@ units = {
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
-
 	}
 }
-
-### STARTING PRODUCTION ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
