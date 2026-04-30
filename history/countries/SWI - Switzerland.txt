@@ -1,3 +1,4 @@
+
 capital = 147 # Switzerland
 
 set_politics = {
@@ -12,6 +13,19 @@ set_popularities = {
 	fascism = 15
 	communism = 5
 	neutrality = 5
+	}
+
+	create_country_leader = {
+		name = "Hans Muster"
+		desc = "POLITICS_HANS_MUSTER_DESC"
+		picture = "GFX_portrait_SWI_hans_muster"
+		expire = "1965.1.1"
+		ideology = neutrality
+		traits = { SWI_commander_in_chief }
+	}
+	traits = {
+		parliamentarist
+	}
 }
 
 set_research_slots = 5

@@ -1,0 +1,4 @@
+# Kingdom of Bavaria
+# Tag: BAV
+color = { 0 0 255 }
+capital = 53

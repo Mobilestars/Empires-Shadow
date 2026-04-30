@@ -1,4 +1,41 @@
+
 # Bulgaria - Stahlpakt Integration
 # Add Bulgaria to the Stahlpakt at game start
+
+capital = 48
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.1.22"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 10
+	fascism = 30
+	neutrality = 55
+	communism = 5
+}
+
+create_country_leader = {
+	name = "Boris III"
+	desc = "POLITICS_BORIS_III_DESC"
+	picture = "GFX_portrait_BUL_boris_iii"
+	expire = "1965.1.1"
+	ideology = neutrality
+	traits = {
+		regal_authority
+	}
+}
+
+create_country_leader = {
+	name = "Ivan Ivanov"
+	desc = "POLITICS_IVAN_IVANOV_DESC"
+	picture = "GFX_portrait_BUL_ivan_ivanov"
+	expire = "1965.1.1"
+	ideology = neutrality
+	traits = { army_chief_defensive }
+}
 
 add_to_faction = GER

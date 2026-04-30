@@ -1,0 +1,20 @@
+l_english:
+ GER_revolt_bavaria_title:0 "Bavarian Revolt!"
+ GER_revolt_bavaria_desc:0 "Bavaria has declared its independence from the German Empire. The Free Kingdom of Bavaria is proclaimed."
+ GER_revolt_bavaria_option:0 "A new kingdom rises."
+
+ GER_revolt_baden_title:0 "Baden-Württemberg Revolt!"
+ GER_revolt_baden_desc:0 "Baden-Württemberg has broken away from the German Empire and declared independence."
+ GER_revolt_baden_option:0 "A new kingdom rises."
+
+ GER_revolt_luxembourg_title:0 "Luxembourg Revolt!"
+ GER_revolt_luxembourg_desc:0 "Luxembourg has seized the opportunity to break free from German rule."
+ GER_revolt_luxembourg_option:0 "A new republic rises."
+
+ GER_revolt_rhenish_title:0 "Rhenish Republic Proclaimed!"
+ GER_revolt_rhenish_desc:0 "The Rhineland has declared itself a republic, independent from the Empire."
+ GER_revolt_rhenish_option:0 "A new republic rises."
+
+ GER_revolt_prussia_title:0 "Prussian Kingdom Restored!"
+ GER_revolt_prussia_desc:0 "Prussia has reasserted its independence and claims its historic lands."
+ GER_revolt_prussia_option:0 "A new kingdom rises."

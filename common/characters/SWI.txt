@@ -1,0 +1,8 @@
+SWI_hans_muster = {
+    name = "Hans Muster"
+    country = SWI
+    picture = GFX_portrait_SWI_hans_muster
+    expire = "1965.1.1"
+    ideology = neutrality
+    traits = { SWI_commander_in_chief }
+}

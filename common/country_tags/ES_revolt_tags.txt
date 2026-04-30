@@ -1,0 +1,4 @@
+BAV = "countries/Kingdom of Bavaria.txt"
+BAD = "countries/Kingdom of Baden-Württemberg.txt"
+RHN = "countries/Rhenish Republic.txt"
+PRU = "countries/Kingdom of Prussia.txt"

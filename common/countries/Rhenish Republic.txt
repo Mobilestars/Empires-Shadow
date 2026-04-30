@@ -1,0 +1,4 @@
+# Rhenish Republic
+# Tag: RHN
+color = { 255 255 0 }
+capital = 42

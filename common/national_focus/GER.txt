@@ -262,6 +262,94 @@ focus_tree = {
 		}
 	}
 
+# Revolten-Fokus nach Innenpolitik
+
+# Revolten-Fokus nach Innenpolitik (nach links verschoben)
+
+focus = {
+	id = GER_start_revolt
+	icon = GFX_focus_generic_civil_war
+	cost = 10
+	prerequisite = { focus = GER_innenpolitik }
+	x = 91
+	y = 1
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+
+# Exklusive Pfade nach Start Revolt
+focus = {
+	id = GER_revolt_bavaria
+	icon = GFX_focus_generic_political_reform
+	cost = 10
+	prerequisite = { focus = GER_start_revolt }
+	mutually_exclusive = { focus = GER_revolt_baden focus = GER_revolt_luxembourg focus = GER_revolt_rhenish focus = GER_revolt_prussia }
+	x = -6
+	y = 1
+	relative_position_id = GER_start_revolt
+	completion_reward = {
+		country_event = GER_revolt_bavaria.1
+	}
+}
+
+focus = {
+	id = GER_revolt_baden
+	icon = GFX_focus_generic_political_reform
+	cost = 10
+	prerequisite = { focus = GER_start_revolt }
+	mutually_exclusive = { focus = GER_revolt_bavaria focus = GER_revolt_luxembourg focus = GER_revolt_rhenish focus = GER_revolt_prussia }
+	x = -2
+	y = 1
+	relative_position_id = GER_start_revolt
+	completion_reward = {
+		country_event = GER_revolt_baden.1
+	}
+}
+
+focus = {
+	id = GER_revolt_luxembourg
+	icon = GFX_focus_generic_political_reform
+	cost = 10
+	prerequisite = { focus = GER_start_revolt }
+	mutually_exclusive = { focus = GER_revolt_bavaria focus = GER_revolt_baden focus = GER_revolt_rhenish focus = GER_revolt_prussia }
+	x = 2
+	y = 1
+	relative_position_id = GER_start_revolt
+	completion_reward = {
+		country_event = GER_revolt_luxembourg.1
+	}
+}
+
+focus = {
+	id = GER_revolt_rhenish
+	icon = GFX_focus_generic_political_reform
+	cost = 10
+	prerequisite = { focus = GER_start_revolt }
+	mutually_exclusive = { focus = GER_revolt_bavaria focus = GER_revolt_baden focus = GER_revolt_luxembourg focus = GER_revolt_prussia }
+	x = 6
+	y = 1
+	relative_position_id = GER_start_revolt
+	completion_reward = {
+		country_event = GER_revolt_rhenish.1
+	}
+}
+
+focus = {
+	id = GER_revolt_prussia
+	icon = GFX_focus_generic_political_reform
+	cost = 10
+	prerequisite = { focus = GER_start_revolt }
+	mutually_exclusive = { focus = GER_revolt_bavaria focus = GER_revolt_baden focus = GER_revolt_luxembourg focus = GER_revolt_rhenish }
+	x = 10
+	y = 1
+	relative_position_id = GER_start_revolt
+	completion_reward = {
+		country_event = GER_revolt_prussia.1
+	}
+}
+
 	# Allgemeiner Einstiegspunkt für alle politischen Wege
 	focus = {
 		id = GER_partei_verstaerkung
@@ -306,7 +394,6 @@ focus_tree = {
 	# PARTEI-STÄRKUNG (gegenseitig exklusiv, für alle sichtbar)
 	###########################
 
-	# Kaiserreich stärken
 	focus = {
 		id = GER_kaiserreich_staerken
 		icon = GFX_focus_ger_the_kaiser
@@ -328,7 +415,6 @@ focus_tree = {
 		}
 	}
 
-	# Demokraten stärken
 	focus = {
 		id = GER_demokraten_staerken
 		icon = GFX_focus_generic_democratic_opposition_support
@@ -349,7 +435,6 @@ focus_tree = {
 		}
 	}
 
-	# Kommunisten stärken
 	focus = {
 		id = GER_kommunisten_staerken
 		icon = GFX_focus_generic_communism_support
@@ -370,7 +455,6 @@ focus_tree = {
 		}
 	}
 
-	# Faschisten stärken
 	focus = {
 		id = GER_faschisten_staerken
 		icon = GFX_focus_ger_the_third_reich
@@ -1377,7 +1461,7 @@ focus_tree = {
 		id = GER_kaiserliches_heer
 		icon = GFX_focus_ger_reichswehr_modernisation
 		cost = 10
-		x = 100
+		x = 116
 		y = 0
 
 		completion_reward = {
@@ -1485,7 +1569,7 @@ focus_tree = {
 		id = GER_kaiserliche_marine
 		icon = GFX_focus_ger_naval_production
 		cost = 10
-		x = 106
+		x = 122
 		y = 0
 
 		completion_reward = {
@@ -1586,7 +1670,7 @@ focus_tree = {
 		id = GER_luftstreitkraefte
 		icon = GFX_focus_ger_secret_rearmament
 		cost = 10
-		x = 112
+		x = 128
 		y = 0
 
 		completion_reward = {
@@ -1680,7 +1764,7 @@ focus_tree = {
 		id = GER_weltpolitik
 		icon = GFX_focus_ger_claims_sudetenland
 		cost = 5
-		x = 90
+		x = 105
 		y = 0
 
 		available = {

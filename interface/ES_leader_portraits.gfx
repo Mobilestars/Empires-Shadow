@@ -56,4 +56,13 @@ spriteTypes = {
         texturefile = "gfx/leaders/CZE/portrait_sergej_vojcechovsky.dds"
     }
 
+        spriteType = {
+            name = "GFX_portrait_SWI_hans_muster"
+            texturefile = "gfx/leaders/SWI/portrait_swi_hans_muster.dds"
+        }
+        spriteType = {
+            name = "GFX_portrait_BUL_ivan_ivanov"
+            texturefile = "gfx/leaders/BUL/portrait_bul_ivan_ivanov.dds"
+        }
+
 }

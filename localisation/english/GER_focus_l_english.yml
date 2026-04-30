@@ -1,4 +1,4 @@
-﻿ l_english:
+﻿l_english:
  # WIRTSCHAFT (Economy)
  GER_wirtschaftswunder:0 "Economic Miracle"
  GER_wirtschaftswunder_desc:0 "Since our victory in the Great War, the German economy has flourished. Let us harness this momentum and press for even greater prosperity for the Fatherland."
@@ -328,3 +328,17 @@
  GER_mittelafrika_idea_desc:0 "The dream of a grand German colonial territory in Central Africa inspires nationalist ambition."
  GER_chemische_industrie_idea:0 "German Chemical Industry"
  GER_chemische_industrie_idea_desc:0 "Germany's world-leading chemical sector provides crucial inputs for the arms industry and agriculture."
+
+ # REVOLT
+ GER_start_revolt:0 "Start Revolt"
+ GER_start_revolt_desc:0 "A wave of separatism and unrest is sweeping the Reich. The time has come to decide which region will break away and lead a new path."
+ GER_revolt_bavaria:0 "Free Kingdom of Bavaria"
+ GER_revolt_bavaria_desc:0 "Bavaria rises in revolt, seeking independence and a new monarchy. The states of Bavaria will be transferred to the new kingdom."
+ GER_revolt_baden:0 "Free Kingdom of Baden-Württemberg"
+ GER_revolt_baden_desc:0 "Baden-Württemberg declares its independence, breaking away from the German Empire."
+ GER_revolt_luxembourg:0 "Luxembourg Revolt"
+ GER_revolt_luxembourg_desc:0 "Luxembourg seizes the moment to break free from German rule."
+ GER_revolt_rhenish:0 "Rhenish Republic"
+ GER_revolt_rhenish_desc:0 "The Rhineland proclaims a republic, separating itself from the Empire."
+ GER_revolt_prussia:0 "Kingdom of Prussia"
+ GER_revolt_prussia_desc:0 "Prussia rises again as a separate kingdom, claiming its historic lands."

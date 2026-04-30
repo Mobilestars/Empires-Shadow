@@ -1,0 +1,4 @@
+# Kingdom of Baden-Württemberg
+# Tag: BAD
+color = { 0 255 0 }
+capital = 50

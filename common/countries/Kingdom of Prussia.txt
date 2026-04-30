@@ -1,0 +1,4 @@
+# Kingdom of Prussia
+# Tag: PRU
+color = { 0 0 0 }
+capital = 55

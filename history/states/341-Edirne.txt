@@ -12,6 +12,8 @@ state= {
 	       owner = BUL
 	       controller = BUL
 	       add_core_of = BUL
+	       add_core_of = GRE
+	       add_core_of = TUR
 	       victory_points = {
 		       11842 5
 	       }

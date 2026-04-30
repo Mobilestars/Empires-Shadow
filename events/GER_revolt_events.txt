@@ -1,0 +1,133 @@
+namespace = GER_revolt
+
+# Free Kingdom of Bavaria
+country_event = {
+    id = GER_revolt_bavaria.1
+    title = GER_revolt_bavaria_title
+    desc = GER_revolt_bavaria_desc
+    picture = GFX_report_event_german_revolt
+    
+    trigger = { }
+    
+    immediate = {
+        transfer_state = 52
+        transfer_state = 53
+        transfer_state = 54
+        if = {
+            limit = { tag != BAV }
+            create_country = BAV
+        }
+        set_player_country = BAV
+    }
+    option = {
+        name = GER_revolt_bavaria_option
+    }
+}
+
+# Free Kingdom of Baden-Württemberg
+country_event = {
+    id = GER_revolt_baden.1
+    title = GER_revolt_baden_title
+    desc = GER_revolt_baden_desc
+    picture = GFX_report_event_german_revolt
+    
+    trigger = { }
+    
+    immediate = {
+        transfer_state = 50
+        transfer_state = 978
+        if = {
+            limit = { tag != BAD }
+            create_country = BAD
+        }
+        set_player_country = BAD
+    }
+    option = {
+        name = GER_revolt_baden_option
+    }
+}
+
+# Luxembourg
+country_event = {
+    id = GER_revolt_luxembourg.1
+    title = GER_revolt_luxembourg_title
+    desc = GER_revolt_luxembourg_desc
+    picture = GFX_report_event_german_revolt
+    
+    trigger = { }
+    
+    immediate = {
+        transfer_state = 8
+        if = {
+            limit = { tag != LUX }
+            create_country = LUX
+        }
+        set_player_country = LUX
+    }
+    option = {
+        name = GER_revolt_luxembourg_option
+    }
+}
+
+# Rhenish Republic
+country_event = {
+    id = GER_revolt_rhenish.1
+    title = GER_revolt_rhenish_title
+    desc = GER_revolt_rhenish_desc
+    picture = GFX_report_event_german_revolt
+    
+    trigger = { }
+    
+    immediate = {
+        transfer_state = 42
+        transfer_state = 51
+        if = {
+            limit = { tag != RHN }
+            create_country = RHN
+        }
+        set_player_country = RHN
+    }
+    option = {
+        name = GER_revolt_rhenish_option
+    }
+}
+
+# Kingdom of Prussia
+country_event = {
+    id = GER_revolt_prussia.1
+    title = GER_revolt_prussia_title
+    desc = GER_revolt_prussia_desc
+    picture = GFX_report_event_german_revolt
+    
+    trigger = { }
+    
+    immediate = {
+        transfer_state = 42
+        transfer_state = 55
+        transfer_state = 51
+        transfer_state = 57
+        transfer_state = 59
+        transfer_state = 56
+        transfer_state = 58
+        transfer_state = 912
+        transfer_state = 909
+        transfer_state = 64
+        transfer_state = 62
+        transfer_state = 66
+        transfer_state = 762
+        transfer_state = 67
+        transfer_state = 886
+        transfer_state = 63
+        transfer_state = 5
+        transfer_state = 763
+        transfer_state = 188
+        if = {
+            limit = { tag != PRU }
+            create_country = PRU
+        }
+        set_player_country = PRU
+    }
+    option = {
+        name = GER_revolt_prussia_option
+    }
+}

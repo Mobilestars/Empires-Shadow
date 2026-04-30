@@ -1428,6 +1428,11 @@
  SWI_etienne_primault: "Etienne Primault"
  SWI_hans_oehler: "Hans Oehler"
  IRQ_ali_abn_hussein: "Ali Abn Hussein"
+
+POLITICS_HANS_MUSTER_DESC: "Ein erfahrener Schweizer Staatsmann, der für Stabilität und Neutralität steht."
+SWI_hans_muster: "Hans Muster"
+POLITICS_IVAN_IVANOV_DESC: "Ein bulgarischer Offizier, der für Verteidigung und Ordnung bekannt ist."
+BUL_ivan_ivanov: "Ivan Ivanov"
  IRQ_nuri_as_said: "Nuri al-Said"
  IRQ_amir_al_illah: "Amir al-Illah"
  IRQ_generic_fascist_demagogue: "Rashid Ali al-Gaylani"

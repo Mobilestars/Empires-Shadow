@@ -1,0 +1,8 @@
+BUL_ivan_ivanov = {
+    name = "Ivan Ivanov"
+    country = BUL
+    picture = GFX_portrait_BUL_ivan_ivanov
+    expire = "1965.1.1"
+    ideology = neutrality
+    traits = { army_chief_defensive }
+}
